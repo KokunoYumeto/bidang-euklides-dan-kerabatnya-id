@@ -1,0 +1,13 @@
+order,unit_id,entity_kind,source_local_id,source_path,translation_state
+1,o004.petrunin.preface,preface,,intro.tex,admitted
+2,o004.petrunin.ch01,chapter,chap:metr,metric.tex,admitted
+3,o004.petrunin.ch01.s01,section,preaxioms,metric.tex,admitted
+4,o004.petrunin.ch01.s02,section,page:model,metric.tex,admitted
+5,o004.petrunin.ch01.s03,section,sec:Metric spaces,metric.tex,admitted
+6,o004.petrunin.ch01.s04,section,,metric.tex,admitted
+7,o004.petrunin.ch01.s05,section,,metric.tex,admitted
+8,o004.petrunin.ch01.s06,section,,metric.tex,admitted
+9,o004.petrunin.ch01.s07,section,,metric.tex,admitted
+10,o004.petrunin.ch01.s08,section,,metric.tex,admitted
+11,o004.petrunin.ch01.s09,section,,metric.tex,admitted
+12,o004.petrunin.ch01.s10,section,sec:cong-triangles,metric.tex,admitted

@@ -1,0 +1,17 @@
+order,exercise_id,source_label,exercise_kind,used_later,hint_id,exercise_source,hint_source,status
+1,o004.petrunin.ex.ch01.001,ex:dist-square,exercise,false,o004.petrunin.hint.ch01.001,metric.tex,hints.tex,admitted
+2,o004.petrunin.ex.ch01.002,ex:d_1+d_2+d_infty,exercise,false,o004.petrunin.hint.ch01.002,metric.tex,hints.tex,admitted
+3,o004.petrunin.ex.ch01.003,ex:4-triangle,exercise,false,o004.petrunin.hint.ch01.003,metric.tex,hints.tex,admitted
+4,o004.petrunin.ex.ch01.004,ex:dist-preserv=>injective,exercise,false,o004.petrunin.hint.ch01.004,metric.tex,hints.tex,admitted
+5,o004.petrunin.ex.ch01.005,ex:motion-of-R,exercise,true,o004.petrunin.hint.ch01.005,metric.tex,hints.tex,admitted
+6,o004.petrunin.ex.ch01.006,ex:d_1=d_infty,exercise,false,o004.petrunin.hint.ch01.006,metric.tex,hints.tex,admitted
+7,o004.petrunin.ex.ch01.007,ad-ex:motions of Manhattan plane,advanced-exercise,false,o004.petrunin.hint.ch01.007,metric.tex,hints.tex,admitted
+8,o004.petrunin.ex.ch01.008,ex:y=|x|,exercise,false,o004.petrunin.hint.ch01.008,metric.tex,hints.tex,admitted
+9,o004.petrunin.ex.ch01.009,ex:line-motion,exercise,true,o004.petrunin.hint.ch01.009,metric.tex,hints.tex,admitted
+10,o004.petrunin.ex.ch01.010,ex:trig==,exercise,true,o004.petrunin.hint.ch01.010,metric.tex,hints.tex,admitted
+11,o004.petrunin.ex.ch01.011,ex:2a=0,exercise,true,o004.petrunin.hint.ch01.011,metric.tex,hints.tex,admitted
+12,o004.petrunin.ex.ch01.012,ex:a+b==c,exercise,false,o004.petrunin.hint.ch01.012,metric.tex,hints.tex,admitted
+13,o004.petrunin.ex.ch01.013,ex:dist-cont,exercise,true,o004.petrunin.hint.ch01.013,metric.tex,hints.tex,admitted
+14,o004.petrunin.ex.ch01.014,ex:comp+cont,exercise,true,o004.petrunin.hint.ch01.014,metric.tex,hints.tex,admitted
+15,o004.petrunin.ex.ch01.015,ex:isom-cont,exercise,false,o004.petrunin.hint.ch01.015,metric.tex,hints.tex,admitted
+16,o004.petrunin.ex.ch01.016,ex:ncong,exercise,false,o004.petrunin.hint.ch01.016,metric.tex,hints.tex,admitted

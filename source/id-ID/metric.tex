@@ -1,0 +1,532 @@
+\chapter{Pendahuluan}\label{chap:metr}
+
+
+\section{Apakah pendekatan aksiomatik itu?}
+\label{preaxioms}
+
+Dalam pendekatan aksiomatik, bidang didefinisikan sebagai apa pun yang memenuhi seperangkat sifat tertentu yang disebut {}\emph{aksioma}.
+Aksioma-aksioma ini pada dasarnya berperan sebagai aturan permainan matematika.
+Setelah sistem aksioma ditetapkan, suatu pernyataan benar jika pernyataan itu mengikuti secara logis dari aksioma-aksioma tersebut, dan hanya dalam hal itu.
+
+Perumusan aksioma-aksioma pertama sama sekali tidak ketat.
+Sebagai contoh, Euklides mendeskripsikan sebuah {}\emph{garis} sebagai \textit{panjang tanpa lebar}
+dan sebuah {}\emph{garis lurus} sebagai garis yang \textit{terletak merata dengan titik-titik pada dirinya}.
+Namun, perumusan ini cukup jelas bagi para matematikawan untuk saling memahami.
+
+Cara terbaik untuk memahami suatu sistem aksiomatik
+adalah dengan menyusunnya sendiri.
+Untuk saat ini, anggaplah kita memahami secara intuitif konsep-konsep seperti garis dan titik.
+Bayangkan suatu permukaan papan tulis yang tak berhingga dan sempurna. 
+Marilah kita mencoba menghimpun pengamatan-pengamatan utama mengenai model ini.
+
+\begin{enumerate}[(i)]
+ \item\label{preaxiomI} Kita dapat mengukur jarak antartitik.
+ \item\label{preaxiomII} Kita dapat menggambar tepat satu garis yang melalui dua titik yang diberikan.
+ \item\label{preaxiomIII} Kita dapat mengukur sudut.
+ \item\label{preaxiomIV} Jika kita memutar atau menggeser, kita tidak akan melihat perbedaan.
+ \item\label{preaxiomV} Jika kita mengubah skala, kita tidak akan melihat perbedaan.
+\end{enumerate}
+Pengamatan-pengamatan ini merupakan awal yang baik.
+Kelak, kita akan mengembangkan bahasa untuk merumuskannya kembali secara ketat.
+
+\section{Apakah model itu?}
+\label{page:model}
+
+Bidang Euklides dapat didefinisikan secara ketat sebagai berikut:
+
+\textit{Definisikan sebuah {}\emph{titik} pada bidang Euklides sebagai pasangan bilangan real $(x,y)$ dan definisikan {}\emph{jarak} antara dua titik $(x_1,y_1)$ dan $(x_2,y_2)$ dengan rumus berikut:}
+\[\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}.\]
+
+Itu saja!
+Kita telah memberikan sebuah {}\emph{model numerik} untuk bidang Euklides;
+model tersebut membangun bidang Euklides dari bilangan real, yang dianggap telah dikenal.
+
+Keringkasan merupakan keunggulan utama pendekatan model,
+tetapi secara intuitif tidak jelas mengapa kita mendefinisikan titik dan jarak dengan cara ini.
+
+Di sisi lain, pengamatan-pengamatan pada bagian sebelumnya jelas secara intuitif ---
+inilah keunggulan utama pendekatan aksiomatik.
+Keunggulan lainnya --- pendekatan aksiomatik mudah disesuaikan. 
+Sebagai contoh, kita dapat menghapus atau mengganti sebuah aksioma dari daftar. 
+Kita akan melakukannya di Bab~\ref{chap:non-euclid}.
+
+\section{Ruang metrik}\label{sec:Metric spaces}
+
+Konsep ruang metrik memberikan 
+cara yang ketat untuk mengatakan: \textit{``kita dapat mengukur jarak antartitik''}.
+Dengan kata lain, sebagai pengganti (\ref{preaxiomI}) pada Bagian~\ref{preaxioms},
+kita dapat mengatakan \textit{``bidang Euklides adalah ruang metrik''}.
+
+\begin{thm}{Definisi}\label{def:metric-space}
+Misalkan $\mathcal X$ suatu himpunan tak kosong dan 
+misalkan $d$ suatu fungsi
+yang menetapkan bilangan real $d(A,B)$
+untuk setiap pasangan $A,B\in\mathcal X$.
+Maka $d$ disebut \index{metrik}\emph{metrik} pada 
+$\mathcal X$ jika, untuk setiap
+$A,B,C\in \mathcal X$, syarat-syarat berikut terpenuhi:
+\begin{enumerate}[(a)]
+\item\label{def:metric-space:a} Kepositifan: 
+$d(A,B)\ge 0.$
+\item\label{def:metric-space:b} $A=B$ jika dan hanya jika 
+$d(A,B)=0.$
+\item\label{def:metric-space:c} Simetri: $d(A, B) = d(B, A).$
+\item\label{def:metric-space:d} \index{segitiga!ketaksamaan}Ketaksamaan segitiga: 
+$d(A, C) \le d(A, B) + d(B, C).$
+\end{enumerate}
+Sebuah \index{metrik!ruang}\emph{ruang metrik} didefinisikan sebagai himpunan yang dilengkapi dengan metrik. 
+Secara lebih formal, ruang metrik adalah pasangan $(\mathcal X, d)$ dengan $\mathcal X$ suatu himpunan dan $d$ suatu metrik pada~$\mathcal X$.
+
+Unsur-unsur $\mathcal X$ disebut \index{titik}\emph{titik-titik} ruang metrik tersebut.
+Nilai $d(A, B)$ disebut \index{jarak}\emph{jarak} dari $A$ ke~$B$.
+\end{thm}
+
+\pagebreak
+
+\subsection*{Contoh-contoh}
+
+\begin{itemize}
+\item {}\emph{Metrik diskret.} Misalkan $\mathcal X$ suatu himpunan sembarang. 
+Untuk setiap $A,B\z\in\mathcal X$, tetapkan $d(A,B)\z=0$ jika $A=B$ dan $d(A,B)=1$ jika tidak.
+Metrik $d$ disebut \index{metrik diskret}\emph{metrik diskret} pada~$\mathcal X$.
+\item\index{real!garis bilangan}\emph{Garis bilangan real.}
+Himpunan semua bilangan real ($\mathbb{R}$) dengan metrik $d$ yang didefinisikan sebagai 
+$$d(A,B)\df|A-B|.$$
+\end{itemize}
+
+\begin{thm}{Latihan}\label{ex:dist-square}
+Tunjukkan bahwa $d(A,B)=|A-B|^2$ \textit{bukan} metrik pada $\mathbb{R}$.
+\end{thm}
+
+\begin{itemize}
+\item \textit{Metrik pada bidang.}
+Misalkan $\mathbb{R}^2$ menyatakan himpunan semua pasangan $(x,y)$ bilangan real.
+Andaikan $A=(x_A,y_A)$ dan $B=(x_B,y_B)$.
+Perhatikan metrik-metrik berikut pada $\mathbb{R}^2$:
+\begin{itemize}
+\item\index{Euklides!metrik}\emph{Metrik Euklides,} dilambangkan dengan \index{59@$d_1$, $d_2$, $d_\infty$}$d_2$, dan didefinisikan sebagai \label{def:d_2}
+$$d_2(A,B)=\sqrt{(x_A-x_B)^2+(y_A-y_B)^2}.$$
+\item\label{Manhattan plane}\index{bidang Manhattan}\emph{Metrik Manhattan,} dilambangkan dengan $d_1$ dan didefinisikan sebagai 
+$$d_1(A,B)=|x_A-x_B|+|y_A-y_B|.$$
+\item{}\emph{Metrik maksimum,} dilambangkan dengan $d_\infty$ dan didefinisikan sebagai 
+$$d_\infty(A,B)=\max\{|x_A-x_B|,|y_A-y_B|\}.$$
+\end{itemize}
+\end{itemize}
+
+\begin{thm}{Latihan}\label{ex:d_1+d_2+d_infty}
+Buktikan bahwa fungsi-fungsi berikut merupakan metrik pada $\mathbb{R}^2$:
+(a)~$d_1$; (b)~$d_2$; (c)~$d_\infty$.
+\end{thm}
+
+
+\section{Notasi singkat untuk jarak}
+
+Biasanya, kita hanya memerlukan satu metrik pada suatu ruang.
+Oleh karena itu, kita tidak perlu menyebutkan metrik tersebut setiap kali.
+
+Diberikan suatu ruang metrik $\mathcal X$,
+jarak antara titik $A$ dan $B$ akan dilambangkan dengan
+$$AB
+\quad
+\text{atau}
+\quad
+d_{\mathcal X}(A,B);$$
+notasi yang terakhir hanya digunakan jika kita perlu menegaskan bahwa $A$ dan $B$ merupakan titik-titik ruang metrik~$\mathcal X$.
+
+Sebagai contoh, ketaksamaan segitiga dapat ditulis sebagai 
+$$AC\le AB+BC.$$
+
+Untuk menghindari kerancuan, kita akan selalu menggunakan ``$\cdot$'' untuk perkalian,
+agar $AB$ tidak disalahartikan sebagai $A\cdot B$.
+
+\begin{thm}{Latihan}\label{ex:4-triangle}
+Tunjukkan bahwa ketaksamaan
+\[AB+PQ\le AP+AQ+BP+BQ\]
+berlaku untuk sembarang empat titik $A$, $B$, $P$, $Q$ dalam suatu ruang metrik.
+\end{thm}
+
+
+\section{Isometri, transformasi isometrik, dan garis}
+
+Pada bagian ini, kita mendefinisikan garis dalam ruang metrik.
+Setelah itu dilakukan, kalimat \textit{``Kita dapat menggambar tepat satu garis yang melalui dua titik yang diberikan.''} menjadi ketat; lihat (\ref{preaxiomII}) pada Bagian~\ref{preaxioms}. 
+
+Ingatlah bahwa suatu pemetaan $f\:\mathcal{X}\to\mathcal{Y}$
+merupakan \index{bijeksi}\emph{bijeksi}
+jika pemetaan tersebut memasangkan secara tepat unsur-unsur kedua himpunan.
+Secara ekuivalen, $f\:\mathcal{X}\to\mathcal{Y}$ merupakan bijeksi jika memiliki suatu \index{invers}\emph{invers};
+yaitu, suatu pemetaan $g\:\mathcal{Y}\to\mathcal{X}$
+sedemikian sehingga 
+$g(f(A))\z=A$ untuk setiap $A\in\mathcal{X}$
+dan
+$f(g(B))\z=B$ untuk setiap $B\in\mathcal{Y}$. 
+
+Misalkan $\mathcal X$ dan $\mathcal Y$ dua ruang metrik serta $d_{\mathcal X}$ dan $d_{\mathcal Y}$ metriknya. 
+Suatu pemetaan 
+$$f\:\mathcal X \z\to \mathcal Y$$ 
+disebut
+\index{pemetaan yang mempertahankan jarak}\emph{pemetaan yang mempertahankan jarak} jika 
+$$d_{\mathcal Y}(f(A), f(B))
+ = d_{\mathcal X}(A,B)$$
+untuk semua $A,B\in {\mathcal X}$.
+
+Pemetaan bijektif yang mempertahankan jarak disebut \index{isometri}\emph{isometri}. 
+
+Dua ruang metrik disebut \index{ruang isometrik}\emph{isometrik} jika terdapat suatu isometri di antara keduanya.
+
+Suatu isometri dari ruang metrik ke dirinya sendiri juga disebut \index{transformasi isometrik}\emph{transformasi isometrik}.
+
+\begin{thm}{Latihan}\label{ex:dist-preserv=>injective}
+Tunjukkan bahwa setiap pemetaan yang mempertahankan jarak bersifat \index{pemetaan injektif}\emph{injektif};
+yaitu, jika $f\:\mathcal X\to\mathcal Y$ merupakan pemetaan yang mempertahankan jarak, 
+maka $f(A)\ne f(B)$ untuk setiap pasangan titik berbeda $A, B\in \mathcal X$.
+\end{thm}
+
+\begin{thm}[!]{Latihan}\label{ex:motion-of-R}
+Tunjukkan bahwa jika $f\:\mathbb{R}\to\mathbb{R}$ merupakan transformasi isometrik pada garis bilangan real,
+maka salah satu dari (a)
+$f(x)=f(0)+x$ untuk setiap $x\in \mathbb{R}$, 
+atau (b)
+$f(x)=f(0)-x$ untuk setiap $x\in \mathbb{R}$. 
+
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:d_1=d_infty}
+Buktikan bahwa $(\mathbb{R}^2,d_1)$ isometrik dengan $(\mathbb{R}^2,d_\infty)$.
+\end{thm}
+
+\begin{thm}{Latihan lanjutan}\label{ad-ex:motions of Manhattan plane}
+Uraikan semua transformasi isometrik bidang Manhattan (didefinisikan dalam Bagian~\ref{sec:Metric spaces}).
+\end{thm}
+
+Jika $\mathcal X$ ruang metrik dan $\mathcal Y$ subhimpunan dari $\mathcal X$,
+maka suatu metrik pada $\mathcal Y$ dapat diperoleh dengan membatasi metrik dari~$\mathcal X$. 
+Dengan kata lain, 
+jarak antara dua titik di $\mathcal Y$ didefinisikan sebagai jarak antara kedua titik tersebut di $\mathcal X$.
+Dengan cara ini, setiap subhimpunan ruang metrik juga dapat dipandang sebagai ruang metrik.
+
+\begin{thm}{Definisi}\label{def:line}
+Suatu subhimpunan $\ell$ dari ruang metrik disebut \index{garis}\emph{garis} jika isometrik dengan garis bilangan real.
+\end{thm}
+
+Tripel titik yang terletak pada satu garis disebut \index{titik-titik segaris}\emph{segaris}.
+Perhatikan bahwa jika $A$, $B$, dan  $C$ segaris, $AC\ge AB$, dan $AC\ge BC$, maka $AC\z= AB+BC$.
+
+Beberapa ruang metrik tidak memiliki garis; sebagai contoh, ruang dengan metrik diskret.
+Gambar menunjukkan contoh-contoh garis pada bidang Manhattan $(\mathbb{R}^2,d_1)$. 
+\begin{figure}[!ht]
+\centering
+\includegraphics{mppics/pic-2}
+\end{figure}
+
+\begin{thm}{Latihan}\label{ex:y=|x|}
+Perhatikan grafik $y=|x|$ dalam $\mathbb{R}^2$.
+Dalam ruang-ruang berikut ini,
+(a) $(\mathbb{R}^2,d_1)$, 
+(b) $(\mathbb{R}^2,d_2)$, 
+(c) $(\mathbb{R}^2,d_\infty)$ 
+apakah grafik tersebut membentuk sebuah garis? 
+Mengapa?
+\end{thm}
+
+\begin{thm}[!]{Latihan}\label{ex:line-motion}
+Tunjukkan bahwa setiap transformasi isometrik memetakan sebuah garis ke sebuah garis.
+\end{thm}
+
+
+\section{Sinar dan ruas}
+
+Andaikan terdapat sebuah garis $\ell$ yang melalui
+dua titik berbeda $P$ dan $Q$.
+Dalam hal ini, kita dapat menyatakan $\ell$ sebagai $(PQ)$.
+Mungkin terdapat lebih dari satu garis yang melalui $P$ dan $Q$,
+tetapi jika kita menulis \index{60@$(PQ)$, $[PQ)$, $[PQ]$}$(PQ)$, kita menganggap bahwa kita telah memilih salah satu garis tersebut. 
+
+Kita akan menggunakan $[P Q)$ untuk menyatakan \index{sinar}\emph{sinar}
+yang berawal di $P$ dan memuat~$Q$. 
+Secara formal, $[P Q)$ merupakan subhimpunan dari $(P Q)$ yang bersesuaian dengan $[0,\infty)$ melalui suatu isometri $f\:(P Q)\to \mathbb{R}$ sedemikian sehingga $f(P)=0$ dan $f(Q)>0$.
+
+Subhimpunan garis $(P Q)$ yang berada di antara $P$ dan $Q$ disebut \index{ruas}\emph{ruas antara} $P$ dan $Q$; ruas tersebut dilambangkan dengan~$[P Q]$.
+Secara formal, ruas dapat didefinisikan sebagai irisan dua sinar: $[P Q]=[P Q)\cap[Q P)$.
+
+\begin{thm}[!]{Latihan}\label{ex:trig==}
+Tunjukkan bahwa, untuk $r\ge 0$ dan suatu sinar $[P Q)$ yang diberikan, terdapat tepat satu $X\in [P Q)$  sedemikian sehingga $P X=r$.
+%\begin{enumerate}[(a)]
+%\item if $X\in [PQ)$, then $QX=|PX-PQ|$;
+%\item if $X\in [PQ]$, then $PX+XQ=PQ$;
+%\item $[OP)\cup[OQ)$ is a line if and only if $XO+OY=XY$ for all $X\in [OP)$ and $Y\in[OQ)$.
+%\end{enumerate}
+
+\end{thm}
+
+%\begin{thm}{Exercise}\label{ex:lineABC}
+%Let $A$, $B$, and $C$ be disticnt points in a metric space such that $AB+BC\z=AC$.
+%Suppose that the there are lines $(AB)$, $(AC)$, and $(BC)$.
+%Show that $((AC)\setminus[AC])\cup [AB]\cup [BC]$ is a line.
+%\end{thm}
+
+\section{Sudut}
+
+Tujuan kita selanjutnya adalah memperkenalkan sudut dan ukuran sudut; 
+setelah itu, pernyataan \textit{``kita dapat mengukur sudut''} akan menjadi ketat;
+lihat (\ref{preaxiomIII}) pada Bagian~\ref{preaxioms}.
+
+Pasangan terurut dua sinar yang berawal di titik yang sama disebut \index{sudut}\emph{sudut}.
+Sudut $AOB$ (juga dilambangkan dengan \index{10@$\angle$, $\measuredangle$}$\angle AOB$) adalah pasangan sinar $[OA)$ dan $[OB)$; titik $O$ disebut \index{titik sudut!sudut}\emph{titik sudut} dari sudut tersebut.
+
+Secara intuitif, ukuran sudut menyatakan seberapa jauh sinar pertama harus diputar berlawanan arah jarum jam,
+agar mencapai posisi sinar kedua.
+Satu putaran penuh dianggap sebesar $2\cdot\pi$;
+nilai ini bersesuaian dengan ukuran sudut dalam radian.%
+\footnote{Untuk saat ini, kita dapat memandang $\pi$ sebagai
+ukuran setengah putaran dalam satuan tertentu.
+Nilai numeriknya, $\pi\approx 3.14$, tidak penting pada tahap ini.}
+
+Ukuran sudut $\angle AOB$ dilambangkan dengan $\measuredangle AOB$;
+nilainya merupakan bilangan real dalam interval $(-\pi,\pi]$. 
+
+\begin{wrapfigure}{o}{25mm}
+\vskip-0mm
+\centering
+\includegraphics{mppics/pic-4}
+\end{wrapfigure}
+
+Notasi $\angle AOB$ dan $\measuredangle AOB$ tampak serupa;
+keduanya juga memiliki makna yang berkaitan erat tetapi berbeda dan sebaiknya tidak dirancukan.
+Sebagai contoh, persamaan 
+$\angle AOB\z=\angle A'O'B'$
+berarti bahwa
+$[OA)=[O'A')$ dan $[OB)\z=[O'B')$;
+khususnya, $O=O'$.
+Di sisi lain, persamaan 
+$\measuredangle AOB\z=\measuredangle A'O'B'$ 
+hanya menyatakan kesamaan dua bilangan real;
+dalam hal ini, $O$ mungkin berbeda dari~$O'$.
+
+Berikut adalah sifat pertama ukuran sudut yang akan menjadi bagian dari aksioma.
+\textit{Diberikan suatu sinar $[O A)$ dan $\alpha\in(-\pi,\pi]$, terdapat tepat satu sinar $[O B)$ sedemikian sehingga $\measuredangle A O B= \alpha$.}
+
+
+
+\section[\texorpdfstring{Bilangan real modulo $2\cdot\pi$}{Bilangan real modulo 2·π}]{Bilangan real modulo $\bm{2\cdot\pi}$}
+
+
+
+Perhatikan tiga sinar yang berawal di titik yang sama, $[O A)$, $[O B)$, dan $[O C)$.
+Ketiganya membentuk tiga sudut $A O B$, $B O C$, dan $A O C$,
+sehingga nilai $\measuredangle A O C$ seharusnya sama dengan
+jumlah $\measuredangle A O B+\measuredangle B O C$ modulo satu putaran penuh.
+Sifat ini akan dinyatakan dengan rumus 
+$$\measuredangle A O B+\measuredangle B O C\equiv \measuredangle A O C,$$
+di mana \index{34@$\equiv$}``$\equiv$'' adalah notasi baru yang akan segera kita perkenalkan.
+Identitas terakhir ini akan menjadi bagian dari aksioma-aksioma.
+
+Kita akan menulis $\alpha\equiv\beta\pmod{2\cdot\pi}$, atau secara ringkas
+\begin{align*}
+\alpha&\equiv\beta
+\end{align*}
+jika $\alpha=\beta+2\cdot\pi\cdot n$
+untuk suatu bilangan bulat~$n$.
+Dalam hal ini, kita mengatakan 
+$$\textit{``$\alpha$ sama dengan $\beta$ modulo $2\cdot\pi$''}.$$
+Sebagai contoh, $-\pi
+\equiv
+\pi\equiv 3\cdot\pi$ dan $\tfrac12\cdot\pi
+\equiv
+-\tfrac32\cdot\pi$.
+
+Relasi ``$\equiv$'' yang diperkenalkan berperilaku seperti tanda sama dengan,
+tetapi
+\[\dots\equiv\alpha-2\cdot\pi\equiv \alpha\equiv \alpha+2\cdot\pi\equiv \alpha+4\cdot\pi\equiv\dots;\] 
+yaitu, jika dua ukuran sudut berbeda sebesar kelipatan satu putaran penuh,
+maka keduanya dianggap sama.
+
+Dengan ``$\equiv$'', kita dapat melakukan penjumlahan, pengurangan, dan perkalian dengan bilangan bulat tanpa menimbulkan masalah.
+Artinya, jika
+$$\alpha\equiv\beta
+\quad
+\text{dan}
+\quad
+\alpha'\equiv \beta',$$ 
+maka
+$$\alpha+\alpha'\equiv\beta+\beta',
+\quad
+\alpha-\alpha'\equiv \beta-\beta'
+\quad 
+\text{dan}
+\quad
+n\cdot\alpha\equiv n\cdot\beta$$
+untuk setiap bilangan bulat~$n$.
+Namun, ``$\equiv$'' tidak mempertahankan perkalian dengan bilangan nonbulat; sebagai contoh, 
+$$\pi
+\equiv 
+-\pi
+\quad
+\text{tetapi}
+\quad
+\tfrac12\cdot\pi
+\not\equiv
+-\tfrac12\cdot\pi.$$ 
+
+\begin{thm}[!]{Latihan}\label{ex:2a=0}
+Tunjukkan bahwa $2\cdot\alpha\equiv0$ jika dan hanya jika $\alpha\equiv0$ atau $\alpha\equiv\pi$.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:a+b==c}
+Andaikan $0\le \alpha\le \pi$, $0\le \beta\le \pi$, dan $0<\gamma<2\cdot \pi$.
+Tunjukkan bahwa
+\[\alpha+\beta\equiv \gamma\quad\text{mengakibatkan}\quad\alpha+\beta=\gamma.\]
+\end{thm}
+
+
+\section{Kekontinuan}
+
+Ukuran sudut juga diasumsikan kontinu.
+Tepatnya, sifat ukuran sudut berikut akan menjadi bagian dari aksioma-aksioma:
+
+\textit{Fungsi}
+$$\measuredangle\:(A,O,B)\mapsto\measuredangle A O B$$
+\textit{kontinu pada setiap tripel titik $(A,O,B)$
+sedemikian sehingga $O\ne A$, $O\ne B$, dan $\measuredangle A O B\ne\pi$.}
+
+Untuk memperjelas sifat ini, kita perlu memperluas konsep {}\emph{kekontinuan} ke fungsi-fungsi antara ruang-ruang metrik.
+Definisi ini merupakan perumuman langsung dari definisi baku untuk fungsi real ke real.
+
+Misalkan $\mathcal X$ dan $\mathcal Y$ dua ruang metrik,
+serta $d_{\mathcal X}$ dan $d_{\mathcal Y}$ metriknya.
+
+Suatu pemetaan $f\:\mathcal X\to\mathcal Y$ disebut \index{kontinu}\emph{kontinu} di titik $A\in \mathcal X$
+jika, untuk setiap $\epsilon>0$, terdapat $\delta>0$ sedemikian sehingga 
+\[d_{\mathcal X}(A,A')
+<
+\delta
+\quad
+\Rightarrow
+\quad
+d_{\mathcal Y}(f(A),f(A'))
+<
+\epsilon.\]
+(Secara informal, ini berarti bahwa perubahan $A$ yang cukup kecil menghasilkan perubahan $f(A)$ yang sekecil apa pun.)
+
+Suatu pemetaan $f\:\mathcal X\to\mathcal Y$ disebut \index{kontinu}\emph{kontinu} jika kontinu di setiap titik $A\in \mathcal X$.
+
+Pemetaan kontinu dengan beberapa variabel dapat didefinisikan dengan cara serupa.
+Andaikan $f$ suatu fungsi yang menghasilkan sebuah titik di $\mathcal Y$ dari suatu tripel titik $(A,B,C)$
+dalam~$\mathcal X$.
+Pemetaan $f$ mungkin hanya didefinisikan untuk beberapa tripel dalam~$\mathcal X$.
+
+Andaikan $f(A,B,C)$ terdefinisi.
+Kemudian, kita mengatakan bahwa $f$ kontinu pada tripel $(A,B,C)$ 
+jika, untuk setiap $\epsilon>0$, terdapat $\delta>0$ sedemikian sehingga
+\[d_{\mathcal Y}(f(A,B,C),f(A',B',C'))<\epsilon\]
+setiap kali $d_{\mathcal X}(A,A')<\delta$, $d_{\mathcal X}(B,B')<\delta$, dan $d_{\mathcal X}(C,C')<\delta$.
+
+
+\begin{thm}[!]{Latihan}\label{ex:dist-cont}
+Misalkan $\mathcal{X}$ suatu ruang metrik.
+\begin{enumerate}[(a)]
+\item\label{ex:dist-cont:a} Misalkan $A\in \mathcal{X}$ suatu titik tetap.
+Tunjukkan bahwa fungsi 
+$$f\:B\mapsto
+d_{\mathcal{X}}(A,B)$$ 
+kontinu di setiap titik~$B$.
+\item Tunjukkan bahwa fungsi $g\:(A,B)\mapsto d_{\mathcal{X}}(A,B)$ kontinu pada setiap pasangan $A,B\in \mathcal{X}$.
+\end{enumerate}
+
+\end{thm}
+
+\begin{thm}[!]{Latihan}\label{ex:comp+cont}
+Misalkan $\mathcal{X}$, $\mathcal{Y}$, dan $\mathcal{Z}$ ruang-ruang metrik.
+Andaikan fungsi $f\:\mathcal{X}\to\mathcal{Y}$
+dan $g\:\mathcal{Y}\to\mathcal{Z}$ kontinu di setiap titik,
+dan $h=g\circ f$ merupakan komposisi keduanya;
+yaitu, $h(A)=g(f(A))$ untuk setiap $A\in \mathcal{X}$.
+Tunjukkan bahwa $h\:\mathcal{X}\to\mathcal{Z}$ kontinu di setiap titik.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:isom-cont}
+Tunjukkan bahwa setiap pemetaan yang mempertahankan jarak bersifat kontinu.
+\end{thm}
+
+\section{Segitiga kongruen}
+\label{sec:cong-triangles}
+
+Tujuan kita selanjutnya adalah menemukan interpretasi yang ketat bagi pernyataan (\ref{preaxiomIV}) pada Bagian~\ref{preaxioms}.
+Untuk itu, kita akan memperkenalkan konsep segitiga kongruen,
+sehingga sebagai pengganti \textit{``jika kita memutar atau menggeser, kita tidak akan melihat perbedaan''}, kita dapat mengatakan bahwa kekongruenan sisi-sudut-sisi berlaku untuk segitiga.
+
+Suatu tripel \textit{terurut} dari titik-titik \textit{berbeda} dalam ruang metrik $\mathcal{X}$, 
+misalnya $A$, $B$, $C$,
+disebut \index{segitiga}\emph{segitiga $ABC$}\label{page:def:triangle} (secara ringkas \index{20@$\triangle$}$\triangle A B C$).
+Titik-titik $A$, $B$, dan $C$ disebut \index{titik sudut!segitiga}\emph{titik-titik sudut} dari $\triangle ABC$.
+Perhatikan bahwa segitiga $A B C$ dan $A C B$ berbeda.
+
+Dua segitiga $A' B' C'$ dan $A B C$ bersifat  
+\index{segitiga!segitiga kongruen}
+\index{kongruen!segitiga}\emph{kongruen}
+(secara ringkas  \index{32@$\cong$}$\triangle A' B' C'\z\cong\triangle A B C$) jika terdapat transformasi isometrik $f\:\mathcal{X}\to\mathcal{X}$ sedemikian sehingga 
+\[A'\z=f(A),
+\quad
+B'=f(B)
+\quad
+\text{dan}
+\quad
+C'=f(C).\]
+
+Misalkan $\mathcal X$ suatu ruang metrik,
+dan $f,g\:\mathcal X\to\mathcal X$ dua transformasi isometrik.
+Perhatikan bahwa invers $f^{-1}:\mathcal X\to\mathcal X$,
+serta komposisi $f\circ g:\mathcal X\to\mathcal X$,
+juga merupakan transformasi isometrik.
+
+Oleh karena itu, ``$\cong$'' merupakan \index{relasi ekuivalensi}\emph{relasi ekuivalensi};
+yaitu, setiap segitiga kongruen dengan dirinya sendiri,
+dan dua syarat berikut berlaku:
+\begin{itemize} 
+\item Jika $\triangle A' B' C'\z\cong\triangle A B C$, maka $\triangle A B C\z\cong\triangle A' B' C'$.
+\item Jika $\triangle A'' B'' C''\z\cong\triangle A' B' C'$ dan $\triangle A' B' C'\z\cong\triangle A B C$,
+maka 
+$$\triangle A'' B'' C''\cong\triangle A B C.$$
+\end{itemize}
+
+Jika $\triangle A' B' C'\z\cong\triangle A B C$,
+maka $AB\z=A'B'$,
+$BC=B'C'$ dan $CA=C'A'$.
+
+Untuk metrik diskret, serta beberapa metrik lainnya, 
+kebalikannya juga berlaku.
+Contoh berikut menunjukkan bahwa hal tersebut tidak berlaku pada bidang Manhattan:
+
+\parbf{Contoh.}\label{example:isometric but not congruent}
+Perhatikan tiga titik 
+$A=(0,1)$, $B=(1,0)$, dan $C\z=(-1,0)$ pada bidang Manhattan $(\mathbb{R}^2,d_1)$.
+Maka
+$$d_1(A,B)=d_1(A,C)=d_1(B,C)=2.$$
+
+Di satu pihak, $\triangle ABC\cong \triangle ACB$.
+Memang, pemetaan $(x,y)\z\mapsto (-x,y)$ merupakan transformasi isometrik pada $(\mathbb{R}^2,d_1)$
+yang memetakan $A\z\mapsto A$, $B\mapsto C$, dan $C\z\mapsto B$.
+
+Di pihak lain, $\triangle ABC\ncong \triangle BCA$.
+Memang, untuk memperoleh kontradiksi, andaikan $\triangle ABC\cong \triangle BCA$; yaitu, terdapat transformasi isometrik $f$ pada $(\mathbb{R}^2,d_1)$ yang memetakan $A\mapsto B$, $B\mapsto C$, dan $C\mapsto A$.
+
+\begin{wrapfigure}[6]{o}{33mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-6}
+\end{wrapfigure}
+
+Kita mengatakan bahwa $M$ merupakan titik tengah $A$ dan $B$ jika 
+\[d_1(A,M)=d_1(B,M)=\tfrac12\cdot d_1(A,B).\]
+Perhatikan bahwa suatu titik $M$ merupakan titik tengah $A$ dan $B$ jika dan hanya jika $f(M)$ merupakan titik tengah $B$ dan~$C$.
+
+Himpunan titik tengah $A$ dan $B$ tak berhingga; himpunan tersebut memuat semua titik $(t,t)$ untuk $t\in[0,1]$ (himpunan itu merupakan ruas berwarna abu-abu pada gambar di atas).
+Sebaliknya, titik tengah $B$ dan $C$ tunggal.
+Oleh karena itu, pemetaan $f$ tidak mungkin bijektif sehingga menghasilkan kontradiksi.
+
+\begin{thm}{Latihan}\label{ex:ncong}
+Perhatikan suatu ruang metrik yang terdiri atas empat titik $A$, $B$, $C$, $D$ dengan metrik yang didefinisikan oleh $AB=AC=AD=BC=BD=1$, dan 
+$CD=2$.
+Tunjukkan bahwa (a) $\triangle ABC\cong \triangle BAC$, dan (b) $\triangle ABC\ncong \triangle BCA$.
+\end{thm}
+

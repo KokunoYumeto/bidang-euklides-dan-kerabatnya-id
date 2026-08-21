@@ -1,0 +1,16 @@
+term_id,source_term,preferred_id_ID,rejected_or_contextual,scope,status
+O004-TERM-0001,Euclidean plane,bidang Euklides,bidang Euclidean,work-wide,admitted
+O004-TERM-0002,axiom,aksioma,postulat (unless source says postulate),work-wide,admitted
+O004-TERM-0003,metric space,ruang metrik,,work-wide,admitted
+O004-TERM-0004,metric,metrik,,work-wide,admitted
+O004-TERM-0005,distance,jarak,,work-wide,admitted
+O004-TERM-0006,isometry,isometri,,work-wide,admitted
+O004-TERM-0007,motion,transformasi isometrik,gerak (too informal as the canonical noun),metric-geometry,admitted
+O004-TERM-0008,line,garis,,work-wide,admitted
+O004-TERM-0009,half-line,sinar,setengah garis,work-wide,admitted
+O004-TERM-0010,segment,ruas,segmen (contextual loanword),work-wide,admitted
+O004-TERM-0011,angle measure,ukuran sudut,,work-wide,admitted
+O004-TERM-0012,congruent,kongruen,,work-wide,admitted
+O004-TERM-0013,triangle inequality,ketaksamaan segitiga,pertidaksamaan segitiga,metric-geometry,admitted
+O004-TERM-0014,distance-preserving map,pemetaan yang mempertahankan jarak,,metric-geometry,admitted
+O004-TERM-0015,continuous,kontinu,,analysis-and-geometry,admitted

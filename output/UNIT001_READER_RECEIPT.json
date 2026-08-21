@@ -1,0 +1,23 @@
+{
+  "schema": "o004-unit001-reader-v0",
+  "status": "partial",
+  "locale": "id-ID",
+  "scope": "title-license; complete-preface; complete-chapter-1; 16-exercises; 16-hints",
+  "authority_commit": "0b0858e1e985f4c8dadbb6075ae9e095cd4a8981",
+  "authority_tree": "4c931765feb8e83b77b079e618b994a74efa5cf3",
+  "full_context_pdf_sha256": "b8b0d838d9eff855fbb85aadc2039660fdbad0f2fdc9e7c6eff5b35d84f915d3",
+  "hint_pdf_sha256": "7ed39f4da2f791da1e2e27547507593b9ca82f8d9338bc07bbe264d1fd26ff67",
+  "selected_full_context_pages_1_based": [1, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+  "hint_pages": 2,
+  "output_path": "output/BIDANG_EUKLIDES_DAN_KERABATNYA_ID_UNIT_001.pdf",
+  "output_pages": 19,
+  "output_bytes": 881787,
+  "output_sha256": "1a6909ab8c315fe2529d9267c3d539def1e1f68667bc432d8bf40059dd91a452",
+  "byte_reproducible_compositions": 2,
+  "structural_qa": "pass",
+  "visual_qa": "pass-all-19-pages",
+  "pdf_lang": "id-ID",
+  "pdf_tagged": false,
+  "accessibility_caveat_disclosed": true,
+  "chapter_2_or_later_reader_text_included": false
+}

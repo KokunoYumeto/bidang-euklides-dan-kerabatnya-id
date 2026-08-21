@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Jika Anda menggunakan Unit Produksi 001 ini, kutip karya asli dan record edisi bahasa Indonesia."
+title: "Bidang Euklides dan Kerabatnya: Sebuah Pengantar Minimalis — Unit Produksi 001"
+type: book
+authors:
+  - family-names: Petrunin
+    given-names: Anton
+version: "2026.08.21-unit001"
+date-released: 2026-08-21
+license: CC-BY-SA-4.0
+doi: 10.5281/zenodo.22044358
+repository-code: "https://github.com/KokunoYumeto/bidang-euklides-dan-kerabatnya-id"
+url: "https://doi.org/10.5281/zenodo.22044358"
+preferred-citation:
+  type: book
+  title: "Bidang Euklides dan Kerabatnya: Sebuah Pengantar Minimalis — Unit Produksi 001 (Prakata dan Bab 1, Bahasa Indonesia)"
+  authors:
+    - family-names: Petrunin
+      given-names: Anton
+  year: 2026
+  doi: 10.5281/zenodo.22044358

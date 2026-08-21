@@ -1,0 +1,246 @@
+{
+  "schema": "o004-curriculum-backend-v0",
+  "generated_at": "2026-08-21",
+  "records": [
+    {
+      "entity_type": "program",
+      "id": "math-curriculum-id-2026",
+      "status": "active",
+      "locale": "id-ID"
+    },
+    {
+      "entity_type": "course",
+      "id": "c100-foundations-geometry",
+      "status": "production",
+      "locale": "id-ID",
+      "role": "Euclidean, affine, projective, and non-Euclidean geometry"
+    },
+    {
+      "entity_type": "resource",
+      "id": "o004-petrunin-euclidean-plane",
+      "status": "admitted-body-only",
+      "locale": "en",
+      "title": "Euclidean Plane and Its Relatives: A Minimalist Introduction",
+      "creator": "Anton Petrunin",
+      "official_url": "https://anton-petrunin.github.io/birkhoff/",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
+    },
+    {
+      "entity_type": "edition",
+      "id": "o004-petrunin-arxiv-v25",
+      "status": "source_frozen",
+      "locale": "en",
+      "edition_statement": "third edition, tenth printing",
+      "revision_date": "2025-07-07",
+      "pdf_sha256": "8797bcfa4ec4457aa7a7561d6b246c0e61deea02cb377b8828cee0b1da28f282",
+      "source_response_sha256": "0dd8863fc75aebaa13f9b817fc5ec5a10ac6220bef7b8b789d4959989f62886f",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
+    },
+    {
+      "entity_type": "edition",
+      "id": "o004-petrunin-current-0b0858e",
+      "status": "source_frozen",
+      "locale": "en",
+      "commit": "0b0858e1e985f4c8dadbb6075ae9e095cd4a8981",
+      "tree": "4c931765feb8e83b77b079e618b994a74efa5cf3",
+      "archive_sha256": "ef6142598854078fe3d9777005b5aff49ee0d5c70b17acebce876398c8b71081",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
+    },
+    {
+      "entity_type": "rights",
+      "id": "rights-petrunin-body-cc-by-sa-4.0",
+      "status": "admitted",
+      "license": "CC BY-SA 4.0",
+      "requires": ["attribution", "change-notice", "share-alike", "license-link"]
+    },
+    {
+      "entity_type": "rights",
+      "id": "rights-p22-cover-excluded",
+      "status": "blocked",
+      "component": "cover/ and two P22 font files",
+      "disposition": "excluded from derivative and every public package"
+    },
+    {
+      "entity_type": "rights",
+      "id": "rights-fiziko-gpl-3.0-or-later",
+      "status": "component-licensed",
+      "component": "mppics/fiziko.mp",
+      "license": "GPL-3.0-or-later"
+    },
+    {
+      "entity_type": "rights",
+      "id": "rights-mppics-macros-unresolved",
+      "status": "blocked-for-public-source-package",
+      "component": "mppics/macros.mp"
+    },
+    {
+      "entity_type": "unit",
+      "id": "o004.petrunin.front-ch01",
+      "status": "admitted-partial",
+      "locale": "id-ID",
+      "source_path": "title.tex; intro.tex; metric.tex; hints.tex#chapter-1",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0",
+      "order": 1
+    },
+    {
+      "entity_type": "unit",
+      "id": "o004.petrunin.preface",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_path": "intro.tex",
+      "source_sha256": "216d86dc2531530376b765b2ee67f5b04ad3cefe07c132d06598c48702c5ea3a",
+      "target_sha256": "efb397acf0168077eba4ee20d090b9f8d9e007c78f599dd7555e13d42390fcd6",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0",
+      "order": 1
+    },
+    {
+      "entity_type": "unit",
+      "id": "o004.petrunin.ch01",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_local_id": "chap:metr",
+      "source_path": "metric.tex",
+      "source_sha256": "d2ed237862fd19d76ecbe518b6b1301ac4d78a2abfaae30d787e09fefb586328",
+      "target_sha256": "ce0b45d0eba3918aeb8cea80c68770a2ff19f2358932087409625171f42f1953",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0",
+      "order": 2
+    },
+    {
+      "entity_type": "segment",
+      "id": "o004.petrunin.seg.preface",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_path": "intro.tex",
+      "source_sha256": "216d86dc2531530376b765b2ee67f5b04ad3cefe07c132d06598c48702c5ea3a",
+      "target_sha256": "efb397acf0168077eba4ee20d090b9f8d9e007c78f599dd7555e13d42390fcd6",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
+    },
+    {
+      "entity_type": "segment",
+      "id": "o004.petrunin.seg.ch01",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_path": "metric.tex",
+      "source_sha256": "d2ed237862fd19d76ecbe518b6b1301ac4d78a2abfaae30d787e09fefb586328",
+      "target_sha256": "ce0b45d0eba3918aeb8cea80c68770a2ff19f2358932087409625171f42f1953",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
+    },
+    {
+      "entity_type": "segment",
+      "id": "o004.petrunin.seg.hints-ch01",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_path": "hints.tex#lines-13-231",
+      "source_sha256": "78cb97e73d57aeacc706099e62e0508a89b3b3ebb6d1087655be3255e785c10c",
+      "authority_prefix_sha256": "ebaf7861611fddbf509e4b6b4afcfad889333302329cd1fb4f5be8a941604bbb",
+      "target_prefix_sha256": "3b57bdb8bdfac490334f2ca5f202d19cb1b5834c2031919b767145d9925b0916",
+      "target_full_sha256": "b92ed99ef11cd717329ceeea99537f42860bded8d6ccb26da27c4300da71408a",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.preface.dependencies",
+      "status": "described-admitted",
+      "source_path": "intro.tex#chapter-dependency-tikz",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch01.01",
+      "status": "described-admitted",
+      "source_local_id": "pic-2",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch01.02",
+      "status": "described-admitted",
+      "source_local_id": "pic-4",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch01.03",
+      "status": "described-admitted",
+      "source_local_id": "pic-6",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
+      "entity_type": "artifact",
+      "id": "o004.petrunin.artifact.upstream-baseline",
+      "status": "built",
+      "locale": "en",
+      "bytes": 2959996,
+      "sha256": "6a296d2a6e046520575b4987fb6f4e519014f3ff64d1f154d59e2bede15bd50d",
+      "pages": 199,
+      "authority_edition_id": "o004-petrunin-current-0b0858e"
+    },
+    {
+      "entity_type": "artifact",
+      "id": "o004.petrunin.artifact.id-unit001-full-context",
+      "status": "built-private-mixed-context",
+      "locale": "mul",
+      "bytes": 2955024,
+      "sha256": "b8b0d838d9eff855fbb85aadc2039660fdbad0f2fdc9e7c6eff5b35d84f915d3",
+      "pages": 203,
+      "public": false,
+      "authority_edition_id": "o004-petrunin-current-0b0858e"
+    },
+    {
+      "entity_type": "artifact",
+      "id": "o004.petrunin.artifact.id-unit001-reader",
+      "status": "admitted-partial",
+      "locale": "id-ID",
+      "source_path": "output/BIDANG_EUKLIDES_DAN_KERABATNYA_ID_UNIT_001.pdf",
+      "bytes": 881787,
+      "sha256": "1a6909ab8c315fe2529d9267c3d539def1e1f68667bc432d8bf40059dd91a452",
+      "pages": 19,
+      "pdf_tagged": false,
+      "pdf_lang": "id-ID",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
+    },
+    {
+      "entity_type": "qa_event",
+      "id": "o004.petrunin.qa.unit001-admission",
+      "status": "pass",
+      "locale": "id-ID",
+      "source_path": "qa/UNIT001_ADMISSION_20260821.md",
+      "structural_qa": "pass",
+      "visual_pages_inspected": 19,
+      "byte_reproducible_compositions": 2,
+      "accessibility_caveat_disclosed": true
+    }
+  ],
+  "relations": [
+    {"id": "rel-course-resource", "type": "depends-on", "from": "c100-foundations-geometry", "to": "o004-petrunin-euclidean-plane"},
+    {"id": "rel-unit-preface", "type": "contains", "from": "o004.petrunin.front-ch01", "to": "o004.petrunin.preface"},
+    {"id": "rel-unit-ch01", "type": "contains", "from": "o004.petrunin.front-ch01", "to": "o004.petrunin.ch01"},
+    {"id": "rel-preface-ch01", "type": "precedes", "from": "o004.petrunin.preface", "to": "o004.petrunin.ch01"},
+    {"id": "rel-preface-figure", "type": "illustrates", "from": "o004.petrunin.fig.preface.dependencies", "to": "o004.petrunin.preface"},
+    {"id": "rel-ch01-figure-01", "type": "illustrates", "from": "o004.petrunin.fig.ch01.01", "to": "o004.petrunin.ch01"},
+    {"id": "rel-ch01-figure-02", "type": "illustrates", "from": "o004.petrunin.fig.ch01.02", "to": "o004.petrunin.ch01"},
+    {"id": "rel-ch01-figure-03", "type": "illustrates", "from": "o004.petrunin.fig.ch01.03", "to": "o004.petrunin.ch01"},
+    {"id": "rel-seg-preface", "type": "translates", "from": "o004.petrunin.seg.preface", "to": "o004.petrunin.preface"},
+    {"id": "rel-seg-ch01", "type": "translates", "from": "o004.petrunin.seg.ch01", "to": "o004.petrunin.ch01"},
+    {"id": "rel-seg-hints-ch01", "type": "contains", "from": "o004.petrunin.front-ch01", "to": "o004.petrunin.seg.hints-ch01"},
+    {"id": "rel-unit-reader", "type": "contains", "from": "o004.petrunin.front-ch01", "to": "o004.petrunin.artifact.id-unit001-reader"},
+    {"id": "rel-reader-qa", "type": "depends-on", "from": "o004.petrunin.artifact.id-unit001-reader", "to": "o004.petrunin.qa.unit001-admission"}
+  ]
+}

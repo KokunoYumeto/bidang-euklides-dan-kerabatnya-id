@@ -1,0 +1,211 @@
+\chapter*{Prakata}
+\addcontentsline{toc}{chapter}{Prakata}
+
+Tujuan buku ini adalah menyajikan pembahasan yang
+ketat,
+konservatif,
+elementer,
+dan minimalis.
+Pada saat yang sama, isinya mendekati batas maksimum yang dapat dipelajari mahasiswa dalam satu semester.
+
+Buku ini disusun berdasarkan
+perkuliahan yang diberikan oleh penulis
+di Pennsylvania State University.
+Perkuliahan tersebut ditujukan kepada mahasiswa sarjana tahun kedua dan tahun terakhir yang telah mengenal bilangan real dan kekontinuan.
+Bekal ini memungkinkan materi dibahas lebih cepat dan lebih ketat daripada di sekolah menengah.
+Sekitar sepertiga materi ini dahulu diajarkan di sekolah menengah, tetapi kini tidak lagi.
+
+\section{Prasyarat}
+
+Mahasiswa sebaiknya telah mengenal
+topik-topik berikut:
+\begin{itemize}
+\item Teori himpunan elementer:
+$\in$,
+$\cup$, 
+$\cap$,
+$\backslash$,
+$\subset$,~$\times$.
+\item Bilangan real: interval, ketaksamaan, identitas aljabar.
+\item Limit, fungsi kontinu, dan teorema nilai antara.
+\item Fungsi standar:
+nilai mutlak,
+logaritma natural,
+fungsi eksponensial.
+Sesekali digunakan pula fungsi trigonometri.
+\item Bab~\ref{chap:trans} menggunakan aljabar vektor dasar.
+\item Untuk membaca Bab~\ref{chap:sphere}, sebaiknya pembaca telah mengenal \textit{hasil kali skalar}, yang juga disebut \textit{hasil kali titik}.
+\item Untuk membaca Bab~\ref{chap:complex}, sebaiknya pembaca telah mengenal bilangan kompleks.
+\end{itemize} 
+
+\section{Gambaran umum}
+
+Kita menggunakan apa yang disebut \textit{pendekatan metrik}, yang diperkenalkan oleh Birkhoff.
+Artinya, kita mendefinisikan bidang Euklides sebagai \textit{ruang metrik} yang memenuhi suatu daftar sifat (\textit{aksioma}).
+Dengan cara ini, kita meminimalkan bagian-bagian teknis yang menjemukan
+dan tidak dapat dihindari dalam pendekatan Hilbert yang lebih klasik.
+Pada saat yang sama, mahasiswa berkesempatan mempelajari geometri ruang metrik.
+
+Berikut adalah graf ketergantungan antarbab.
+
+\begin{figure}[!ht]
+\centering
+
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,scale=1.4,
+  thick,main node/.style={circle,draw,font=\sffamily\bfseries,minimum size=8mm}]
+
+  \node[main node] (1) at (-1.5,10/6) {\ref{chap:metr}};
+  \node[main node] (2) at (-.5,10/6){\ref{chap:axioms}};
+  \node[main node] (3) at (.5,10/6) {\ref{chap:half-planes}};
+  \node[main node] (4) at (1.5,10/6) {\ref{chap:cong}};
+  \node[main node] (5) at (2.5,10/6) {\ref{chap:perp}};
+  \node[main node] (6) at (3.5,10/6) {\ref{chap:parallel}};
+  \node[main node] (7) at (4.5,10/6) {\ref{chap:angle-sum}};
+  \node[main node] (8) at (5.5,10/6) {\ref{chap:triangle}};
+  \node[main node] (9) at (5,5/6){\ref{chap:inscribed-angle}};
+  \node[main node] (10) at (4.5,0) {\ref{chap:inversion}};
+  \node[main node] (11) at (3,5/6) {\ref{chap:non-euclid}};
+  \node[main node] (12) at (3.6,0){\ref{chap:poincare}};
+  \node[main node] (13) at (3,-5/6) {\ref{chap:h-plane}};
+  \node[main node] (14) at (5,-5/6) {\ref{chap:trans}};
+  \node[main node] (15) at (4.5,-10/6) {\ref{chap:proj}};
+  \node[main node] (16) at (4,-5/6) {\ref{chap:sphere}};
+  \node[main node] (17) at (3.5,-10/6) {\ref{chap:klein}};
+  \node[main node] (18) at (5.5,0) {\ref{chap:complex}};
+  \node[main node] (19) at (4,15/6) {\ref{chap:car}};
+  \node[main node] (20) at (5,15/6) {\ref{chap:area}};
+
+  \path[every node/.style={font=\sffamily\small}]
+   (1) edge node{}(2)
+   (2) edge node{}(3)
+   (3) edge node{}(4)
+   (4) edge node{}(5)
+   (5) edge node{}(6)
+   (6) edge node{}(7)
+   (7) edge node{}(9)
+   (7) edge node{}(8)
+   (7) edge node{}(20)
+   (10) edge node{}(14)
+   (14) edge node{}(15)
+   (7) edge node{}(19)
+   (9) edge node{}(10)
+   (10) edge node{}(12)
+   (10) edge node{}(16)
+   (10) edge node{}(18)
+   (5) edge node{}(11)
+   (11) edge node{}(12)
+   (12) edge node{}(13)
+   (15) edge node{}(17)
+   (16) edge[dashed] node{}(17)
+   (13) edge node{}(17);
+\end{tikzpicture}
+\end{figure}
+
+Dalam (\ref{chap:metr}), kita memperkenalkan konsep-konsep yang diperlukan untuk merumuskan aksioma;
+bahasannya mencakup ruang metrik,
+garis,
+ukuran sudut,
+pemetaan kontinu,
+dan segitiga kongruen.
+
+Selanjutnya, kita memasuki geometri Euklides:
+(\ref{chap:axioms}) Aksioma dan akibat langsung;
+(\ref{chap:half-planes}) Setengah-bidang dan kekontinuan;
+(\ref{chap:cong}) Segitiga kongruen;
+(\ref{chap:perp}) Lingkaran, transformasi isometrik, dan garis tegak lurus;
+(\ref{chap:parallel}) Segitiga sebangun dan (\ref{chap:angle-sum}) Garis sejajar
+--- inilah dua bab pertama tempat kita menggunakan Aksioma~\ref{def:birkhoff-axioms:4}, yang ekuivalen dengan postulat kesejajaran Euklides.
+Dalam (\ref{chap:triangle}), kita menyajikan teorema-teorema geometri segitiga yang paling klasik;
+bab ini terutama disertakan sebagai ilustrasi.
+
+Dalam dua bab berikutnya, kita membahas geometri lingkaran pada bidang Euklides:
+(\ref{chap:inscribed-angle}) Sudut keliling; (\ref{chap:inversion}) Inversi.
+Inversi akan digunakan untuk membangun model bidang hiperbolik.
+
+Selanjutnya, kita membahas geometri non-Euklides:
+(\ref{chap:non-euclid})
+Geometri netral --- geometri tanpa postulat kesejajaran;
+(\ref{chap:poincare})
+Model cakram konformal ---
+suatu konstruksi bidang hiperbolik,
+yakni contoh bidang netral yang bukan bidang Euklides.
+Dalam (\ref{chap:h-plane}), kita membahas geometri bidang hiperbolik yang telah dibangun --- inilah puncak pembahasan buku ini.
+
+Dalam bab-bab sisanya, kita membahas topik tambahan:
+(\ref{chap:trans}) Geometri afin;
+(\ref{chap:proj}) Geometri proyektif;
+(\ref{chap:sphere}) Geometri sferis;
+(\ref{chap:klein}) Model proyektif bidang hiperbolik;
+(\ref{chap:complex}) Koordinat kompleks;
+(\ref{chap:car}) Konstruksi geometri;
+(\ref{chap:area}) Luas.
+Bukti-bukti dalam bab-bab ini tidak sepenuhnya ketat.
+
+Kami menganjurkan pembaca menggunakan tugas visual pada situs web penulis.
+
+\textbf{Latihan kelas} biasanya mengilustrasikan konsep yang baru diperkenalkan dan dimaksudkan untuk dibahas di kelas.
+Latihan yang digunakan kembali pada bagian selanjutnya ditandai dengan tanda seru: \textbf{Latihan!}
+Suatu pernyataan ditandai dengan ``$\a$''\label{a-mark} (misalnya, ``\textbf{Teorema\abs}'') jika buktinya tidak menggunakan Aksioma~\ref{def:birkhoff-axioms:4}.
+Penandaan ini akan menjadi penting mulai Bab~\ref{chap:non-euclid}.
+
+
+\section{Penafian}
+ 
+Sebagian besar bukti dalam buku ini telah muncul dalam Elements karya Euklides.
+Saya tidak berusaha mencari rujukan aslinya; tugas itu mustahil dilakukan.
+
+\section{Sumber yang disarankan}
+
+\begin{itemize}
+\item {}\emph{Byrne's Euclid} \cite{byrne} --- versi berwarna dari enam buku pertama Elements karya Euklides, disunting oleh Oliver Byrne.
+
+\item {}\emph{Kiselyov's geometry} \cite{kiselev} ---
+buku teks klasik untuk pelajar sekolah karya Andrey Kiselyov; buku ini dapat membantu jika Anda kesulitan mengikuti pembahasan di sini.
+
+\item {}\emph{Lessons in Geometry} karya Jacques Hadamard \cite{hadamard} --- ensiklopedia geometri elementer yang semula ditulis untuk guru sekolah.
+
+%\item Moise's book, \cite{moise} --- should be good for further study.
+
+%\item Greenberg's book \cite{greenberg}  --- a historical tour in the axiomatic systems of various geometries.
+
+\item {}\emph{Problems in geometry} karya Victor Prasolov \cite{prasolov} sempurna untuk menguasai keterampilan pemecahan masalah.
+
+\item {}\emph{Geometry in figures} karya Arseniy Akopyan \cite{akopyan} --- ensiklopedia geometri Euklides yang nyaris tanpa kata-kata.
+
+\item {}\emph{Euclidea} \cite{euclidea} --- cara yang menyenangkan sekaligus menantang untuk mempelajari konstruksi geometri.
+ 
+\item {}\emph{Geometry} karya Igor Sharygin \cite{sharygin} --- buku teks geometri terbaik bagi pelajar sekolah.
+Saya merekomendasikannya kepada siapa pun yang dapat membaca bahasa Rusia.
+
+\item {}\emph{problems.ru} \cite{zadachi} --- kumpulan soal daring dalam bahasa Rusia.
+
+\end{itemize}
+
+\section{Ucapan terima kasih}
+
+{\sloppy
+
+Saya berterima kasih kepada
+Stephanie Alexander,
+Thomas Barthelme,
+Berk Ceylan,
+Matthew Chao, 
+Quinn Culver,
+Svetlana Katok, 
+Nina Lebedeva,
+Alexander Lytchak,
+Alexei Novikov,
+dan Lukeria Petrunina
+atas saran-saran yang berguna dan koreksi terhadap kesalahan cetak.
+
+Karya ini didukung sebagian oleh
+hibah NSF
+DMS-0103957,
+DMS-0406482,
+DMS-0905138,
+DMS-1309340,
+DMS-2005279,
+serta hibah Simons Foundation
+245094, 584781.
+
+}
