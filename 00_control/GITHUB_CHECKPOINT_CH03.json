@@ -1,0 +1,58 @@
+{
+  "schema": "o004-private-github-checkpoint-v0",
+  "checked_at": "2026-08-21T23:41:27.7588750+02:00",
+  "repository": "KokunoYumeto/bidang-euklides-dan-kerabatnya-id",
+  "url": "https://github.com/KokunoYumeto/bidang-euklides-dan-kerabatnya-id",
+  "visibility": "PRIVATE",
+  "branch": "main",
+  "content_commit": "4b2a2a683354c4785aaebb777343049ec5697f6e",
+  "remote_commit": "4b2a2a683354c4785aaebb777343049ec5697f6e",
+  "commit_match": true,
+  "blob_readback": [
+    {
+      "path": "source/id-ID/half-planes.tex",
+      "bytes": 16419,
+      "local_blob": "af7b9c8e2d859f67e82bb8f28517b6218a51cb83",
+      "remote_blob": "af7b9c8e2d859f67e82bb8f28517b6218a51cb83",
+      "match": true
+    },
+    {
+      "path": "source/id-ID/hints.tex",
+      "bytes": 92201,
+      "local_blob": "4eea8ccf4dd6c80ce45ee0beb16b2af0ea084ea6",
+      "remote_blob": "4eea8ccf4dd6c80ce45ee0beb16b2af0ea084ea6",
+      "match": true
+    },
+    {
+      "path": "backend/catalog-v0.json",
+      "bytes": 47671,
+      "local_blob": "545797f6462979d6976e4c597c03f1849f3c22d9",
+      "remote_blob": "545797f6462979d6976e4c597c03f1849f3c22d9",
+      "match": true
+    },
+    {
+      "path": "00_control/00_CURRENT_GOAL_AND_WORKFLOW.md",
+      "bytes": 4091,
+      "local_blob": "a07ab0156f2d00f53d95860e891447743088d2e1",
+      "remote_blob": "a07ab0156f2d00f53d95860e891447743088d2e1",
+      "match": true
+    },
+    {
+      "path": "00_control/CURRENT_CURSOR.md",
+      "bytes": 3134,
+      "local_blob": "b018bd600ddd700590771b12c8fa3cbdc817fd2e",
+      "remote_blob": "b018bd600ddd700590771b12c8fa3cbdc817fd2e",
+      "match": true
+    },
+    {
+      "path": "qa/CH03_ADMISSION_20260821.md",
+      "bytes": 4188,
+      "local_blob": "27ccb7050b6067969fe317c6ff5cbf4ba174fa56",
+      "remote_blob": "27ccb7050b6067969fe317c6ff5cbf4ba174fa56",
+      "match": true
+    }
+  ],
+  "zenodo_action": "none",
+  "zenodo_record": 22044358,
+  "zenodo_required_state": "published record with files restricted"
+}

@@ -102,6 +102,13 @@ in place without a new version: anonymous record readback reports restricted
 access and exposes zero files, and anonymous requests for all five exact file
 URLs return HTTP 403.
 
+The Chapter 3 content checkpoint is private Git commit
+`4b2a2a683354c4785aaebb777343049ec5697f6e`. GitHub branch readback matched
+that commit, repository visibility remained `PRIVATE`, and six representative
+source/backend/control blob IDs matched local Git exactly. The receipt is
+`00_control/GITHUB_CHECKPOINT_CH03.json`. No Zenodo mutation or new version was
+made at this boundary.
+
 The three-layer architecture is frozen in
 `00_control/CURRICULUM_ARCHITECTURE.md`; the complete finite workflow is
 `00_control/00_CURRENT_GOAL_AND_WORKFLOW.md`.
