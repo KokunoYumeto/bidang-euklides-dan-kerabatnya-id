@@ -11,3 +11,16 @@ order,unit_id,entity_kind,source_local_id,source_path,translation_state
 10,o004.petrunin.ch01.s08,section,,metric.tex,admitted
 11,o004.petrunin.ch01.s09,section,,metric.tex,admitted
 12,o004.petrunin.ch01.s10,section,sec:cong-triangles,metric.tex,admitted
+13,o004.petrunin.ch02,chapter,chap:axioms,axioms.tex,admitted
+14,o004.petrunin.ch02.s01,section,sec:axioms,axioms.tex,admitted
+15,o004.petrunin.ch02.s02,section,,axioms.tex,admitted
+16,o004.petrunin.ch02.s03,section,,axioms.tex,admitted
+17,o004.petrunin.ch02.s04,section,,axioms.tex,admitted
+18,o004.petrunin.ch02.s05,section,,axioms.tex,admitted
+19,o004.petrunin.ch02.s06,section,,axioms.tex,admitted
+20,o004.petrunin.ch03,chapter,chap:half-planes,half-planes.tex,admitted
+21,o004.petrunin.ch03.s01,section,,half-planes.tex,admitted
+22,o004.petrunin.ch03.s02,section,,half-planes.tex,admitted
+23,o004.petrunin.ch03.s03,section,,half-planes.tex,admitted
+24,o004.petrunin.ch03.s04,section,,half-planes.tex,admitted
+25,o004.petrunin.ch03.s05,section,,half-planes.tex,admitted

@@ -1,0 +1,47 @@
+{
+  "schema": "o004-ch03-qa-v0",
+  "status": "pass",
+  "authority": {
+    "chapter_bytes": 15512,
+    "chapter_sha256": "372dc4db8690fc18cdb27401a183c3b0a260ad0bfe7a4932d749e0703000e6a0",
+    "hint_slice_bytes": 2689,
+    "hint_slice_sha256": "0b7dc1b5844236cd1c0d160a5387bf1cb9159660d43d557cd090260ea4e3afda"
+  },
+  "target": {
+    "chapter_bytes": 16419,
+    "chapter_sha256": "e7b3b3e4858302e4c361fe47056c9285d4881c5a2c8ec4cd2332629504f698d8",
+    "hint_slice_bytes": 3053,
+    "hint_slice_sha256": "d5f75149bd2fdbc993d00c0a8d4c8c659846374c9da60d459be0871bbe6f40d4",
+    "whole_hints_sha256": "7ae3873f3e805efd84692b4b3f138c79bdf9f77c524701292a4bf43fc9a7e8ef",
+    "frozen_prefix_sha256": "07d7b54f88389a171e2487c77184b6b0755a136dd4902fa41fa6aa0e031876fb",
+    "frozen_suffix_sha256": "d5cd7c02bde78f749f657812b4c48a6d652c1d5820cc2cbe7fe937f0d0711aa5"
+  },
+  "chapter_topology": {
+    "environments": 82,
+    "labels": 25,
+    "equation_labels": 1,
+    "references": 38,
+    "citations": 0,
+    "graphics": 13,
+    "theorem_options": 21,
+    "qeds": 10
+  },
+  "scalar_counts": {
+    "sections": 5,
+    "index_entries": 7,
+    "absolute_markers": 9,
+    "used_later_markers": 4
+  },
+  "chapter_math_surfaces": 326,
+  "hint_topology": {
+    "commands_raw": 102,
+    "references_raw": 21,
+    "comments": 1
+  },
+  "hint_math_surfaces_raw": 65,
+  "qa_script": {
+    "path": "scripts/qa_ch03.py",
+    "bytes": 8774,
+    "sha256": "a9d67b9688b0b45a370a552537e7eeccd497e593af790b4caad3ee09e7bee257"
+  }
+}

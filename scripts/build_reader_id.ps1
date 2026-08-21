@@ -1,10 +1,15 @@
 param(
-    [string]$SourceRoot = (Join-Path $PSScriptRoot '..\source\id-ID'),
+    [string]$SourceRoot,
     [Parameter(Mandatory = $true)]
     [string]$OutputRoot
 )
 
 $ErrorActionPreference = 'Stop'
+if ([string]::IsNullOrWhiteSpace($SourceRoot)) {
+    # Windows PowerShell can evaluate a param-block default before
+    # $PSScriptRoot is populated when this script is launched with -File.
+    $SourceRoot = Join-Path $PSScriptRoot '..\source\id-ID'
+}
 $source = [IO.Path]::GetFullPath($SourceRoot)
 $output = [IO.Path]::GetFullPath($OutputRoot)
 
@@ -30,6 +35,21 @@ Get-ChildItem -LiteralPath (Join-Path $source 'mppics') -File -Filter '*.mp' |
 Get-ChildItem -LiteralPath (Join-Path $source 'pics') -File -Filter '*.eps' |
     ForEach-Object { Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $output ('pics\' + $_.Name)) }
 
+# The upstream wood-texture macro uses uniformdeviate for figures 287--289.
+# MetaPost otherwise chooses a time-dependent seed, so independent builds can
+# differ even when every source byte is identical.  Seed each driver explicitly
+# in the disposable build closure; the upstream source overlay remains intact.
+$metaPostRandomSeed = 2718
+foreach ($driverName in @('pic.mp', 'pic-hints.mp')) {
+    $driverPath = Join-Path $output ('mppics\' + $driverName)
+    $driverText = [IO.File]::ReadAllText($driverPath, [Text.Encoding]::UTF8)
+    [IO.File]::WriteAllText(
+        $driverPath,
+        "randomseed := $metaPostRandomSeed;`n" + $driverText,
+        [Text.UTF8Encoding]::new($false)
+    )
+}
+
 $env:SOURCE_DATE_EPOCH = '1766112130'
 $env:FORCE_SOURCE_DATE = '1'
 
@@ -54,25 +74,50 @@ Invoke-BuildCommand '02-mpost-hints' (Join-Path $output 'mppics') {
     mpost -interaction=nonstopmode -tex=latex pic-hints.mp
 }
 
+$epsNormalizer = Join-Path $PSScriptRoot 'normalize_eps_pdf.py'
+if (-not (Test-Path -LiteralPath $epsNormalizer -PathType Leaf)) {
+    throw "Missing EPS-PDF normalizer: $epsNormalizer"
+}
+$normalizedEps = @()
+foreach ($epsFile in Get-ChildItem -LiteralPath (Join-Path $output 'pics') -File -Filter '*.eps') {
+    $stem = [IO.Path]::GetFileNameWithoutExtension($epsFile.Name)
+    $livePdf = Join-Path $output ('pics\' + $stem + '-live-conversion.pdf')
+    $normalizedPdf = Join-Path $output ('pics\' + $stem + '-eps-converted-to.pdf')
+    Invoke-BuildCommand ('03-epstopdf-' + $stem) $output {
+        epstopdf "--outfile=$livePdf" $epsFile.FullName
+    }
+    Invoke-BuildCommand ('04-normalize-eps-pdf-' + $stem) $output {
+        python $epsNormalizer --source-eps $epsFile.FullName --input-pdf $livePdf --output-pdf $normalizedPdf
+    }
+    Remove-Item -LiteralPath $livePdf
+    $normalizedFile = Get-Item -LiteralPath $normalizedPdf
+    $normalizedEps += [ordered]@{
+        source = $epsFile.Name
+        output = $normalizedFile.Name
+        bytes = $normalizedFile.Length
+        sha256 = (Get-FileHash -Algorithm SHA256 -LiteralPath $normalizedPdf).Hash.ToLowerInvariant()
+    }
+}
+
 # The driver inputs the index unconditionally.  Seed an empty generated index
 # for the first pass; MakeIndex replaces it immediately afterward.
 [IO.File]::WriteAllBytes((Join-Path $output 'all-lectures.ind'), [byte[]]@())
 
-Invoke-BuildCommand '03-pdflatex-initial' $output {
+Invoke-BuildCommand '05-pdflatex-initial' $output {
     pdflatex -interaction=nonstopmode -halt-on-error all-lectures.tex
 }
-Invoke-BuildCommand '04-makeindex' $output { makeindex all-lectures }
-Invoke-BuildCommand '05-biber' $output { biber all-lectures }
-Invoke-BuildCommand '06-pdflatex' $output {
-    pdflatex -interaction=nonstopmode -halt-on-error all-lectures.tex
-}
-Invoke-BuildCommand '07-makeindex' $output { makeindex all-lectures }
+Invoke-BuildCommand '06-makeindex' $output { makeindex all-lectures }
+Invoke-BuildCommand '07-biber' $output { biber all-lectures }
 Invoke-BuildCommand '08-pdflatex' $output {
+    pdflatex -interaction=nonstopmode -halt-on-error all-lectures.tex
+}
+Invoke-BuildCommand '09-makeindex' $output { makeindex all-lectures }
+Invoke-BuildCommand '10-pdflatex' $output {
     pdflatex -interaction=nonstopmode -halt-on-error all-lectures.tex
 }
 
 $first = (Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path $output 'all-lectures.pdf')).Hash.ToLowerInvariant()
-Invoke-BuildCommand '09-pdflatex-reproducibility' $output {
+Invoke-BuildCommand '11-pdflatex-reproducibility' $output {
     pdflatex -interaction=nonstopmode -halt-on-error all-lectures.tex
 }
 $second = (Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path $output 'all-lectures.pdf')).Hash.ToLowerInvariant()
@@ -85,6 +130,8 @@ $pdf = Get-Item -LiteralPath (Join-Path $output 'all-lectures.pdf')
     source_root = $source
     output_root = $output
     source_date_epoch = 1766112130
+    metapost_random_seed = $metaPostRandomSeed
+    normalized_eps_pdfs = $normalizedEps
     pdf_bytes = $pdf.Length
     pdf_sha256 = $second
 } | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $output 'BUILD_RECEIPT.json') -Encoding utf8NoBOM

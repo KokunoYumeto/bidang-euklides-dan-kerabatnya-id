@@ -35,3 +35,21 @@ This does not block the Indonesian translation overlay, backend, controls, or a
 generated body PDF without P22 assets. A public reproduction script may fetch
 the exact official archive for local use, verify it, exclude `cover/`, and apply
 the separately distributed overlay without republishing the generator files.
+
+## Deterministic generated-asset handling
+
+The build closure converts `pics/by-sa.eps` and
+`pics/H2checkers_334.eps` locally, removes conversion-time Info/XMP metadata,
+and assigns a stable PDF file identifier derived from each immutable source
+EPS. This does not change the assets' rights or provenance. The normalized
+outputs are deterministic:
+
+- CC badge: 5,002 bytes, SHA-256
+  `7167e45adcc360f116b77210a2e452308e2b8fffd84106f1ea69045cb5be9928`;
+- H2checkers: 194,716 bytes, SHA-256
+  `61a45915d8630a8df63bd9b9ecb095ab9fe6d6671b3360f814bea97ce9a8d885`.
+
+The CC badge is used only to identify the actual CC BY-SA 4.0 license;
+H2checkers retains its public-domain provenance. This deterministic conversion
+does not authorize redistribution of `mppics/macros.mp` or either excluded
+font.

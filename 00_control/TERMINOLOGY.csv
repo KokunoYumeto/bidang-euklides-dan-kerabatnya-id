@@ -14,3 +14,15 @@ O004-TERM-0012,congruent,kongruen,,work-wide,admitted
 O004-TERM-0013,triangle inequality,ketaksamaan segitiga,pertidaksamaan segitiga,metric-geometry,admitted
 O004-TERM-0014,distance-preserving map,pemetaan yang mempertahankan jarak,,metric-geometry,admitted
 O004-TERM-0015,continuous,kontinu,,analysis-and-geometry,admitted
+O004-TERM-0016,sign of an angle,tanda sudut,,oriented-angle-geometry,admitted
+O004-TERM-0017,positive angle,sudut positif,,oriented-angle-geometry,admitted
+O004-TERM-0018,negative angle,sudut negatif,,oriented-angle-geometry,admitted
+O004-TERM-0019,intermediate value theorem,teorema nilai antara,,analysis-and-geometry,admitted
+O004-TERM-0020,half-plane,setengah bidang,,plane-geometry,admitted
+O004-TERM-0021,same side,pada sisi yang sama,,plane-geometry,admitted
+O004-TERM-0022,opposite sides,pada sisi yang berlawanan,,plane-geometry,admitted
+O004-TERM-0023,Pasch's theorem,teorema Pasch,,plane-geometry,admitted
+O004-TERM-0024,degenerate triangle,segitiga degenerat,segitiga terdegenerasi,work-wide,admitted
+O004-TERM-0025,circle,lingkaran,,work-wide,admitted
+O004-TERM-0026,center,pusat,,work-wide,admitted
+O004-TERM-0027,radius,jari-jari,,work-wide,admitted

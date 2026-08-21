@@ -79,3 +79,31 @@ All 19 pages were rendered at 120 dpi and inspected through four contact sheets
 plus high-resolution scope, figure, chapter-end, and both hint-page witnesses.
 No clipping, overlap, missing figure, English Chapter 2 spill, or blank required
 content was observed.
+
+## Chapter 3 deterministic admission boundary
+
+The build harness now seeds disposable MetaPost driver copies with `2718`, uses
+`mpost -tex=latex`, and normalizes conversion-time metadata in both EPS-derived
+PDFs. Default source-root resolution is performed after parameter binding so it
+does not evaluate an empty `$PSScriptRoot`; the admitted builds were executed
+under PowerShell 7.
+
+Two fresh, separate output directories produced the same result:
+
+- PDF: 204 pages; 2,961,804 bytes;
+- SHA-256: `94057485cd2f16d55b1adff8d0e53583584c8330e2b51a08d906ef1e83dc6117`;
+- 224 generated `.mps` files; zero cross-build hash mismatches;
+- normalized CC badge PDF SHA-256
+  `7167e45adcc360f116b77210a2e452308e2b8fffd84106f1ea69045cb5be9928`;
+- normalized H2checkers PDF SHA-256
+  `61a45915d8630a8df63bd9b9ecb095ab9fe6d6671b3360f814bea97ce9a8d885`.
+
+The converged full-context log has zero undefined references/citations and no
+fatal error. It reports 33 overfull and 20 underfull boxes plus the inherited
+group warning. Chapter 3 itself contributes one 3.65144-point overfull graphic
+wrapper and two underfull text boxes, with no visible clipping or overlap; its
+hint slice contributes none. Pages 26-33 and hint pages 183-184 were rendered
+at 150 dpi and inspected. See `qa/CH03_ADMISSION_20260821.md`.
+
+The full-context PDF still contains English Chapter 4+ material. It is build/QA
+evidence and is not a release artifact.

@@ -1,0 +1,38 @@
+{
+  "schema": "o004-ch02-qa-v0",
+  "status": "pass",
+  "authority": {
+    "axioms_bytes": 12593,
+    "axioms_sha256": "f82198417341fe2ae9bb713bddda2f8620b6d45bf1b948bf94f7fa93efcf85a5",
+    "hint_slice_bytes": 1962,
+    "hint_slice_sha256": "d0ddde798dd4f09dadc8ece08e8fae377226dc851b9a0534935bc3fbc7916511"
+  },
+  "target": {
+    "axioms_bytes": 13472,
+    "axioms_sha256": "e44a5934711c4871289ec82a1c8e4e2acb98b66c18e1e5a3bca378ecabaa3a6d",
+    "hint_slice_bytes": 2249,
+    "hint_slice_sha256": "cb449316a820b09ef386feefa61d3b57b05b46d90929ea3e87a4c78e7913c066",
+    "whole_hints_sha256": "cb075a2c45658d5f0a82391024097a2cffdcd99201fe3d075cef7d74a0bbbaca",
+    "frozen_prefix_sha256": "659167c454ee2ee734a6222fa065b860ed53348eb3a74744a567fba802a1d486",
+    "frozen_suffix_sha256": "3a4e2fface82d19a9488b95352d58fbeedabe388c6e3b0967c3f1ffbe4e87761"
+  },
+  "axioms_topology": {
+    "environments": 56,
+    "labels": 25,
+    "references": 27,
+    "citations": 4,
+    "graphics": 5,
+    "theorem_options": 15,
+    "parit": 9,
+    "qeds": 7,
+    "protected_math_surfaces": 199
+  },
+  "hint_topology": {
+    "commands_raw": 69,
+    "references_raw": 30,
+    "commands_active": 60,
+    "references_active": 26,
+    "math_surfaces_active": 15,
+    "math_surfaces_raw": 16
+  }
+}

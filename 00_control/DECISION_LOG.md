@@ -54,3 +54,45 @@ Because Babel reapplies English captions at document start, Indonesian
 structural labels are registered through `\captionsenglish` in addition to the
 direct commands. This changes only generated labels such as `Bab` and
 `Daftar Isi`; source numbering and identifiers remain unchanged.
+
+## D010 — private access state
+
+Keep `KokunoYumeto/bidang-euklides-dan-kerabatnya-id` private. Keep Zenodo
+record `22044358`, DOI `10.5281/zenodo.22044358`, but restrict its files in
+place. Do not create a new version or change either surface to public without a
+new direct instruction.
+
+## D011 — localized Chapter 2 reflow
+
+The longer Indonesian chapter introduction made the inherited `\vfill` spill
+two lines onto an almost empty page and collide with the running header. Remove
+that stretch, move the opener up three baselines, and add three baselines after
+the preserved page break. This retains normal type size, fills the opener,
+keeps the framed axioms together, and introduces no mathematical or identifier
+change.
+
+## D012 — three-layer O004 course architecture
+
+Use the complete Petrunin book as the sole external instructional spine, then
+separately author the CC BY-SA 4.0 companion *Transformations, Invariants, and
+Model Surfaces* and the separately attributed CC BY-SA 4.0 solutions/mastery
+volume. No second external whole book or excerpt is required course reading.
+The backend and accessible HTML/EPUB are release layers. Translation completion
+does not itself decide curricular selection, but the independently selected
+architecture retains the existing edition.
+
+## D013 — deterministic MetaPost and EPS repair
+
+Set MetaPost random seed `2718` only in disposable build copies of both drivers.
+Convert each EPS and then remove live Info/XMP metadata and derive a stable PDF
+ID from the source-EPS hash. This preserves source bytes while eliminating the
+only observed cross-build differences. Two fresh Chapter 3 builds now agree in
+the final PDF and all 224 generated MetaPost figures.
+
+## D014 — Chapter 3 admission
+
+Admit complete Chapter 3 and its eight available author hints after structural,
+independent language, deterministic-build and visual checks. Do not invent a
+hint for `ex:angle-measures`. The full-context PDF contains English Chapter 4+
+material and is QA evidence only. Advance the source-order cursor to Chapter 4,
+`cong.tex`.

@@ -1,0 +1,388 @@
+%\part*{Euclidean geometry}
+\addtocontents{toc}{\protect\contentsline{part}{\protect\numberline{}Geometri Euklides}{}{}}
+  
+\chapter{Aksioma}
+\label{chap:axioms}
+
+\vspace*{-3\baselineskip}
+
+Suatu sistem aksioma sudah terdapat dalam ``Elements'' karya Euklides --- buku pelajaran paling berhasil dan berpengaruh yang pernah ditulis.
+
+Kajian sistematis atas berbagai geometri sebagai sistem aksiomatik
+ dipicu
+oleh penemuan geometri non-Euklides.
+Cabang matematika yang muncul dengan cara ini disebut landasan geometri.
+
+Sistem aksioma yang paling populer
+diusulkan oleh David Hilbert pada tahun 1899.
+Sistem ini juga merupakan sistem pertama yang ketat menurut standar modern.
+Sistem tersebut terdiri atas dua puluh aksioma dalam lima kelompok, enam ``pengertian pangkal'', dan tiga ``istilah pangkal'';
+semuanya tidak didefinisikan berdasarkan konsep-konsep yang telah didefinisikan sebelumnya.
+
+Kemudian, banyak sistem lain diusulkan.
+Beberapa yang patut disebut ialah
+sistem yang dikembangkan oleh Alexandr Alexandrov \cite{alexandrov}, yang intuitif dan elementer,
+sistem karya Friedrich Bachmann \cite{bachmann} yang didasarkan pada konsep simetri,
+serta sistem karya Alfred Tarski \cite{tarski} --- suatu sistem minimalis yang dirancang untuk dianalisis menggunakan logika matematika.
+
+Kita akan menggunakan sistem lain yang dekat dengan sistem George Birkhoff \cite{birkhoff}.
+Sistem ini bertumpu pada pengamatan utama (\ref{preaxiomI})--(\ref{preaxiomV}) yang tercantum pada Bagian~\ref{preaxioms}.
+
+Aksioma-aksioma itu memakai gagasan 
+ruang metrik, 
+garis, 
+sudut,
+segitiga,
+kesamaan modulo $2\cdot\pi$ ($\equiv$), 
+kekontinuan pemetaan antara ruang-ruang metrik,
+dan kekongruenan segitiga ($\cong$).
+Semua konsep ini dibahas dalam bagian pendahuluan.
+
+Sistem kita dibangun di atas ruang metrik.
+Secara khusus, kita menggunakan bilangan real sebagai unsur pembangun. 
+Karena itu, pendekatan kita tidak sepenuhnya aksiomatik --- kita membangun teori ini di atas sesuatu yang lain;
+pendekatan ini menyerupai pengantar geometri Euklides berbasis model yang dibahas pada Bagian~\ref{page:model}.
+Kita menggunakan pendekatan ini untuk meminimalkan bagian-bagian yang menjemukan, yang tidak dapat dihindari dalam landasan yang sepenuhnya aksiomatik.
+
+\newpage
+\vspace*{3\baselineskip}
+
+\section{Aksioma-aksioma}
+\label{sec:axioms}
+
+
+\begin{framed}
+\begin{enumerate}[I.]
+\item\label{def:birkhoff-axioms:0} \index{bidang!bidang Euklides}\index{Euklides!bidang}\emph{Bidang Euklides} adalah ruang metrik dengan sedikitnya dua titik.
+
+
+\item\label{def:birkhoff-axioms:1} 
+Untuk setiap dua titik berbeda $P$ dan $Q$ yang diberikan pada bidang Euklides, terdapat tepat satu garis yang memuat keduanya.
+
+\item\label{def:birkhoff-axioms:2} 
+Setiap sudut $\angle AOB$ pada bidang Euklides
+menentukan suatu bilangan real dalam interval $(-\pi,\pi]$.
+Bilangan ini disebut \index{sudut!ukuran}\emph{ukuran sudut $\angle AOB$}
+dan dilambangkan dengan $\measuredangle A O B$.
+Bilangan tersebut memenuhi syarat-syarat berikut:
+\begin{enumerate}[(a)]
+\item\label{def:birkhoff-axioms:2a} 
+Jika diberikan suatu sinar $[O A)$ dan $\alpha\in(-\pi,\pi]$, 
+terdapat tepat satu sinar $[O B)$ 
+sedemikian sehingga $\measuredangle A O B= \alpha$.
+\item\label{def:birkhoff-axioms:2b} 
+Untuk sebarang titik $A$, $B$, dan $C$ yang berbeda dari $O$, berlaku
+$$\measuredangle A O B+\measuredangle B O C
+\equiv\measuredangle A O C.$$
+\item\label{def:birkhoff-axioms:2c} 
+Fungsi 
+$$\measuredangle\:(A,O,B)\mapsto\measuredangle A O B$$
+kontinu pada sebarang tripel titik $(A,O,B)$
+sedemikian sehingga $O\ne A$, $O\ne B$, dan $\measuredangle A O B\ne\pi$.
+
+\end{enumerate}
+
+\item\label{def:birkhoff-axioms:3}  
+Pada bidang Euklides, berlaku
+$\triangle A B C\cong\triangle A' B' C'$
+jika dan hanya jika 
+\begin{align*}
+A' B'&=A B, & A' C'&= A C, &&\text{dan}
+&\measuredangle C' A' B'&=\pm\measuredangle C A B.
+\end{align*}
+\item\label{def:birkhoff-axioms:4}
+Jika untuk dua segitiga $\triangle ABC$, $\triangle AB'C'$ pada bidang Euklides
+dan untuk $k>0$ berlaku
+\begin{align*}
+B'&\in [AB),
+& C'&\in [AC),
+\\
+AB'&=k\cdot AB,&
+AC'&=k\cdot AC,
+\end{align*}
+maka
+\begin{align*}
+B'C'&=k\cdot BC,&
+\measuredangle AB'C'&=\measuredangle ABC,
+&
+\measuredangle AC'B'&=\measuredangle ACB.
+\end{align*}
+\end{enumerate}
+\end{framed}
+
+Mulai sekarang,  
+kita tidak boleh menggunakan informasi apa pun tentang bidang Euklides yang tidak dapat diturunkan dari kelima aksioma di atas.
+
+\begin{thm}{Latihan kelas}\label{ex:infinite}
+Buktikan: bidang memuat tak berhingga banyak (a) titik dan (b) garis.
+\end{thm}
+
+\section{Garis dan sinar}
+
+\begin{thm}[\abs]{Proposisi}\label{lem:line-line}
+\let\thefootnote\relax\footnotetext{${}^\a$ Tanda ``$\a$'' menunjukkan bahwa Aksioma~\ref{def:birkhoff-axioms:4} tidak digunakan dalam bukti.
+Abaikan tanda ini untuk saat ini; tanda tersebut akan menjadi penting pada Bab~\ref{chap:non-euclid}.}
+Sebarang dua garis berbeda berpotongan pada paling banyak satu titik.
+\end{thm}
+
+\parit{Bukti.}
+Andaikan dua garis $\ell$ dan $m$ berpotongan di dua titik berbeda $P$ dan~$Q$.
+Dengan menerapkan Aksioma~\ref{def:birkhoff-axioms:1}, kita memperoleh $\ell=m$.
+\qeds
+
+\begin{thm}{Latihan}\label{ex:[OA)=[OA')}
+Misalkan $A'\in[OA)$ dan $A'\not=O$. 
+Tunjukkan bahwa 
+\[[O A)\z=[O A').\]
+
+\end{thm}
+
+\section{Sudut nol}
+
+\begin{thm}[\abs]{Proposisi}\label{lem:AOA=0}
+$\measuredangle A O A= 0$ untuk setiap $A\not=O$.
+\end{thm}
+
+\parit{Bukti.}
+Menurut Aksioma~\ref{def:birkhoff-axioms:2b},
+$$\measuredangle A O A
++
+\measuredangle A O A 
+\equiv
+\measuredangle A O A.$$
+Jika $\measuredangle A O A$ dikurangkan dari kedua ruas, diperoleh
+$\measuredangle A O A \equiv 0$.
+
+Menurut Aksioma~\ref{def:birkhoff-axioms:2}, $-\pi<\measuredangle A O A\le \pi$;
+oleh karena itu, $\measuredangle A O A \z= 0$.
+\qeds
+
+\begin{thm}[!]{Latihan}\label{ex:[OA)=[OB)}
+Andaikan $\measuredangle A O B= 0$.
+Tunjukkan bahwa $[OA)=[OB)$.
+\end{thm}
+
+\begin{thm}[\abs]{Proposisi}\label{lem:AOB+BOA=0}
+Untuk sebarang titik $A$ dan $B$ yang berbeda dari $O$,
+berlaku
+$$\measuredangle A O B\equiv-\measuredangle B O A.$$
+
+\end{thm}
+
+\parit{Bukti.}
+Menurut Aksioma~\ref{def:birkhoff-axioms:2b},
+$$\measuredangle A O B+\measuredangle B O A \equiv\measuredangle A O A.$$
+Menurut Proposisi~\ref{lem:AOA=0}, $\measuredangle A O A=0$.
+Dengan demikian, hasil tersebut diperoleh.
+\qeds
+
+\section{Sudut lurus}
+
+Jika $\measuredangle A O B=\pi$,
+kita mengatakan bahwa $\angle A O B$ merupakan 
+\index{sudut!sudut lurus}\emph{sudut lurus}.
+Menurut Proposisi~\ref{lem:AOB+BOA=0}, 
+jika $\angle A O B$ lurus,
+maka $\angle B O A$ juga lurus.
+
+Kita mengatakan bahwa titik $O$ \index{di antara}\emph{terletak di antara} titik $A$ dan $B$
+jika $O\not= A$, $O\not= B$, dan $O\in[A B]$.
+
+\begin{thm}[\abs]{Teorema}\label{thm:straight-angle}
+Sudut $A O B$ merupakan sudut lurus 
+jika dan hanya jika $O$ 
+terletak di antara $A$ dan~$B$.
+\end{thm}
+
+\begin{wrapfigure}{r}{40mm}
+\centering
+\vskip-0mm
+\includegraphics{mppics/pic-8}
+\end{wrapfigure}
+
+\parit{Bukti.}
+Menurut Latihan~\ref{ex:trig==}, kita dapat mengandaikan bahwa
+$O A = O B = 1$.
+
+\parit{Bagian ``jika''.}
+Andaikan $O$  
+terletak di antara $A$ dan~$B$.
+Tetapkan $\alpha=\measuredangle A O B$.
+
+Dengan menerapkan Aksioma~\ref{def:birkhoff-axioms:2a},
+kita memperoleh sinar $[OA')$ sedemikian sehingga $\alpha\z=\measuredangle B O A'$.
+Menurut Latihan~\ref{ex:trig==}, kita dapat mengandaikan bahwa $OA'=1$.
+Menurut Aksioma~\ref{def:birkhoff-axioms:3},
+\[\triangle AOB\z\cong\triangle BOA'.\]
+Misalkan $f$ menyatakan transformasi isometrik bidang yang bersesuaian;
+yaitu, $f$ merupakan transformasi isometrik sedemikian sehingga $f(A)=B$, $f(O)=O$, dan $f(B)=A'$. 
+
+\begin{wrapfigure}{o}{40mm}
+\centering
+\vskip-2mm
+\includegraphics{mppics/pic-10}
+\end{wrapfigure}
+
+Maka 
+\[(A'B)=f((AB))\ni f(O)=O.\]
+Oleh karena itu, kedua garis $(AB)$ dan $(A'B)$ memuat $B$ dan~$O$.
+Menurut Aksioma~\ref{def:birkhoff-axioms:1}, $(AB)=(A'B)$.
+
+Menurut definisi garis, $(AB)$ isometrik dengan garis bilangan real $\mathbb{R}$.
+Oleh karena itu, $(AB)$ memuat tepat dua titik, $A$ dan $B$, yang berjarak $1$ dari~$O$.
+Karena $OA' = 1$, diperoleh $A' = A$ atau $A' = B$.
+Karena suatu isometri bersifat injektif, $A' = f(B) \ne f(A) = B$.
+Jadi, $A' \ne B$, sehingga $A = A'$.
+
+Menurut Aksioma~\ref{def:birkhoff-axioms:2b} dan Proposisi~\ref{lem:AOA=0}, kita memperoleh
+\begin{align*}
+2\cdot\alpha&=
+\measuredangle AOB+\measuredangle BOA'=
+\\
+&=\measuredangle AOB+\measuredangle BOA\equiv
+\\
+&\equiv\measuredangle AOA=
+\\
+&= 0.
+\end{align*}
+Oleh karena itu, menurut Latihan~\ref{ex:2a=0}, $\alpha$ sama dengan $0$ atau~$\pi$.
+
+Karena $[OA)\ne [OB)$,  
+kita memiliki $\alpha\ne 0$; lihat Latihan~\ref{ex:[OA)=[OB)}.
+Oleh karena itu, $\alpha=\pi$.
+
+
+\parit{Bagian ``hanya jika''.}
+Misalkan $\measuredangle A O B= \pi$.
+Perhatikan garis $(OA)$ dan pilih titik $B'$ pada $(OA)$ sedemikian sehingga $O$ terletak di antara $A$ dan~$B'$.
+
+Dari hasil di atas, $\measuredangle AOB'=\pi$.
+Aksioma~\ref{def:birkhoff-axioms:2a} memberikan $[O B)\z=[O B')$.
+Jadi, $O$ terletak di antara $A$ dan~$B$.
+\qeds 
+
+Segitiga $ABC$ disebut 
+\index{segitiga!segitiga degenerat}\index{degenerat!segitiga}\emph{degenerat}
+jika $A$, $B$, dan $C$ terletak pada satu garis.
+Akibat berikut hanyalah perumusan ulang Teorema~\ref{thm:straight-angle}.
+
+\begin{thm}[\abs]{Akibat}\label{cor:degenerate=pi}
+Suatu segitiga degenerat jika dan hanya jika salah satu sudutnya sama dengan $\pi$ atau~$0$.
+Selain itu, ukuran sudut dalam suatu segitiga degenerat adalah $0$, $0$, dan $\pi$.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:lineAOB}
+Tunjukkan bahwa tiga titik berbeda $A$, $O$, dan $B$ terletak pada satu garis jika dan hanya jika 
+$$2\cdot \measuredangle AOB\equiv 0.$$ 
+
+\end{thm}
+
+\begin{thm}[!]{Latihan}\label{ex:ABCO-line}
+Misalkan $A$, $B$, dan $C$ tiga titik yang berbeda dari~$O$.
+Tunjukkan bahwa $B$, $O$, dan $C$ terletak pada satu garis jika dan hanya jika
+$$2\cdot \measuredangle AOB\equiv 2\cdot \measuredangle AOC.$$ 
+
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:infinite-number-of-lines} 
+Tunjukkan bahwa terdapat suatu segitiga tak degenerat.
+\end{thm}
+
+\section{Sudut bertolak belakang}
+
+Sepasang sudut $AOB$ dan $A'OB'$ 
+disebut \index{sudut!sudut bertolak belakang}\index{sudut bertolak belakang}\emph{bertolak belakang}
+jika titik $O$ 
+terletak di antara $A$ dan $A'$ 
+sekaligus di antara $B$ dan $B'$.
+
+
+\begin{thm}[\abs]{Proposisi}\label{prop:vert}
+Sudut-sudut bertolak belakang memiliki ukuran yang sama.
+\end{thm}
+
+
+\parit{Bukti.}
+Andaikan sudut $AOB$ dan $A'OB'$ bertolak belakang.
+Perhatikan bahwa $\angle AOA'$ dan $\angle BOB'$ lurus.
+Oleh karena itu, $\measuredangle AOA'\z=\measuredangle BOB'=\pi$.
+
+{
+
+\begin{wrapfigure}[4]{o}{24mm}
+\vskip-2mm
+\centering
+\includegraphics{mppics/pic-12}
+\end{wrapfigure}
+
+Diperoleh
+\begin{align*}
+0&=\measuredangle AOA'-\measuredangle BOB'\equiv
+\\
+&\equiv 
+\measuredangle AOB+\measuredangle BOA'-\measuredangle BOA'-\measuredangle A'OB'
+\equiv
+\\
+&\equiv\measuredangle AOB-\measuredangle A'OB'.
+\end{align*}
+Karena $-\pi<\measuredangle AOB\le \pi$ dan $-\pi<\measuredangle A'OB'\le \pi$, kita memperoleh $\measuredangle AOB\z=\measuredangle A'OB'$.
+\qeds
+
+}
+
+\section{Pencerminan terhadap suatu titik}
+
+\begin{thm}[\abs]{Lema}\label{lem:point-reflection}
+Untuk setiap dua titik berbeda $X$ dan $O$, terdapat tepat satu titik $X'$ sedemikian sehingga $O$ merupakan titik tengah ruas $[XX']$.
+\end{thm}
+
+\begin{wrapfigure}{o}{33mm}
+\vskip-0mm
+\centering
+\includegraphics{mppics/pic-915}
+\end{wrapfigure}
+
+\parit{Bukti.}
+Titik $O$ merupakan titik tengah ruas $[XX']$ jika dan hanya jika $X'\in [XO)$ dan $XX'=2\cdot XO$.
+
+Menurut Aksioma~\ref{def:birkhoff-axioms:1}, garis $(XO)$ dan dengan demikian sinar $[XO)$ ditentukan secara tunggal.
+Selanjutnya, menurut Latihan~\ref{ex:trig==}, terdapat tepat satu titik $X'\in [XO)$ sedemikian sehingga $XX'=2\cdot XO$.
+\qeds
+
+Titik $X'$ yang diberikan oleh lema disebut \index{pencerminan terhadap suatu titik}\emph{cerminan} titik $X$ terhadap $O$.
+Kita juga menetapkan bahwa $O'=O$; yaitu, $O$ merupakan cerminan dirinya sendiri terhadap dirinya sendiri.
+
+Titik $O$ disebut \index{pusat!pencerminan}\emph{pusat pencerminan}.
+
+\begin{thm}[\abs]{Proposisi}\label{prop:point-reflection}
+Pencerminan terhadap suatu titik merupakan transformasi isometrik bidang.
+\end{thm}
+
+\parit{Bukti.}
+Misalkan $O$ pusat pencerminan.
+Perhatikan bahwa jika $X'$ merupakan cerminan $X$ terhadap $O$,
+maka $X$ merupakan cerminan $X'$.
+Dengan kata lain, komposisi pencerminan tersebut dengan dirinya sendiri adalah pemetaan identitas.
+Secara khusus, pencerminan tersebut merupakan bijeksi.
+
+\begin{wrapfigure}{o}{33mm}
+\vskip-6mm
+\centering
+\includegraphics{mppics/pic-76}
+\end{wrapfigure}
+
+Sekarang pilih dua titik $X$ dan $Y$;
+misalkan $X'$ dan $Y'$ secara berurutan merupakan cerminan kedua titik tersebut terhadap $O$.
+Untuk memeriksa bahwa pencerminan tersebut mempertahankan jarak, kita perlu menunjukkan bahwa $X'Y'=XY$.
+
+Kita dapat mengandaikan bahwa $X$, $Y$, dan $O$ berbeda; jika tidak, pernyataan tersebut jelas.
+Menurut definisi pencerminan, berlaku $OX=OX'$, $OY=OY'$.
+Perhatikan pula bahwa sudut $XOY$ dan $X'OY'$ bertolak belakang.
+Menurut \ref{prop:vert}, $\measuredangle XOY\z=\measuredangle X'OY'$.
+
+Aksioma~\ref{def:birkhoff-axioms:3} memberikan $\triangle XOY\cong\triangle X'OY'$ dan $X'Y'=XY$.
+\qeds
+
+\begin{thm}{Latihan}\label{ex:refelection-of-line}
+Buktikan bahwa pencerminan terhadap titik memetakan setiap garis ke garis.
+\end{thm}

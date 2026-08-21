@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-21T18:54:48+02:00",
+  "unit_id": "o004.petrunin.front-ch01",
+  "source_commit": "0b0858e1e985f4c8dadbb6075ae9e095cd4a8981",
+  "github": {
+    "repository": "https://github.com/KokunoYumeto/bidang-euklides-dan-kerabatnya-id",
+    "visibility": "private",
+    "release_tag": "v2026.08.21-unit001",
+    "release_url": "https://github.com/KokunoYumeto/bidang-euklides-dan-kerabatnya-id/releases/tag/v2026.08.21-unit001",
+    "target_commit": "6ccd1c6add2bf4fb5f3c18314c8358e08b47bb08",
+    "asset_count": 5,
+    "anonymous_repository_status": 404,
+    "note": "The repository and release remain private by explicit instruction."
+  },
+  "zenodo": {
+    "record_id": 22044358,
+    "doi": "10.5281/zenodo.22044358",
+    "record_api": "https://zenodo.org/api/records/22044358",
+    "access_right": "restricted",
+    "file_count_authenticated": 5,
+    "file_count_anonymous": 0,
+    "same_record_edit": true,
+    "new_version_created": false,
+    "anonymous_file_checks": {
+      "BIDANG_EUKLIDES_DAN_KERABATNYA_ID_UNIT_001.pdf": 403,
+      "README_RELEASE.md": 403,
+      "SHA256SUMS": 403,
+      "TRANSLATION_OVERLAY_AND_BACKEND_ID_UNIT_001.zip": 403,
+      "UNIT001_READER_RECEIPT.json": 403
+    },
+    "note": "The original record was edited in place from open to restricted access; its DOI and five stored files were preserved. Anonymous API readback reports restricted access and no file entries."
+  },
+  "artifacts": {
+    "BIDANG_EUKLIDES_DAN_KERABATNYA_ID_UNIT_001.pdf": {
+      "bytes": 881787,
+      "sha256": "1a6909ab8c315fe2529d9267c3d539def1e1f68667bc432d8bf40059dd91a452"
+    },
+    "README_RELEASE.md": {
+      "bytes": 2094,
+      "sha256": "6ef917ade4136a1b72fde880f8d250c340606fdd765117af896b169ff3e8aef1"
+    },
+    "SHA256SUMS": {
+      "bytes": 405,
+      "sha256": "08a42657f2f57a4f42d3b23af85659a5e8509c8298eaf0d5d16c209959f11a0e"
+    },
+    "TRANSLATION_OVERLAY_AND_BACKEND_ID_UNIT_001.zip": {
+      "bytes": 75083,
+      "sha256": "b7cc657d89340e9a8b4f30523eee09d5552ab86f9ef027bd5f9aaa42818b6eac"
+    },
+    "UNIT001_READER_RECEIPT.json": {
+      "bytes": 1062,
+      "sha256": "38b1ee2f4e180be775a467cbcd2a4a55c02dbd901ecb343050bbc32c837ed7d1"
+    }
+  }
+}

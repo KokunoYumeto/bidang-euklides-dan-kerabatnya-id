@@ -1,0 +1,509 @@
+\chapter{Setengah bidang}\label{chap:half-planes}
+
+Bab ini memuat bukti-bukti panjang untuk pernyataan-pernyataan yang secara intuitif sudah jelas.
+Bab ini boleh dilewati, tetapi pastikan Anda memahami definisi sudut positif/negatif dan bahwa intuisi Anda selaras dengan pernyataan \ref{thm:signs-of-triug}, \ref{prop:half-plane}, \ref{cor:half-plane}, \ref{thm:pasch}, dan \ref{thm:abc}.
+
+\section{Tanda suatu sudut}
+
+Sudut positif dan negatif dapat dibayangkan sebagai arah {}\emph{berlawanan arah jarum jam} dan {}\emph{searah jarum jam}; keduanya didefinisikan sebagai berikut:
+\begin{itemize}
+\item Sudut $A O B$ disebut \index{sudut!sudut positif dan negatif}\emph{positif} 
+jika $0<\measuredangle A O B<\pi$;
+\item Sudut $A O B$ disebut {}\emph{negatif} 
+jika $\measuredangle A O B<0$.
+\end{itemize}
+
+Menurut definisi di atas, sudut lurus maupun sudut nol
+tidak positif ataupun negatif.
+
+\begin{thm}{Latihan kelas}\label{ex:AOB+<=>BOA-}
+Tunjukkan bahwa $\angle A O B$ positif jika dan hanya jika $\angle B O A$ negatif.
+\end{thm}
+
+\begin{thm}{Lema}\label{lem:straight-sign}
+Misalkan $\angle AOB$ merupakan sudut lurus.
+Maka $\angle AOX$ positif 
+jika dan hanya jika $\angle BOX$ negatif.
+\end{thm}
+
+\parit{Bukti.}
+Tetapkan $\alpha=\measuredangle AOX$ 
+dan 
+$\beta=\measuredangle BOX$.
+Karena $\angle AOB$ lurus,
+$$\alpha-\beta\equiv \pi.\eqlbl{eq:alpha-beta}$$
+
+Akibatnya, $\alpha=\pi$ $\Leftrightarrow$ $\beta=0$
+dan $\alpha=0$ $\Leftrightarrow$ $\beta=\pi$.
+Dalam kedua kasus ini, tanda $\angle AOX$ dan $\angle BOX$ tidak terdefinisi.
+
+Dalam kasus-kasus selebihnya, berlaku $|\alpha|<\pi$ dan $|\beta|<\pi$.
+Jika $\alpha$ dan $\beta$ bertanda sama, maka $|\alpha-\beta|<\pi$;
+hal ini bertentangan dengan \ref{eq:alpha-beta}.
+Dengan demikian, pernyataan terbukti.
+\qeds
+
+\begin{thm}{Latihan}\label{ex:PP(PN)}
+Andaikan sudut $ABC$ dan $A'B'C'$ bertanda sama
+dan 
+\[2\cdot \measuredangle ABC\equiv 2\cdot \measuredangle A'B'C'.\]
+Tunjukkan bahwa $\measuredangle ABC= \measuredangle A'B'C'$.
+\end{thm}
+
+\section{Teorema nilai antara}
+
+\begin{thm}{Teorema nilai antara}\label{thm:intermidiate}
+Misalkan $f\:[a,b]\to \mathbb{R}$ merupakan fungsi kontinu.
+Andaikan 
+$f(a)$ dan $f(b)$ berlainan tanda.
+Maka $f(t_0)=0$ untuk suatu $t_0\in[a,b]$.
+\end{thm}
+
+\begin{wrapfigure}{r}{38mm}
+\vskip-6mm
+\centering
+\includegraphics{mppics/pic-14}
+\end{wrapfigure}
+
+Teorema nilai antara dianggap sudah dikenal;
+teorema ini semestinya dibahas dalam setiap mata kuliah kalkulus.
+Kita hanya akan menggunakan akibat berikut:
+
+\begin{thm}[\abs]{Akibat}\label{cor:intermidiate}
+Andaikan untuk setiap $t\z\in [0,1]$ terdapat tiga titik $O_t$, $A_t$, dan $B_t$ pada bidang sedemikian sehingga
+\begin{enumerate}[(a)]
+\item Setiap fungsi $t\mapsto O_t$, $t\mapsto A_t$, dan $t\z\mapsto B_t$ kontinu.
+\end{enumerate}
+
+\begin{enumerate}[(a)]\addtocounter{enumi}{1}
+\item Untuk setiap $t\in [0,1]$, titik-titik $O_t$, $A_t$, dan $B_t$ tidak segaris.  
+\end{enumerate}
+Maka $\angle A_0O_0B_0$ dan $\angle A_1O_1B_1$ bertanda sama.
+\end{thm}
+
+\parit{Bukti.}
+Tinjau fungsi 
+$f(t)=\measuredangle A_tO_tB_t$.
+
+Karena titik-titik $O_t$, $A_t$, dan $B_t$ tidak segaris, Teorema~\ref{thm:straight-angle} menyiratkan bahwa $f(t)=\measuredangle A_tO_tB_t$ bukan $0$ ataupun $\pi$ untuk setiap $t\in[0,1]$.
+
+Oleh karena itu, menurut Aksioma~\ref{def:birkhoff-axioms:2c} dan Latihan~\ref{ex:comp+cont},
+$f$ merupakan fungsi kontinu.
+Menurut teorema nilai antara, $f(0)$ dan $f(1)$ bertanda sama;
+dengan demikian, pernyataan terbukti.
+\qeds
+
+
+\section{Lema-lema bertanda sama}
+
+
+
+\begin{thm}[\abs]{Lema}\label{lem:signs}
+Andaikan $Q'\in [PQ)$ dan $Q'\z\ne P$.
+Maka untuk setiap $X\z\notin (PQ)$, sudut $PQX$ dan $PQ'X$ bertanda sama.
+\end{thm}
+
+{
+
+\begin{wrapfigure}{o}{33mm}
+\centering
+\vskip-5mm
+\includegraphics{mppics/pic-16}
+\end{wrapfigure}
+
+\parit{Bukti.}
+Menurut Latihan~\ref{ex:trig==},
+untuk setiap $t\in [0,1]$ terdapat tepat satu titik $Q_t\in[PQ)$ 
+sedemikian sehingga 
+\[PQ_t=  (1-t)\cdot PQ+t\cdot PQ'.\]
+Pemetaan $t\mapsto Q_t$ kontinu,
+\begin{align*}
+Q_0&=Q,
+&
+Q_1&=Q'
+\end{align*}
+dan untuk setiap $t\in [0,1]$, 
+berlaku $P\z\ne Q_t$.
+
+}
+
+Dengan menerapkan Akibat~\ref{cor:intermidiate}
+pada $P_t=P$, $Q_t$, dan $X_t=X$, kita memperoleh bahwa $\angle PQX$ bertanda sama dengan $\angle PQ'X$.
+\qeds
+
+
+{\sloppy
+
+\begin{thm}[\abs]{Tanda sudut-sudut suatu segitiga}\label{thm:signs-of-triug}
+Dalam setiap segitiga tak degenerat $ABC$, sudut $ABC$, $BCA$, dan $CAB$ bertanda sama.
+\end{thm}
+
+}
+
+{
+
+\begin{wrapfigure}{o}{33mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-18}
+\end{wrapfigure}
+
+\parit{Bukti.}
+Pilih titik $Z\in (AB)$ sedemikian sehingga $A$ terletak di antara $B$ dan~$Z$.
+
+
+Menurut Lema~\ref{lem:signs},
+sudut $ZBC$ dan $ZAC$ bertanda sama.
+
+
+Perhatikan bahwa $\measuredangle ABC=\measuredangle ZBC$
+dan 
+$$\measuredangle ZAC+\measuredangle CAB\equiv \pi.$$
+Oleh karena itu, $\angle CAB$ bertanda sama dengan $\angle ZAC$,
+yang selanjutnya bertanda sama dengan $\measuredangle ABC\z=\measuredangle ZBC$.
+
+}
+
+Dengan mengulangi argumen yang sama untuk $\angle BCA$ dan $\angle CAB$,
+kita memperoleh pernyataan yang dimaksud.
+\qeds
+
+\begin{wrapfigure}{r}{26mm}
+\vskip-2mm
+\centering
+\includegraphics{mppics/pic-838}
+\end{wrapfigure}
+
+\begin{thm}[!]{Latihan kelas}\label{ex:between}
+Misalkan $A$, $B$, $C$, dan $P$ merupakan titik-titik sedemikian sehingga $B$ terletak di antara $A$ dan $C$, dan misalkan $P \not\in (AC)$.
+Tunjukkan bahwa sudut $\angle APB$, $\angle BPC$, dan $\angle APC$ bertanda sama.
+Simpulkan bahwa
+\[|\measuredangle APB|+|\measuredangle BPC|=|\measuredangle APC|.\]
+\end{thm}
+
+\begin{thm}[\abs]{Lema}\label{lem:signsXY}
+Andaikan $[XY]$ tidak berpotongan dengan $(PQ)$.
+Maka sudut $PQX$ dan $PQY$ bertanda sama.
+\end{thm}
+
+\begin{wrapfigure}{o}{26mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-20}
+\end{wrapfigure}
+
+Buktinya hampir sama dengan bukti di atas.
+
+\parit{Bukti.}
+Menurut Latihan~\ref{ex:trig==},
+untuk setiap $t\z\in [0,1]$ terdapat titik $X_t\in[XY]$ 
+sedemikian sehingga 
+\[XX_t= t\cdot XY.\]
+Pemetaan $t\mapsto X_t$ kontinu.
+Selain itu, $X_0=X$, $X_1=Y$, dan $X_t\notin(QP)$ untuk setiap $t\in [0,1]$.
+
+Dengan menerapkan Akibat~\ref{cor:intermidiate}
+pada $P_t\z=P$, $Q_t\z=Q$, dan $X_t$, kita memperoleh bahwa
+$\angle PQX$ bertanda sama dengan $\angle PQY$.
+\qeds
+
+\section{Setengah bidang}
+
+\begin{thm}{Proposisi}\label{prop:half-plane}
+Andaikan $X,Y\notin(PQ)$.
+Maka sudut $PQX$ dan $PQY$ bertanda sama jika dan hanya jika $[XY]$ tidak berpotongan dengan $(PQ)$.
+\end{thm}
+
+\begin{wrapfigure}{o}{30mm}
+\includegraphics{mppics/pic-22}
+\centering
+\end{wrapfigure}
+
+\parit{Bukti.} Bagian ``jika'' mengikuti dari Lema~\ref{lem:signsXY}. 
+
+Andaikan $[XY]$ berpotongan dengan $(PQ)$;
+misalkan $Z$ menyatakan titik potongnya.
+Tanpa mengurangi keumuman, kita dapat mengandaikan $Z\ne P$.
+
+Perhatikan bahwa $Z$ terletak di antara $X$ dan $Y$.
+Menurut Lema~\ref{lem:straight-sign}, $\angle PZX$ dan $\angle PZY$ berlainan tanda.
+Hal ini membuktikan pernyataan jika $Z=Q$.
+
+Jika $Z\ne Q$, maka $\angle ZQX$ dan $\angle QZX$ berlainan tanda menurut \ref{thm:signs-of-triug}.
+Dengan cara yang sama, kita memperoleh bahwa $\angle ZQY$ dan $\angle QZY$ berlainan tanda.
+
+Jika $Q$ terletak di antara $Z$ dan $P$, maka menurut Lema~\ref{lem:straight-sign}, kedua pasangan sudut $\angle PQX$, $\angle ZQX$ dan $\angle PQY$, $\angle ZQY$ berlainan tanda. 
+Akibatnya, $\angle PQX$ dan $\angle PQY$ berlainan tanda, sebagaimana diperlukan.
+
+Dalam kasus selebihnya, $[QZ)=[QP)$ sehingga $\angle PQX=\angle ZQX$ dan $\angle PQY=\angle ZQY$. 
+Jadi, sekali lagi $\angle PQX$ dan $\angle PQY$ berlainan tanda, sebagaimana diperlukan.
+\qeds
+
+\begin{thm}[\abs]{Akibat}\label{cor:half-plane}
+Komplemen suatu garis $(PQ)$ pada bidang 
+dapat disajikan secara tunggal sebagai gabungan dua subhimpunan saling lepas 
+yang disebut \index{setengah bidang}\emph{setengah bidang}
+sedemikian sehingga 
+\begin{enumerate}[(a)]
+\item\label{cor:half-plane:angle} Dua titik $X,Y\notin(PQ)$ terletak pada setengah bidang yang sama jika dan hanya jika sudut $PQX$ dan $PQY$ bertanda sama.
+\item\label{cor:half-plane:intersect} Dua titik $X,Y\notin(PQ)$ terletak pada setengah bidang yang sama jika dan hanya jika $[XY]$ tidak berpotongan dengan~$(PQ)$.
+\end{enumerate}
+
+\end{thm}
+
+{
+
+\begin{wrapfigure}{r}{26mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-24}
+\end{wrapfigure}
+
+Kita mengatakan bahwa $X$ dan $Y$ terletak pada {}\emph{sisi yang sama dari} $(PQ)$ jika keduanya terletak pada salah satu setengah bidang dari $(PQ)$, dan kita mengatakan bahwa $P$ dan $Q$ terletak pada {}\emph{sisi yang berlawanan dari} $\ell$ jika keduanya terletak pada setengah bidang yang berbeda dari~$\ell$.
+
+
+\begin{thm}{Latihan}\label{ex:vert-intersect}
+Andaikan sudut $AOB$ dan $A'OB'$ bertolak belakang dan $B\notin (OA)$.
+Tunjukkan bahwa garis $(AB)$ tidak berpotongan dengan ruas~$[A'B']$.
+\end{thm}
+
+}
+
+Tinjau segitiga $ABC$.
+Ingatlah bahwa titik-titik sudutnya ialah $A$, $B$, dan $C$;
+ruas $[AB]$, $[BC]$, dan $[CA]$ akan disebut \index{sisi!segitiga}\emph{sisi-sisi segitiga}.
+
+{
+
+\begin{wrapfigure}{r}{27mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-26}
+\end{wrapfigure}
+
+\begin{thm}[\abs]{Teorema Pasch}\label{thm:pasch}\index{Teorema Pasch}
+Andaikan suatu garis $\ell$ tidak melalui titik sudut mana pun dari suatu segitiga.
+Maka garis tersebut berpotongan dengan tepat dua sisi segitiga atau tidak berpotongan dengan sisi mana pun.
+\end{thm}
+
+\parit{Bukti.}
+Andaikan garis $\ell$ berpotongan dengan sisi $[AB]$ dari segitiga $ABC$ dan tidak melalui $A$, $B$, ataupun $C$.
+
+Menurut Akibat~\ref{cor:half-plane}, titik sudut $A$ dan $B$ terletak pada sisi yang berlawanan dari~$\ell$.
+
+}
+
+Titik sudut $C$ dapat terletak pada sisi yang sama dengan $A$ dan pada sisi yang berlawanan dari $B$, atau sebaliknya.
+Menurut Akibat~\ref{cor:half-plane}, dalam kasus pertama, $\ell$ berpotongan dengan sisi $[BC]$ dan tidak berpotongan dengan $[AC]$; dalam kasus kedua, $\ell$ berpotongan dengan sisi $[AC]$ dan tidak berpotongan dengan $[BC]$.
+Dengan demikian, pernyataan terbukti.
+\qeds
+
+{
+
+\begin{wrapfigure}[5]{r}{29mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-28}
+\bigskip
+\includegraphics{mppics/pic-30}
+\end{wrapfigure}
+
+\begin{thm}[!]{Latihan}\label{ex:signs-PXQ-PYQ}
+Tunjukkan bahwa dua titik $X,Y\z\notin(PQ)$ terletak pada sisi yang sama dari $(PQ)$
+jika dan hanya jika sudut $PXQ$ dan $PYQ$ bertanda sama.
+\end{thm}
+
+\begin{thm}[!]{Latihan}\label{ex:chevinas}
+Misalkan $\triangle ABC$ merupakan segitiga tak degenerat,
+$A'\in[BC]$  dan 
+$B'\in [AC]$.
+Tunjukkan bahwa $[AA']$ berpotongan dengan $[BB']$.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:Z}
+Andaikan titik $X$ dan $Y$ terletak pada sisi yang berlawanan dari garis~$(PQ)$.
+Tunjukkan bahwa $[PX)$ tidak berpotongan dengan~$[QY)$. 
+\end{thm}
+
+}
+
+\begin{thm}{Latihan lanjutan}\label{ex:angle-measures}
+Besaran berikut 
+$$\tilde\measuredangle ABC=
+\begin{cases}
+\pi&\text{jika}\ \measuredangle ABC=\pi
+\\
+-\measuredangle ABC&\text{jika}\ \measuredangle ABC<\pi
+\end{cases}
+$$
+dapat digunakan sebagai ukuran sudut; 
+artinya, aksioma-aksioma tetap berlaku jika $\measuredangle$ diganti dengan $\tilde\measuredangle$ di mana-mana.
+
+Tunjukkan bahwa $\measuredangle$ dan $\tilde\measuredangle$ merupakan satu-satunya ukuran sudut yang mungkin pada bidang. 
+
+Tunjukkan bahwa tanpa Aksioma~\ref{def:birkhoff-axioms:2c}, pernyataan ini tidak lagi benar.
+\end{thm}
+
+\section{Segitiga dengan sisi-sisi yang diberikan}
+
+Untuk $\triangle ABC$, tetapkan 
+\begin{align*}
+a&=BC,
+&
+b&=CA,
+&
+c&=AB.
+\end{align*}
+Tanpa mengurangi keumuman, kita dapat mengandaikan bahwa 
+\[a\le b \le c.\]
+Maka ketiga ketaksamaan segitiga untuk $\triangle ABC$
+berlaku jika dan hanya jika 
+\[c\le a+b.\]
+Teorema berikut menyatakan bahwa inilah satu-satunya pembatasan pada $a$, $b$, dan~$c$.
+
+\begin{thm}[\abs]{Teorema}\label{thm:abc}
+Andaikan $0<a\le b\le c\le a+b$.
+Maka terdapat segitiga dengan sisi-sisi $a$, $b$, dan $c$;
+artinya, terdapat $\triangle ABC$ 
+sedemikian sehingga $a=BC$, $b=CA$, dan $c=AB$.
+\end{thm}
+
+Bukti proposisi berikut diberikan pada akhir bagian ini.
+
+\begin{thm}[\abs]{Proposisi}\label{prop:C-cont}
+Tetapkan suatu bilangan real $r>0$ 
+dan dua titik berbeda $A$ dan~$B$.
+Maka untuk 
+setiap bilangan real $\beta\in [0,\pi]$,
+terdapat tepat satu titik $C_\beta$ sedemikian sehingga $BC_\beta=r$
+dan $\measuredangle ABC_\beta=\beta$.
+Selain itu, $\beta\mapsto C_\beta$ 
+merupakan pemetaan kontinu dari $[0,\pi]$ ke bidang.
+\end{thm}
+
+\parit{Bukti Teorema~\ref{thm:abc} dengan mengandaikan Proposisi~\ref{prop:C-cont}.}\label{page:proof:thm:abc}
+Tetapkan titik $A$ dan $B$ sedemikian sehingga $AB=c$.
+Untuk $\beta\in [0,\pi]$,
+misalkan $C_\beta$ menyatakan titik sedemikian sehingga $BC_\beta\z=a$ dan $\measuredangle ABC_\beta=\beta$.
+
+Menurut \ref{prop:C-cont},
+pemetaan
+$\beta\mapsto C_\beta$ kontinu.
+Oleh karena itu, fungsi $b\:\beta\mapsto AC_\beta$ kontinu
+(secara formal, hal ini mengikuti dari Latihan~\ref{ex:dist-cont} dan Latihan~\ref{ex:comp+cont}).
+
+Perhatikan bahwa $b(0)=c-a$ dan $b(\pi)=c+a$.
+Karena $c-a\le b\le c+a$,
+menurut teorema nilai antara (\ref{thm:intermidiate})
+terdapat $\beta_0\in[0,\pi]$ sedemikian sehingga
+$b(\beta_0)=b$,
+sehingga pernyataan terbukti. 
+\qeds
+
+Bukti Proposisi~\ref{prop:C-cont} bergantung pada lema berikut.
+
+
+{
+
+\begin{wrapfigure}{o}{22mm}
+\vskip-2mm
+\centering
+\includegraphics{mppics/pic-32}
+\end{wrapfigure}
+
+Andaikan $r>0$ dan $0<\beta<\pi$.
+Tinjau segitiga $ABC$ sedemikian sehingga 
+$AB=BC=r$ dan $\measuredangle ABC=\beta$.
+Keberadaan segitiga semacam itu mengikuti dari Aksioma~\ref{def:birkhoff-axioms:2a} dan Latihan~\ref{ex:trig==}.
+Menurut Aksioma~\ref{def:birkhoff-axioms:3},
+nilai
+$\beta$ dan~$r$ menentukan $\triangle ABC$ hingga kekongruenan.
+Secara khusus, jarak $AC$ hanya bergantung pada $\beta$ dan~$r$;
+dengan demikian, kita dapat meninjau fungsi $s$ yang didefinisikan oleh
+$$s(r,\beta)\df AC.$$
+
+}
+
+\begin{thm}[\abs]{Lema}\label{lem:f(r,a)}
+Untuk $r>0$ dan $\epsilon>0$, terdapat $\delta>0$ sedemikian sehingga
+\[0<\beta<\delta\quad\Longrightarrow\quad s(r,\beta)<\epsilon.\]
+
+\end{thm}
+
+
+
+{
+
+\begin{wrapfigure}{l}{36mm}
+\vskip-8mm
+\centering
+\includegraphics{mppics/pic-34}
+\end{wrapfigure}
+
+\parit{Bukti.}
+Tetapkan dua titik $A$ dan $B$ sedemikian sehingga $AB\z=r$.
+
+Pilih titik $X$ sedemikian sehingga $\measuredangle ABX$ positif.
+Misalkan $Y\in [AX)$ merupakan titik sedemikian sehingga $AY=\tfrac\epsilon2$;
+titik tersebut ada menurut Latihan~\ref{ex:trig==}.
+
+Titik $X$ dan $Y$ terletak pada sisi yang sama dari $(AB)$;
+oleh karena itu, $\angle ABY$ positif. 
+Tetapkan $\delta\z=\measuredangle ABY$.
+
+Andaikan $0<\beta<\delta$;
+menurut Aksioma~\ref{def:birkhoff-axioms:2a}, kita dapat memilih $C$ sedemikian sehingga $\measuredangle ABC\z=\beta$ dan $BC\z=r$.
+Selanjutnya, kita dapat memilih sinar $[BZ)$ sedemikian sehingga $\measuredangle ABZ\z=\tfrac12\cdot \beta$.
+
+}
+
+Titik $A$ dan $Y$ terletak pada sisi yang berlawanan dari~$(BZ)$ dan $\measuredangle ABZ\z\equiv -\measuredangle CBZ$.
+Secara khusus, $(BZ)$ berpotongan dengan $[AY]$;
+misalkan $D$ menyatakan titik potongnya.
+
+Karena $D$ terletak di antara $A$ dan $Y$, berlaku $AD<AY$.
+
+Karena $D$ terletak pada $(BZ)$, berlaku $\measuredangle ABD\z\equiv -\measuredangle CBD$.
+Menurut Aksioma~\ref{def:birkhoff-axioms:3},
+$\triangle ABD\cong \triangle CBD$.
+Akibatnya,
+\begin{align*}
+s(r,\beta)&=AC\le
+\\
+&\le AD+DC=
+\\
+&=2\cdot AD< 
+\\
+&< 2\cdot AY=
+\\
+&=\epsilon.
+\end{align*}
+\qedsf
+
+
+
+\parit{Bukti Proposisi~\ref{prop:C-cont}.}
+Keberadaan dan ketunggalan $C_\beta$ mengikuti dari Aksioma~\ref{def:birkhoff-axioms:2a} dan Latihan~\ref{ex:trig==}.
+
+Jika $\beta_1\ne\beta_2$, maka
+$$C_{\beta_1}C_{\beta_2}=s(r,|\beta_1-\beta_2|).$$
+
+Menurut \ref{lem:f(r,a)}, pemetaan $\beta\mapsto C_\beta$ kontinu.
+\qeds
+
+
+
+Untuk suatu bilangan real positif $r$ dan suatu titik $O$,
+himpunan $\Gamma$ yang terdiri atas semua titik berjarak $r$ dari $O$ disebut \index{lingkaran}\emph{lingkaran}
+dengan \index{jari-jari}\emph{jari-jari} $r$ dan \index{pusat}\emph{pusat}~$O$.
+
+\begin{wrapfigure}{r}{40mm}
+\centering
+\includegraphics{mppics/pic-35}
+\end{wrapfigure}
+
+\begin{thm}[!]{Latihan}\label{ex:intersecting-circles-3}
+Tunjukkan bahwa dua lingkaran berpotongan jika dan hanya jika 
+\[|r_1-r_2|\le d\le r_1+r_2,\]
+di mana $r_1$ dan $r_2$ menyatakan jari-jari kedua lingkaran, dan $d$ merupakan jarak antara pusat keduanya.
+\end{thm}
