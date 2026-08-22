@@ -47,3 +47,23 @@ O004-TERM-0045,idealized compass,jangka ideal,,geometric-construction,admitted
 O004-TERM-0046,problem analysis,analisis masalah,,geometric-construction,admitted
 O004-TERM-0047,reflection,pencerminan,,transformation-geometry,admitted
 O004-TERM-0048,nondegenerate,tak degenerat,tidak degenerat (understandable but not canonical),work-wide,admitted
+O004-TERM-0049,right angle,sudut siku-siku,,angle-geometry,admitted
+O004-TERM-0050,acute angle,sudut lancip,,angle-geometry,admitted
+O004-TERM-0051,obtuse angle,sudut tumpul,,angle-geometry,admitted
+O004-TERM-0052,perpendicular,tegak lurus,,plane-geometry,admitted
+O004-TERM-0053,perpendicular bisector,garis sumbu,garis bagi tegak lurus,plane-geometry,admitted
+O004-TERM-0054,footpoint,titik kaki tegak lurus,kaki proyeksi (contextual),plane-geometry,admitted
+O004-TERM-0055,reflection across a line,pencerminan terhadap garis,,transformation-geometry,admitted
+O004-TERM-0056,direct motion,transformasi isometrik langsung,gerak langsung,transformation-geometry,admitted
+O004-TERM-0057,indirect motion,transformasi isometrik tak langsung,gerak tak langsung,transformation-geometry,admitted
+O004-TERM-0058,distance from a point to a line,jarak titik ke garis,,metric-geometry,admitted
+O004-TERM-0059,right triangle,segitiga siku-siku,,triangle-geometry,admitted
+O004-TERM-0060,acute triangle,segitiga lancip,,triangle-geometry,admitted
+O004-TERM-0061,obtuse triangle,segitiga tumpul,,triangle-geometry,admitted
+O004-TERM-0062,inside a circle,di dalam lingkaran,,circle-geometry,admitted
+O004-TERM-0063,outside a circle,di luar lingkaran,,circle-geometry,admitted
+O004-TERM-0064,chord,tali busur,,circle-geometry,admitted
+O004-TERM-0065,diameter,diameter,,circle-geometry,admitted
+O004-TERM-0066,secant line,garis sekan,garis potong (contextual),circle-geometry,admitted
+O004-TERM-0067,tangent line,garis singgung,,circle-geometry,admitted
+O004-TERM-0068,tangent circles,lingkaran bersinggungan,lingkaran tangen (contextual),circle-geometry,admitted

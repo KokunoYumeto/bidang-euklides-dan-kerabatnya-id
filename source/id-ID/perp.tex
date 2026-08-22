@@ -1,0 +1,502 @@
+\chapter{Garis tegak lurus}\label{chap:perp}
+
+\section{Sudut siku-siku, lancip, dan tumpul}
+
+\begin{itemize}
+\item Jika $|\measuredangle A O B|=\tfrac\pi2$, sudut $\angle A O B$ disebut \index{siku-siku!sudut}\emph{siku-siku};
+%\item Jika $\measuredangle A O B\ne\pm\tfrac\pi2$, sudut $\angle A O B$ disebut \index{sudut!sudut serong}\emph{serong};
+\item Jika $|\measuredangle A O B|<\tfrac\pi2$, sudut $\angle A O B$ disebut
+\index{lancip}\emph{lancip};
+\item Jika $|\measuredangle A O B|>\tfrac\pi2$, sudut $\angle A O B$ disebut \index{sudut!sudut siku-siku, lancip, dan tumpul}\index{tumpul}\emph{tumpul}.
+\end{itemize}
+
+\begin{wrapfigure}[2]{r}{25mm}
+\vskip-25mm
+\centering
+\includegraphics{mppics/pic-46}
+\end{wrapfigure}
+
+Sudut siku-siku akan ditandai dengan persegi kecil seperti pada gambar.
+
+Jika $\angle A O B$ siku-siku, kita juga dapat mengatakan bahwa $[O A)$ \index{tegak lurus}\emph{tegak lurus} terhadap $[O B)$.
+Hal ini dapat ditulis sebagai \index{38@$\perp$}$[O A)\z\perp [O B)$.
+
+Teorema~\ref{thm:straight-angle} memungkinkan kita menyebut dua garis $(O A)$ dan $(O B)$ {}\emph{tegak lurus} jika $[O A)\z\perp [O B)$; dengan demikian, kita dapat menulis $(O A)\z\perp (O B)$.
+
+\begin{thm}{Latihan}\label{ex:acute-obtuce}
+Andaikan titik $O$ terletak di antara $A$ dan $B$ dan $X\ne O$.
+Tunjukkan bahwa
+$\angle XOA$ lancip jika dan hanya jika
+$\angle XOB$ tumpul.
+\end{thm}
+
+\section{Garis sumbu}
+
+Andaikan $M$ adalah titik tengah ruas $[AB]$;
+secara ekuivalen, $M\in(A B)$ dan $A M \z= M B$.
+
+Garis $\ell$ yang melalui $M$ dan tegak lurus terhadap $(AB)$ disebut \index{garis sumbu}\index{tegak lurus!garis sumbu}\emph{garis sumbu} ruas~$[AB]$.
+
+\begin{thm}[\abs]{Teorema}\label{thm:perp-bisect}
+Untuk dua titik berbeda $A$ dan $B$,
+semua titik yang berjarak sama dari $A$ dan $B$, dan hanya
+titik-titik itu, terletak pada garis sumbu~$[A B]$.
+\end{thm}
+
+\parit{Bukti.} Misalkan $M$ adalah titik tengah~$[A B]$.
+Andaikan $P A= P B$ dan $P\ne M$.
+Menurut SSS (\ref{thm:SSS}),
+$\triangle A M P \z\cong\triangle B M P$.
+Oleh karena itu,
+$\measuredangle A M P=\pm \measuredangle B M P$.
+Karena $A\not=B$, tanda dalam rumus ini adalah ``$-$''.
+
+\begin{wrapfigure}[8]{o}{34mm}
+\centering
+\includegraphics{mppics/pic-48}
+\end{wrapfigure}
+
+Selain itu,
+\begin{align*}
+\pi
+&=
+\measuredangle A M B
+\equiv
+\\
+&\equiv\measuredangle A M P+\measuredangle P M B
+\equiv
+\\
+&\equiv
+2\cdot \measuredangle A M P.
+\end{align*}
+Dengan demikian, $\measuredangle A M P
+=
+\pm
+\tfrac\pi2$.
+Oleh karena itu, $P$ terletak pada garis sumbu.
+
+
+Untuk membuktikan kebalikannya,
+andaikan $P$
+adalah sembarang titik pada garis sumbu $[A B]$ dan $P\z\ne M$.
+Maka $\measuredangle A M P=\pm \tfrac\pi2$,
+$\measuredangle B M P=\pm \tfrac\pi2$ dan
+$A M\z=B M$.
+Menurut SAS, $\triangle A M P\cong \triangle B M P$;
+khususnya, $A P\z= B P$.
+\qeds
+
+
+\begin{thm}[!]{Latihan}\label{ex:pbisec-side}
+Misalkan $\ell$ adalah garis sumbu $[A B]$, dan $X$ adalah sembarang titik pada bidang.
+Tunjukkan bahwa
+$AX<BX$ jika dan hanya jika $X$ dan $A$ terletak pada sisi yang sama dari~$\ell$.
+\end{thm}
+
+\begin{thm}[!]{Latihan}\label{ex:side-angle}
+Misalkan $ABC$ adalah segitiga tak degenerat.
+Tunjukkan bahwa
+\[AC>BC\iff|\measuredangle ABC|>|\measuredangle CAB|.\]
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:pbisec-motion}
+Suatu transformasi isometrik memiliki titik tetap $F$ dan memetakan titik $X$ ke titik lain $Y$.
+Tunjukkan bahwa $F$ terletak pada garis sumbu $[XY]$.
+\end{thm}
+
+
+
+
+\section{Ketunggalan garis tegak lurus}
+
+\begin{thm}[\abs]{Teorema}\label{perp:ex+un}
+Terdapat tepat satu garis yang melalui suatu titik $P$ dan tegak lurus terhadap suatu garis~$\ell$.
+\end{thm}
+
+Menurut teorema di atas,
+terdapat tepat satu titik $Q\in\ell$ sedemikian sehingga $(QP)\perp\ell$.
+Titik $Q$ ini disebut \index{titik kaki tegak lurus}\emph{titik kaki tegak lurus} dari $P$ pada~$\ell$.
+
+\parit{Bukti.}
+Jika $P\in\ell$, keberadaan dan ketunggalan keduanya diperoleh dari Aksioma~\ref{def:birkhoff-axioms:2}.
+
+{
+
+\begin{wrapfigure}{r}{30mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-50}
+\end{wrapfigure}
+
+\parit{Keberadaan untuk $P\not\in\ell$.}
+Misalkan $A$ dan $B$ adalah dua titik berbeda pada~$\ell$.
+Pilih $P'$ sedemikian sehingga $AP'\z=AP$ dan $\measuredangle  BAP' \equiv -\measuredangle   BAP$.
+Menurut Aksioma~\ref{def:birkhoff-axioms:3}, $\triangle A P' B\z\cong\triangle A P B$.
+Khususnya, $A P= A P'$ dan $B P= B P'$.
+
+Menurut Teorema~\ref{thm:perp-bisect}, $A$ dan $B$ terletak pada garis sumbu~$[P P']$.
+Khususnya, $(P P')\perp (A B)=\ell$.
+
+}
+
+
+\parit{Ketunggalan untuk $P\not\in\ell$.}
+Dari uraian di atas, kita dapat memilih titik $P'$ sedemikian sehingga $\ell$ merupakan garis sumbu~$[PP']$.
+
+Andaikan $m\perp \ell$ dan $m\ni P$.
+Maka $m$ merupakan garis sumbu suatu ruas $[Q Q']$ pada $\ell$;
+khususnya, $P Q= P Q'$.
+
+{
+
+\begin{wrapfigure}{r}{37mm}
+\centering
+\includegraphics{mppics/pic-52}
+\end{wrapfigure}
+
+Karena $\ell$ merupakan garis sumbu $[P P']$,
+kita memperoleh $PQ= P'Q$ dan $PQ' \z= P'Q'$.
+Oleh karena itu,
+$$P' Q=P Q=P Q'= P' Q'.$$
+Menurut Teorema~\ref{thm:perp-bisect},
+$P'$ terletak pada garis sumbu $[QQ']$, yaitu~$m$.
+Menurut Aksioma~\ref{def:birkhoff-axioms:1}, $m=(P P')$.
+\qeds
+
+}
+
+\begin{thm}[!]{Latihan}\label{ex:construction-perpendicular}
+Uraikan konstruksi penggaris dan jangka untuk membuat garis yang melalui suatu titik dan tegak lurus terhadap suatu garis yang diberikan.
+\end{thm}
+
+\section{Pencerminan terhadap garis}
+
+Andaikan titik $P$ dan garis $(AB)$ diberikan.
+Untuk memperoleh \index{pencerminan!terhadap garis}\emph{bayangan pencerminan} $P'$ dari $P$ terhadap $(AB)$,
+tarik ruas tegak lurus dari $P$ hingga mencapai $(AB)$,
+lalu perpanjang ruas tersebut sejauh jarak yang sama ke sisi lainnya.
+
+{
+
+\begin{wrapfigure}{o}{37mm}
+\vskip-2mm
+\centering
+\includegraphics{mppics/pic-54}
+\end{wrapfigure}
+
+Menurut Teorema~\ref{perp:ex+un}, $P'$ ditentukan secara tunggal oleh~$P$.
+Perhatikan bahwa $P=P'$ jika dan hanya jika $P\in(AB)$.
+
+\begin{thm}[\abs]{Proposisi}\label{prop:reflection}
+Andaikan $P'$ adalah bayangan pencerminan $P$ terhadap $(AB)$.
+Maka $AP'=AP$,
+dan jika $A\ne P$,
+maka
+$\measuredangle BAP'\equiv -\measuredangle BAP$.
+\end{thm}
+
+
+\parit{Bukti.}
+Jika $P\in (AB)$,
+maka $P\z=P'$.
+Menurut Akibat~\ref{cor:degenerate=pi}, $\measuredangle BAP\z=0$ atau~$\pi$.
+Dengan demikian, pernyataan tersebut terbukti.
+
+}
+
+Jika $P\notin (AB)$, maka~$P'\ne P$.
+Menurut konstruksi $P'$,
+garis $(AB)$ merupakan garis sumbu~$[PP']$.
+Oleh karena itu, menurut Teorema~\ref{thm:perp-bisect}, $AP'\z=AP$ dan $BP'\z=BP$.
+Khususnya,
+$\triangle ABP'\z\cong \triangle ABP$.
+Dengan demikian, $\measuredangle BAP'=\pm \measuredangle BAP$.
+
+Karena $P'\ne P$ dan $AP'=AP$,
+kita memperoleh $\measuredangle BAP'\ne \measuredangle BAP$.
+Jadi, satu-satunya kemungkinan yang tersisa adalah $\measuredangle BAP'\equiv-\measuredangle BAP$.
+\qeds
+
+
+
+\begin{thm}{Latihan}\label{ex:2-reflections}
+Misalkan $X$ dan $Y$ masing-masing merupakan bayangan pencerminan $P$ terhadap garis $(AB)$ dan $(BC)$.
+Tunjukkan bahwa $\measuredangle XBY\equiv 2\cdot \measuredangle ABC$.
+
+\end{thm}
+
+
+\begin{thm}[\abs]{Akibat}\label{cor:reflection+angle}
+Pencerminan terhadap garis merupakan transformasi isometrik bidang.
+Selain itu,
+$\measuredangle Q'P'R'\equiv -\measuredangle QPR$
+jika $\triangle P'Q'R'$ adalah bayangan pencerminan $\triangle PQR$.
+\end{thm}
+
+
+\parit{Bukti.}
+Komposisi dua pencerminan terhadap garis yang sama
+merupakan pemetaan identitas.
+Khususnya, setiap pencerminan merupakan bijeksi.
+
+Tetapkan sebuah garis $(AB)$ dan dua titik $P$ dan $Q$;
+nyatakan bayangan pencerminan keduanya terhadap $(AB)$ dengan $P'$ dan $Q'$.
+Mari kita tunjukkan bahwa
+$$P'Q'=PQ;\eqlbl{eq:P'Q'=PQ}$$
+yakni, pencerminan tersebut mempertahankan jarak.
+
+\begin{wrapfigure}{r}{33mm}
+\centering
+\vskip-15mm
+\includegraphics{mppics/pic-56}
+\end{wrapfigure}
+
+Tanpa mengurangi keumuman, kita dapat mengandaikan bahwa titik $P$ dan $Q$ berbeda dari $A$ dan~$B$.
+Menurut Proposisi~\ref{prop:reflection}, kita memperoleh
+\begin{align*}
+\measuredangle BAP'&\equiv -\measuredangle BAP,
+&
+\measuredangle BAQ'&\equiv -\measuredangle BAQ,
+\\
+AP'&=AP,
+&
+AQ'&=AQ.
+\end{align*}
+Akibatnya,
+\[\measuredangle P'AQ'\equiv -\measuredangle PAQ.\eqlbl{eq:P'AQ'=PAQ}\]
+Menurut SAS,
+$\triangle P'AQ'\cong\triangle PAQ$
+dan diperoleh \ref{eq:P'Q'=PQ}.
+Selain itu, kita juga memperoleh
+\[\measuredangle AP'Q'\equiv\pm\measuredangle APQ.\]
+Menurut \ref{eq:P'AQ'=PAQ} dan teorema tentang tanda sudut-sudut segitiga (\ref{thm:signs-of-triug}), kita memperoleh
+\[\measuredangle AP'Q'\equiv-\measuredangle APQ.\eqlbl{eq:AP'Q'=APQ}\]
+
+Dengan mengulangi argumen yang sama untuk pasangan titik $P$ dan $R$,
+kita memperoleh
+$$\measuredangle AP'R'\equiv-\measuredangle APR.\eqlbl{eq:AP'R'=APR}$$
+Dengan mengurangkan \ref{eq:AP'R'=APR} dari \ref{eq:AP'Q'=APQ},
+kita memperoleh
+$\measuredangle Q'P'R'\equiv-\measuredangle QPR$.
+\qedsf
+
+
+\section[Isometri langsung dan tak langsung]{Transformasi isometrik langsung dan tak langsung}
+\label{direct motion}
+
+\begin{thm}[!]{Latihan kelas}\label{ex:3-reflections}
+Tunjukkan bahwa setiap transformasi isometrik bidang dapat dinyatakan sebagai
+komposisi paling banyak tiga pencerminan terhadap garis.
+\end{thm}
+
+Transformasi isometrik $X\mapsto X'$ disebut \index{transformasi isometrik langsung}\emph{langsung} jika
+$$\measuredangle Q'P'R'= \measuredangle QPR$$
+untuk setiap segitiga $PQR$;
+jika sebaliknya selalu berlaku
+$$\measuredangle Q'P'R'\equiv -\measuredangle QPR,$$
+maka transformasi isometrik tersebut disebut \index{transformasi isometrik tak langsung}\emph{tak langsung}.
+
+Menurut Akibat~\ref{cor:reflection+angle}, setiap pencerminan terhadap garis merupakan transformasi isometrik tak langsung.
+Perhatikan bahwa komposisi dua pencerminan merupakan transformasi isometrik langsung.
+Secara lebih umum, komposisi dua transformasi isometrik tak langsung bersifat langsung,
+komposisi dua transformasi isometrik langsung bersifat langsung,
+dan komposisi transformasi isometrik langsung dengan transformasi isometrik tak langsung bersifat tak langsung.
+Khususnya, latihan di atas menyiratkan pernyataan berikut.
+
+\begin{thm}{Proposisi}\label{prop:direct-indirect}
+Setiap transformasi isometrik bidang bersifat langsung atau tak langsung.
+\end{thm}
+
+
+\section{Ruas tegak lurus adalah yang terpendek}
+\label{sec:perp<oblique}
+
+\begin{thm}[\abs]{Lema}\label{lem:perp<oblique}
+Andaikan $Q$ adalah titik kaki tegak lurus dari $P$ pada garis~$\ell$.
+Maka
+$$PX>PQ$$
+untuk setiap titik $X$ pada $\ell$ yang berbeda dari~$Q$.
+\end{thm}
+
+Jika $P$, $Q$, dan $\ell$ seperti di atas,
+maka $PQ$ disebut \label{distance!from a point to a line}\index{jarak!dari titik ke garis}\emph{jarak dari $P$ ke~$\ell$}.
+
+\parit{Bukti.}
+Jika $P\in \ell$,
+maka hasilnya langsung diperoleh karena $PQ=0$.
+Jadi, kita dapat mengandaikan bahwa $P\notin \ell$.
+
+\begin{wrapfigure}{o}{24mm}
+\centering
+\vskip-4mm
+\includegraphics{mppics/pic-58}
+\vskip0mm
+\end{wrapfigure}
+
+Misalkan $P'$ adalah bayangan pencerminan $P$ terhadap garis~$\ell$.
+Perhatikan bahwa $Q$ merupakan titik tengah $[PP']$
+dan $\ell$ merupakan garis sumbu $[PP']$.
+Oleh karena itu,
+$$PX=P'X
+\quad
+\text{dan}
+\quad
+PQ=P'Q=\tfrac12\cdot PP'.$$
+
+Garis $\ell$ berpotongan dengan $[PP']$ hanya di titik $Q$.
+Oleh karena itu, $X\notin [PP']$.
+Menurut ketaksamaan segitiga dan Akibat~\ref{cor:degenerate-trig}, berlaku
+$$PX+P'X>PP',$$
+sehingga diperoleh hasil yang dimaksud: $PX>PQ$.
+\qeds
+
+\begin{thm}{Latihan kelas}\label{ex:right-acute}
+Tunjukkan bahwa
+\begin{enumerate}[(a)]
+\item Jika $\triangle ABC$ memiliki sudut siku-siku di $C$, maka sudut-sudut lainnya lancip.
+\item Jika $\triangle ABC$ memiliki sudut tumpul di $C$, maka sudut-sudut lainnya lancip.
+\end{enumerate}
+\end{thm}
+
+Latihan ini berkaitan erat dengan Proposisi~\ref{prop:2sum}.
+
+Jika sebuah segitiga memiliki sudut tumpul atau siku-siku, segitiga itu berturut-turut disebut \index{segitiga!segitiga siku-siku, lancip, dan tumpul}\index{tumpul}\emph{segitiga tumpul} atau \index{segitiga!segitiga siku-siku}\index{siku-siku!segitiga}\emph{segitiga siku-siku}.
+Jika tidak, yaitu jika semua sudutnya lancip, segitiga itu disebut \index{lancip}\emph{segitiga lancip}.
+
+\begin{thm}[!]{Latihan}\label{ex:obtuce}
+Andaikan titik $X$ terletak di antara $V$ dan $W$.
+Tunjukkan bahwa untuk setiap titik $P$, berlaku $PX < PV$ atau $PX < PW$.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:PMQ}
+Andaikan titik $P$ dan $Q$ terletak pada sisi yang sama dari garis~$\ell$.
+Misalkan $M\in \ell$ adalah titik yang meminimumkan jumlah $PM+MQ$.
+Tunjukkan bahwa $M\in (P'Q)$, dengan $P'$ merupakan bayangan pencerminan $P$ terhadap $\ell$.
+\end{thm}
+
+
+
+\section{Lingkaran}
+
+Ingat bahwa lingkaran berjari-jari $r$ dan berpusat di $O$ adalah himpunan semua titik yang berjarak $r$ dari $O$.
+Titik $P$ dikatakan terletak \index{di dalam!lingkaran}\emph{di dalam} lingkaran jika $OP<r$;
+jika $OP>r$, titik $P$ dikatakan terletak \index{di luar lingkaran}\emph{di luar} lingkaran.
+\label{def:circle}
+
+\begin{thm}[!]{Latihan}\label{ex:inside-outside}
+Misalkan $\Gamma$ adalah sebuah lingkaran dan $P\notin \Gamma$.
+Andaikan sebuah garis $\ell$ melalui titik $P$
+dan memotong $\Gamma$ di dua titik berbeda, $X$ dan~$Y$.
+Tunjukkan bahwa $P$ berada di dalam $\Gamma$ jika dan hanya jika $P$ terletak di antara $X$ dan~$Y$.
+\end{thm}
+
+Ruas yang menghubungkan dua titik pada lingkaran disebut \index{tali busur}\emph{tali busur} lingkaran.
+Tali busur yang melalui pusat lingkaran disebut \index{diameter}\emph{diameter} lingkaran.
+
+\begin{thm}{Latihan}\label{ex:chord-perp}
+Andaikan dua lingkaran berbeda $\Gamma$ dan $\Gamma'$ memiliki tali busur bersama~$[A B]$.
+Tunjukkan bahwa garis yang melalui pusat $\Gamma$ dan pusat $\Gamma'$ merupakan garis sumbu~$[A B]$.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:center}
+Uraikan konstruksi penggaris dan jangka untuk memperoleh pusat
+suatu lingkaran yang diberikan.
+\end{thm}
+
+{
+
+\begin{wrapfigure}[4]{r}{54mm}
+\vskip-8mm
+\centering
+\includegraphics{mppics/pic-60}
+\end{wrapfigure}
+
+\begin{thm}[\abs]{Lema}\label{lem:line-circle}
+Sebuah garis dan sebuah lingkaran memiliki paling banyak dua titik potong.
+\end{thm}
+
+
+\parit{Bukti.} Andaikan $A$, $B$, dan $C$ adalah titik-titik berbeda yang terletak pada sebuah garis $\ell$ dan sebuah lingkaran $\Gamma$ berpusat di~$O$.
+Maka $OA=OB=OC$; khususnya, $O$ terletak pada $m$ dan $n$,
+yang masing-masing merupakan garis sumbu $[A B]$ dan $[B C]$.
+Perhatikan bahwa titik tengah $[AB]$ dan titik tengah $[BC]$ berbeda.
+Oleh karena itu, $m$ dan $n$ berbeda.
+Hal ini bertentangan dengan ketunggalan garis tegak lurus (Teorema~\ref{perp:ex+un}).
+\qeds
+
+}
+
+\begin{thm}[!]{Latihan}\label{ex:two-circ}
+Tunjukkan bahwa dua lingkaran berbeda memiliki paling banyak dua titik potong.
+\end{thm}
+
+Sebagai akibat dari lema di atas,
+sebuah garis $\ell$ dan sebuah lingkaran $\Gamma$ dapat memiliki 2, 1, atau 0 titik potong.
+Dalam dua kasus pertama, garis tersebut masing-masing disebut \index{garis sekan}\emph{sekan} atau \index{garis singgung}\emph{garis singgung};
+jika $P$ merupakan satu-satunya titik potong $\ell$ dan $\Gamma$,
+kita mengatakan bahwa \textit{$\ell$ menyinggung $\Gamma$ di $P$}.
+
+Serupa dengan itu, menurut Latihan~\ref{ex:two-circ},
+dua lingkaran berbeda dapat memiliki 2, 1, atau 0 titik potong.
+Jika $P$ merupakan satu-satunya titik potong lingkaran $\Gamma$ dan $\Gamma'$,
+kita mengatakan bahwa \index{bersinggungan!lingkaran}\emph{$\Gamma$ bersinggungan dengan $\Gamma'$ di $P$}; kita juga menganggap bahwa sebuah lingkaran bersinggungan dengan dirinya sendiri di setiap titiknya.
+
+\begin{thm}[\abs]{Lema}\label{lem:tangent}
+Misalkan $\ell$ adalah sebuah garis dan $\Gamma$ adalah sebuah lingkaran berpusat di~$O$.
+Andaikan $P$ merupakan titik bersama $\ell$ dan~$\Gamma$.
+Maka $\ell$ menyinggung $\Gamma$ di $P$ jika dan hanya jika $(PO)\perp \ell$.
+\end{thm}
+
+\parit{Bukti.}
+Misalkan $Q$ adalah titik kaki tegak lurus dari $O$ pada~$\ell$.
+
+Andaikan~$P\ne Q$.
+Misalkan $P'$ adalah bayangan pencerminan $P$ terhadap~$(OQ)$.
+Perhatikan bahwa $P'\in\ell$ dan $(OQ)$ merupakan garis sumbu~$[PP']$.
+Oleh karena itu, $OP=OP'$.
+Dengan demikian, $P,P'\in \Gamma\cap \ell$;
+artinya, $\ell$ merupakan garis sekan terhadap~$\Gamma$.
+
+Jika $P=Q$,
+maka menurut Lema~\ref{lem:perp<oblique},
+$OP<OX$ untuk setiap titik $X\in \ell$ yang berbeda dari~$P$.
+Dengan demikian, $P$ merupakan satu-satunya titik pada irisan $\Gamma\cap\ell$;
+artinya, $\ell$ menyinggung $\Gamma$ di~$P$.
+\qeds
+
+\begin{thm}{Latihan}\label{ex:tangent-circles}
+Misalkan $\Gamma$ dan $\Gamma'$ adalah dua lingkaran yang masing-masing berpusat di $O$ dan $O'$, serta berjari-jari $r$ dan~$r'$.
+Tunjukkan bahwa $\Gamma$ bersinggungan dengan $\Gamma'$ jika dan hanya jika salah satu syarat berikut berlaku:
+\begin{enumerate}[(a)]
+\item\label{ex:tangent-circles:a} Kedua lingkaran berpotongan di sebuah titik~$P$ yang segaris dengan $O$ dan~$O'$.
+\item\label{ex:tangent-circles:b} Kedua lingkaran berpotongan di sebuah titik~$P$ dan memiliki garis singgung bersama di titik ini.
+\item\label{ex:tangent-circles-2} $OO' = r + r'$ atau $OO' = |r - r'|$.
+\end{enumerate}
+
+\end{thm}
+
+
+{
+
+\begin{wrapfigure}{r}{20mm}
+\vskip-10mm
+\centering
+\includegraphics{mppics/pic-62}
+\end{wrapfigure}
+
+\begin{thm}{Latihan}\label{ex:tangent-circles-3}
+Andaikan tiga lingkaran memiliki dua titik bersama.
+Buktikan bahwa pusat ketiganya segaris.
+\end{thm}
+
+}
+
+\begin{thm}{Latihan}\label{ex:tangent}
+Uraikan konstruksi penggaris dan jangka untuk membuat garis-garis yang melalui suatu titik yang diberikan dan menyinggung suatu lingkaran yang diberikan.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:tangent-circle}
+Diberikan dua lingkaran $\Gamma_1$ dan $\Gamma_2$ serta sebuah ruas $[AB]$,
+uraikan konstruksi penggaris dan jangka untuk membuat lingkaran berjari-jari $AB$
+yang bersinggungan dengan kedua lingkaran $\Gamma_1$ dan~$\Gamma_2$.
+\end{thm}

@@ -27,8 +27,23 @@ exercise-hint pairs, one synthetic ID for the unlabeled worked construction
 problem, ten described figures, and fifteen concept/dependency rows. The
 catalog records the deliberate layout-only reflow of `pic-445` through
 `pic-449`: all five panels and their order are preserved, but the overflowing
-side wrap is replaced by a visually verified two-row sequence. The current
-catalog has 140 unique records and 87 relations with no dangling endpoints.
+side wrap is replaced by a visually verified two-row sequence.
+
+Chapter 5 adds seven ordered sections, eight result records, eighteen exercise
+rows, and seventeen authored hint records. Exercises 17 and 18 intentionally
+share the final hint record because the source presents their guidance in one
+combined block. The exercise kind `advanced-classroom-exercise` preserves both
+the source's advanced flag and classroom designation for `ex:3-reflections`.
+Twenty-six concept/dependency rows cover perpendicularity, reflections and
+orientation, point-line distance, triangle types, and circle tangency. Fourteen
+figure descriptions cover nine body figures and five hint figures; all are
+visually admitted. The catalog also preserves the two misspelled exercise IDs
+and the stray distance label, records four bounded prose clarifications, and
+records the admitted layout-only short running title. Chapter 5 reader,
+exercise, hint, result, figure, build-artifact, and QA records are admitted;
+concept mappings remain `mapped-pending-qa` as an additive backend review
+state. The current catalog has 201 unique records and 122 relations with no
+dangling endpoints.
 
 Serialization rules: UTF-8 without BOM, LF, two-space indentation, object keys
 in the checked-in order, arrays in source order, one terminal newline.  A

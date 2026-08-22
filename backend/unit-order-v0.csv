@@ -31,3 +31,11 @@ order,unit_id,entity_kind,source_local_id,source_path,translation_state
 30,o004.petrunin.ch04.s04,section,,cong.tex,admitted
 31,o004.petrunin.ch04.s05,section,,cong.tex,admitted
 32,o004.petrunin.ch04.s06,section,,cong.tex,admitted
+33,o004.petrunin.ch05,chapter,chap:perp,perp.tex,admitted
+34,o004.petrunin.ch05.s01,section,,perp.tex,admitted
+35,o004.petrunin.ch05.s02,section,,perp.tex,admitted
+36,o004.petrunin.ch05.s03,section,,perp.tex,admitted
+37,o004.petrunin.ch05.s04,section,,perp.tex,admitted
+38,o004.petrunin.ch05.s05,section,direct motion,perp.tex,admitted
+39,o004.petrunin.ch05.s06,section,sec:perp<oblique,perp.tex,admitted
+40,o004.petrunin.ch05.s07,section,,perp.tex,admitted

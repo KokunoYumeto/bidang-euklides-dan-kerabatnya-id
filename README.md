@@ -4,11 +4,12 @@ Edisi Bahasa Indonesia independen dari *Euclidean Plane and Its Relatives: A
 Minimalist Introduction* karya Anton Petrunin, untuk peran kurikulum C100
 Fondasi Geometri.
 
-Status produksi saat ini: Prakata serta Bab 1–4 lengkap telah diterjemahkan,
+Status produksi saat ini: Prakata serta Bab 1–5 lengkap telah diterjemahkan,
 dipetakan dalam backend, dibangun secara deterministik, dan diperiksa secara
 visual. Pembaca yang tersedia di bawah tetap Unit Produksi 001: rilis parsial
 yang hanya memuat Prakata, Bab 1, 16 latihan Bab 1, 16 petunjuk, dan gambar
-terkait. Edisi lengkap belum dinyatakan selesai dan repositori tetap privat.
+terkait. Edisi lengkap belum dinyatakan selesai, repositori tetap privat, dan
+berkas pada rekaman Zenodo tetap dibatasi.
 
 - [Baca Unit Produksi 001](output/BIDANG_EUKLIDES_DAN_KERABATNYA_ID_UNIT_001.pdf)
 - [DOI Zenodo Unit 001](https://doi.org/10.5281/zenodo.22044358)

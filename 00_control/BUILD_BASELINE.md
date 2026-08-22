@@ -45,7 +45,7 @@ Two consecutive final passes produced identical bytes:
 - page size: 432 × 648 pt
 - unencrypted; no JavaScript; no forms; untagged
 - resolved references/citations: zero undefined
-- log: 24 overfull boxes, 18 underfull boxes, one inherited
+- log: 24 overfull boxes, 20 underfull boxes, one inherited
   `end occurred inside a group` warning, no LaTeX error or fatal error
 
 Seven representative pages (title, Preface, Chapter 1 opening/body/end,
@@ -140,4 +140,34 @@ inspected. All ten figures, including every construction panel, are visible and
 legible with no overlap or cutoff. See `qa/CH04_ADMISSION_20260822.md`.
 
 The full-context PDF still contains English Chapter 5+ material. It is private
+build/QA evidence and is not a release artifact.
+
+## Chapter 5 deterministic admission boundary
+
+Two fresh output directories, `build/ch05-final-c-20260822` and
+`build/ch05-final-d-20260822`, built from the exact final Chapter 5 body and
+hint bytes, produced identical results:
+
+- PDF: 207 pages; 2,965,782 bytes;
+- SHA-256: `6ca6402e66b5ab0a048697bf0478a00548e1c5a64096d605fbd95947c21994ee`;
+- 224 generated `.mps` files; zero cross-build hash mismatches;
+- normalized CC badge SHA-256
+  `7167e45adcc360f116b77210a2e452308e2b8fffd84106f1ea69045cb5be9928`;
+- normalized H2checkers SHA-256
+  `61a45915d8630a8df63bd9b9ecb095ab9fe6d6671b3360f814bea97ce9a8d885`.
+
+The converged log has zero undefined references/citations and no fatal error.
+It reports 44 overfull and 31 underfull boxes plus the inherited group warning.
+Chapter 5 contributes four overfull and one underfull diagnostic; rendered
+inspection confirms that none clips or hides reader content.
+
+Pages 41-48 and hint pages 185-187 were rendered at 150 dpi and inspected.
+All nine body figures and five hint figures are present and legible. The first
+build exposed a collision between the long Indonesian Section E running head
+and page number 45. An optional short running/contents title, `Isometri
+langsung dan tak langsung`, removes the collision while retaining the complete
+visible section title. Pixel comparison proves pages 41-44, 46-48, and 185-187
+are unchanged by the repair; the repaired page 45 was inspected separately.
+
+The full-context PDF still contains English Chapter 6+ material. It is private
 build/QA evidence and is not a release artifact.

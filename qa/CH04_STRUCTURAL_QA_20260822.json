@@ -5,16 +5,21 @@
     "chapter_bytes": 12527,
     "chapter_sha256": "7ad021c768316aafec871003fdcb7f5daff4a16d42c378366dfe8dc913df4f4f",
     "hint_slice_bytes": 1451,
-    "hint_slice_sha256": "35999a3ca0db65e8c1bdf1e9e9a298b90a1c7cf0fc8044203ffaa8b0202b8716"
+    "hint_slice_sha256": "35999a3ca0db65e8c1bdf1e9e9a298b90a1c7cf0fc8044203ffaa8b0202b8716",
+    "later_suffix_bytes": 78262,
+    "later_suffix_sha256": "c9d2a983be56f8d1c78b6ad06ce6ac6e468b4b74df161d8fac79c8e056eecce4"
   },
   "target": {
-    "chapter_bytes": 13651,
-    "chapter_sha256": "d9fe38fcbe9dcbe12b26b5513f22d3637e8282e9a37fc5537a2518cf2c6f2ede",
+    "chapter_bytes": 13622,
+    "chapter_sha256": "70cbc1809520da16814159a32021a66ebb48db56190b3a638af2205436282b43",
     "hint_slice_bytes": 1601,
     "hint_slice_sha256": "85eb2f743180e984948a8fe094b5a7f645135e47a7a5f1e9d8cb8ac86fa69c5c",
-    "whole_hints_sha256": "84a8289a0d5a7939bd13d16831efcd155d017ec0d7099584aa451a38d299d3f0",
+    "whole_hints_sha256": "0d0f48fcc22abd8ed8e2a067b2b30d27c15003ba2cad549fd0cc0135e9c6dc8c",
+    "frozen_prefix_bytes": 12488,
     "frozen_prefix_sha256": "2ff27e2ca3f9c53f94dec954a4c07560787e9a61ed854d1a0720e0018152abe1",
-    "frozen_suffix_sha256": "c9d2a983be56f8d1c78b6ad06ce6ac6e468b4b74df161d8fac79c8e056eecce4"
+    "current_later_suffix_bytes": 78742,
+    "current_later_suffix_sha256": "0ecdce9485703c603e822b84a415677f6b8dbfb3fbd65385e8d78d264d9b220f",
+    "current_later_suffix_matches_authority": false
   },
   "chapter_topology": {
     "environments": 42,

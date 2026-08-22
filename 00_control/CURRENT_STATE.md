@@ -3,11 +3,11 @@
 Updated: 2026-08-22
 
 Status: active Bahasa Indonesia reader production. The front matter, Chapters
-1-4, and their exact available hint slices are complete, structurally verified,
+1-5, and their exact available hint slices are complete, structurally verified,
 and visually admitted. The GitHub repository and Unit 001 release are private.
 Zenodo record `22044358`, DOI
 `10.5281/zenodo.22044358`, retains all five files with restricted access. The
-whole book is not complete; the cursor is immediately before Chapter 5.
+whole book is not complete; the cursor is immediately before Chapter 6.
 
 The admitted core is Anton Petrunin, *Euclidean Plane and Its Relatives: A
 Minimalist Introduction*. The labeled publication witness is arXiv
@@ -112,11 +112,37 @@ wrap with a centered two-row sequence retaining `pic-445` through `pic-449` in
 order. The final pages have no clipping, overlap, or missing panels. See
 `qa/CH04_ADMISSION_20260822.md`.
 
-The backend now has 140 unique records and 87 relations with no dangling
-endpoints. Chapter 4 contributes seven unit-order rows, four result records,
-five exercise-hint pairs, one synthetic unlabeled-problem ID, ten admitted
-figure descriptions and 15 concept/dependency rows. JSON Schema and
-artifact-tool UTF-8/LF CSV verification pass.
+Unit `o004.petrunin.ch05` adds complete Bab 5, Garis tegak lurus dan
+transformasi isometrik: seven sections, eight results, eighteen exercises,
+seventeen authored hint blocks covering all eighteen exercises, nine body
+figures, and five hint figures. The final source hint is intentionally shared
+by `ex:tangent` and `ex:tangent-circle`. Target hashes are
+`650ffbc55d59c238dc7c884bc3d0765ecae6e2fdab953d5390fb27ceb09446ed`
+for `perp.tex` and
+`d2788d7d1095d838d733533750e3bc6fe4d6de00bad2669be21f67f8988894de`
+for its hint slice.
+
+Two fresh Chapter 5 builds are byte-identical: 207 pages, 2,965,782 bytes,
+SHA-256
+`6ca6402e66b5ab0a048697bf0478a00548e1c5a64096d605fbd95947c21994ee`.
+All 224 generated MetaPost figures match across builds. PDF pages 41-48 and
+hint pages 185-187 were inspected. All fourteen figures are legible, with no
+clipping, overlap, or missing content. The initial build exposed a collision
+between the long Section E running head and page number 45; an optional short
+running title fixes only that header while preserving the complete visible
+section title. See `qa/CH05_ADMISSION_20260822.md`.
+
+The Chapter 5 translation records one referent correction for an undefined
+source symbol `$f$`, three bounded Indonesian attachment/wording
+clarifications, and the layout-only short running title. None changes a
+mathematical claim, formula, identifier, exercise, figure, or source order.
+
+The backend now has 201 unique records and 122 relations with no dangling
+endpoints. Chapter 5 contributes eight unit-order rows, eight result records,
+eighteen exercise rows, seventeen hint records, fourteen admitted figure
+descriptions, 26 concept/dependency rows, one build artifact, one QA event, and
+five admitted correction records. JSON Schema and artifact-tool UTF-8/LF CSV
+verification pass; concept mappings remain separately pending backend review.
 
 The exact publication/access receipt is
 `00_control/PUBLICATION_RECEIPT_UNIT001.json`. GitHub is private at
@@ -125,7 +151,8 @@ The exact publication/access receipt is
 `6ccd1c6add2bf4fb5f3c18314c8358e08b47bb08`. The Zenodo record was edited
 in place without a new version: anonymous record readback reports restricted
 access and exposes zero files, and anonymous requests for all five exact file
-URLs return HTTP 403.
+URLs currently return HTTP 404. The record and DOI were not changed and no new
+version was created; see `00_control/ACCESS_CHECK_CH04_20260822.json`.
 
 The Chapter 3 content checkpoint is private Git commit
 `4b2a2a683354c4785aaebb777343049ec5697f6e`. GitHub branch readback matched
@@ -138,6 +165,6 @@ The three-layer architecture is frozen in
 `00_control/CURRICULUM_ARCHITECTURE.md`; the complete finite workflow is
 `00_control/00_CURRENT_GOAL_AND_WORKFLOW.md`.
 
-Next action: translate Chapter 5 (`perp.tex`) and its matching contiguous hint
+Next action: translate Chapter 6 (`similar.tex`) and its matching contiguous hint
 slice in source order, extend the backend, and apply the same bounded gate. Do
-not reopen the admitted Chapters 1-4 boundary.
+not reopen the admitted Chapters 1-5 boundary.

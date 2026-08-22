@@ -16,7 +16,8 @@ TARGET = LANE / "source" / "id-ID"
 CH4_MARKER = b"%\\subsection*{Chapter~\\ref{chap:cong}}"
 CH5_MARKER = b"%\\subsection*{Chapter~\\ref{chap:perp}}"
 FROZEN_TARGET_PREFIX_SHA256 = "2ff27e2ca3f9c53f94dec954a4c07560787e9a61ed854d1a0720e0018152abe1"
-FROZEN_TARGET_SUFFIX_SHA256 = "c9d2a983be56f8d1c78b6ad06ce6ac6e468b4b74df161d8fac79c8e056eecce4"
+FROZEN_TARGET_CHAPTER_SHA256 = "70cbc1809520da16814159a32021a66ebb48db56190b3a638af2205436282b43"
+FROZEN_TARGET_SLICE_SHA256 = "85eb2f743180e984948a8fe094b5a7f645135e47a7a5f1e9d8cb8ac86fa69c5c"
 
 _shared = runpy.run_path(str(Path(__file__).with_name("qa_ch03.py")))
 active_text = _shared["active_text"]
@@ -54,6 +55,8 @@ def main() -> None:
 
     source = source_chapter_path.read_text(encoding="utf-8")
     target = target_chapter_path.read_text(encoding="utf-8")
+    if digest(target_chapter_path.read_bytes()) != FROZEN_TARGET_CHAPTER_SHA256:
+        die("admitted translated Chapter 4 body changed")
     source_environments = ordered(r"\\(begin|end)\{([^}]+)\}", source)
     target_environments = ordered(r"\\(begin|end)\{([^}]+)\}", target)
     semantic_source_environments = [pair for pair in source_environments if pair[1] not in {"wrapfigure", "center"}]
@@ -155,8 +158,13 @@ def main() -> None:
     target_prefix, target_slice, target_suffix = split_slice(target_hint_bytes)
     if digest(target_prefix) != FROZEN_TARGET_PREFIX_SHA256:
         die("frozen translated Chapter 1-3 hint prefix changed")
-    if target_suffix != source_suffix or digest(target_suffix) != FROZEN_TARGET_SUFFIX_SHA256:
-        die("frozen Chapter 5+ hint suffix changed")
+    if digest(target_slice) != FROZEN_TARGET_SLICE_SHA256:
+        die("admitted translated Chapter 4 hint slice changed")
+
+    # Later chapters are owned by their own source-order QA. Record whether the
+    # current suffix is still authority-identical, but do not freeze its hash;
+    # an admitted Chapter 5+ translation must not invalidate Chapter 4.
+    later_suffix_matches_authority = target_suffix == source_suffix
 
     source_hint = source_slice.decode("utf-8")
     target_hint = target_slice.decode("utf-8")
@@ -182,6 +190,8 @@ def main() -> None:
             "chapter_sha256": digest(source_chapter_path.read_bytes()),
             "hint_slice_bytes": len(source_slice),
             "hint_slice_sha256": digest(source_slice),
+            "later_suffix_bytes": len(source_suffix),
+            "later_suffix_sha256": digest(source_suffix),
         },
         "target": {
             "chapter_bytes": target_chapter_path.stat().st_size,
@@ -189,8 +199,11 @@ def main() -> None:
             "hint_slice_bytes": len(target_slice),
             "hint_slice_sha256": digest(target_slice),
             "whole_hints_sha256": digest(target_hint_bytes),
+            "frozen_prefix_bytes": len(target_prefix),
             "frozen_prefix_sha256": digest(target_prefix),
-            "frozen_suffix_sha256": digest(target_suffix),
+            "current_later_suffix_bytes": len(target_suffix),
+            "current_later_suffix_sha256": digest(target_suffix),
+            "current_later_suffix_matches_authority": later_suffix_matches_authority,
         },
         "chapter_topology": topology,
         "layout_reflow": layout_reflow,

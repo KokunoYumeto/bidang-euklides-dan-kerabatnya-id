@@ -109,3 +109,26 @@ layout-only correction, with formulas, labels, references, figure order and
 mathematics unchanged. The full-context PDF contains English Chapter 5+
 material and remains private QA evidence. Advance the cursor to Chapter 5,
 `perp.tex`.
+
+## D016 — Chapter 5 bounded wording corrections
+
+Where the authority introduces the motion `X\mapsto X'` and then refers to an
+undefined `$f$`, translate the evident referent as `transformasi isometrik
+tersebut` rather than introducing an unsupported symbol. Also clarify three
+otherwise ambiguous Indonesian attachments: extend the constructed
+perpendicular segment rather than an infinite line; pair `m` and `n`
+respectively with the perpendicular bisectors of `AB` and `BC`; and attach
+“through the given point” to the requested tangent lines. Record all four
+changes explicitly. They alter no mathematical claim, formula, label,
+reference, exercise, or source order.
+
+## D017 — Chapter 5 admission and running-head repair
+
+Admit complete Chapter 5 and all seventeen authored hint blocks covering its
+eighteen exercises after structural, language, deterministic-build, and visual
+checks. Use the optional short section title `Isometri langsung dan tak
+langsung` only in the running head to prevent a collision with page number 45;
+retain the complete visible title. The two fresh 207-page full-context PDFs are
+byte-identical and all fourteen Chapter 5 figures are visually admitted. The
+full-context PDF contains English Chapter 6+ material and remains private QA
+evidence. Advance the cursor to Chapter 6, `similar.tex`.

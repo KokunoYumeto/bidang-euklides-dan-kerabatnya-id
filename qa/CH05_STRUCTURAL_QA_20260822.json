@@ -1,0 +1,155 @@
+{
+  "schema": "o004-ch05-qa-v0",
+  "status": "pass",
+  "authority": {
+    "chapter_bytes": 16499,
+    "chapter_sha256": "c5be147e0249d3c7ffe5f2432cdd11b5e686e808927661de57614c55bfc28f91",
+    "hint_slice_bytes": 5290,
+    "hint_slice_sha256": "80f7d0508c31e8a2dbdf3826814658b98ba551ac427f1d6a3955311f4502044e",
+    "later_suffix_bytes": 72972,
+    "later_suffix_sha256": "0d0735b595811fea0fb1bb90103e8a99521e0b2d44170bae9b2d89862c743114"
+  },
+  "target": {
+    "chapter_bytes": 17849,
+    "chapter_sha256": "650ffbc55d59c238dc7c884bc3d0765ecae6e2fdab953d5390fb27ceb09446ed",
+    "hint_slice_bytes": 5770,
+    "hint_slice_sha256": "d2788d7d1095d838d733533750e3bc6fe4d6de00bad2669be21f67f8988894de",
+    "whole_hints_sha256": "0d0f48fcc22abd8ed8e2a067b2b30d27c15003ba2cad549fd0cc0135e9c6dc8c",
+    "frozen_prefix_bytes": 14089,
+    "frozen_prefix_sha256": "c6d71d57ad3753572e380e673c6d60f55cb10540dc3c5918f0c66a4f58f64245",
+    "current_later_suffix_bytes": 72972,
+    "current_later_suffix_sha256": "0d0735b595811fea0fb1bb90103e8a99521e0b2d44170bae9b2d89862c743114",
+    "current_later_suffix_matches_authority": true,
+    "utf8_lf_no_bom_terminal_lf": true,
+    "trailing_whitespace_lines": [],
+    "active_english_prose_hits": {
+      "chapter": [],
+      "hints": []
+    },
+    "untranslated_source_language_overlap": {
+      "chapter": [],
+      "hints": []
+    }
+  },
+  "chapter_topology": {
+    "environments": 80,
+    "labels": 34,
+    "equation_labels": 4,
+    "references": 22,
+    "citations": 0,
+    "graphics": 9,
+    "theorem_options": 26,
+    "qeds": 7
+  },
+  "chapter_raw_topology": {
+    "authority_commands": 509,
+    "target_commands": 509,
+    "environments": 80,
+    "labels": 34,
+    "equation_labels": 4,
+    "references": 22,
+    "citations": 0,
+    "graphics": 9,
+    "theorem_options": 26,
+    "qeds": 7,
+    "authority_comments": 1,
+    "target_comments": 1
+  },
+  "scalar_counts": {
+    "sections": 7,
+    "index_entries": 25,
+    "absolute_markers": 7,
+    "used_later_markers": 7
+  },
+  "chapter_math_surfaces": {
+    "active": {
+      "authority_count": 334,
+      "target_count": 333,
+      "omitted_authority_surface": "$f$",
+      "authority_surface_ordinal": 176
+    },
+    "raw": {
+      "authority_count": 336,
+      "target_count": 335,
+      "omitted_authority_surface": "$f$",
+      "authority_surface_ordinal": 178
+    }
+  },
+  "named_editorial_correction": {
+    "id": "o004.petrunin.correction.ch05.undefined-f",
+    "authority_line": 297,
+    "authority_token_omitted": "$f$",
+    "reason": "The authority calls the motion f without defining f; the target says 'the transformation' instead.",
+    "mathematics_changed": false,
+    "only_permitted_math_surface_difference": true
+  },
+  "named_layout_correction": {
+    "id": "o004.petrunin.correction.ch05.direct-motion-running-head",
+    "authority_line": 284,
+    "target_line": 284,
+    "target_running_title": "Isometri langsung dan tak langsung",
+    "target_visible_title": "Transformasi isometrik langsung dan tak langsung",
+    "reason": "The shorter optional running title prevents a running-head/page-number collision while preserving the full visible section title.",
+    "mathematics_changed": false,
+    "identifiers_changed": false,
+    "section_order_changed": false
+  },
+  "exercise_hint_closure": {
+    "exercise_count": 18,
+    "hint_block_count": 17,
+    "covered_exercise_count": 18,
+    "ordered_exercise_ids": [
+      "ex:acute-obtuce",
+      "ex:pbisec-side",
+      "ex:side-angle",
+      "ex:pbisec-motion",
+      "ex:construction-perpendicular",
+      "ex:2-reflections",
+      "ex:3-reflections",
+      "ex:right-acute",
+      "ex:obtuce",
+      "ex:PMQ",
+      "ex:inside-outside",
+      "ex:chord-perp",
+      "ex:center",
+      "ex:two-circ",
+      "ex:tangent-circles",
+      "ex:tangent-circles-3",
+      "ex:tangent",
+      "ex:tangent-circle"
+    ],
+    "shared_hint_headers": [
+      [
+        "ex:tangent",
+        "ex:tangent-circle"
+      ]
+    ],
+    "complete": true
+  },
+  "hint_topology": {
+    "environments": 16,
+    "labels": 0,
+    "equation_labels": 0,
+    "references": 44,
+    "citations": 0,
+    "graphics": 5,
+    "theorem_options": 0,
+    "qeds": 0
+  },
+  "hint_raw_topology": {
+    "commands": 189,
+    "environments": 16,
+    "labels": 0,
+    "equation_labels": 0,
+    "references": 45,
+    "citations": 0,
+    "graphics": 5,
+    "theorem_options": 0,
+    "qeds": 0,
+    "comments": 1
+  },
+  "hint_math_surfaces": {
+    "active": 82,
+    "raw": 82
+  }
+}

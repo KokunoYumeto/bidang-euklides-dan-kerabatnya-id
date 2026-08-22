@@ -3,7 +3,7 @@
 Updated: 2026-08-22
 
 Current admitted unit IDs: `o004.petrunin.front-ch01`, `o004.petrunin.ch02`,
-`o004.petrunin.ch03`, `o004.petrunin.ch04`
+`o004.petrunin.ch03`, `o004.petrunin.ch04`, `o004.petrunin.ch05`
 
 Completed and frozen:
 
@@ -47,20 +47,38 @@ Completed and frozen:
     reflowed from one overflowing side wrap into a visually admitted two-row
     sequence. Figures, order, text, formulas, labels and references are
     unchanged.
+17. `perp.tex` — complete Bab 5, seven sections, eight results, eighteen
+    exercises, and nine body figures; 17,849 bytes, SHA-256
+    `650ffbc55d59c238dc7c884bc3d0765ecae6e2fdab953d5390fb27ceb09446ed`.
+18. `hints.tex` — complete Chapter 5 slice, target lines 396-561, seventeen
+    author hint blocks covering eighteen exercises and five hint figures;
+    5,770 bytes, SHA-256
+    `d2788d7d1095d838d733533750e3bc6fe4d6de00bad2669be21f67f8988894de`.
+    The final block is shared by `ex:tangent` and `ex:tangent-circle`.
+19. Chapter 5 backend: eight unit rows, eight result records, eighteen
+    exercises, seventeen hint records, fourteen admitted figure descriptions,
+    26 concept/dependency rows, one build artifact, one QA event, and five
+    admitted bounded-correction records. The catalog has 201 records and 122
+    relations with zero dangling endpoints.
+20. The Section E running head uses the optional short title `Isometri
+    langsung dan tak langsung` to avoid a page-number collision while the full
+    visible title is unchanged. One undefined source `$f$` is rendered as the
+    already-introduced isometric transformation; three further wording
+    clarifications change no mathematics or identifiers.
 
-Current production boundary: immediately before Chapter 5 (`perp.tex`) and at
-the Chapter 5 hint marker on target line 396. The translated hint prefix before
-that marker is 14,089 bytes, SHA-256
-`c6d71d57ad3753572e380e673c6d60f55cb10540dc3c5918f0c66a4f58f64245`.
-Everything from the marker onward remains byte-identical to authority: 78,262
+Current production boundary: immediately before Chapter 6 (`similar.tex`) and
+at the Chapter 6 hint marker on target line 562. The translated hint prefix
+before that marker is 19,859 bytes, SHA-256
+`f2d9f4153457a500482d1f480c07a18d62d2ac2440138f9cf927f93ae1c522b0`.
+Chapter 6+ remains byte-identical to authority.
+
+Chapter 6 authority and current target `similar.tex` are identical: 10,655
 bytes, SHA-256
-`c9d2a983be56f8d1c78b6ad06ce6ac6e468b4b74df161d8fac79c8e056eecce4`.
-
-Chapter 5 authority and current target `perp.tex` are identical: 16,499 bytes,
-SHA-256
-`c5be147e0249d3c7ffe5f2432cdd11b5e686e808927661de57614c55bfc28f91`.
-Its exact authority hint slice is source lines 396-561, 5,290 bytes, SHA-256
-`80f7d0508c31e8a2dbdf3826814658b98ba551ac427f1d6a3955311f4502044e`.
+`75dd3b1b3eca732b2744a7d61f37356c6078cf57f59f8bd5413f6de8205b8d1a`.
+Its exact authority hint slice is source lines 562-607, 2,092 bytes, SHA-256
+`ccda006b21c6fac93216f50518fc938a0c1825ae70b66182afdac63793eb4808`.
+The Chapter 7+ suffix is 70,880 bytes, SHA-256
+`5cb477a32870e20435d7cb6978a361b33ddead279f26dbec5814f57b4100d474`.
 
 Artifact boundary: the locally admitted 19-page partial reader has SHA-256
 `1a6909ab8c315fe2529d9267c3d539def1e1f68667bc432d8bf40059dd91a452`.
@@ -78,7 +96,11 @@ Chapter 4 admission evidence is `qa/CH04_ADMISSION_20260822.md`; its two fresh
 full-context builds are 205 pages, 2,962,911 bytes, SHA-256
 `1ff91aa4ff95880980237060624fe95022d6664b8cc68180859d266a9e5cc92e`.
 
-Immediate cursor action: translate Chapter 5 (`perp.tex`) and its matching
+Chapter 5 admission evidence is `qa/CH05_ADMISSION_20260822.md`; its two fresh
+full-context builds are 207 pages, 2,965,782 bytes, SHA-256
+`6ca6402e66b5ab0a048697bf0478a00548e1c5a64096d605fbd95947c21994ee`.
+
+Immediate cursor action: translate Chapter 6 (`similar.tex`) and its matching
 contiguous hints, then extend the backend and perform one bounded gate.
-Translation remains dominant; do not reopen the admitted Chapters 1-4
+Translation remains dominant; do not reopen the admitted Chapters 1-5
 boundary.

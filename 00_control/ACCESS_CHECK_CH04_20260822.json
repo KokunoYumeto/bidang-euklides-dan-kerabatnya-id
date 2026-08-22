@@ -1,0 +1,31 @@
+{
+  "schema": "o004-access-check-v0",
+  "recorded_at": "2026-08-22T03:36:12.3312487+02:00",
+  "github": {
+    "repository": "KokunoYumeto/bidang-euklides-dan-kerabatnya-id",
+    "branch": "main",
+    "head": "a171257651109e9a5fe496a74804f835ea09c651",
+    "private": true,
+    "visibility": "private",
+    "remote_head_matches_local": true,
+    "checkpoint_receipt_remote_blob": "f57867894ffc380434930e86a1e6157dff4da5b7",
+    "checkpoint_receipt_bytes": 2718,
+    "checkpoint_receipt_sha256": "d981f04f0282da5328d89d9d644c8b4ef400166058e8b09c92f1a982fdefab70"
+  },
+  "zenodo": {
+    "record_id": 22044358,
+    "doi": "10.5281/zenodo.22044358",
+    "anonymous_api_access_right": "restricted",
+    "anonymous_api_file_count": 0,
+    "mutated": false,
+    "new_version_created": false,
+    "anonymous_direct_file_status": {
+      "BIDANG_EUKLIDES_DAN_KERABATNYA_ID_UNIT_001.pdf": 404,
+      "README_RELEASE.md": 404,
+      "SHA256SUMS": 404,
+      "TRANSLATION_OVERLAY_AND_BACKEND_ID_UNIT_001.zip": 404,
+      "UNIT001_READER_RECEIPT.json": 404
+    },
+    "interpretation": "The anonymous record exposes no file inventory and none of the five known file URLs is anonymously downloadable."
+  }
+}
