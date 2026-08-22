@@ -1,0 +1,98 @@
+{
+  "schema": "o004-github-checkpoint-v0",
+  "recorded_at": "2026-08-22T06:43:07.4906647+02:00",
+  "repository": "KokunoYumeto/bidang-euklides-dan-kerabatnya-id",
+  "repository_url": "https://github.com/KokunoYumeto/bidang-euklides-dan-kerabatnya-id",
+  "visibility": "PRIVATE",
+  "branch": "main",
+  "content_commit": "6ff15b6090337a602b993fbb43e55cbe85a65402",
+  "remote_head_verified": true,
+  "zenodo_mutated": false,
+  "zenodo_new_version_created": false,
+  "build_evidence": {
+    "source_chapter_path": "triangle.tex",
+    "source_chapter_bytes": 15865,
+    "source_chapter_sha256": "b599ee9baded53dc0c81fe6e0bb6539e5e43e5173d1ba525df5e8885a024f8b6",
+    "source_hints_path": "hints.tex",
+    "source_hints_bytes": 94133,
+    "source_hints_sha256": "fab63adad2acc5dacd44b51724afd9297ffa3a64a9753ad9e5bd22732d899483",
+    "next_chapter_authority_path": "inscribed-angle.tex",
+    "next_chapter_authority_bytes": 19072,
+    "next_chapter_authority_sha256": "ea6f921d62502fc78b8bc4757ae43fc8d9728c149ce76abe9533eeb475fad0f4",
+    "build_directories": [
+      "build/ch08-final-c-20260822",
+      "build/ch08-final-d-20260822"
+    ],
+    "pdf_pages": 209,
+    "pdf_bytes": 2677012,
+    "pdf_sha256": "ca38d7112aa685020094760b3d91c8511cc926eaff73c8fe1db27446400cfdfc",
+    "metapost_files_per_build": 224,
+    "metapost_mismatches": 0,
+    "localized_pic_108_mps_bytes": 22274,
+    "localized_pic_108_mps_sha256": "7801282b8ef71e335f8da9ee426d69a1d255adbb9cabcdbcf7819179d8c72532",
+    "undefined_references_or_citations": 0,
+    "structural_qa_bytes": 9468,
+    "structural_qa_sha256": "7d2f9f8ef2ef6d63a676327d3240ff6705b5c4a1cf8acba9df2d78e6e0950ffd",
+    "backend_records": 360,
+    "backend_relations": 209,
+    "backend_dangling_endpoints": 0
+  },
+  "remote_file_readback": [
+    {
+      "path": "source/id-ID/triangle.tex",
+      "bytes": 15865,
+      "sha256": "b599ee9baded53dc0c81fe6e0bb6539e5e43e5173d1ba525df5e8885a024f8b6",
+      "git_blob": "f31c5a01fc3cfce149c5c01c222254bde6d705b6",
+      "matches_local_commit": true
+    },
+    {
+      "path": "source/id-ID/hints.tex",
+      "bytes": 94133,
+      "sha256": "fab63adad2acc5dacd44b51724afd9297ffa3a64a9753ad9e5bd22732d899483",
+      "git_blob": "6c9522df187a0e561570bd6e7454e5ecdd40859e",
+      "matches_local_commit": true
+    },
+    {
+      "path": "backend/catalog-v0.json",
+      "bytes": 174380,
+      "sha256": "238a0bd84e574aa56d568db98951d24635bb981ec778aff39837b9b67d9786aa",
+      "git_blob": "0f3b5db8fda793f0768a5e2561783696a4fb0b8a",
+      "matches_local_commit": true
+    },
+    {
+      "path": "scripts/apply_figure_localizations.ps1",
+      "bytes": 1603,
+      "sha256": "83abf9446c6fea42dbe3a43885bad2983e2b5062a2ea5e5de4c8e83e0317b6f4",
+      "git_blob": "0cc7ec7ccb67f2510319a14738d6ff21a260c251",
+      "matches_local_commit": true
+    },
+    {
+      "path": "qa/CH08_ADMISSION_20260822.md",
+      "bytes": 6992,
+      "sha256": "7963e70c51d98e2caf3685bcc25461375c00b915fb6bc3b9e47a5fc0885052fb",
+      "git_blob": "b9ae2fac8ad4411760e0f9b0ee2c5a3281f15704",
+      "matches_local_commit": true
+    },
+    {
+      "path": "00_control/CURRENT_CURSOR.md",
+      "bytes": 11431,
+      "sha256": "9bc80a71c0c359ec4ed40b1122e8d0da2086e5062cb31d3c20dfa764fb26c549",
+      "git_blob": "c17302a5f751adbae43d6dfd0ad5e28c0951156e",
+      "matches_local_commit": true
+    }
+  ],
+  "restricted_access_readback": {
+    "zenodo_record_id": 22044358,
+    "doi": "10.5281/zenodo.22044358",
+    "anonymous_api_http_status": 200,
+    "anonymous_api_access_right": "restricted",
+    "anonymous_api_file_count": 0,
+    "known_file_request_status": 302,
+    "known_file_request_destination": "Zenodo login page",
+    "known_file_request_content_type": "text/html; charset=utf-8",
+    "known_files_checked": 5,
+    "anonymous_file_bytes_obtained": false,
+    "record_updated": "2026-08-21T18:52:39.740048+02:00",
+    "interpretation": "The record was not mutated at this checkpoint. Anonymous metadata still reports restricted access and no files; every known file request redirects to authentication, so no file bytes are anonymously downloadable."
+  }
+}

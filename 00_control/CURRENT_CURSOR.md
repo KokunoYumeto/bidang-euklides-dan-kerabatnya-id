@@ -155,9 +155,9 @@ Publication state: the GitHub repository and release remain private. Zenodo
 record `22044358`, DOI `10.5281/zenodo.22044358`, is the same published record
 with its five files restricted; see
 `00_control/PUBLICATION_RECEIPT_UNIT001.json`. The latest private content
-checkpoint is commit `6086305e6ffba0101cf2a96fb1b105f655e00d54`; remote
+checkpoint is commit `6ff15b6090337a602b993fbb43e55cbe85a65402`; remote
 bytes/blob IDs and unchanged restricted Zenodo state are recorded in
-`00_control/GITHUB_CHECKPOINT_CH07.json`.
+`00_control/GITHUB_CHECKPOINT_CH08.json`.
 
 Chapter 3 admission evidence is `qa/CH03_ADMISSION_20260821.md`; its two fresh
 full-context builds have SHA-256

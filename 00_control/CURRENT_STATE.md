@@ -278,6 +278,14 @@ blob IDs exactly. The receipt is `00_control/GITHUB_CHECKPOINT_CH07.json`.
 Zenodo remained file-restricted, exposed zero files anonymously, redirected all
 five known file requests to authentication, and was not mutated or versioned.
 
+The Chapter 8 content checkpoint is private Git commit
+`6ff15b6090337a602b993fbb43e55cbe85a65402`. GitHub branch readback matched
+that commit, repository visibility remained `PRIVATE`, and six representative
+source/backend/QA/control files matched local bytes, SHA-256 hashes, and Git
+blob IDs exactly. The receipt is `00_control/GITHUB_CHECKPOINT_CH08.json`.
+Zenodo remained file-restricted, exposed zero files anonymously, redirected all
+five known file requests to authentication, and was not mutated or versioned.
+
 The three-layer architecture is frozen in
 `00_control/CURRICULUM_ARCHITECTURE.md`; the complete finite workflow is
 `00_control/00_CURRENT_GOAL_AND_WORKFLOW.md`.
