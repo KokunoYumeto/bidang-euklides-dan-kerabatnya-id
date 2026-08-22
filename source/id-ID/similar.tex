@@ -1,0 +1,343 @@
+\chapter[Segitiga sebangun]{Segitiga sebangun}\label{chap:parallel}
+
+Dua segitiga $A' B' C'$ dan $A B C$ disebut
+\index{segitiga!segitiga sebangun}\index{segitiga sebangun}\emph{sebangun} (secara ringkas \index{30@$\sim$}$\triangle A' B' C'\z\sim\triangle A B C$) jika (1) sisi-sisi yang bersesuaian sebanding;
+yaitu,
+$$A' B'
+=
+k\cdot A B,
+\quad
+B' C'=k\cdot B C
+\quad
+\text{dan}
+\quad
+C' A'
+=
+k\cdot C A
+\eqlbl{dist}
+$$
+untuk suatu koefisien $k>0$ (yang disebut \index{koefisien kesebangunan}\emph{koefisien kesebangunan}), dan (2) sudut-sudut yang bersesuaian sama, mungkin dengan perubahan tanda:
+$$
+\begin{aligned}
+\measuredangle A' B' C'&=\pm\measuredangle A B C,
+\\
+\measuredangle B' C' A'&=\pm\measuredangle B C A,
+\\
+\measuredangle C' A' B'&=\pm\measuredangle CAB.
+\end{aligned}
+\eqlbl{angles}
+$$
+
+\parbf{Catatan.}
+\begin{itemize}
+\item Menurut \ref{thm:signs-of-triug}, pada ketiga persamaan di atas, semua tandanya dapat dianggap sama.
+
+\item Persamaan-persamaan dalam \ref{dist} dapat ditulis ulang sebagai
+\[\frac{A'B'}{AB}=\frac{B'C'}{BC}=\frac{C'A'}{CA}.\]
+
+\item Jika $\triangle A' B' C'\sim\triangle A B C$ dengan koefisien $k=1$,
+ maka $\triangle A' B' C'\z\cong\triangle A B C$.
+
+\item Perhatikan bahwa ``$\sim$'' merupakan
+\index{relasi ekuivalensi}\emph{relasi ekuivalensi}.
+Artinya,
+\begin{enumerate}[(i)]
+\item $\triangle A B C\sim\triangle A B C$
+untuk setiap $\triangle A B C$.
+\item Jika $\triangle A' B' C'\sim\triangle A B C$, maka
+$$\triangle A B C\sim\triangle A' B' C'.$$
+\item Jika $\triangle A'' B'' C''\sim\triangle A' B' C'$ dan $\triangle A' B' C'\z\sim\triangle A B C$, maka
+$$\triangle A'' B'' C''\sim\triangle A B C.$$
+\end{enumerate}
+\end{itemize}
+
+\section{Kriteria kesebangunan}
+
+Dengan menggunakan notasi baru ``$\sim$'', kita dapat menyatakan kembali Aksioma~\ref{def:birkhoff-axioms:4}:
+
+\begin{thm}{Pernyataan ulang Aksioma~\ref{def:birkhoff-axioms:4}}
+Jika untuk
+$\triangle ABC$,
+$\triangle AB'C'$,
+dan $k>0$ berlaku
+$B'\in [AB)$,
+$C'\in [AC)$,
+$AB'=k\cdot AB$ dan
+$AC'=k\cdot AC$,
+maka $\triangle ABC\sim\triangle AB'C'$.
+\end{thm}
+
+Dengan kata lain, Aksioma~\ref{def:birkhoff-axioms:4} memberikan
+suatu syarat yang menjamin bahwa dua segitiga sebangun.
+Mari kita rumuskan tiga {}\emph{kriteria kesebangunan} lainnya.
+
+\begin{thm}{Kriteria kesebangunan}\label{prop:sim}
+Dua segitiga
+$\triangle ABC$ dan $\triangle A'B'C'$
+sebangun jika salah satu kriteria berikut terpenuhi:
+
+(SAS)\index{kriteria kesebangunan SAS}
+Untuk suatu konstanta $k>0$ berlaku
+\[A B=k\cdot A' B',
+\quad
+A C=k\cdot A' C',
+\quad
+\text{dan}
+\quad
+\measuredangle B A C=\pm\measuredangle B' A' C'.\]
+
+(AA)\index{kriteria kesebangunan AA} Segitiga $A' B' C'$ tak degenerat
+dan
+$$\measuredangle A B C
+=
+\pm\measuredangle A' B' C',
+\quad
+\measuredangle B A C
+=
+\pm\measuredangle B' A' C'.$$
+
+(SSS)\index{kriteria kesebangunan SSS} Untuk suatu konstanta $k>0$ berlaku
+$$A B=k\cdot A' B',
+\quad
+A C=k\cdot A' C',
+\quad
+CB=k\cdot C'B'.$$
+
+\end{thm}
+
+Setiap kriteria ini dibuktikan dengan menerapkan Aksioma~\ref{def:birkhoff-axioms:4} bersama kriteria kekongruenan SAS, ASA, dan SSS secara berturut-turut
+(lihat Aksioma~\ref{def:birkhoff-axioms:3} dan kriteria \ref{thm:ASA} serta \ref{thm:SSS}).
+
+
+\parit{Bukti.}
+Ambil $k=\tfrac{AB}{A'B'}$.
+Pilih titik $B''\in [A'B')$ dan $C''\in [A'C')$,
+sedemikian sehingga $A'B''=k\cdot A'B'$ dan $A'C''=k\cdot A'C'$.
+Menurut Aksioma~\ref{def:birkhoff-axioms:4},
+$\triangle A'B'C'\z\sim \triangle A'B''C''$.
+
+Dengan menerapkan kriteria kekongruenan SAS, ASA, atau SSS, sesuai dengan kasusnya,
+kita memperoleh $\triangle A'B''C''\cong \triangle ABC$.
+Dengan demikian, pernyataan terbukti.
+\qeds
+
+\begin{thm}{Latihan}\label{ex:mid-triangle}
+Misalkan $A'$, $B'$, dan $C'$ berturut-turut merupakan titik tengah sisi-sisi $[BC]$, $[CA]$, dan $[AB]$ dari $\triangle ABC$.
+Tunjukkan bahwa $\triangle A'B'C'\sim\triangle ABC$ dan tentukan koefisien kesebangunannya.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:k*triangle}
+Misalkan $O$, $A$, $B$, $C$, $A'$, $B'$, dan $C'$ merupakan titik-titik yang berbeda.
+Andaikan $A'\in [OA)$, $B'\in[OB)$, $C'\in [OC)$, $OA'=k\cdot OA$, $OB'=k\cdot OB$, dan $OC'=k\cdot OC$ untuk suatu $k>0$.
+Tunjukkan bahwa $\triangle A'B'C'\sim\triangle ABC$.
+\end{thm}
+
+Suatu bijeksi $X\leftrightarrow X'$ dari bidang ke dirinya sendiri disebut \index{transformasi pelestari sudut}\emph{transformasi pelestari sudut} jika
+\[\measuredangle ABC= \measuredangle A'B'C'\]
+untuk setiap $\triangle ABC$ dan bayangannya $\triangle A'B'C'$.
+
+(Istilah \index{transformasi}\emph{transformasi} digunakan untuk bijeksi bidang ke dirinya sendiri yang mempertahankan suatu struktur geometri tertentu.
+Misalnya, {}\emph{transformasi isometrik} adalah \textit{transformasi yang mempertahankan jarak}.)
+
+
+\begin{thm}{Latihan}\label{ex:angle-preserving-euclid}
+Tunjukkan bahwa setiap transformasi pelestari sudut pada bidang mengalikan semua jarak dengan suatu konstanta tetap.
+\end{thm}
+
+\section{Teorema Pythagoras}\index{Teorema Pythagoras}
+
+Ingat bahwa suatu segitiga disebut \index{segitiga!segitiga siku-siku}\index{segitiga siku-siku}\emph{siku-siku} jika salah satu sudutnya siku-siku.
+Sisi yang berhadapan dengan sudut siku-siku disebut \index{hipotenusa}\emph{hipotenusa}.
+Sisi-sisi yang mengapit sudut siku-siku disebut \index{sisi siku-siku}\emph{sisi-sisi siku-siku}.
+
+
+\begin{thm}{Teorema}\label{thm:pyth}
+Andaikan $\triangle ABC$ memiliki sudut siku-siku di~$C$.
+Maka
+$$AC^2+BC^2=AB^2.$$
+
+\end{thm}
+
+\parit{Bukti.}
+Misalkan $D$ adalah titik kaki tegak lurus dari $C$ pada~$(AB)$.
+
+\begin{wrapfigure}[4]{r}{40mm}
+\vskip-2mm
+\centering
+\includegraphics{mppics/pic-66}
+\end{wrapfigure}
+
+Menurut Lema~\ref{lem:perp<oblique},
+\begin{align*}
+AD&<AC<AB,
+\shortintertext{dan}
+BD&<BC<AB.
+\end{align*}
+Oleh karena itu, $D$ terletak di antara $A$ dan $B$;
+khususnya,
+$$AD+BD=AB.\eqlbl{AD+BD=AB}$$
+
+Menurut kriteria kesebangunan AA, kita memperoleh
+$$\triangle ADC\sim\triangle ACB\sim \triangle CDB.$$
+Khususnya,
+$$
+\frac{A D}{A C}=\frac{A C}{A B}
+\quad
+\text{dan}
+\quad
+\frac{B D}{B C}=\frac{B C}{B A}.
+\eqlbl{BCD}$$
+
+Mari kita tulis ulang kedua identitas dalam \ref{BCD}:
+\begin{align*}
+AC^2=AB\cdot AD
+\quad
+\text{dan}
+\quad
+BC^2=AB\cdot B D.
+\end{align*}
+Dengan menjumlahkan kedua identitas ini dan menerapkan \ref{AD+BD=AB}, kita memperoleh
+$$AC^2 +BC^2=AB\cdot (AD+ B D)=AB^2.$$
+\qedsf
+
+Gagasan dalam bukti ini muncul dalam Elements \cite[X.33]{euclid},
+tetapi bukti yang diberikan di sana \cite[I.47]{euclid} berbeda;
+bukti tersebut menggunakan metode luas yang dibahas dalam Bab~\ref{chap:area}.
+
+
+\begin{thm}{Latihan}\label{ex:pyth}
+Andaikan $A$, $B$, $C$, dan $D$ seperti dalam bukti di atas.
+Tunjukkan bahwa
+$CD^2=AD\cdot BD$.
+
+\end{thm}
+
+Latihan berikut merupakan kebalikan Teorema Pythagoras.
+
+\begin{thm}{Latihan}\label{ex:pyth-conv}
+Misalkan $ABC$ merupakan segitiga sedemikian sehingga
+$AC^2+BC^2=AB^2$.
+Tunjukkan bahwa sudut di $C$ siku-siku.
+\end{thm}
+
+\section{Metode segitiga sebangun}
+
+Bukti Teorema Pythagoras di atas menggunakan {}\emph{metode segitiga sebangun}.
+Untuk menerapkan metode ini, kita perlu mencari pasangan-pasangan segitiga sebangun, kemudian menggunakan kesebandingan sisi-sisi yang bersesuaian dan/atau kesamaan sudut-sudut yang bersesuaian.
+Pada awalnya, menemukan pasangan semacam itu mungkin tidak mudah.
+
+{
+
+\begin{wrapfigure}{r}{25mm}
+\vskip-6mm
+\centering
+\includegraphics{mppics/pic-68}
+\end{wrapfigure}
+
+
+\begin{thm}{Latihan kelas}\label{ex:two-pairs-sim}
+Misalkan $ABC$ merupakan segitiga tak degenerat, dan misalkan titik-titik $X$, $Y$, dan $Z$ terletak seperti pada gambar.
+Andaikan $\measuredangle CAY\z\equiv\measuredangle XBC$.
+Temukan empat pasang segitiga sebangun yang menggunakan keenam titik ini sebagai titik-titik sudut,
+dan buktikan kesebangunannya.
+\end{thm}
+
+}
+
+\begin{thm}{Latihan}\label{ex:ABC+D}
+Andaikan $\triangle ABC$ tak degenerat.
+Andaikan $D\in [AB]$ dan $\measuredangle CAB=\measuredangle BCD$.
+Tunjukkan bahwa $CD=\tfrac{b\cdot a}c$, dengan $a=BC$, $b=CA$, dan $c=AB$.
+\end{thm}
+
+{
+
+\begin{wrapfigure}{r}{25mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-69}
+\end{wrapfigure}
+
+\begin{thm}{Latihan}\label{ex:right-perp-bi}
+Andaikan $\triangle ABC$ memiliki sudut siku-siku di~$C$.
+Misalkan $M$ merupakan titik tengah $[AB]$.
+Misalkan $P$ dan $Q$ berturut-turut menyatakan titik-titik potong garis sumbu $[AB]$ dengan sinar
+$[BC)$ dan $[AC)$.
+Tunjukkan bahwa
+\[
+4\cdot MP\cdot MQ = AB^2.
+\]
+
+\end{thm}
+
+
+}
+
+%\begin{thm}{Exercise}\label{ex:footpoints}
+%Suppose that $\triange ABC$ and $\triange A'B'C'$ are nondegenerate,
+%Assume $C'$ is a footpoint of $C$ on $(AB)$, $A'$ is a footpoint of $A$ on $(XC)$, $B'$ is a footpoint of $B$ on $(XC)$ for some point $X\in (AB)$
+%Show that $\triangle ABC\sim \triange A'B'C'$.
+%\end{thm}
+
+
+\section{Ketaksamaan Ptolemy}
+
+Suatu \index{segiempat}\emph{segiempat} didefinisikan sebagai susunan terurut empat titik berbeda di bidang.
+Keempat titik ini disebut \index{titik sudut!segiempat}\emph{titik-titik sudut}.
+Segiempat $ABCD$ juga akan dilambangkan dengan \index{25@$\square$}$\square ABCD$.
+
+Untuk suatu segiempat $ABCD$,
+keempat ruas $[AB]$, $[BC]$, $[CD]$, dan $[DA]$ disebut \index{sisi!segiempat}\emph{sisi-sisi $\square ABCD$};
+dua ruas lainnya, $[AC]$ dan $[BD]$, disebut \index{diagonal!segiempat}\emph{diagonal-diagonal $\square ABCD$}.
+
+\begin{thm}{Ketaksamaan Ptolemy}\label{ptolemy-inq}
+Pada setiap segiempat, hasil kali kedua diagonal tidak dapat melebihi jumlah hasil kali pasangan-pasangan sisi yang berhadapan;
+yaitu,
+\[AC\cdot BD\le AB\cdot CD+ BC\cdot DA\]
+untuk setiap $\square ABCD$.
+\end{thm}
+
+Kita akan menyajikan bukti klasik ketaksamaan ini dengan menggunakan metode segitiga sebangun beserta suatu konstruksi bantu.
+Bukti ini diberikan sebagai ilustrasi --- bukti tersebut tidak akan digunakan lagi selanjutnya.
+
+{
+
+\begin{wrapfigure}{o}{33mm}
+\vskip-3mm
+\centering
+\includegraphics{mppics/pic-70}
+\end{wrapfigure}
+
+\parit{Bukti.}
+Perhatikan sinar $[AX)$ sedemikian sehingga $\measuredangle BAX=\measuredangle CAD$.
+Dalam hal ini, $\measuredangle XAD\z=\measuredangle BAC$ karena jika $\measuredangle BAX$ ditambahkan pada ruas kiri dan $\measuredangle CAD$ pada ruas kanan, kedua ruas menjadi $\measuredangle BAD$.
+Kita dapat mengambil
+\[AX=\frac{AB}{AC}\cdot AD.\]
+
+}
+
+Dalam hal ini, berlaku
+\begin{align*}\frac{AX}{AD}&=\frac{AB}{AC},
+&
+\frac{AX}{AB}&=\frac{AD}{AC}.\\
+\shortintertext{Dengan demikian}
+\triangle BAX&\sim \triangle CAD,
+&
+\triangle XAD&\sim\triangle BAC.\\
+\shortintertext{Oleh karena itu}
+\frac{BX}{CD}&=\frac{AB}{AC},
+&
+\frac{XD}{BC}&=\frac{AD}{AC},
+\shortintertext{atau}
+AC\cdot BX&=AB\cdot CD,
+&
+AC\cdot XD&=BC\cdot AD.
+\end{align*}
+Dengan menjumlahkan kedua persamaan ini, kita memperoleh
+\[AC\cdot(BX+XD)=AB\cdot CD+BC\cdot AD.\]
+Yang tersisa hanyalah menerapkan ketaksamaan segitiga, $BD\le BX+XD$.
+\qeds
+
+Dengan menggunakan bukti ini bersama \ref{prop:inscribed-quadrangle}, dapat ditunjukkan bahwa kesamaan hanya berlaku jika titik-titik sudut $A$, $B$, $C$, dan $D$ terletak pada suatu garis atau lingkaran dalam urutan siklik yang sama;
+lihat juga \ref{ptolemy-id} untuk bukti lain bagi kasus kesamaan.
+Latihan~\ref{ex:ptolemy} mengisyaratkan bukti lain untuk ketaksamaan Ptolemy dengan menggunakan koordinat kompleks.

@@ -3,11 +3,11 @@
 Updated: 2026-08-22
 
 Status: active Bahasa Indonesia reader production. The front matter, Chapters
-1-5, and their exact available hint slices are complete, structurally verified,
+1-7, and their exact available hint slices are complete, structurally verified,
 and visually admitted. The GitHub repository and Unit 001 release are private.
 Zenodo record `22044358`, DOI
 `10.5281/zenodo.22044358`, retains all five files with restricted access. The
-whole book is not complete; the cursor is immediately before Chapter 6.
+whole book is not complete; the cursor is immediately before Chapter 8.
 
 The admitted core is Anton Petrunin, *Euclidean Plane and Its Relatives: A
 Minimalist Introduction*. The labeled publication witness is arXiv
@@ -137,12 +137,72 @@ source symbol `$f$`, three bounded Indonesian attachment/wording
 clarifications, and the layout-only short running title. None changes a
 mathematical claim, formula, identifier, exercise, figure, or source order.
 
-The backend now has 201 unique records and 122 relations with no dangling
-endpoints. Chapter 5 contributes eight unit-order rows, eight result records,
-eighteen exercise rows, seventeen hint records, fourteen admitted figure
-descriptions, 26 concept/dependency rows, one build artifact, one QA event, and
-five admitted correction records. JSON Schema and artifact-tool UTF-8/LF CSV
-verification pass; concept mappings remain separately pending backend review.
+Unit `o004.petrunin.ch06` adds complete Bab 6, Segitiga sebangun: four
+sections, four results, eight exercises, eight matching author hints, and four
+figures. Target hashes are
+`23c609c66ae26e627425bfd196454b4cdc7a7b11d8398265786c9234ddcdd201`
+for `similar.tex` and
+`38cdafe5f4fcbb7440d4ac9cfdb1bb6c1b0925d37de24dc0996da61de0e82273`
+for its hint slice.
+
+Two fresh Chapter 6 builds are byte-identical: 208 pages, 2,967,413 bytes,
+SHA-256
+`4c4e1b9a27b17d274834c4b828bc764519d018c73a0449842098b1e2d937146a`.
+All 224 generated MetaPost figures match across builds. PDF pages 49–54 and
+hint page 188 were inspected. All four figures and their wraps are legible,
+with no clipping, overlap, collision, or missing content. The six Chapter 6
+overfull and one underfull diagnostics are visually harmless. See
+`qa/CH06_ADMISSION_20260822.md`.
+
+Chapter 6 preserves the legacy chapter label `chap:parallel`, the legacy
+theorem-label spelling `thm:signs-of-triug`, the incompatibility between `k=1`
+and seven distinct points in `ex:k*triangle`, and inactive commented
+`\triange` spellings. The backend tracks the chapter-label note, distinctness
+inconsistency, inactive typos, and a localized Ptolemy clarification. That
+proof explicitly names the corresponding left and right sides when adding
+equal angles; this changes no mathematical claim, formula, identifier, or
+source order.
+
+The backend now has 240 unique records and 139 relations with no dangling
+endpoints. Chapter 6 contributes five unit-order rows, four result records,
+eight exercise–hint mappings, four admitted figure descriptions, 22
+concept/dependency rows, four correction/source-note records, one build
+artifact, and one QA event. JSON Schema and UTF-8/LF CSV verification pass;
+concept mappings remain separately pending backend review.
+
+Unit `o004.petrunin.ch07` adds complete Bab 7, Garis sejajar: six sections,
+eight results, twenty-one top-level exercises with three labeled subparts,
+twenty-one authored hint blocks, thirteen body figures, and two hint figures.
+The parent hint for `ex:line-coord` covers its labeled parameterization
+subpart. Target hashes are
+`3459de730c56922fe4a9e30781d3a12ce1671c735423f5eaed12175d9d5d5385`
+for `parallel.tex` and
+`1a914474041c1a1fb05a3b7f2cd46c8da279431de7d08e39ed9f72e770532280`
+for its hint slice.
+
+Two fresh Chapter 7 builds are byte-identical: 208 pages, 2,968,464 bytes,
+SHA-256
+`7fa21a42a1cdf4d78db3b1b1ae9d8db3e58ae50c3091264f4402f4b54aa0b448`.
+All 224 generated MetaPost figures match across builds. Body pages 55–65 and
+hint pages 189–190 were independently inspected; all fifteen Chapter 7 figures
+and the corrected/reflowed reader surfaces are legible, with no clipping,
+overlap, collision, off-page content, or missing material. The six Chapter 7
+overfull and three underfull diagnostics are visually harmless. See
+`qa/CH07_ADMISSION_20260822.md`.
+
+Chapter 7 preserves the legacy `chap:angle-sum`, `ex:smililar+parallel`, and
+both `ex:apolonnius` spellings. It discloses four high-confidence mathematical
+repairs, the nondegenerate-quadrangle index correction, the forced-pagebreak
+reflow, and bounded Indonesian fluency normalization. The inactive signed
+`pi/4` exercise and hint remain preserved as an upstream editorial note.
+
+The backend now has 309 unique records and 179 relations with no dangling
+catalog endpoints. Chapter 7 contributes seven unit-order rows, eight result
+records, twenty-four exercise/subpart rows, twenty-one top-level hint mappings,
+fifteen admitted figure descriptions, twenty-nine concept/dependency rows,
+twelve correction/source/localization records, one build artifact, and one QA
+event. JSON Schema and UTF-8/LF CSV verification pass; Chapter 7 concept
+mappings remain `mapped-pending-qa`.
 
 The exact publication/access receipt is
 `00_control/PUBLICATION_RECEIPT_UNIT001.json`. GitHub is private at
@@ -175,6 +235,6 @@ The three-layer architecture is frozen in
 `00_control/CURRICULUM_ARCHITECTURE.md`; the complete finite workflow is
 `00_control/00_CURRENT_GOAL_AND_WORKFLOW.md`.
 
-Next action: translate Chapter 6 (`similar.tex`) and its matching contiguous hint
-slice in source order, extend the backend, and apply the same bounded gate. Do
-not reopen the admitted Chapters 1-5 boundary.
+Next action: translate Chapter 8 (`triangle.tex`) and its matching contiguous
+hint slice in source order, extend the backend, and apply the same bounded
+gate. Do not reopen the admitted Chapters 1-7 boundary.

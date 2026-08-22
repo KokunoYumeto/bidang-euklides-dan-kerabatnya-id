@@ -1,0 +1,589 @@
+\chapter{Garis sejajar}\label{chap:angle-sum}
+
+{
+
+\begin{wrapfigure}{o}{19mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-72}
+\end{wrapfigure}
+
+Ingat bahwa sebagai akibat Aksioma~\ref{def:birkhoff-axioms:1},
+setiap dua garis berbeda $\ell$ dan $m$ memiliki tepat satu titik persekutuan atau tidak memiliki titik persekutuan sama sekali; lihat \ref{lem:line-line}.
+Dalam kasus pertama, kedua garis tersebut \index{garis berpotongan}\emph{berpotongan} (secara ringkas $\ell\nparallel m$);
+dalam kasus kedua, $\ell$ dan $m$ disebut \index{sejajar!garis}\emph{sejajar} (secara ringkas, \index{36@\hskip.4mm$\parallel$\hskip.4mm, \hskip.4mm$\nparallel$\hskip.4mm}$\ell\parallel m$);
+selain itu, suatu garis selalu dianggap sejajar dengan dirinya sendiri.
+
+}
+
+Untuk menegaskan bahwa dua garis dalam suatu gambar sejajar, kita akan menandainya dengan tanda panah sejenis.
+
+
+
+\begin{thm}[\abs]{Proposisi}\label{prop:perp-perp} Misalkan $\ell$, $m$, dan $n$ merupakan tiga garis.
+Andaikan $n\perp \ell$ dan $n\perp m$.
+Maka $\ell\parallel m$.
+\end{thm}
+
+\parit{Bukti.}
+Andaikan sebaliknya;
+yaitu, $\ell$ dan~$m$ berpotongan pada satu titik, sebutlah $Z$.
+Maka menurut Teorema~\ref{perp:ex+un},
+$\ell=m$.
+Karena setiap garis sejajar dengan dirinya sendiri, kita memperoleh $\ell\parallel m$ --- suatu kontradiksi.
+\qeds
+
+\begin{thm}{Teorema}\label{thm:parallel}
+Untuk setiap titik $P$ dan setiap garis $\ell$,
+terdapat tepat satu garis $m$
+yang melalui $P$ dan sejajar dengan~$\ell$.
+\end{thm}
+
+Teorema di atas memiliki dua bagian, yaitu keberadaan dan ketunggalan.
+Dalam bukti ketunggalan, kita akan menggunakan metode segitiga sebangun.
+
+\parit{Bukti; keberadaan.}
+Terapkan Teorema~\ref{perp:ex+un} dua kali,
+pertama untuk mengonstruksi garis $n$ melalui $P$ yang tegak lurus terhadap $\ell$,
+dan kedua untuk mengonstruksi garis $m$ melalui $P$ yang tegak lurus terhadap~$n$.
+Kemudian terapkan Proposisi~\ref{prop:perp-perp}.
+
+\parit{Ketunggalan.}
+Jika $P\in\ell$, maka $m=\ell$ menurut definisi garis sejajar.
+Sekarang, andaikan $P\notin\ell$.
+
+Mari kita mengonstruksi garis $n\ni P$ dan $m\ni P$ seperti dalam bukti keberadaan; jadi $n\perp \ell$, $m\perp n$, dan $m\parallel \ell$.
+
+Andaikan terdapat garis lain $s\ni P$ yang sejajar dengan~$\ell$.
+Pilih titik $Q\in s$ yang terletak pada sisi $m$ yang sama dengan~$\ell$.
+Misalkan $R$ adalah titik kaki tegak lurus dari $Q$ pada~$n$.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics{mppics/pic-74}
+\end{figure}
+
+Misalkan $D$ adalah titik potong $n$ dan~$\ell$.
+Menurut Proposisi~\ref{prop:perp-perp}, $(QR)\parallel m$.
+Oleh karena itu, $Q$, $R$, dan $\ell$ terletak pada sisi yang sama terhadap~$m$.
+Khususnya, $R\in [P D)$.
+
+Pilih $Z\in [P Q)$ sedemikian sehingga
+$$\frac{PZ}{PQ}=\frac{PD}{PR};$$
+titik tersebut ada menurut Latihan~\ref{ex:trig==}.
+Menurut kriteria kesebangunan SAS (atau, secara ekuivalen, menurut Aksioma~\ref{def:birkhoff-axioms:4}),
+kita memperoleh $\triangle RPQ\sim \triangle DPZ$;
+oleh karena itu, $(Z D)\perp(P D)$.
+Akibatnya, $Z$ terletak pada $\ell$ dan $s$ --- suatu kontradiksi.\qeds
+
+\begin{thm}{Akibat}\label{cor:parallel-1}
+Andaikan $\ell$, $m$, dan $n$ merupakan garis-garis
+sedemikian sehingga $\ell\parallel m$ dan $m\parallel n$.
+Maka $\ell\parallel n$.
+\end{thm}
+
+\parit{Bukti.}
+Andaikan sebaliknya; yaitu, $\ell\nparallel n$.
+Maka terdapat titik $P\in \ell\cap n$.
+Menurut Teorema~\ref{thm:parallel},
+$n=\ell$ --- suatu kontradiksi.
+\qeds
+
+Menurut definisi, $\ell\parallel m$ jika dan hanya jika $m\z\parallel \ell$.
+Oleh karena itu, menurut akibat di atas, ``$\parallel$'' merupakan suatu
+\index{relasi ekuivalensi}\emph{relasi ekuivalensi}.
+Artinya, untuk sembarang garis $\ell$, $m$, dan $n$, berlaku syarat-syarat berikut:
+\begin{enumerate}[(i)]
+\item $\ell\parallel \ell$;
+\item jika $\ell\parallel m$, maka $m\parallel \ell$;
+\item jika $\ell\parallel m$ dan $m\parallel n$, maka
+$\ell\parallel n$.
+\end{enumerate}
+
+Latihan berikut memberikan kebalikan parsial Proposisi \ref{prop:perp-perp}.
+
+\begin{thm}[!]{Latihan}\label{ex:perp-perp}
+Misalkan $k$, $\ell$, $m$, dan $n$ merupakan garis-garis.
+\begin{enumerate}[(a)]
+ \item\label{ex:perp-perp:a}
+ Andaikan $\ell\parallel m$ dan $m\perp n$.
+ Tunjukkan bahwa $\ell\perp n$.
+ \item\label{ex:perp-perp:b}
+ Andaikan $k\perp \ell$, $\ell\parallel m$, dan $m\perp n$.
+ Tunjukkan bahwa $k\parallel n$.
+\end{enumerate}
+
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:construction-parallel}
+Lakukan konstruksi dengan penggaris dan jangka untuk membuat garis yang melalui suatu titik yang diberikan dan sejajar dengan suatu garis yang diberikan.
+\end{thm}
+
+\section{Pencerminan terhadap titik}
+
+Ingat bahwa jika $O$ merupakan titik tengah ruas $[XX']$,
+maka kita mengatakan bahwa $X'$ merupakan \index{pencerminan terhadap titik}\emph{cerminan} $X$ terhadap titik $O$.
+Selain itu, kita mengasumsikan bahwa $O'=O$; yaitu, $O$ merupakan cerminan dirinya sendiri terhadap dirinya sendiri.
+
+Pernyataan berikut merupakan penyempurnaan Proposisi~\ref{prop:point-reflection}.
+
+\begin{thm}[\abs]{Proposisi}\label{prop:point-reflection+}
+Pencerminan terhadap suatu titik merupakan transformasi isometrik langsung.
+\end{thm}
+
+\parit{Bukti.}
+Pilih suatu titik $O$.
+Menurut Proposisi~\ref{prop:point-reflection}, pencerminan terhadap $O$ merupakan transformasi isometrik.
+Perhatikan bahwa setiap sudut $\angle XOY$ bertolak belakang dengan cerminannya $\angle X'OY'$.
+Menurut \ref{prop:vert}, $\measuredangle XOY\z=\measuredangle X'OY'$.
+Oleh karena itu, pencerminan tersebut tidak mungkin merupakan transformasi isometrik tak langsung.
+
+Menurut \ref{prop:direct-indirect}, setiap transformasi isometrik bersifat langsung atau tak langsung.
+Oleh karena itu, pencerminan terhadap $O$ harus bersifat langsung.
+\qeds
+
+\begin{thm}{Latihan}\label{ex:reflections}
+Andaikan $\angle AOB$ siku-siku.
+Tunjukkan bahwa komposisi pencerminan terhadap garis $(OA)$ dan $(OB)$ merupakan pencerminan terhadap $O$.
+
+Gunakan pernyataan ini dan Akibat~\ref{cor:reflection+angle} untuk menyusun bukti lain bagi~\ref{prop:point-reflection+}.
+\end{thm}
+
+{
+
+\begin{wrapfigure}{r}{23mm}
+\vskip-6mm
+\centering
+\includegraphics{mppics/pic-78}
+\end{wrapfigure}
+
+
+\begin{thm}{Teorema}\label{thm:parallel-point-reflection}
+Misalkan $\ell$ dan $m$ merupakan garis-garis yang masing-masing melalui titik $P$ dan $Q$.
+Andaikan $O$ merupakan titik tengah $[PQ]$.
+Maka $m \parallel \ell$ jika dan hanya jika $m$ merupakan cerminan $\ell$ terhadap $O$.
+\end{thm}
+
+}
+
+\parit{Bukti; bagian ``jika''.}
+Andaikan $m$ merupakan cerminan $\ell$ terhadap $O$.
+Andaikan $\ell\nparallel m$; yaitu, $\ell$ dan $m$ berpotongan pada satu titik $Z$.
+Misalkan $Z'$ menyatakan cerminan $Z$ terhadap $O$.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics{mppics/pic-80}
+\end{figure}
+
+Titik $Z'$ terletak pada kedua garis $\ell$ dan $m$.
+Akibatnya, $Z'=Z$, atau secara ekuivalen $Z=O$.
+Dalam kasus ini, $O\in \ell$, sehingga cerminan $\ell$ terhadap $O$ adalah $\ell$ itu sendiri;
+yaitu, $\ell=m$ dan khususnya $\ell\parallel m$ --- suatu kontradiksi.
+
+\parit{Bagian ``hanya jika''.}
+Misalkan $\ell'$ merupakan cerminan $\ell$ terhadap $O$.
+Menurut bagian ``jika'' dari teorema, $\ell'\parallel \ell$.
+Kedua garis $\ell'$ dan $m$ melalui $Q$.
+Menurut ketunggalan garis sejajar (\ref{thm:parallel}), jika $m\parallel \ell$, maka $\ell'=m$; dengan demikian, pernyataan terbukti.
+\qeds
+
+% Reflow id-ID: the inherited forced page break is omitted; content and order are unchanged.
+
+\section[Sifat transversal]{\hspace{1em}Sifat transversal}
+
+{
+
+\begin{wrapfigure}{r}{25mm}
+\centering
+\vskip-10mm
+\includegraphics{mppics/pic-82}
+\end{wrapfigure}
+
+Jika garis $t$ memotong masing-masing garis $\ell$ dan $m$ pada satu titik, maka kita menyebut $t$ sebagai \index{transversal}\emph{transversal} bagi $\ell$ dan~$m$.
+Sebagai contoh, pada gambar, garis $(CB)$ merupakan transversal
+bagi $(AB)$ dan~$(CD)$.
+
+}
+
+\begin{thm}{Sifat transversal}\label{thm:parallel-2}
+Misalkan $A$, $B$, $C$, dan $D$ merupakan titik-titik sedemikian sehingga $A\ne B$, $B\ne C$, dan $C\ne D$.
+Maka $(AB)\parallel(C D)$ jika dan hanya jika
+$$2\cdot(\measuredangle A B C+\measuredangle B C D)\equiv 0.
+\eqlbl{A B C + B C D}$$
+Secara ekuivalen,
+$$\measuredangle A B C+\measuredangle B C D
+\equiv
+0
+\quad
+\text{atau}
+\quad
+\measuredangle A B C+\measuredangle B C D
+\equiv
+\pi.$$
+
+Selain itu, jika $(AB)\ne(C D)$, maka dalam kasus pertama,
+$A$ dan $D$ terletak pada sisi-sisi yang berlawanan terhadap $(BC)$;
+dalam kasus kedua,
+$A$ dan $D$ terletak pada sisi yang sama terhadap~$(BC)$.
+\end{thm}
+
+
+
+\parit{Bukti; bagian ``hanya jika''.}
+Misalkan $O$ menyatakan titik tengah $[BC]$.
+
+Andaikan $(AB)\parallel(C D)$.
+Menurut Teorema~\ref{thm:parallel-point-reflection},
+$(CD)$ merupakan cerminan $(AB)$ terhadap $O$.
+
+\begin{wrapfigure}{r}{31mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-84}
+\end{wrapfigure}
+
+Misalkan $A'$ merupakan cerminan $A$ terhadap $O$.
+Maka $A'\in (CD)$ dan menurut Proposisi~\ref{prop:point-reflection+}, kita memperoleh
+\[\measuredangle ABO=\measuredangle A'CO.\eqlbl{A B O = A' C O}\]
+Perhatikan bahwa
+\[\measuredangle ABO\equiv\measuredangle ABC,
+\qquad
+\measuredangle A'CO\equiv-\measuredangle BCA'.\eqlbl{eq:A B O= A B C}
+\]
+Karena $A'$, $C$, dan $D$ terletak pada satu garis, Latihan~\ref{ex:ABCO-line} menyiratkan bahwa
+\[2\cdot \measuredangle BCD\equiv 2\cdot \measuredangle BCA'.\eqlbl{eq:2BCD= 2BCA'}\]
+Akhirnya, \ref{A B O = A' C O}, \ref{eq:A B O= A B C}, dan \ref{eq:2BCD= 2BCA'} menyiratkan \ref{A B C + B C D}.
+\qeds
+
+\parit{Bagian ``jika''.}
+Menurut Teorema~\ref{thm:parallel}, terdapat tepat satu garis $(CD)$ melalui $C$ yang sejajar dengan $(AB)$.
+Dari bagian ``hanya jika'', kita mengetahui bahwa \ref{A B C + B C D} berlaku.
+
+Di sisi lain, terdapat \textit{tepat satu} garis $(CD)$ sedemikian sehingga \ref{A B C + B C D} berlaku.
+Memang, andaikan terdapat dua garis semacam itu, $(CD)$ dan $(CD')$, maka
+$$2\cdot(\measuredangle A B C+\measuredangle B C D)\equiv 2\cdot(\measuredangle A B C+\measuredangle B C D')\equiv0.
+$$
+Oleh karena itu,
+$2\cdot\measuredangle B C D\equiv 2\cdot\measuredangle B C D'$
+dan menurut Latihan~\ref{ex:ABCO-line}, $D'\in (CD)$, atau secara ekuivalen garis $(CD)$ berimpit dengan $(CD')$.
+
+Oleh karena itu, jika \ref{A B C + B C D} berlaku, maka $(CD)\parallel (AB)$.
+
+
+\parit{Pernyataan terakhir.}
+Jika $(AB)\ne(C D)$ serta $A$ dan $D$ terletak pada sisi-sisi yang berlawanan terhadap $(BC)$, maka $\angle ABC$ dan $\angle BCD$ memiliki tanda yang berlawanan.
+Oleh karena itu,
+\[-\pi\z<\measuredangle A B C+\measuredangle B C D<\pi.\]
+Dengan menerapkan \ref{A B C + B C D}, kita memperoleh $\measuredangle A B C+\measuredangle B C D=0$.
+
+Demikian pula, jika $A$ dan $D$ terletak pada sisi yang sama terhadap $(BC)$,
+maka $\angle ABC$ dan $\angle BCD$ memiliki tanda yang sama.
+Oleh karena itu,
+\[0<|\measuredangle A B C+\measuredangle B C D|<2\cdot\pi,\]
+dan \ref{A B C + B C D} menyiratkan bahwa $\measuredangle A B C+\measuredangle B C D\z\equiv\pi$.
+\qeds
+
+\begin{thm}{Latihan}\label{ex:parallel-angles}
+Andaikan $(AB) \parallel (A'B')$ dan $(BC) \parallel (B'C')$.
+Tunjukkan bahwa
+$2\cdot \measuredangle ABC \equiv 2\cdot \measuredangle A'B'C'$.
+Simpulkan bahwa salah satu dari
+\[
+\measuredangle ABC \equiv \measuredangle A'B'C' \quad \text{atau} \quad \measuredangle ABC \equiv \pi + \measuredangle A'B'C',
+\]
+berlaku, dan gambarlah sepasang sudut untuk mengilustrasikan setiap kasus.
+\end{thm}
+
+
+\begin{thm}[!]{Latihan}\label{ex:smililar+parallel}
+Misalkan $\triangle ABC$ merupakan segitiga tak degenerat, dan andaikan $P$ terletak di antara $A$ dan $B$.
+Andaikan suatu garis $\ell$ melalui $P$ dan sejajar dengan $(AC)$.
+Tunjukkan bahwa $\ell$ memotong sisi $[BC]$ pada satu titik lain, sebutlah $Q$, dan
+\[\triangle ABC\sim\triangle PBQ.\]
+Khususnya, $\tfrac{PB}{AB}=\tfrac{QB}{CB}$.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:trisection}
+Bagilah suatu ruas yang diberikan menjadi tiga bagian sama panjang dengan penggaris dan jangka.
+\end{thm}
+
+\section{Sudut-sudut segitiga}
+
+\begin{thm}{Teorema}\label{thm:3sum}
+Pada setiap $\triangle A B C$, berlaku
+$$\measuredangle A B C+ \measuredangle B C A + \measuredangle C A B \equiv \pi.$$
+
+\end{thm}
+
+\parit{Bukti.}
+Jika $\triangle A B C$ degenerat, maka kesamaan tersebut mengikuti Akibat~\ref{cor:degenerate=pi}.
+Sekarang, andaikan $\triangle A B C$ tak degenerat.
+
+Misalkan $X$ merupakan cerminan $C$ terhadap titik tengah $M$ dari $[AB]$.
+Menurut Proposisi~\ref{prop:point-reflection+},
+$\measuredangle BAX\z=\measuredangle ABC$.
+Perhatikan bahwa $(AX)$ merupakan cerminan $(CB)$ terhadap $M$;
+oleh karena itu, menurut Teorema~\ref{thm:parallel-point-reflection}, $(AX)\z\parallel (CB)$.
+
+
+\begin{wrapfigure}{o}{23mm}
+\centering
+\vskip-0mm
+\includegraphics{mppics/pic-86}
+\end{wrapfigure}
+
+Karena $[BM]$ dan $[MX]$ tidak memotong $(CA)$,
+titik-titik $B$, $M$, dan $X$ terletak pada sisi yang sama terhadap $(CA)$.
+Dengan menerapkan sifat transversal pada transversal $(CA)$ bagi $(AX)$ dan $(CB)$, kita memperoleh
+\[\measuredangle BCA+\measuredangle CAX\equiv \pi.\eqlbl{eq:ABC+CAB}\]
+
+Karena $\measuredangle BAX=\measuredangle ABC$,
+berlaku
+\[\measuredangle CAX\equiv\measuredangle CAB+\measuredangle ABC.\]
+Identitas terakhir ini dan \ref{eq:ABC+CAB} menyiratkan teorema.\qeds
+
+\begin{thm}[!]{Latihan kelas}\label{ex:|3sum|}
+Tunjukkan bahwa
+$$|\measuredangle A B C|+ |\measuredangle B C A| + |\measuredangle C A B| = \pi$$
+untuk setiap $\triangle ABC$.
+\end{thm}
+
+{
+
+\begin{wrapfigure}{r}{30mm}
+\vskip-0mm
+\centering
+\includegraphics{mppics/pic-88}
+\vskip4mm
+\includegraphics{mppics/pic-90}
+%\vskip4mm
+%\includegraphics{mppics/pic-92}
+\end{wrapfigure}
+
+\begin{thm}{Latihan}\label{ex:pent}
+Misalkan $\triangle ABC$ merupakan segitiga tak degenerat.
+Andaikan terdapat titik $D\in [BC]$
+sedemikian sehingga
+\[\measuredangle BAD=\measuredangle DAC,
+\quad
+BA=AD=DC.\]
+Tunjukkan bahwa $\measuredangle CBA= \measuredangle BAC$ dan $AC=BC$.
+\end{thm}
+
+
+\begin{thm}{Latihan}\label{ex:right-isos}
+Misalkan $\triangle ABC$ merupakan segitiga sama kaki tak degenerat dengan alas~$[AC]$.
+Andaikan $D$ merupakan cerminan $A$ terhadap $B$.
+Tunjukkan bahwa $\angle ACD$ siku-siku.
+\end{thm}
+
+
+
+%\begin{thm}{Exercise}\label{ex:pi/4-isos}
+%Let $\triangle ABC$ be an isosceles nondegenerate triangle with base~$[AC]$.
+%Assume that a circle is passing thru $A$, centered at a point on $[AB]$, and tangent to $(BC)$ at the point~$X$.
+%Show that $\measuredangle CAX\z=\pm\tfrac\pi4$.
+%\end{thm}
+
+}
+
+\begin{thm}[!]{Latihan}\label{ex:quadrangle}
+Tunjukkan bahwa untuk setiap segiempat $ABCD$, berlaku
+$$\measuredangle ABC+\measuredangle BCD+\measuredangle CDA+\measuredangle DAB\equiv 0.$$
+
+\end{thm}
+
+
+\section{Jajar genjang}
+
+{
+
+\begin{wrapfigure}{r}{26mm}
+\vskip-10mm
+\centering
+\includegraphics{mppics/pic-94}
+\end{wrapfigure}
+
+Suatu segiempat $ABCD$ di bidang Euklides disebut \index{segiempat!segiempat tak degenerat}\index{tak degenerat!segiempat}\emph{tak degenerat} jika tidak ada tiga dari titik-titik $A,B,C,D$ yang terletak pada satu garis.
+
+}
+
+Suatu segiempat tak degenerat disebut \index{jajar genjang}\emph{jajar genjang}
+jika sisi-sisi yang berhadapan saling sejajar.
+
+
+
+\begin{thm}{Lema}\label{lem:parallelogram}
+Setiap jajar genjang \index{simetri pusat}\emph{simetris pusat} terhadap titik tengah salah satu diagonalnya;
+yaitu, pencerminan terhadap titik tengah tersebut memetakan jajar genjang itu ke dirinya sendiri.
+
+Khususnya, jika $\square A B C D$ merupakan jajar genjang, maka
+\begin{enumerate}[(a)]
+\item\label{lem:parallelogram:midpoint} diagonal-diagonalnya $[AC]$ dan $[BD]$ saling berpotongan di titik tengah keduanya;
+\item $\measuredangle A B C= \measuredangle C D A$;
+\item $AB=CD$.
+\end{enumerate}
+\end{thm}
+
+{
+
+\begin{wrapfigure}{r}{33mm}
+\centering
+\includegraphics{mppics/pic-96}
+\end{wrapfigure}
+
+\parit{Bukti.} Misalkan $\square A B C D$ merupakan jajar genjang.
+Misalkan $M$ menyatakan titik tengah $[AC]$.
+
+Karena $(AB)\parallel (CD)$, Teorema~\ref{thm:parallel-point-reflection} menyiratkan bahwa $(CD)$ merupakan cerminan $(AB)$ terhadap $M$.
+Dengan cara yang sama, $(BC)$ merupakan cerminan $(DA)$ terhadap $M$.
+Karena $\square A B C D$ tak degenerat, diperoleh bahwa $D$ merupakan cerminan $B$ terhadap $M$; dengan kata lain, $M$ merupakan titik tengah $[BD]$.
+
+Pernyataan-pernyataan lainnya mengikuti karena pencerminan terhadap $M$ merupakan transformasi isometrik langsung pada bidang (lihat \ref{prop:point-reflection+}).
+\qeds
+
+}
+
+\begin{thm}{Latihan}\label{ex:4parallels}
+Andaikan titik $P$ berbeda dari titik-titik sudut suatu jajar genjang $ABCD$.
+Misalkan $a$, $b$, $c$, dan $d$ merupakan garis-garis yang melalui titik $A$, $B$, $C$, dan $D$ sedemikian sehingga
+$a\parallel (CP)$,
+$b\parallel (DP)$,
+$c\parallel (AP)$, dan
+$d\parallel (BP)$.
+Tunjukkan bahwa garis-garis $a$, $b$, $c$, dan $d$ berpotongan pada satu titik.
+\end{thm}
+
+
+\begin{thm}{Latihan}\label{ex:romb}
+Andaikan $ABCD$ merupakan segiempat sedemikian sehingga
+\[AB=CD=BC=DA.\]
+Tunjukkan bahwa $ABCD$ merupakan jajar genjang.
+\end{thm}
+
+Segiempat seperti dalam latihan di atas disebut \index{belah ketupat}\emph{belah ketupat}.
+
+Suatu segiempat $ABCD$ disebut \index{persegi panjang}\emph{persegi panjang} jika sudut-sudut $ABC$, $BCD$, $CDA$, dan $DAB$ siku-siku.
+Menurut sifat transversal (\ref{thm:parallel-2}),
+setiap persegi panjang merupakan jajar genjang.
+
+Persegi panjang yang semua sisinya sama panjang disebut \index{persegi}\emph{persegi}.
+
+\begin{thm}{Latihan}\label{ex:rectangle}
+Tunjukkan bahwa suatu jajar genjang $ABCD$ merupakan persegi panjang
+jika dan hanya jika $AC=BD$.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:romb2}
+Tunjukkan bahwa suatu jajar genjang $ABCD$ merupakan belah ketupat
+jika dan hanya jika $(AC)\perp (BD)$.
+\end{thm}
+
+Andaikan $\ell\parallel m$ dan $X,Y\in m$.
+Misalkan $X'$ dan $Y'$ berturut-turut menyatakan titik kaki tegak lurus dari $X$ dan $Y$ pada~$\ell$.
+Perhatikan bahwa $\square XYY'X'$ merupakan persegi panjang.
+Menurut Lema~\ref{lem:parallelogram}, $XX'=YY'$.
+Artinya, setiap titik pada $m$ memiliki jarak yang sama dari $\ell$.
+Jarak ini disebut \index{jarak!antara garis sejajar}\emph{jarak antara} $\ell$ dan~$m$.
+
+\begin{thm}{Latihan}\label{ex:inscribed-rhombus}
+Suatu belah ketupat $AXYZ$ dengan panjang sisi $s$ terinskripsi dalam segitiga tak degenerat $ABC$ sedemikian sehingga $X\in [AB]$, $Y\in [BC]$, dan $Z\in[CA]$.
+Tunjukkan bahwa $s=\sqrt{XB\cdot ZC}$.
+\end{thm}
+
+\section{Metode koordinat}
+
+Latihan berikut penting;
+latihan tersebut menunjukkan bahwa definisi aksiomatik kita sesuai dengan model yang diuraikan dalam Bagian~\ref{page:model}.
+
+
+\begin{thm}{Latihan}\label{ex:coordinates}
+Misalkan $\ell$ dan $m$ merupakan dua garis yang saling tegak lurus di bidang Euklides.
+Untuk suatu titik $P$, misalkan $P_\ell$ dan $P_m$ berturut-turut menyatakan titik kaki tegak lurus dari $P$ pada $\ell$ dan $m$.
+
+\begin{enumerate}[(a)]
+\item Tunjukkan bahwa untuk setiap $X\in \ell$ dan $Y\in m$, terdapat tepat satu titik $P$ sedemikian sehingga $P_\ell=X$ dan $P_m=Y$.
+\end{enumerate}
+
+\begin{enumerate}[(a)]\addtocounter{enumi}{1}
+\item
+Tunjukkan bahwa
+$PQ^2=P_\ell Q_\ell^2+P_mQ_m^2$
+untuk setiap pasangan titik $P$ dan~$Q$.
+\end{enumerate}
+
+\begin{enumerate}[(a)]\addtocounter{enumi}{2}
+\item Simpulkan bahwa bidang tersebut isometrik dengan $(\mathbb{R}^2,d_2)$; lihat \ref{sec:Metric spaces}.
+\end{enumerate}
+
+\end{thm}
+
+\begin{wrapfigure}{r}{37mm}
+\centering
+\includegraphics{mppics/pic-98}
+\end{wrapfigure}
+
+Setelah latihan ini diselesaikan, kita dapat menerapkan
+metode koordinat
+untuk menyelesaikan sembarang masalah dalam geometri bidang Euklides.
+Metode ini kuat dan universal;
+metode tersebut akan dikembangkan lebih lanjut dalam Bab~\ref{chap:complex}.
+
+\begin{thm}{Latihan}\label{ex:abc}
+Gunakan Latihan~\ref{ex:coordinates}
+untuk memberikan bukti alternatif bagi Teorema~\ref{thm:abc} di bidang Euklides.
+
+Yaitu, buktikan bahwa untuk bilangan-bilangan real $a$, $b$, dan $c$ yang memenuhi
+ $$0<a\le b\le c\le a+b,$$
+terdapat suatu segitiga $ABC$
+sedemikian sehingga $a=BC$, $b=CA$, dan $c=AB$.
+\end{thm}
+
+\begin{thm}[!]{Latihan}\label{ex:line-coord}
+Perhatikan dua titik berbeda $A=(x_A,y_A)$ dan $B\z=(x_B,y_B)$ pada bidang koordinat.
+Tunjukkan bahwa garis sumbu $[AB]$ dinyatakan oleh persamaan
+\[2\cdot (x_B-x_A)\cdot x+2\cdot (y_B-y_A)\cdot y=x_B^2+y_B^2-x_A^2-y_A^2.\]
+
+Simpulkan bahwa suatu garis dapat didefinisikan sebagai himpunan bagian bidang koordinat dalam salah satu bentuk berikut:
+\begin{enumerate}[(a)]
+\item Himpunan solusi suatu persamaan $a\cdot x+b\cdot y=c$
+untuk konstanta $a$, $b$, dan $c$ sedemikian sehingga $a\ne 0$ atau $b\ne0$.
+\item\label{ex:line-coord:parameter} Himpunan titik $(a\cdot t+c,b\cdot t+d)$ untuk semua $t\in \mathbb{R}$, dengan $a$, $b$, $c$, dan $d$ merupakan konstanta yang memenuhi $a\ne 0$ atau $b\ne0$.
+\end{enumerate}
+
+\end{thm}
+
+\section{Lingkaran Apollonius}\label{sec:Apollonian circle}
+Latihan-latihan dalam bagian ini mengilustrasikan metode koordinat; latihan-latihan tersebut tidak akan digunakan lagi selanjutnya.
+
+\begin{thm}{Latihan}\label{ex:circle-coord}
+Tunjukkan bahwa untuk nilai-nilai real tetap $a$, $b$, dan $c$, persamaan
+\[x^2+y^2+a\cdot x+b\cdot y+c=0\]
+menggambarkan suatu lingkaran, suatu titik, atau himpunan kosong.
+
+Tunjukkan bahwa jika persamaan tersebut menggambarkan suatu lingkaran, maka $(-\tfrac a2,-\tfrac b2)$ merupakan pusatnya,
+dan $r\z=\tfrac12\cdot \sqrt{a^2+b^2-4\cdot c}$ merupakan jari-jarinya.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:apolonnius}
+Gunakan latihan sebelumnya untuk menunjukkan bahwa, untuk suatu bilangan real positif $k\ne1$,
+lokus titik-titik $M$ yang memenuhi $AM=k\cdot BM$,
+dengan $A$ dan $B$ dua titik berbeda,
+merupakan suatu lingkaran.
+\end{thm}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics{mppics/pic-100}
+\end{figure}
+
+Lingkaran dalam latihan di atas merupakan contoh dari apa yang disebut \index{lingkaran Apollonius}\emph{lingkaran Apollonius dengan fokus $A$ dan $B$}.
+Beberapa lingkaran semacam ini untuk nilai $k$ yang berbeda ditunjukkan pada gambar;
+untuk $k=1$, lingkaran tersebut menjadi garis sumbu $[AB]$.
+
+
+\begin{thm}{Latihan}\label{ex:apolonnius-construction}
+Andaikan $A\ne B$, $M\notin\{A,B\}$, dan $AM\ne BM$.
+Dengan penggaris dan jangka, konstruksilah lingkaran Apollonius dengan fokus $A$ dan $B$ yang diberikan dan melalui suatu titik $M$ yang diberikan.
+\end{thm}

@@ -67,3 +67,33 @@ O004-TERM-0065,diameter,diameter,,circle-geometry,admitted
 O004-TERM-0066,secant line,garis sekan,garis potong (contextual),circle-geometry,admitted
 O004-TERM-0067,tangent line,garis singgung,,circle-geometry,admitted
 O004-TERM-0068,tangent circles,lingkaran bersinggungan,lingkaran tangen (contextual),circle-geometry,admitted
+O004-TERM-0069,similar triangles,segitiga sebangun,,triangle-geometry,admitted
+O004-TERM-0070,similarity coefficient,koefisien kesebangunan,faktor skala (contextual),triangle-geometry,admitted
+O004-TERM-0071,corresponding sides,sisi-sisi yang bersesuaian,,triangle-geometry,admitted
+O004-TERM-0072,corresponding angles,sudut-sudut yang bersesuaian,,triangle-geometry,admitted
+O004-TERM-0073,similarity criterion,kriteria kesebangunan,syarat kesebangunan,triangle-geometry,admitted
+O004-TERM-0074,angle-preserving transformation,transformasi pelestari sudut,,transformation-geometry,admitted
+O004-TERM-0075,hypotenuse,hipotenusa,,triangle-geometry,admitted
+O004-TERM-0076,legs of a right triangle,sisi-sisi siku-siku,kaki-kaki segitiga (noncanonical),triangle-geometry,admitted
+O004-TERM-0077,Pythagorean theorem,teorema Pythagoras,,triangle-geometry,admitted
+O004-TERM-0078,method of similar triangles,metode segitiga sebangun,,triangle-geometry,admitted
+O004-TERM-0079,quadrangle,segiempat,,plane-geometry,admitted
+O004-TERM-0080,Ptolemy inequality,ketaksamaan Ptolemy,,plane-geometry,admitted
+O004-TERM-0081,cyclic order,urutan siklik,,circle-geometry,admitted
+O004-TERM-0082,parallel lines,garis sejajar,,plane-geometry,admitted
+O004-TERM-0083,intersecting lines,garis berpotongan,,plane-geometry,admitted
+O004-TERM-0084,point reflection,pencerminan terhadap titik,,transformation-geometry,admitted
+O004-TERM-0085,reflection image,cerminan,bayangan pencerminan (contextual),transformation-geometry,admitted
+O004-TERM-0086,transversal,transversal,garis transversal,plane-geometry,admitted
+O004-TERM-0087,transversal property,sifat transversal,,plane-geometry,admitted
+O004-TERM-0088,centrally symmetric,simetris pusat,,transformation-geometry,admitted
+O004-TERM-0089,parallelogram,jajar genjang,,plane-geometry,admitted
+O004-TERM-0090,rhombus,belah ketupat,,plane-geometry,admitted
+O004-TERM-0091,rectangle,persegi panjang,,plane-geometry,admitted
+O004-TERM-0092,square,persegi,,plane-geometry,admitted
+O004-TERM-0093,distance between parallel lines,jarak antara garis sejajar,,metric-geometry,admitted
+O004-TERM-0094,coordinate method,metode koordinat,,analytic-geometry,admitted
+O004-TERM-0095,coordinate plane,bidang koordinat,,analytic-geometry,admitted
+O004-TERM-0096,locus,lokus,,analytic-geometry,admitted
+O004-TERM-0097,Apollonius circle,lingkaran Apollonius,,circle-geometry,admitted
+O004-TERM-0098,focus (Apollonius circle),fokus,,circle-geometry,admitted

@@ -132,3 +132,39 @@ retain the complete visible title. The two fresh 207-page full-context PDFs are
 byte-identical and all fourteen Chapter 5 figures are visually admitted. The
 full-context PDF contains English Chapter 6+ material and remains private QA
 evidence. Advance the cursor to Chapter 6, `similar.tex`.
+
+## D018 — Chapter 6 admission and preserved source notes
+
+Admit complete Chapter 6 and all eight authored hints after structural,
+language, deterministic-build, and visual checks. Preserve the inherited
+legacy chapter label `chap:parallel`, theorem-label spelling
+`thm:signs-of-triug`, the `k=1` distinctness inconsistency in
+`ex:k*triangle`, and the inactive commented `\triange` spellings without
+silently editing the authority. The Ptolemy proof may explicitly identify the
+left and right sides to which equal angles are added; this is a localized
+fluency clarification and changes no mathematics. The two fresh 208-page
+full-context PDFs and all 224 generated MetaPost files are byte-identical.
+Pages 49–54 and hint page 188 are visually admitted; the full-context PDF
+contains English Chapter 7+ material and remains private QA evidence. Advance
+the cursor to Chapter 7, `parallel.tex`.
+
+## D019 — Chapter 7 admission, bounded corrections, and reflow
+
+Admit complete Chapter 7 and its twenty-one authored hint blocks after
+structural, language, deterministic-build, backend, and visual checks. Preserve
+the legacy `chap:angle-sum`, `ex:smililar+parallel`, and both
+`ex:apolonnius` spellings as immutable source identities. Apply four
+high-confidence mathematical repairs: the point-reflection proof's incidence
+point is `Q`, not `P`; the `ex:romb` sign argument needs `D\ne B`, not
+`D\ne C`; the `ex:romb2` SSS argument begins from `AB=AD`, not the automatic
+parallelogram equality `AB=CD`; and the Apollonius construction states the
+three hypotheses needed for a nondegenerate determined circle. Correct the
+two nondegenerate-quadrangle index keys without changing displayed content.
+Remove the inherited unexplained forced page break and inset the following
+visible heading by one em to obtain a clean reflow; mathematics, identifiers,
+order, and running/contents title remain unchanged. Preserve the inactive
+signed-`pi/4` exercise and hint as an upstream editorial note. Two fresh
+208-page full-context PDFs and all 224 generated MetaPost files are
+byte-identical. Body pages 55–65 and hint pages 189–190 are visually admitted;
+the full-context PDF contains English Chapter 8+ material and remains private
+QA evidence. Advance the cursor to Chapter 8, `triangle.tex`.

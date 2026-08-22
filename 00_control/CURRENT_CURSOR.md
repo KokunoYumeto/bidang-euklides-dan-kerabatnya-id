@@ -3,7 +3,8 @@
 Updated: 2026-08-22
 
 Current admitted unit IDs: `o004.petrunin.front-ch01`, `o004.petrunin.ch02`,
-`o004.petrunin.ch03`, `o004.petrunin.ch04`, `o004.petrunin.ch05`
+`o004.petrunin.ch03`, `o004.petrunin.ch04`, `o004.petrunin.ch05`,
+`o004.petrunin.ch06`, `o004.petrunin.ch07`
 
 Completed and frozen:
 
@@ -65,20 +66,62 @@ Completed and frozen:
     visible title is unchanged. One undefined source `$f$` is rendered as the
     already-introduced isometric transformation; three further wording
     clarifications change no mathematics or identifiers.
+21. `similar.tex` — complete Bab 6, four sections, four results, eight
+    exercises, and four figures; 11,244 bytes, SHA-256
+    `23c609c66ae26e627425bfd196454b4cdc7a7b11d8398265786c9234ddcdd201`.
+22. `hints.tex` — complete Chapter 6 slice, target lines 562–607, eight
+    matching authored hints; 2,353 bytes, SHA-256
+    `38cdafe5f4fcbb7440d4ac9cfdb1bb6c1b0925d37de24dc0996da61de0e82273`.
+23. Chapter 6 backend: five unit-order rows, four result records, eight
+    exercise–hint mappings, four admitted figure descriptions, 22
+    concept/dependency rows, four correction/source-note records, one build
+    artifact, and one QA event. The catalog has 240 records and 139 relations
+    with zero dangling endpoints; concept mappings remain pending their
+    separate backend review.
+24. The inherited `chap:parallel`, `thm:signs-of-triug`, `k=1`
+    distinctness inconsistency, and inactive `\triange` spellings are recorded
+    without source repair. The Ptolemy proof's explicit left/right-side wording
+    is admitted as a nonmathematical localization clarification.
+25. `parallel.tex` — complete Bab 7, six sections, eight results, twenty-one
+    top-level exercises with three labeled subparts, and thirteen body figures;
+    22,352 bytes, SHA-256
+    `3459de730c56922fe4a9e30781d3a12ce1671c735423f5eaed12175d9d5d5385`.
+26. `hints.tex` — complete Chapter 7 slice, target lines 608–792,
+    twenty-one authored hint blocks and two hint figures; 6,855 bytes,
+    SHA-256
+    `1a914474041c1a1fb05a3b7f2cd46c8da279431de7d08e39ed9f72e770532280`.
+    The labeled subpart `ex:line-coord:parameter` is covered by its parent
+    `ex:line-coord` hint.
+27. Chapter 7 backend: seven unit-order rows, eight result records,
+    twenty-four exercise/subpart rows, twenty-one top-level hint mappings,
+    fifteen admitted figure descriptions, twenty-nine concept/dependency rows,
+    twelve correction/source/localization records, one build artifact, and one
+    QA event. The catalog has 309 records and 179 relations with zero dangling
+    endpoints; concept mappings remain `mapped-pending-qa`.
+28. Four high-confidence mathematical repairs, one index correction, one
+    layout-only reflow, and bounded Indonesian fluency normalization are
+    admitted and disclosed in `qa/CH07_ADMISSION_20260822.md`. Legacy and
+    misspelled source IDs and the inactive signed-`pi/4` material remain
+    preserved.
 
-Current production boundary: immediately before Chapter 6 (`similar.tex`) and
-at the Chapter 6 hint marker on target line 562. The translated hint prefix
-before that marker is 19,859 bytes, SHA-256
-`f2d9f4153457a500482d1f480c07a18d62d2ac2440138f9cf927f93ae1c522b0`.
-Chapter 6+ remains byte-identical to authority.
+Current production boundary: immediately before Chapter 8 (`triangle.tex`) and
+at its hint marker on target line 793. The translated hint prefix through
+Chapter 7 is 29,067 bytes, SHA-256
+`46c00e637aa948158b9e3ac7a5b38379bb367ec9c90f2c560d010f151c3b814c`.
 
-Chapter 6 authority and current target `similar.tex` are identical: 10,655
-bytes, SHA-256
-`75dd3b1b3eca732b2744a7d61f37356c6078cf57f59f8bd5413f6de8205b8d1a`.
-Its exact authority hint slice is source lines 562-607, 2,092 bytes, SHA-256
-`ccda006b21c6fac93216f50518fc938a0c1825ae70b66182afdac63793eb4808`.
-The Chapter 7+ suffix is 70,880 bytes, SHA-256
-`5cb477a32870e20435d7cb6978a361b33ddead279f26dbec5814f57b4100d474`.
+Chapter 8 authority and current target `triangle.tex` are byte-identical:
+14,691 bytes, SHA-256
+`95e4d8050e38af8da76ed24c48277550bfe7cdf8c1a7274887d6f853e4429948`.
+Its exact authority hint slice is target lines 793–871, 3,032 bytes, SHA-256
+`9094d0267cd658585f398bf029934f4a3af9eec2069ecfd18451fa5a3fc2ad8d`.
+The translated prose action begins after the preserved marker/counter lines,
+at line 797, and ends at line 870. The Chapter 9+ suffix begins at line 872 and
+is byte-identical to authority: 61,744 bytes, SHA-256
+`2ea9859cf7143c6f56069ad802df4c1e295839f8729408a0f72ee8884e205afd`.
+Chapter 8 contains thirteen exercises, thirteen directly matching authored
+hint blocks, nine body figures, and no hint figures. Preserve the immutable
+`ex:midle` and `ex:ext-disect` spellings and record the source's
+proposition/lemma and external/exterior-bisector terminology inconsistencies.
 
 Artifact boundary: the locally admitted 19-page partial reader has SHA-256
 `1a6909ab8c315fe2529d9267c3d539def1e1f68667bc432d8bf40059dd91a452`.
@@ -100,7 +143,15 @@ Chapter 5 admission evidence is `qa/CH05_ADMISSION_20260822.md`; its two fresh
 full-context builds are 207 pages, 2,965,782 bytes, SHA-256
 `6ca6402e66b5ab0a048697bf0478a00548e1c5a64096d605fbd95947c21994ee`.
 
-Immediate cursor action: translate Chapter 6 (`similar.tex`) and its matching
+Chapter 6 admission evidence is `qa/CH06_ADMISSION_20260822.md`; its two fresh
+full-context builds are 208 pages, 2,967,413 bytes, SHA-256
+`4c4e1b9a27b17d274834c4b828bc764519d018c73a0449842098b1e2d937146a`.
+
+Chapter 7 admission evidence is `qa/CH07_ADMISSION_20260822.md`; its two fresh
+full-context builds are 208 pages, 2,968,464 bytes, SHA-256
+`7fa21a42a1cdf4d78db3b1b1ae9d8db3e58ae50c3091264f4402f4b54aa0b448`.
+
+Immediate cursor action: translate Chapter 8 (`triangle.tex`) and its matching
 contiguous hints, then extend the backend and perform one bounded gate.
-Translation remains dominant; do not reopen the admitted Chapters 1-5
+Translation remains dominant; do not reopen the admitted Chapters 1-7
 boundary.

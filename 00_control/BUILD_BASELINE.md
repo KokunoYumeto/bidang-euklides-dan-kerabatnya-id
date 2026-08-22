@@ -171,3 +171,60 @@ are unchanged by the repair; the repaired page 45 was inspected separately.
 
 The full-context PDF still contains English Chapter 6+ material. It is private
 build/QA evidence and is not a release artifact.
+
+## Chapter 6 deterministic admission boundary
+
+Two fresh output directories, `build/ch06-final-a-20260822` and
+`build/ch06-final-b-20260822`, built from the exact final Chapter 6 body and
+hint bytes, produced identical results:
+
+- PDF: 208 pages; 2,967,413 bytes;
+- SHA-256: `4c4e1b9a27b17d274834c4b828bc764519d018c73a0449842098b1e2d937146a`;
+- 224 generated `.mps` files; zero cross-build hash mismatches;
+- normalized CC badge SHA-256
+  `7167e45adcc360f116b77210a2e452308e2b8fffd84106f1ea69045cb5be9928`;
+- normalized H2checkers SHA-256
+  `61a45915d8630a8df63bd9b9ecb095ab9fe6d6671b3360f814bea97ce9a8d885`.
+
+The converged log has zero undefined references/citations and no fatal error.
+It reports 51 overfull and 32 underfull boxes plus the inherited group warning.
+Chapter 6 contributes six overfull and one underfull diagnostic; rendered
+inspection confirms that none clips, collides, or obscures reader content.
+
+Pages 49–54 and hint page 188 were rendered at 150 dpi and inspected. All four
+Chapter 6 figures are present, sharp, and correctly wrapped. Page 54's open
+space is the genuine end of the short chapter, and the mixed-language boundary
+on hint page 188 cleanly separates the admitted Chapter 6 hints from English
+Chapter 7 QA context.
+
+The full-context PDF still contains English Chapter 7+ material. It is private
+build/QA evidence and is not a release artifact.
+
+## Chapter 7 deterministic admission boundary
+
+Two fresh output directories, `build/ch07-final-e-20260822` and
+`build/ch07-final-f-20260822`, built from the exact final Chapter 7 body and
+hint bytes, produced identical results:
+
+- PDF: 208 pages; 2,968,464 bytes;
+- SHA-256: `7fa21a42a1cdf4d78db3b1b1ae9d8db3e58ae50c3091264f4402f4b54aa0b448`;
+- 224 generated `.mps` files; zero cross-build hash mismatches;
+- normalized CC badge SHA-256
+  `7167e45adcc360f116b77210a2e452308e2b8fffd84106f1ea69045cb5be9928`;
+- normalized H2checkers SHA-256
+  `61a45915d8630a8df63bd9b9ecb095ab9fe6d6671b3360f814bea97ce9a8d885`.
+
+The converged log has zero undefined references/citations and no fatal error.
+It reports 55 overfull and 39 underfull boxes plus the inherited group warning.
+Chapter 7 contributes six overfull and three underfull diagnostics; rendered
+inspection confirms that none clips, collides, or obscures reader content.
+
+Body pages 55–65 and hint pages 189–190 were rendered at 150 dpi and
+independently inspected. All thirteen body figures and both hint figures are
+present and legible. The corrected incidence point is visible on page 58; the
+reflowed `Sifat transversal` heading is clean; the added Apollonius hypotheses
+are readable on page 64; and the transition to untranslated Chapter 8 context
+on page 65 is explicit. See `qa/CH07_ADMISSION_20260822.md`.
+
+The full-context PDF still contains English Chapter 8+ material. It is private
+build/QA evidence and is not a release artifact.

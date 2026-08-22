@@ -39,3 +39,15 @@ order,unit_id,entity_kind,source_local_id,source_path,translation_state
 38,o004.petrunin.ch05.s05,section,direct motion,perp.tex,admitted
 39,o004.petrunin.ch05.s06,section,sec:perp<oblique,perp.tex,admitted
 40,o004.petrunin.ch05.s07,section,,perp.tex,admitted
+41,o004.petrunin.ch06,chapter,chap:parallel,similar.tex,admitted
+42,o004.petrunin.ch06.s01,section,,similar.tex,admitted
+43,o004.petrunin.ch06.s02,section,,similar.tex,admitted
+44,o004.petrunin.ch06.s03,section,,similar.tex,admitted
+45,o004.petrunin.ch06.s04,section,,similar.tex,admitted
+46,o004.petrunin.ch07,chapter,chap:angle-sum,parallel.tex,translated-admitted
+47,o004.petrunin.ch07.s01,section,,parallel.tex,translated-admitted
+48,o004.petrunin.ch07.s02,section,,parallel.tex,translated-admitted
+49,o004.petrunin.ch07.s03,section,,parallel.tex,translated-admitted
+50,o004.petrunin.ch07.s04,section,,parallel.tex,translated-admitted
+51,o004.petrunin.ch07.s05,section,,parallel.tex,translated-admitted
+52,o004.petrunin.ch07.s06,section,sec:Apollonian circle,parallel.tex,translated-admitted

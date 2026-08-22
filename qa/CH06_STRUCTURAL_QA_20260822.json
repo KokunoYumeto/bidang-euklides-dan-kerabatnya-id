@@ -1,0 +1,132 @@
+{
+  "schema": "o004-ch06-qa-v0",
+  "status": "pass",
+  "authority": {
+    "chapter_bytes": 10655,
+    "chapter_sha256": "75dd3b1b3eca732b2744a7d61f37356c6078cf57f59f8bd5413f6de8205b8d1a",
+    "hint_slice_bytes": 2092,
+    "hint_slice_sha256": "ccda006b21c6fac93216f50518fc938a0c1825ae70b66182afdac63793eb4808",
+    "later_suffix_bytes": 70880,
+    "later_suffix_sha256": "5cb477a32870e20435d7cb6978a361b33ddead279f26dbec5814f57b4100d474"
+  },
+  "target": {
+    "chapter_bytes": 11244,
+    "chapter_sha256": "23c609c66ae26e627425bfd196454b4cdc7a7b11d8398265786c9234ddcdd201",
+    "hint_slice_bytes": 2353,
+    "hint_slice_sha256": "38cdafe5f4fcbb7440d4ac9cfdb1bb6c1b0925d37de24dc0996da61de0e82273",
+    "whole_hints_sha256": "db4f4b097ed2f39b1c5340a93037b4f3dd781a9a9d34610a51e2fdf77e5bbd69",
+    "frozen_prefix_bytes": 19859,
+    "frozen_prefix_sha256": "f2d9f4153457a500482d1f480c07a18d62d2ac2440138f9cf927f93ae1c522b0",
+    "current_later_suffix_bytes": 70880,
+    "current_later_suffix_sha256": "5cb477a32870e20435d7cb6978a361b33ddead279f26dbec5814f57b4100d474",
+    "current_later_suffix_matches_authority": true,
+    "utf8_lf_no_bom_terminal_lf": true,
+    "trailing_whitespace_lines": [],
+    "active_english_prose_hits": {
+      "chapter": [],
+      "hints": []
+    },
+    "untranslated_source_language_overlap": {
+      "chapter": [],
+      "hints": []
+    }
+  },
+  "chapter_topology": {
+    "environments": 44,
+    "labels": 12,
+    "equation_labels": 4,
+    "references": 17,
+    "citations": 2,
+    "graphics": 4,
+    "theorem_options": 12,
+    "qeds": 3
+  },
+  "chapter_raw_topology": {
+    "environments": 46,
+    "labels": 13,
+    "equation_labels": 4,
+    "references": 17,
+    "citations": 2,
+    "graphics": 4,
+    "theorem_options": 13,
+    "qeds": 3,
+    "authority_commands": 348,
+    "target_commands": 348,
+    "authority_comments": 5,
+    "target_comments": 5
+  },
+  "scalar_counts": {
+    "sections": 4,
+    "index_entries": 20,
+    "absolute_markers": 0,
+    "used_later_markers": 0
+  },
+  "chapter_math_surfaces": {
+    "active": 143,
+    "raw": 156
+  },
+  "exercise_hint_closure": {
+    "exercise_count": 8,
+    "hint_block_count": 8,
+    "covered_exercise_count": 8,
+    "ordered_exercise_ids": [
+      "ex:mid-triangle",
+      "ex:k*triangle",
+      "ex:angle-preserving-euclid",
+      "ex:pyth",
+      "ex:pyth-conv",
+      "ex:two-pairs-sim",
+      "ex:ABC+D",
+      "ex:right-perp-bi"
+    ],
+    "complete": true
+  },
+  "hint_topology": {
+    "environments": 0,
+    "labels": 0,
+    "equation_labels": 0,
+    "references": 10,
+    "citations": 0,
+    "graphics": 0,
+    "theorem_options": 0,
+    "qeds": 0
+  },
+  "hint_raw_topology": {
+    "environments": 0,
+    "labels": 0,
+    "equation_labels": 0,
+    "references": 12,
+    "citations": 0,
+    "graphics": 0,
+    "theorem_options": 0,
+    "qeds": 0,
+    "commands": 88,
+    "comments": 2
+  },
+  "hint_math_surfaces": {
+    "active": 22,
+    "raw": 23
+  },
+  "named_source_notes": [
+    {
+      "id": "o004.petrunin.correction.ch06.legacy-chapter-label",
+      "description": "The Similar triangles chapter retains the legacy label chap:parallel.",
+      "source_changed": false
+    },
+    {
+      "id": "o004.petrunin.correction.ch06.k-one-distinctness",
+      "description": "Exercise ex:k*triangle requires distinct points but permits k=1, which forces each primed point to equal its unprimed counterpart.",
+      "source_changed": false
+    },
+    {
+      "id": "o004.petrunin.correction.ch06.inactive-triange-typos",
+      "description": "The commented-out footpoint exercise and hint retain inherited triange typos and English prose as inactive source surfaces.",
+      "source_changed": false
+    }
+  ],
+  "named_localization_clarification": {
+    "id": "o004.petrunin.correction.ch06.ptolemy-corresponding-sides",
+    "description": "The Indonesian proof explicitly names the left and right sides to which the equal angles are added.",
+    "mathematics_changed": false
+  }
+}

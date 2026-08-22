@@ -11,6 +11,8 @@
 !/source/id-ID/half-planes.tex
 !/source/id-ID/cong.tex
 !/source/id-ID/perp.tex
+!/source/id-ID/similar.tex
+!/source/id-ID/parallel.tex
 !/source/id-ID/hints.tex
 /qa/*
 !/qa/UNIT001_ADMISSION_20260821.md
@@ -22,6 +24,10 @@
 !/qa/CH04_ADMISSION_20260822.md
 !/qa/CH05_STRUCTURAL_QA_20260822.json
 !/qa/CH05_ADMISSION_20260822.md
+!/qa/CH06_STRUCTURAL_QA_20260822.json
+!/qa/CH06_ADMISSION_20260822.md
+!/qa/CH07_STRUCTURAL_QA_20260822.json
+!/qa/CH07_ADMISSION_20260822.md
 /output/*
 !/output/BIDANG_EUKLIDES_DAN_KERABATNYA_ID_UNIT_001.pdf
 !/output/UNIT001_READER_RECEIPT.json
