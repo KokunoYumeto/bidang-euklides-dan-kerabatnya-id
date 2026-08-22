@@ -1,0 +1,383 @@
+\chapter{Segitiga kongruen}\label{chap:cong}
+
+\section{Sisi-sudut-sisi}
+
+Tujuan kita selanjutnya adalah memberikan syarat-syarat yang menjamin kekongruenan dua segitiga.
+
+Salah satu syarat tersebut diberikan dalam Aksioma~\ref{def:birkhoff-axioms:3}; aksioma itu menyatakan bahwa jika dua pasang sisi dari dua segitiga sama panjang, dan sudut-sudut apitnya sama hingga tanda, maka kedua segitiga tersebut kongruen.
+Aksioma ini juga disebut {}\emph{syarat kekongruenan sisi-sudut-sisi}, atau singkatnya, \index{syarat kekongruenan SAS}\emph{SAS}.
+
+\section{Sudut-sisi-sudut}
+
+\begin{thm}[\abs]{Syarat ASA}\label{thm:ASA}\index{syarat kekongruenan ASA}
+Andaikan bahwa
+\begin{align*}
+AB&=A'B',
+&
+\measuredangle A B C &= \pm\measuredangle A' B' C',
+&
+\measuredangle C A B&=\pm\measuredangle C' A' B'
+\end{align*}
+ dan $\triangle A' B' C'$ tak degenerat.
+Maka
+$$\triangle A B C\cong\triangle A' B' C'.$$
+
+\end{thm}
+
+Untuk segitiga degenerat, pernyataan ini tidak berlaku.
+Sebagai contoh, tinjau sebuah segitiga dengan panjang sisi $1$, $4$, $5$
+dan segitiga lain dengan panjang sisi $2$, $3$,~$5$.
+
+\parit{Bukti.}
+Menurut Teorema~\ref{thm:signs-of-triug},
+berlaku salah satu dari dua kemungkinan berikut:
+\[
+\measuredangle A B C = \measuredangle A' B' C'
+\quad\text{dan}\quad
+\measuredangle C A B=\measuredangle C' A' B'
+\eqlbl{eq:+angles}\]
+atau
+\[
+\measuredangle A B C = -\measuredangle A' B' C'
+\quad\text{dan}\quad
+\measuredangle C A B=-\measuredangle C' A' B'.
+\eqlbl{eq:-angles}\]
+Andaikan \ref{eq:+angles} berlaku;
+kasus \ref{eq:-angles} serupa.
+
+\begin{wrapfigure}{o}{26mm}
+\vskip-2mm
+\centering
+\includegraphics{mppics/pic-36}
+\end{wrapfigure}
+
+Misalkan $C''$ adalah titik pada sinar $[A' C')$ sedemikian sehingga $A' C''\z=A C$.
+
+Menurut Aksioma~\ref{def:birkhoff-axioms:3},
+$\triangle A' B' C''\cong \triangle A B C$.
+Dengan menerapkan kembali Aksioma~\ref{def:birkhoff-axioms:3},
+kita memperoleh
+$$\measuredangle A' B' C'' = \measuredangle A B C=\measuredangle A' B' C'.$$
+Menurut Aksioma~\ref{def:birkhoff-axioms:2a}, $[B' C')=[B' C'')$.
+Dengan demikian,
+$C''$ terletak pada $(B' C')$ maupun~$(A' C')$.
+
+Karena $\triangle A' B' C'$ tak degenerat, $(A' C')$ berbeda dari~$(B' C')$.
+Dengan menerapkan Aksioma~\ref{def:birkhoff-axioms:1}, kita memperoleh $C''=C'$.
+
+Oleh karena itu,
+$\triangle A' B' C'=\triangle A' B' C''\cong\triangle A B C$.
+\qeds
+
+\section{Segitiga sama kaki}
+
+Segitiga yang memiliki dua sisi sama panjang disebut \index{segitiga sama kaki}\emph{sama kaki};
+sisi yang tersisa disebut \index{alas}\emph{alas}.
+
+
+\begin{thm}[\abs]{Teorema}\label{thm:isos}
+Andaikan $\triangle A B C$ adalah segitiga sama kaki dengan alas $[A B]$.
+Maka
+$$\measuredangle A B C\equiv -\measuredangle B A C.$$
+Selain itu, kebalikannya berlaku jika $\triangle A B C$ tak degenerat.
+\end{thm}
+
+Bukti berikut berasal dari Pappus dari Aleksandria.
+
+
+
+\parit{Bukti.}
+Perhatikan bahwa
+$$
+\measuredangle A C B \equiv -\measuredangle B C A,
+\quad
+C A = C B,
+\quad \text{dan oleh karena itu}\quad
+C B=C A.$$
+
+\begin{wrapfigure}[9]{r}{25mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-38}
+\end{wrapfigure}
+
+Menurut Aksioma~\ref{def:birkhoff-axioms:3},
+$$\triangle C A B\cong\triangle C B A.$$
+Dengan menerapkan teorema tentang tanda sudut-sudut segitiga (\ref{thm:signs-of-triug}) dan Aksioma~\ref{def:birkhoff-axioms:3} sekali lagi,
+kita memperoleh
+$$\measuredangle B A C
+\equiv -\measuredangle A B C.$$
+
+Untuk membuktikan kebalikannya, andaikan bahwa
+$\measuredangle C A B \z\equiv - \measuredangle C B A$.
+Menurut syarat ASA (\ref{thm:ASA}), $\triangle C A B\z\cong\triangle CBA$.
+Oleh karena itu,~$C A\z=C B$.
+\qeds
+
+Segitiga yang memiliki tiga sisi sama panjang disebut \index{segitiga sama sisi}\emph{sama sisi}.
+
+\begin{thm}{Latihan}\label{ex:equilateral}
+Misalkan $\triangle ABC$ adalah segitiga sama sisi.
+Tunjukkan bahwa
+\[\measuredangle ABC=\measuredangle BCA=\measuredangle CAB.\]
+
+\end{thm}
+
+
+\section{Sisi-sisi-sisi}
+
+\begin{thm}[\abs]{Syarat SSS}\label{thm:SSS}\index{syarat kekongruenan SSS}
+$\triangle A B C\cong\triangle A' B' C'$ jika
+$$A' B'=A B,
+\quad
+B' C'=B C,
+\quad
+\text{dan}
+\quad
+C' A'=C A.$$
+
+\end{thm}
+
+Perhatikan bahwa syarat ini juga berlaku untuk segitiga degenerat.
+
+\parit{Bukti.}
+Pilih $C''$ sedemikian sehingga $A' C''= A' C'$ dan $\measuredangle B' A' C''= \measuredangle B A C$.
+Menurut Aksioma~\ref{def:birkhoff-axioms:3},
+$$\triangle A' B' C''\cong\triangle A B C.$$
+
+Cukup dibuktikan bahwa
+$$\triangle A' B' C'\cong\triangle A' B' C''.\eqlbl{eq:A'B'C'simA'B'C''}$$
+Syarat \ref{eq:A'B'C'simA'B'C''} jelas berlaku jika $C''\z=C'$.
+Dengan demikian, tinggal meninjau kasus $C''\z\ne C'$.
+
+\begin{wrapfigure}{o}{30mm}
+\centering
+\includegraphics{mppics/pic-40}
+\end{wrapfigure}
+
+Jelas bahwa sisi-sisi yang bersesuaian dari $\triangle A' B' C'$ dan $\triangle A' B' C''$ sama panjang.
+Oleh karena itu, $\triangle C' A' C''$ dan $\triangle C' B' C''$ merupakan segitiga sama kaki.
+Menurut Teorema~\ref{thm:isos}, berlaku
+\begin{align*}
+ \measuredangle A' C'' C'&\equiv -\measuredangle A' C' C'',
+\\
+\measuredangle C' C'' B'&\equiv -\measuredangle C'' C' B'.
+\end{align*}
+Dengan menjumlahkan keduanya, kita memperoleh
+$$\measuredangle A' C'' B'
+\equiv -\measuredangle A' C' B'.$$
+Dengan menerapkan kembali Aksioma~\ref{def:birkhoff-axioms:3},
+kita memperoleh \ref{eq:A'B'C'simA'B'C''}.
+\qeds
+
+\begin{thm}[\abs]{Akibat}\label{cor:degenerate-trig}
+Jika $AB+BC=AC$, maka $B\in [AC]$.
+\end{thm}
+
+\parit{Bukti.}
+Karena $AB+BC=AC$, kita dapat memilih $B'\in [AC]$ sedemikian sehingga $AB=AB'$;
+perhatikan bahwa $BC\z=B'C$.
+
+Kita dapat mengandaikan bahwa $AB>0$ dan $BC>0$;
+jika tidak, $A=B$ atau $B=C$, dan pernyataan langsung berlaku.
+Dalam kasus ini, $B'$ terletak di antara $A$ dan $C$.
+Menurut Teorema~\ref{thm:straight-angle}, $\measuredangle AB'C=\pi$.
+
+Menurut SSS,
+\[\triangle ABC\cong \triangle AB'C.\]
+Oleh karena itu, $\measuredangle ABC=\pi$.
+Menurut Teorema~\ref{thm:straight-angle}, $B$ terletak di antara $A$ dan $C$.
+\qeds
+
+
+
+\begin{thm}{Latihan lanjutan}\label{ex:SMS}
+Tinjau dua segitiga $A B C$ dan $A' B' C'$.
+Misalkan $M$ adalah titik tengah $[A B]$, dan
+$M'$ adalah titik tengah $[A' B']$.
+Andaikan $C' A'=C A$, $C' B'= C B$, dan $C' M'\z= C M$.
+Buktikan bahwa
+\[\triangle A' B' C'\cong\triangle A B C.\]
+
+\end{thm}
+
+{
+
+\begin{wrapfigure}[6]{r}{26mm}
+\vskip-0mm
+\centering
+\includegraphics{mppics/pic-42}
+\end{wrapfigure}
+
+\begin{thm}{Latihan}\label{ex:isos-sides}
+Misalkan $\triangle A B C$ adalah segitiga sama kaki dengan alas $[A B]$.
+Andaikan titik $A'$ terletak di antara $B$ dan $C$,
+titik $B'$ terletak di antara $A$ dan $C$,
+dan $C A'\z=C B'$.
+Tunjukkan bahwa
+\begin{enumerate}[(a)]
+\item $\triangle A A' C\cong \triangle B B' C$;
+\item $\triangle A B B'\cong \triangle B A A'$.
+\end{enumerate}
+
+\end{thm}
+
+\begin{thm}[!]{Latihan}\label{ex:ABC-motion}
+Misalkan $\triangle ABC$ adalah segitiga tak degenerat, dan
+$f$ adalah pemetaan yang mempertahankan jarak dari bidang ke dirinya sendiri
+sedemikian sehingga
+$$f(A)=A,
+\quad
+f(B)=B,
+\quad
+\text{dan}
+\quad
+f(C)=C.$$
+
+Tunjukkan bahwa $f$ adalah pemetaan identitas;
+artinya, $f(X)=X$ untuk setiap titik $X$ pada bidang.
+\end{thm}
+
+Pernyataan dalam latihan tersebut disebut \emph{lema tiga paku}, karena tiga paku menahan bidang pada tempatnya. %(Tidak seperti di Yerusalem, tidak ada yang terluka di sini.)
+
+}
+
+%{
+
+%\begin{wrapfigure}{r}{28mm}\vskip-11mm\centering\includegraphics{mppics/pic-43}\end{wrapfigure}
+
+%\begin{thm}{Latihan}\label{ex:3-isos}
+%Andaikan bahwa $\triangle ABC'$, $\triangle BCA'$, dan $\triangle CAB'$ adalah segitiga sama kaki yang terletak di luar $\triangle ABC$;
+%artinya,
+%$A$ dan $A'$ terletak pada sisi-sisi yang berlawanan dari $(BC)$,
+%$B$ dan $B'$ terletak pada sisi-sisi yang berlawanan dari $(CA)$,
+%$C$ dan $C'$ terletak pada sisi-sisi yang berlawanan dari $(AB)$.
+
+%Tunjukkan bahwa $AA'=BB'=CC'$.
+%\end{thm}
+
+%}
+
+\section{Tentang sisi-sisi-sudut dan sisi-sudut-sudut}
+
+Dalam setiap syarat SAS, ASA, dan SSS, kita menetapkan tiga bagian yang bersesuaian dari kedua segitiga.
+Sekarang, mari kita bahas tiga bagian bersesuaian lainnya.
+
+Kombinasi pertama disebut {}\emph{sisi-sisi-sudut}, atau singkatnya SSA;
+kombinasi ini menetapkan dua sisi dan satu sudut yang bukan sudut apit.
+Syarat ini tidak cukup untuk menjamin kekongruenan.
+Dengan kata lain, terdapat dua segitiga tak degenerat $ABC$ dan $A'B'C'$ sedemikian sehingga
+\[AB=A'B',\quad BC=B'C',\quad \measuredangle BAC\equiv\pm \measuredangle B'A'C',\]
+tetapi $\triangle ABC\not\cong\triangle A'B'C'$ dan $AC\ne A'C'$.
+
+\begin{wrapfigure}{r}{35mm}
+\vskip-6mm
+\centering
+\includegraphics{mppics/pic-44}
+\end{wrapfigure}
+
+Kita tidak akan menggunakan pernyataan negatif ini, sehingga tidak perlu membuktikannya secara formal.
+Anda dapat menduga sebuah contoh dari gambar.
+
+Kombinasi kedua disebut {}\emph{sisi-sudut-sudut}, atau singkatnya SAA;
+kombinasi ini menetapkan satu sisi dan dua sudut, salah satunya berhadapan dengan sisi tersebut.
+Ini memberikan suatu syarat kekongruenan;
+artinya, jika salah satu dari segitiga $ABC$ atau $A'B'C'$ tak degenerat dan
+$AB=A'B'$, $\measuredangle ABC\equiv\pm \measuredangle A'B'C'$, $\measuredangle BCA\z\equiv\pm \measuredangle B'C'A'$,
+maka $\triangle ABC\cong\triangle A'B'C'$.
+
+Syarat SAA tidak akan digunakan secara langsung selanjutnya.
+Salah satu bukti untuk syarat ini dapat diperoleh dari ASA dan teorema tentang jumlah sudut segitiga, yang dibuktikan kemudian (lihat~\ref{thm:3sum}).
+Untuk bukti yang lebih langsung, lihat Latihan~\ref{ex:SAA}.
+
+Kombinasi lainnya disebut {}\emph{sudut-sudut-sudut}, atau singkatnya AAA.
+Menurut Aksioma~\ref{def:birkhoff-axioms:4}, syarat ini bukan syarat kekongruenan pada bidang Euklides.
+Namun, pada bidang hiperbolik syarat ini merupakan syarat kekongruenan; lihat \ref{thm:AAA}.
+
+{
+
+\section{Konstruksi}
+
+Masalah konstruksi merupakan sumber latihan geometri yang berharga,
+yang akan kita gunakan lebih lanjut dalam buku ini.
+Bab~\ref{chap:car} akan dikhususkan untuk topik tersebut.
+
+\index{konstruksi dengan penggaris dan jangka}\emph{Konstruksi dengan penggaris dan jangka} adalah konstruksi yang menggunakan penggaris dan jangka ideal.
+Penggaris ideal hanya dapat digunakan untuk menggambar garis yang melalui dua titik tertentu.
+Jangka ideal hanya dapat digunakan untuk menggambar lingkaran dengan pusat dan jari-jari tertentu.
+Artinya, jika diberikan tiga titik $A$, $B$, dan $O$,
+kita dapat menggambar lingkaran berjari-jari $AB$ yang berpusat di~$O$.
+Kita juga dapat menandai titik-titik baru pada bidang,
+serta pada garis, lingkaran,
+dan titik perpotongan yang telah dikonstruksi (dengan asumsi titik-titik tersebut ada).
+
+Kita juga dapat meninjau perangkat konstruksi yang berbeda.
+Sebagai contoh,
+kita dapat menggunakan penggaris saja,
+atau menciptakan alat baru,
+misalnya alat yang menghasilkan titik tengah dari dua titik tertentu,
+atau cerminan satu titik terhadap titik lainnya.
+
+\begin{thm}{Masalah}
+Diberikan dua garis $\ell$ dan $m$ serta sebuah titik $M$ yang tidak terletak pada salah satu pun dari kedua garis tersebut,
+konstruksikan ruas garis yang ujung-ujungnya masing-masing terletak pada $\ell$ dan $m$, serta yang dibagi dua oleh~$M$.
+\end{thm}
+
+Tahap-tahap konstruksi berikut ditunjukkan dalam gambar.
+
+\begin{center}
+\includegraphics[width=.29\textwidth]{mppics/pic-445}\hfill
+\includegraphics[width=.29\textwidth]{mppics/pic-446}\hfill
+\includegraphics[width=.29\textwidth]{mppics/pic-447}
+
+\medskip
+
+\includegraphics[width=.29\textwidth]{mppics/pic-448}\hspace{.08\textwidth}
+\includegraphics[width=.29\textwidth]{mppics/pic-449}
+\end{center}
+
+\parit{Konstruksi.}
+\begin{enumerate}[1.]
+\item Gambarlah sebuah lingkaran berpusat di $M$ yang memotong garis $\ell$ di dua titik, misalnya $P$ dan $Q$.
+\item Gambarlah garis $(PM)$ dan tandai titik potongnya yang lain dengan lingkaran sebagai $P'$.
+Dengan cara serupa, gambarlah $(QM)$ dan tandai titik potongnya yang lain sebagai $Q'$.
+\item Gambarlah garis $\ell'=(P'Q')$ dan tandai sebagai $A$ titik potongnya dengan $m$ (jika ada).
+\end{enumerate}
+
+}
+
+\begin{enumerate}[1.]\setcounter{enumi}{3}
+\item Gambarlah garis $(MA)$;
+tandai sebagai $B$ titik potongnya dengan $\ell$.
+Maka $[AB]$ adalah ruas yang diminta.
+\end{enumerate}
+
+
+Sering kali perlu dilakukan \emph{analisis masalah}:
+membuktikan bahwa hasil konstruksi memenuhi syarat-syarat yang diminta, serta menentukan kapan konstruksi dapat dilakukan dan berapa banyak solusi yang mungkin ada.
+Mari kita lakukan analisis tersebut untuk contoh di atas.
+
+
+\parit{Analisis masalah.}
+Perhatikan bahwa $P'$ dan $Q'$ masing-masing merupakan cerminan $P$ dan $Q$ terhadap~$M$.
+Oleh karena itu, garis $\ell'=(P'Q')$ adalah cerminan $\ell=(PQ)$ terhadap~$M$.
+
+Karena $A$ terletak pada $\ell'$,
+titik $B$ adalah cerminan $A$ terhadap $M$.
+Memang, $B$ adalah titik potong (yang pasti tunggal) antara $(MA)$ dan $\ell$, sedangkan $\ell'$ merupakan cerminan $\ell$.
+Menurut definisi pencerminan, $M$ adalah titik tengah $[AB]$.
+
+Garis $\ell'$ mungkin tidak memiliki titik potong dengan $m$.
+Dalam kasus ini, masalah tersebut tidak memiliki solusi.
+Mungkin juga terjadi bahwa $\ell'=m$;
+dalam kasus ini, terdapat tak berhingga banyak solusi --- sembarang titik pada $m$ dapat ditandai sebagai~$A$.
+Dalam semua kasus selebihnya, terdapat tepat satu solusi.
+\qeds
+
+\begin{thm}{Latihan}\label{ex:motion}
+Andaikan $\triangle ABC$ dan $\triangle A'B'C'$ adalah segitiga tak degenerat yang kongruen;
+khususnya, terdapat transformasi isometrik $f$ sedemikian sehingga
+\[f\colon A\mapsto A',\quad f\colon B\mapsto B',\quad\text{dan}\quad f\colon C\mapsto C'.\]
+
+Diberikan sebuah titik $X$, konstruksikan $X'=f(X)$.
+\end{thm}

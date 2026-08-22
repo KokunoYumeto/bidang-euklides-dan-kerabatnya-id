@@ -16,6 +16,7 @@ TARGET = LANE / "source" / "id-ID"
 CH3_MARKER = b"%\\subsection*{Chapter~\\ref{chap:half-planes}}"
 CH4_MARKER = b"%\\subsection*{Chapter~\\ref{chap:cong}}"
 FROZEN_TARGET_PREFIX_SHA256 = "07d7b54f88389a171e2487c77184b6b0755a136dd4902fa41fa6aa0e031876fb"
+FROZEN_TARGET_SLICE_SHA256 = "d5f75149bd2fdbc993d00c0a8d4c8c659846374c9da60d459be0871bbe6f40d4"
 
 
 def die(message: str) -> None:
@@ -154,12 +155,12 @@ def main() -> None:
 
     source_hint_bytes = source_hints_path.read_bytes()
     target_hint_bytes = target_hints_path.read_bytes()
-    _, source_slice, source_suffix = split_slice(source_hint_bytes)
+    _, source_slice, _ = split_slice(source_hint_bytes)
     target_prefix, target_slice, target_suffix = split_slice(target_hint_bytes)
     if digest(target_prefix) != FROZEN_TARGET_PREFIX_SHA256:
         die("frozen translated Chapter 1-2 hint prefix changed")
-    if target_suffix != source_suffix:
-        die("frozen Chapter 4+ hint suffix changed")
+    if digest(target_slice) != FROZEN_TARGET_SLICE_SHA256:
+        die("admitted translated Chapter 3 hint slice changed")
 
     source_hint = source_slice.decode("utf-8")
     target_hint = target_slice.decode("utf-8")
@@ -193,7 +194,7 @@ def main() -> None:
             "hint_slice_sha256": digest(target_slice),
             "whole_hints_sha256": digest(target_hint_bytes),
             "frozen_prefix_sha256": digest(target_prefix),
-            "frozen_suffix_sha256": digest(target_suffix),
+            "current_later_suffix_sha256": digest(target_suffix),
         },
         "chapter_topology": topology,
         "scalar_counts": scalar_counts,

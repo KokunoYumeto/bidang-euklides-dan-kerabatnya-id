@@ -22,6 +22,14 @@ absence of a source hint for `ex:angle-measures`. Its concept table carries the
 prerequisite graph from oriented-angle signs through half-planes, Pasch's
 theorem, triangle existence, and the circle-intersection criterion.
 
+Chapter 4 adds six ordered sections, four neutral-geometry results, five
+exercise-hint pairs, one synthetic ID for the unlabeled worked construction
+problem, ten described figures, and fifteen concept/dependency rows. The
+catalog records the deliberate layout-only reflow of `pic-445` through
+`pic-449`: all five panels and their order are preserved, but the overflowing
+side wrap is replaced by a visually verified two-row sequence. The current
+catalog has 140 unique records and 87 relations with no dangling endpoints.
+
 Serialization rules: UTF-8 without BOM, LF, two-space indentation, object keys
 in the checked-in order, arrays in source order, one terminal newline.  A
 canonical SHA-256 is recorded after each admitted boundary.  The schema is

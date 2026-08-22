@@ -84,9 +84,8 @@ def compare_file(name: str) -> dict[str, object]:
     source = source_path.read_text(encoding="utf-8")
     target = target_path.read_text(encoding="utf-8")
 
-    # The queued Chapter 2+ suffix is compared byte-for-byte below.  Restrict
-    # regex work to the translated prefix so this check stays bounded and does
-    # not repeatedly parse the remaining 90 KB backmatter.
+    # Restrict regex work to the admitted Chapter 1 prefix. Later chapter
+    # slices are validated by their own fail-closed source-order QA scripts.
     checked_source = source
     checked_target = target
     if name == "hints.tex":
@@ -95,8 +94,6 @@ def compare_file(name: str) -> dict[str, object]:
             die("hints.tex: Chapter 2 boundary missing")
         source_boundary = source.index(boundary)
         target_boundary = target.index(boundary)
-        if source[source_boundary:] != target[target_boundary:]:
-            die("hints.tex: queued Chapter 2+ suffix changed")
         checked_source = source[:source_boundary]
         checked_target = target[:target_boundary]
 

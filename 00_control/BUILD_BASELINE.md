@@ -107,3 +107,37 @@ at 150 dpi and inspected. See `qa/CH03_ADMISSION_20260821.md`.
 
 The full-context PDF still contains English Chapter 4+ material. It is build/QA
 evidence and is not a release artifact.
+
+## Chapter 4 deterministic admission boundary
+
+The first translated Chapter 4 build was rejected visually because the five
+construction panels in the inherited side wrap overlapped Indonesian prose and
+ran off the page. The admitted source reflows `pic-445` through `pic-449` into
+a centered two-row sequence without changing their order or any mathematical
+surface, identifier, reference, exercise, or construction step.
+
+The fixed closure `build/ch04-source-snapshot-20260822` contains the exact
+admitted Chapter 4 and hint bytes, with authority Chapter 5 onward. Two fresh
+output directories, `build/ch04-final-i-20260822` and
+`build/ch04-final-j-20260822`, built independently from that closure, produced
+identical results. Their PDF bytes are also identical to the visually
+inspected pre-cleanup builds; intervening source changes removed only trailing
+whitespace from Chapter 4 and its hint comments:
+
+- PDF: 205 pages; 2,962,911 bytes;
+- SHA-256: `1ff91aa4ff95880980237060624fe95022d6664b8cc68180859d266a9e5cc92e`;
+- 224 generated `.mps` files; zero cross-build hash mismatches;
+- normalized CC badge SHA-256
+  `7167e45adcc360f116b77210a2e452308e2b8fffd84106f1ea69045cb5be9928`;
+- normalized H2checkers SHA-256
+  `61a45915d8630a8df63bd9b9ecb095ab9fe6d6671b3360f814bea97ce9a8d885`.
+
+The converged log has zero undefined references/citations and no fatal error.
+It reports 40 overfull and 22 underfull boxes plus the inherited group warning.
+Chapter 4 contributes seven overfull and two underfull diagnostics; none causes
+visible clipping. Pages 34-40 and hint page 184 were rendered at 150 dpi and
+inspected. All ten figures, including every construction panel, are visible and
+legible with no overlap or cutoff. See `qa/CH04_ADMISSION_20260822.md`.
+
+The full-context PDF still contains English Chapter 5+ material. It is private
+build/QA evidence and is not a release artifact.

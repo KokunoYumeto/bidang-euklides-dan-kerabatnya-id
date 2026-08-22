@@ -202,8 +202,8 @@ def main() -> None:
     )
     if digest(target_ch3) != FROZEN_TARGET_CH3_SHA256:
         die("admitted translated Chapter 3 hint slice changed")
-    if target_ch4plus != source_ch4plus:
-        die("frozen Chapter 4+ hint suffix changed")
+    # Later chapter slices are admitted by their own fail-closed QA scripts.
+    # Chapter 2 must not reject legitimate source-order progress after Chapter 3.
 
     source_ch2_text = source_ch2.decode("utf-8")
     target_ch2_text = target_ch2.decode("utf-8")
@@ -270,7 +270,7 @@ def main() -> None:
             "whole_hints_sha256": digest(target_hint_bytes),
             "frozen_prefix_sha256": digest(target_prefix),
             "admitted_ch3_sha256": digest(target_ch3),
-            "frozen_ch4plus_sha256": digest(target_ch4plus),
+            "current_ch4plus_sha256": digest(target_ch4plus),
         },
         "axioms_topology": topology,
         "axioms_math_surfaces": len(source_math),

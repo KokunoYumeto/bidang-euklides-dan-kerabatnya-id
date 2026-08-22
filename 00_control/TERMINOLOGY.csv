@@ -26,3 +26,24 @@ O004-TERM-0024,degenerate triangle,segitiga degenerat,segitiga terdegenerasi,wor
 O004-TERM-0025,circle,lingkaran,,work-wide,admitted
 O004-TERM-0026,center,pusat,,work-wide,admitted
 O004-TERM-0027,radius,jari-jari,,work-wide,admitted
+O004-TERM-0028,congruent triangles,segitiga kongruen,,triangle-geometry,admitted
+O004-TERM-0029,side-angle-side congruence condition,syarat kekongruenan sisi-sudut-sisi (SAS),,triangle-geometry,admitted
+O004-TERM-0030,angle-side-angle congruence condition,syarat kekongruenan sudut-sisi-sudut (ASA),,triangle-geometry,admitted
+O004-TERM-0031,side-side-side congruence condition,syarat kekongruenan sisi-sisi-sisi (SSS),,triangle-geometry,admitted
+O004-TERM-0032,included angle,sudut apit,,triangle-geometry,admitted
+O004-TERM-0033,isosceles triangle,segitiga sama kaki,,triangle-geometry,admitted
+O004-TERM-0034,base (of an isosceles triangle),alas,,triangle-geometry,admitted
+O004-TERM-0035,equilateral triangle,segitiga sama sisi,,triangle-geometry,admitted
+O004-TERM-0036,midpoint,titik tengah,,work-wide,admitted
+O004-TERM-0037,identity map,pemetaan identitas,,transformation-geometry,admitted
+O004-TERM-0038,three-nail lemma,lema tiga paku,,transformation-geometry,admitted
+O004-TERM-0039,side-side-angle,sisi-sisi-sudut (SSA),,triangle-geometry,admitted
+O004-TERM-0040,non-included angle,sudut bukan apit,,triangle-geometry,admitted
+O004-TERM-0041,side-angle-angle,sisi-sudut-sudut (SAA),,triangle-geometry,admitted
+O004-TERM-0042,angle-angle-angle,sudut-sudut-sudut (AAA),,triangle-geometry,admitted
+O004-TERM-0043,ruler-and-compass construction,konstruksi penggaris dan jangka,,geometric-construction,admitted
+O004-TERM-0044,idealized ruler,penggaris ideal,,geometric-construction,admitted
+O004-TERM-0045,idealized compass,jangka ideal,,geometric-construction,admitted
+O004-TERM-0046,problem analysis,analisis masalah,,geometric-construction,admitted
+O004-TERM-0047,reflection,pencerminan,,transformation-geometry,admitted
+O004-TERM-0048,nondegenerate,tak degenerat,tidak degenerat (understandable but not canonical),work-wide,admitted

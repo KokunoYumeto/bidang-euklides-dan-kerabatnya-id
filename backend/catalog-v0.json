@@ -1,6 +1,6 @@
 {
   "schema": "o004-curriculum-backend-v0",
-  "generated_at": "2026-08-21",
+  "generated_at": "2026-08-22",
   "records": [
     {
       "entity_type": "program",
@@ -137,6 +137,20 @@
       "qa_status": "pass"
     },
     {
+      "entity_type": "unit",
+      "id": "o004.petrunin.ch04",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_local_id": "chap:cong",
+      "source_path": "cong.tex",
+      "source_sha256": "7ad021c768316aafec871003fdcb7f5daff4a16d42c378366dfe8dc913df4f4f",
+      "target_sha256": "70cbc1809520da16814159a32021a66ebb48db56190b3a638af2205436282b43",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0",
+      "order": 5,
+      "qa_status": "pass"
+    },
+    {
       "entity_type": "segment",
       "id": "o004.petrunin.seg.preface",
       "status": "translated-admitted",
@@ -218,6 +232,31 @@
       "authority_slice_sha256": "0b7dc1b5844236cd1c0d160a5387bf1cb9159660d43d557cd090260ea4e3afda",
       "target_slice_sha256": "d5f75149bd2fdbc993d00c0a8d4c8c659846374c9da60d459be0871bbe6f40d4",
       "target_full_sha256": "7ae3873f3e805efd84692b4b3f138c79bdf9f77c524701292a4bf43fc9a7e8ef",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
+    },
+    {
+      "entity_type": "segment",
+      "id": "o004.petrunin.seg.ch04",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_local_id": "chap:cong",
+      "source_path": "cong.tex",
+      "source_sha256": "7ad021c768316aafec871003fdcb7f5daff4a16d42c378366dfe8dc913df4f4f",
+      "target_sha256": "70cbc1809520da16814159a32021a66ebb48db56190b3a638af2205436282b43",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
+    },
+    {
+      "entity_type": "segment",
+      "id": "o004.petrunin.seg.hints-ch04",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_path": "hints.tex#lines-360-395",
+      "source_sha256": "78cb97e73d57aeacc706099e62e0508a89b3b3ebb6d1087655be3255e785c10c",
+      "authority_slice_sha256": "35999a3ca0db65e8c1bdf1e9e9a298b90a1c7cf0fc8044203ffaa8b0202b8716",
+      "target_slice_sha256": "85eb2f743180e984948a8fe094b5a7f645135e47a7a5f1e9d8cb8ac86fa69c5c",
+      "target_full_sha256": "84a8289a0d5a7939bd13d16831efcd155d017ec0d7099584aa451a38d299d3f0",
       "authority_edition_id": "o004-petrunin-current-0b0858e",
       "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
     },
@@ -437,6 +476,60 @@
       "result_kind": "lemma",
       "absolute_geometry": true,
       "does_not_use_axiom": "o004.petrunin.ax.ch02.v"
+    },
+    {
+      "entity_type": "segment",
+      "id": "o004.petrunin.result.ch04.thm-asa",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_local_id": "thm:ASA",
+      "source_path": "cong.tex",
+      "result_kind": "theorem",
+      "absolute_geometry": true,
+      "does_not_use_axiom": "o004.petrunin.ax.ch02.v"
+    },
+    {
+      "entity_type": "segment",
+      "id": "o004.petrunin.result.ch04.thm-isos",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_local_id": "thm:isos",
+      "source_path": "cong.tex",
+      "result_kind": "theorem",
+      "absolute_geometry": true,
+      "does_not_use_axiom": "o004.petrunin.ax.ch02.v"
+    },
+    {
+      "entity_type": "segment",
+      "id": "o004.petrunin.result.ch04.thm-sss",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_local_id": "thm:SSS",
+      "source_path": "cong.tex",
+      "result_kind": "theorem",
+      "absolute_geometry": true,
+      "does_not_use_axiom": "o004.petrunin.ax.ch02.v"
+    },
+    {
+      "entity_type": "segment",
+      "id": "o004.petrunin.result.ch04.cor-degenerate-trig",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_local_id": "cor:degenerate-trig",
+      "source_path": "cong.tex",
+      "result_kind": "corollary",
+      "absolute_geometry": true,
+      "does_not_use_axiom": "o004.petrunin.ax.ch02.v"
+    },
+    {
+      "entity_type": "segment",
+      "id": "o004.petrunin.problem.ch04.001",
+      "status": "translated-admitted",
+      "locale": "id-ID",
+      "source_local_id": null,
+      "source_path": "cong.tex",
+      "result_kind": "worked-construction-problem",
+      "synthetic_id_reason": "The source problem is active but has no LaTeX label."
     },
     {
       "entity_type": "concept",
@@ -811,6 +904,156 @@
       "first_unit_id": "o004.petrunin.ch03.s05"
     },
     {
+      "entity_type": "concept",
+      "id": "o004.concept.sas-congruence-condition",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "side-angle-side congruence condition",
+      "preferred_term": "syarat kekongruenan sisi-sudut-sisi (SAS)",
+      "first_unit_id": "o004.petrunin.ch04.s01"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.asa-congruence-condition",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "angle-side-angle congruence condition",
+      "preferred_term": "syarat kekongruenan sudut-sisi-sudut (ASA)",
+      "first_unit_id": "o004.petrunin.ch04.s02"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.isosceles-triangle",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "isosceles triangle",
+      "preferred_term": "segitiga sama kaki",
+      "first_unit_id": "o004.petrunin.ch04.s03"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.triangle-base",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "base of an isosceles triangle",
+      "preferred_term": "alas segitiga sama kaki",
+      "first_unit_id": "o004.petrunin.ch04.s03"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.isosceles-base-angle-theorem",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "isosceles base-angle theorem",
+      "preferred_term": "teorema sudut alas segitiga sama kaki",
+      "first_unit_id": "o004.petrunin.ch04.s03"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.equilateral-triangle",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "equilateral triangle",
+      "preferred_term": "segitiga sama sisi",
+      "first_unit_id": "o004.petrunin.ch04.s03"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.sss-congruence-condition",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "side-side-side congruence condition",
+      "preferred_term": "syarat kekongruenan sisi-sisi-sisi (SSS)",
+      "first_unit_id": "o004.petrunin.ch04.s04"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.triangle-inequality-equality-case",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "equality case of the triangle inequality",
+      "preferred_term": "kasus kesamaan pada ketaksamaan segitiga",
+      "first_unit_id": "o004.petrunin.ch04.s04"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.three-nail-lemma",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "three-nail lemma",
+      "preferred_term": "lema tiga paku",
+      "first_unit_id": "o004.petrunin.ch04.s04"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.ssa-ambiguity",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "ambiguity of side-side-angle",
+      "preferred_term": "ambiguitas sisi-sisi-sudut (SSA)",
+      "first_unit_id": "o004.petrunin.ch04.s05"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.saa-congruence-condition",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "side-angle-angle congruence condition",
+      "preferred_term": "syarat kekongruenan sisi-sudut-sudut (SAA)",
+      "first_unit_id": "o004.petrunin.ch04.s05"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.aaa-criterion",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "angle-angle-angle criterion",
+      "preferred_term": "kriteria sudut-sudut-sudut (AAA)",
+      "first_unit_id": "o004.petrunin.ch04.s05"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.ruler-compass-construction",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "ruler-and-compass construction",
+      "preferred_term": "konstruksi penggaris dan jangka",
+      "first_unit_id": "o004.petrunin.ch04.s06"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.construction-analysis",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "problem analysis for a construction",
+      "preferred_term": "analisis masalah konstruksi",
+      "first_unit_id": "o004.petrunin.ch04.s06"
+    },
+    {
+      "entity_type": "concept",
+      "id": "o004.concept.construction-solution-multiplicity",
+      "status": "mapped-pending-qa",
+      "locale": "id-ID",
+      "source_path": "cong.tex",
+      "source_term": "number of solutions to a construction",
+      "preferred_term": "banyaknya solusi suatu konstruksi",
+      "first_unit_id": "o004.petrunin.ch04.s06"
+    },
+    {
       "entity_type": "asset",
       "id": "o004.petrunin.fig.preface.dependencies",
       "status": "described-admitted",
@@ -1029,6 +1272,106 @@
       "rights_id": "rights-mppics-macros-unresolved"
     },
     {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch04.01",
+      "status": "described-admitted",
+      "source_local_id": "pic-36",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch04.02",
+      "status": "described-admitted",
+      "source_local_id": "pic-38",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch04.03",
+      "status": "described-admitted",
+      "source_local_id": "pic-40",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch04.04",
+      "status": "described-admitted",
+      "source_local_id": "pic-42",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch04.05",
+      "status": "described-admitted",
+      "source_local_id": "pic-44",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch04.06",
+      "status": "described-admitted",
+      "source_local_id": "pic-445",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch04.07",
+      "status": "described-admitted",
+      "source_local_id": "pic-446",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch04.08",
+      "status": "described-admitted",
+      "source_local_id": "pic-447",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch04.09",
+      "status": "described-admitted",
+      "source_local_id": "pic-448",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
+      "entity_type": "asset",
+      "id": "o004.petrunin.fig.ch04.10",
+      "status": "described-admitted",
+      "source_local_id": "pic-449",
+      "source_path": "mppics/pic.mp",
+      "source_sha256": "616b73cc36d9d7517ae54b8948a982469829988280d5cf22dfb634f3081129f3",
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-mppics-macros-unresolved"
+    },
+    {
       "entity_type": "artifact",
       "id": "o004.petrunin.artifact.upstream-baseline",
       "status": "built",
@@ -1064,6 +1407,40 @@
       "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
     },
     {
+      "entity_type": "artifact",
+      "id": "o004.petrunin.artifact.id-ch04-full-context",
+      "status": "built-private-mixed-context-qa-only",
+      "locale": "mul",
+      "source_path": "build/ch04-final-i-20260822/all-lectures.pdf",
+      "bytes": 2962911,
+      "sha256": "1ff91aa4ff95880980237060624fe95022d6664b8cc68180859d266a9e5cc92e",
+      "pages": 205,
+      "pdf_tagged": false,
+      "public": false,
+      "authority_edition_id": "o004-petrunin-current-0b0858e",
+      "rights_id": "rights-petrunin-body-cc-by-sa-4.0"
+    },
+    {
+      "entity_type": "correction",
+      "id": "o004.petrunin.correction.ch04.construction-panel-reflow",
+      "status": "applied-admitted",
+      "locale": "id-ID",
+      "source_path": "cong.tex#pic-445-pic-449",
+      "correction_kind": "layout-only-reflow",
+      "mathematics_changed": false,
+      "description": "The five-panel construction sequence was moved from an overflowing side wrap into a full-width two-row sequence after visual QA found text overlap and page overflow."
+    },
+    {
+      "entity_type": "correction",
+      "id": "o004.petrunin.correction.ch04.eq-label-sim",
+      "status": "upstream-editorial-note-preserved",
+      "locale": null,
+      "source_path": "cong.tex",
+      "source_local_id": "eq:A'B'C'simA'B'C''",
+      "correction_kind": "identifier-wording-note",
+      "description": "The stable source label contains sim although the displayed relation is congruence; the identifier is preserved for compatibility."
+    },
+    {
       "entity_type": "qa_event",
       "id": "o004.petrunin.qa.unit001-admission",
       "status": "pass",
@@ -1072,6 +1449,20 @@
       "structural_qa": "pass",
       "visual_pages_inspected": 19,
       "byte_reproducible_compositions": 2,
+      "accessibility_caveat_disclosed": true
+    },
+    {
+      "entity_type": "qa_event",
+      "id": "o004.petrunin.qa.ch04-admission",
+      "status": "pass",
+      "locale": "id-ID",
+      "source_path": "qa/CH04_ADMISSION_20260822.md",
+      "structural_qa": "pass",
+      "visual_pages_inspected": 8,
+      "byte_reproducible_builds": 2,
+      "generated_mps_compared": 224,
+      "layout_reflow_verified": true,
+      "undefined_references_or_citations": 0,
       "accessibility_caveat_disclosed": true
     }
   ],
@@ -1139,6 +1530,28 @@
     {"id": "rel-ch03-figure-11", "type": "illustrates", "from": "o004.petrunin.fig.ch03.11", "to": "o004.petrunin.ch03"},
     {"id": "rel-ch03-figure-12", "type": "illustrates", "from": "o004.petrunin.fig.ch03.12", "to": "o004.petrunin.ch03"},
     {"id": "rel-ch03-figure-13", "type": "illustrates", "from": "o004.petrunin.fig.ch03.13", "to": "o004.petrunin.ch03"},
+    {"id": "rel-ch03-ch04", "type": "precedes", "from": "o004.petrunin.ch03", "to": "o004.petrunin.ch04"},
+    {"id": "rel-seg-ch04", "type": "translates", "from": "o004.petrunin.seg.ch04", "to": "o004.petrunin.ch04"},
+    {"id": "rel-seg-hints-ch04", "type": "contains", "from": "o004.petrunin.ch04", "to": "o004.petrunin.seg.hints-ch04"},
+    {"id": "rel-ch04-result-asa", "type": "contains", "from": "o004.petrunin.ch04", "to": "o004.petrunin.result.ch04.thm-asa"},
+    {"id": "rel-ch04-result-isos", "type": "contains", "from": "o004.petrunin.ch04", "to": "o004.petrunin.result.ch04.thm-isos"},
+    {"id": "rel-ch04-result-sss", "type": "contains", "from": "o004.petrunin.ch04", "to": "o004.petrunin.result.ch04.thm-sss"},
+    {"id": "rel-ch04-result-degenerate-trig", "type": "contains", "from": "o004.petrunin.ch04", "to": "o004.petrunin.result.ch04.cor-degenerate-trig"},
+    {"id": "rel-ch04-problem-001", "type": "contains", "from": "o004.petrunin.ch04", "to": "o004.petrunin.problem.ch04.001"},
+    {"id": "rel-ch04-figure-01", "type": "illustrates", "from": "o004.petrunin.fig.ch04.01", "to": "o004.petrunin.ch04"},
+    {"id": "rel-ch04-figure-02", "type": "illustrates", "from": "o004.petrunin.fig.ch04.02", "to": "o004.petrunin.ch04"},
+    {"id": "rel-ch04-figure-03", "type": "illustrates", "from": "o004.petrunin.fig.ch04.03", "to": "o004.petrunin.ch04"},
+    {"id": "rel-ch04-figure-04", "type": "illustrates", "from": "o004.petrunin.fig.ch04.04", "to": "o004.petrunin.ch04"},
+    {"id": "rel-ch04-figure-05", "type": "illustrates", "from": "o004.petrunin.fig.ch04.05", "to": "o004.petrunin.ch04"},
+    {"id": "rel-ch04-figure-06", "type": "illustrates", "from": "o004.petrunin.fig.ch04.06", "to": "o004.petrunin.ch04"},
+    {"id": "rel-ch04-figure-07", "type": "illustrates", "from": "o004.petrunin.fig.ch04.07", "to": "o004.petrunin.ch04"},
+    {"id": "rel-ch04-figure-08", "type": "illustrates", "from": "o004.petrunin.fig.ch04.08", "to": "o004.petrunin.ch04"},
+    {"id": "rel-ch04-figure-09", "type": "illustrates", "from": "o004.petrunin.fig.ch04.09", "to": "o004.petrunin.ch04"},
+    {"id": "rel-ch04-figure-10", "type": "illustrates", "from": "o004.petrunin.fig.ch04.10", "to": "o004.petrunin.ch04"},
+    {"id": "rel-ch04-reflow", "type": "adapts", "from": "o004.petrunin.correction.ch04.construction-panel-reflow", "to": "o004.petrunin.ch04"},
+    {"id": "rel-ch04-label-note", "type": "depends-on", "from": "o004.petrunin.correction.ch04.eq-label-sim", "to": "o004.petrunin.seg.ch04"},
+    {"id": "rel-ch04-artifact", "type": "contains", "from": "o004.petrunin.ch04", "to": "o004.petrunin.artifact.id-ch04-full-context"},
+    {"id": "rel-ch04-artifact-qa", "type": "depends-on", "from": "o004.petrunin.artifact.id-ch04-full-context", "to": "o004.petrunin.qa.ch04-admission"},
     {"id": "rel-unit-reader", "type": "contains", "from": "o004.petrunin.front-ch01", "to": "o004.petrunin.artifact.id-unit001-reader"},
     {"id": "rel-reader-qa", "type": "depends-on", "from": "o004.petrunin.artifact.id-unit001-reader", "to": "o004.petrunin.qa.unit001-admission"}
   ]

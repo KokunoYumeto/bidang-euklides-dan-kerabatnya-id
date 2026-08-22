@@ -96,3 +96,16 @@ independent language, deterministic-build and visual checks. Do not invent a
 hint for `ex:angle-measures`. The full-context PDF contains English Chapter 4+
 material and is QA evidence only. Advance the source-order cursor to Chapter 4,
 `cong.tex`.
+
+## D015 — Chapter 4 admission and construction-panel reflow
+
+Admit complete Chapter 4 and all five authored hints after structural,
+language, deterministic-build and visual checks. Preserve all ten active
+figures and the inactive `ex:3-isos`/`pic-43` block. The longer Indonesian text
+made the inherited five-panel side wrap overlap prose and run off the page;
+replace only that wrapper with a centered two-row sequence for `pic-445`
+through `pic-449`. Record the environment substitution as an explicit
+layout-only correction, with formulas, labels, references, figure order and
+mathematics unchanged. The full-context PDF contains English Chapter 5+
+material and remains private QA evidence. Advance the cursor to Chapter 5,
+`perp.tex`.

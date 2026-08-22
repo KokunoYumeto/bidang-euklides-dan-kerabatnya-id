@@ -1,13 +1,13 @@
 # O004 / C100 — current state
 
-Updated: 2026-08-21
+Updated: 2026-08-22
 
 Status: active Bahasa Indonesia reader production. The front matter, Chapters
-1-3, and their exact available hint slices are complete, structurally verified,
+1-4, and their exact available hint slices are complete, structurally verified,
 and visually admitted. The GitHub repository and Unit 001 release are private.
 Zenodo record `22044358`, DOI
 `10.5281/zenodo.22044358`, retains all five files with restricted access. The
-whole book is not complete; the cursor is immediately before Chapter 4.
+whole book is not complete; the cursor is immediately before Chapter 5.
 
 The admitted core is Anton Petrunin, *Euclidean Plane and Its Relatives: A
 Minimalist Introduction*. The labeled publication witness is arXiv
@@ -88,10 +88,35 @@ legible, with no clipping, overlap or missing content. This full-context PDF
 contains English Chapter 4+ material and is not a release artifact. See
 `qa/CH03_ADMISSION_20260821.md`.
 
-The backend now has 103 records and 65 relations with no dangling endpoints.
+At the Chapter 3 boundary, the backend had 103 records and 65 relations.
 Chapter 3 contributes five section rows, 12 result records, nine exercise rows,
 eight hint links, 13 descriptions and 16 concept/dependency rows. JSON Schema
 and deterministic UTF-8/LF CSV validation pass.
+
+Unit `o004.petrunin.ch04` adds complete Bab 4, Segitiga kongruen: six
+sections, four neutral-geometry results, five labeled exercises, one unlabeled
+worked construction problem, five matching hints, and ten active figures.
+Target hashes are
+`70cbc1809520da16814159a32021a66ebb48db56190b3a638af2205436282b43`
+for `cong.tex` and
+`85eb2f743180e984948a8fe094b5a7f645135e47a7a5f1e9d8cb8ac86fa69c5c`
+for its hint slice.
+
+Two fresh Chapter 4 builds are byte-identical: 205 pages, 2,962,911 bytes,
+SHA-256
+`1ff91aa4ff95880980237060624fe95022d6664b8cc68180859d266a9e5cc92e`.
+All 224 generated MetaPost figures match across builds. PDF pages 34-40 and
+hint page 184 were inspected. The initial build exposed overlapping and
+off-page construction panels; the admitted source replaces that single side
+wrap with a centered two-row sequence retaining `pic-445` through `pic-449` in
+order. The final pages have no clipping, overlap, or missing panels. See
+`qa/CH04_ADMISSION_20260822.md`.
+
+The backend now has 140 unique records and 87 relations with no dangling
+endpoints. Chapter 4 contributes seven unit-order rows, four result records,
+five exercise-hint pairs, one synthetic unlabeled-problem ID, ten admitted
+figure descriptions and 15 concept/dependency rows. JSON Schema and
+artifact-tool UTF-8/LF CSV verification pass.
 
 The exact publication/access receipt is
 `00_control/PUBLICATION_RECEIPT_UNIT001.json`. GitHub is private at
@@ -113,6 +138,6 @@ The three-layer architecture is frozen in
 `00_control/CURRICULUM_ARCHITECTURE.md`; the complete finite workflow is
 `00_control/00_CURRENT_GOAL_AND_WORKFLOW.md`.
 
-Next action: translate Chapter 4 (`cong.tex`) and its matching contiguous hint
+Next action: translate Chapter 5 (`perp.tex`) and its matching contiguous hint
 slice in source order, extend the backend, and apply the same bounded gate. Do
-not reopen the admitted Chapters 1-3 boundary.
+not reopen the admitted Chapters 1-4 boundary.

@@ -31,3 +31,8 @@ order,exercise_id,source_label,exercise_kind,used_later,hint_id,exercise_source,
 30,o004.petrunin.ex.ch03.007,ex:Z,exercise,false,o004.petrunin.hint.ch03.007,half-planes.tex,hints.tex,admitted
 31,o004.petrunin.ex.ch03.008,ex:angle-measures,advanced-exercise,false,,half-planes.tex,,admitted-no-source-hint
 32,o004.petrunin.ex.ch03.009,ex:intersecting-circles-3,exercise,true,o004.petrunin.hint.ch03.009,half-planes.tex,hints.tex,admitted
+33,o004.petrunin.ex.ch04.001,ex:equilateral,exercise,false,o004.petrunin.hint.ch04.001,cong.tex,hints.tex,admitted
+34,o004.petrunin.ex.ch04.002,ex:SMS,advanced-exercise,false,o004.petrunin.hint.ch04.002,cong.tex,hints.tex,admitted
+35,o004.petrunin.ex.ch04.003,ex:isos-sides,exercise,false,o004.petrunin.hint.ch04.003,cong.tex,hints.tex,admitted
+36,o004.petrunin.ex.ch04.004,ex:ABC-motion,exercise,true,o004.petrunin.hint.ch04.004,cong.tex,hints.tex,admitted
+37,o004.petrunin.ex.ch04.005,ex:motion,exercise,false,o004.petrunin.hint.ch04.005,cong.tex,hints.tex,admitted

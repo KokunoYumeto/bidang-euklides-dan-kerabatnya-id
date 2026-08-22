@@ -1,9 +1,9 @@
 # Translation cursor
 
-Updated: 2026-08-21
+Updated: 2026-08-22
 
 Current admitted unit IDs: `o004.petrunin.front-ch01`, `o004.petrunin.ch02`,
-`o004.petrunin.ch03`
+`o004.petrunin.ch03`, `o004.petrunin.ch04`
 
 Completed and frozen:
 
@@ -32,18 +32,35 @@ Completed and frozen:
     Exercise `ex:angle-measures` has no source hint.
 12. Chapter 3 backend: five section rows, 12 result records, nine exercises,
     eight hint links, 13 figure descriptions and 16 concept/dependency rows.
+13. `cong.tex` — complete Bab 4, six sections, four neutral-geometry results,
+    five labeled exercises, one unlabeled worked construction problem, and ten
+    active figures; 13,622 bytes, SHA-256
+    `70cbc1809520da16814159a32021a66ebb48db56190b3a638af2205436282b43`.
+14. `hints.tex` — complete Chapter 4 slice, target lines 360-395, five
+    matching hints; 1,601 bytes, SHA-256
+    `85eb2f743180e984948a8fe094b5a7f645135e47a7a5f1e9d8cb8ac86fa69c5c`.
+15. Chapter 4 backend: seven unit rows, four result records, five exercises
+    and hints, one synthetic ID for the unlabeled problem, ten figure
+    descriptions, and 15 concept/dependency rows. The catalog has 140 records
+    and 87 relations with zero dangling endpoints.
+16. The construction sequence `pic-445` through `pic-449` is deliberately
+    reflowed from one overflowing side wrap into a visually admitted two-row
+    sequence. Figures, order, text, formulas, labels and references are
+    unchanged.
 
-Current production boundary: immediately before Chapter 4 (`cong.tex`) and at
-the Chapter 4 hint marker on target line 360. The translated hint prefix before
-that marker is 12,488 bytes, SHA-256
-`2ff27e2ca3f9c53f94dec954a4c07560787e9a61ed854d1a0720e0018152abe1`.
-Everything from the marker onward remains byte-identical to authority: 79,713
+Current production boundary: immediately before Chapter 5 (`perp.tex`) and at
+the Chapter 5 hint marker on target line 396. The translated hint prefix before
+that marker is 14,089 bytes, SHA-256
+`c6d71d57ad3753572e380e673c6d60f55cb10540dc3c5918f0c66a4f58f64245`.
+Everything from the marker onward remains byte-identical to authority: 78,262
 bytes, SHA-256
-`d5cd7c02bde78f749f657812b4c48a6d652c1d5820cc2cbe7fe937f0d0711aa5`.
+`c9d2a983be56f8d1c78b6ad06ce6ac6e468b4b74df161d8fac79c8e056eecce4`.
 
-Chapter 4 authority and current target `cong.tex` are identical: 12,527 bytes,
+Chapter 5 authority and current target `perp.tex` are identical: 16,499 bytes,
 SHA-256
-`7ad021c768316aafec871003fdcb7f5daff4a16d42c378366dfe8dc913df4f4f`.
+`c5be147e0249d3c7ffe5f2432cdd11b5e686e808927661de57614c55bfc28f91`.
+Its exact authority hint slice is source lines 396-561, 5,290 bytes, SHA-256
+`80f7d0508c31e8a2dbdf3826814658b98ba551ac427f1d6a3955311f4502044e`.
 
 Artifact boundary: the locally admitted 19-page partial reader has SHA-256
 `1a6909ab8c315fe2529d9267c3d539def1e1f68667bc432d8bf40059dd91a452`.
@@ -57,7 +74,11 @@ Chapter 3 admission evidence is `qa/CH03_ADMISSION_20260821.md`; its two fresh
 full-context builds have SHA-256
 `94057485cd2f16d55b1adff8d0e53583584c8330e2b51a08d906ef1e83dc6117`.
 
-Immediate cursor action: translate Chapter 4 (`cong.tex`) and its matching
+Chapter 4 admission evidence is `qa/CH04_ADMISSION_20260822.md`; its two fresh
+full-context builds are 205 pages, 2,962,911 bytes, SHA-256
+`1ff91aa4ff95880980237060624fe95022d6664b8cc68180859d266a9e5cc92e`.
+
+Immediate cursor action: translate Chapter 5 (`perp.tex`) and its matching
 contiguous hints, then extend the backend and perform one bounded gate.
-Translation remains dominant; do not reopen the admitted Chapters 1-3
+Translation remains dominant; do not reopen the admitted Chapters 1-4
 boundary.

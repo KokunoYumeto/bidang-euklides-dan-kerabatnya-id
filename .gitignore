@@ -9,6 +9,7 @@
 !/source/id-ID/metric.tex
 !/source/id-ID/axioms.tex
 !/source/id-ID/half-planes.tex
+!/source/id-ID/cong.tex
 !/source/id-ID/hints.tex
 /qa/*
 !/qa/UNIT001_ADMISSION_20260821.md
@@ -16,6 +17,8 @@
 !/qa/CH02_ADMISSION_20260821.md
 !/qa/CH03_STRUCTURAL_QA_20260821.json
 !/qa/CH03_ADMISSION_20260821.md
+!/qa/CH04_STRUCTURAL_QA_20260822.json
+!/qa/CH04_ADMISSION_20260822.md
 /output/*
 !/output/BIDANG_EUKLIDES_DAN_KERABATNYA_ID_UNIT_001.pdf
 !/output/UNIT001_READER_RECEIPT.json
