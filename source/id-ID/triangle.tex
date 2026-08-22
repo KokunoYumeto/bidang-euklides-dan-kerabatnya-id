@@ -1,0 +1,439 @@
+\chapter{Geometri segitiga}\label{chap:triangle}
+
+Geometri segitiga adalah kajian tentang sifat-sifat segitiga, termasuk pusat dan lingkaran yang terkait dengannya.
+
+Kita membahas hasil-hasil paling dasar dalam geometri segitiga,
+terutama untuk menunjukkan bahwa perangkat yang telah kita kembangkan cukup memadai untuk membuktikan berbagai pernyataan.
+
+\section{Lingkaran luar dan pusat lingkaran luar}
+
+\begin{thm}{Teorema}\label{thm:circumcenter}
+Garis-garis sumbu dari sisi-sisi setiap segitiga tak degenerat berpotongan di satu titik.
+\end{thm}
+
+Titik perpotongan garis-garis sumbu tersebut disebut \index{pusat lingkaran luar}\emph{pusat lingkaran luar}.
+Titik ini merupakan pusat \index{lingkaran luar}\emph{lingkaran luar} segitiga itu;
+yaitu, lingkaran yang melalui ketiga titik sudut segitiga.
+Pusat lingkaran luar suatu segitiga biasanya dinotasikan dengan~$O$.
+
+\begin{wrapfigure}{o}{29mm}
+\centering
+\includegraphics{mppics/pic-102}
+\end{wrapfigure}
+
+
+\parit{Bukti.}
+Misalkan $\triangle ABC$ tak degenerat.
+Misalkan $\ell$ dan $m$ berturut-turut merupakan garis sumbu sisi $[AB]$ dan $[AC]$.
+
+Andaikan $\ell$ berpotongan dengan $m$, katakanlah di $O$.
+
+Mari kita terapkan Teorema~\ref{thm:perp-bisect}.
+Karena $O\in\ell$, berlaku $OA\z=OB$, dan karena $O\in m$, berlaku $OA\z=OC$.
+Akibatnya, $OB\z=OC$;
+yaitu, $O$ terletak pada garis sumbu~$[B C]$.
+
+Tinggal ditunjukkan bahwa $\ell\nparallel m$.
+Andaikan sebaliknya, bahwa $\ell\parallel m$.
+Karena $\ell\perp(AB)$ dan $m\z\perp(AC)$, Latihan~\ref{ex:perp-perp}\textit{\ref{ex:perp-perp:b}} menyiratkan bahwa
+$(AC)\parallel(AB)$, dan menurut Teorema~\ref{thm:parallel}, berlaku $(AC)=(AB)$.
+Dengan demikian, $\triangle ABC$ degenerat --- suatu kontradiksi.
+\qeds
+
+\begin{thm}[!]{Latihan}\label{ex:unique-cline}
+Tunjukkan bahwa terdapat tepat satu lingkaran yang melalui titik-titik sudut suatu segitiga tak degenerat di bidang Euklides.
+\end{thm}
+
+
+
+\section{Garis tinggi dan ortosenter}
+
+Sebuah \index{garis tinggi}\emph{garis tinggi} segitiga adalah garis yang melalui suatu titik sudut dan tegak lurus terhadap garis yang memuat sisi di hadapannya.
+Istilah \index{garis tinggi}\emph{tinggi} juga dapat digunakan untuk jarak dari titik sudut tersebut ke titik kaki tegak lurusnya pada garis yang memuat sisi di hadapannya.
+
+\begin{thm}{Teorema}\label{thm:orthocenter}
+Ketiga garis tinggi setiap segitiga tak degenerat berpotongan di satu titik.
+\end{thm}
+
+Titik perpotongan garis-garis tinggi disebut \index{ortosenter}\emph{ortosenter};
+titik ini biasanya dinotasikan dengan~$H$.
+
+{
+
+\begin{wrapfigure}{o}{34mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-104}
+\end{wrapfigure}
+
+\parit{Bukti.}
+Ambil suatu segitiga tak degenerat $A B C$.
+Tinjau tiga garis $\ell$, $m$, dan $n$
+sedemikian sehingga
+\begin{align*}
+\ell&\parallel(BC),
+&
+m&\parallel(CA),
+&
+n&\parallel(AB),
+\\
+\ell&\ni A,
+&
+m&\ni B,
+&
+n&\ni C.
+\end{align*}
+Karena $\triangle A B C$ tak degenerat,
+tidak ada dua di antara garis $\ell$, $m$, dan $n$ yang sejajar.
+Misalkan $A'$, $B'$, dan $C'$ berturut-turut merupakan titik perpotongan
+$m$ dengan $n$, $n$ dengan $\ell$, dan $\ell$ dengan $m$.
+
+}
+
+Perhatikan bahwa $\square A B C B'$, $\square B C A C'$, dan $\square C A B A'$ merupakan jajar genjang.
+Dengan menerapkan Lema~\ref{lem:parallelogram}, kita memperoleh bahwa $\triangle ABC$ merupakan \index{segitiga medial}\emph{segitiga medial} dari $\triangle A' B' C'$;
+yaitu, $A$, $B$, dan $C$ berturut-turut merupakan titik tengah $[B' C']$, $[C' A']$, dan $[A' B']$.
+
+Karena $(B' C')\parallel (BC)$, Latihan~\ref{ex:perp-perp}\textit{\ref{ex:perp-perp:a}} menyiratkan bahwa garis tinggi dari $A$ tegak lurus terhadap $[B' C']$, dan menurut uraian di atas, garis itu membagi dua~$[B' C']$.
+
+Dengan demikian, garis-garis tinggi $\triangle A B C$
+juga merupakan garis-garis sumbu $\triangle A' B' C'$.
+Dengan menerapkan Teorema~\ref{thm:circumcenter}, kita memperoleh bahwa garis-garis tinggi $\triangle ABC$ berpotongan di satu titik.
+\qeds
+
+\begin{thm}{Latihan}\label{ex:orthic-4}
+Andaikan ortosenter $H$ dari $\triangle ABC$ berbeda dari titik-titik sudutnya.
+Tunjukkan bahwa $A$ merupakan ortosenter $\triangle H B C$.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:orthic-sim}
+Misalkan $A'$, $B'$, dan $C'$ berturut-turut merupakan titik-titik kaki dari ketiga garis tinggi suatu segitiga lancip $ABC$.
+Tunjukkan bahwa
+\[
+\triangle ABC \sim \triangle A'B'C \sim \triangle AB'C' \sim \triangle A'BC'.
+\]
+\end{thm}
+
+
+
+\section{Garis berat dan titik berat}
+
+Garis berat suatu segitiga adalah ruas yang menghubungkan sebuah titik sudut dengan titik tengah sisi di hadapannya.
+
+\begin{thm}{Teorema}\label{thm:centroid}
+Ketiga garis berat setiap segitiga tak degenerat berpotongan di satu titik.
+Selain itu, titik perpotongan tersebut membagi setiap garis berat dalam perbandingan 2:1.
+\end{thm}
+
+Titik perpotongan garis-garis berat disebut \index{titik berat}\emph{titik berat} segitiga;
+titik ini biasanya dinotasikan dengan~$M$.
+Dalam bukti ini, kita akan menerapkan Latihan \ref{ex:chevinas} dan \ref{ex:smililar+parallel}; penyelesaian lengkap keduanya diberikan dalam petunjuk.
+
+\parit{Bukti.}
+Tinjau suatu segitiga tak degenerat $A B C$.
+Misalkan $[A A']$ dan $[B B']$ merupakan dua garis beratnya.
+Menurut Latihan~\ref{ex:chevinas},
+$[A A']$ dan $[B B']$ memiliki suatu titik perpotongan;
+nyatakan titik itu dengan $M$.
+
+\begin{wrapfigure}{o}{36mm}
+\vskip-4mm
+\centering
+\includegraphics{mppics/pic-106}
+\end{wrapfigure}
+
+Tarik garis $\ell$ yang melalui $A'$ dan sejajar dengan $(BB')$.
+Dengan menerapkan Latihan~\ref{ex:smililar+parallel} pada $\triangle BB'C$ dan $\ell$, kita memperoleh bahwa $\ell$ memotong $[B'C]$ di suatu titik, katakanlah $X$, dan
+\[\frac{CX}{CB'}=\frac{CA'}{CB}=\frac12;\]
+yaitu, $X$ merupakan titik tengah $[CB']$.
+
+Karena $B'$ merupakan titik tengah $[AC]$ dan $X$ merupakan titik tengah $[B'C]$, kita memperoleh
+\[\frac{AB'}{AX}=\frac23.\]
+
+Dengan menerapkan Latihan~\ref{ex:smililar+parallel} pada $\triangle XA'A$ dan garis $(BB')$, kita memperoleh
+\[\frac{AM}{AA'}=\frac{AB'}{AX}=\frac23;\eqlbl{eq:2/3}\]
+yaitu, $M$ membagi $[AA']$ dalam perbandingan 2:1.
+
+Kesamaan \ref{eq:2/3} menentukan $M$ secara tunggal pada $[AA']$.
+Dengan mengulangi argumen yang sama untuk garis-garis berat $[AA']$ dan $[CC']$, kita memperoleh bahwa keduanya juga berpotongan di~$M$,
+sehingga hasilnya terbukti.
+\qeds
+
+
+\begin{thm}{Latihan}\label{ex:midle}
+Misalkan $\square ABCD$ merupakan segiempat tak degenerat
+dan $X$, $Y$, $V$, serta~$W$ berturut-turut merupakan titik tengah
+$[AB]$, $[BC]$, $[CD]$, dan~$[DA]$.
+Tunjukkan bahwa $\square XYVW$ merupakan jajar genjang.
+\end{thm}
+
+\begin{thm}{Latihan lanjutan}\label{ex:euler-line}
+Tunjukkan bahwa ortosenter $H$, titik berat $M$, dan pusat lingkaran luar $O$ dari setiap segitiga tak degenerat $ABC$ terletak pada satu garis.
+Selain itu, titik berat membagi ruas $[HO]$ dalam perbandingan $2:1$.
+\end{thm}
+
+Garis dalam latihan ini disebut \emph{garis Euler}.
+
+
+\section{Garis bagi sudut}
+
+Jika $\measuredangle A B X\equiv-\measuredangle C B X$,
+maka kita katakan bahwa garis $(BX)$ {}\emph{membagi dua} $\angle ABC$,
+atau bahwa garis $(BX)$ merupakan \index{garis bagi!garis bagi sudut}\emph{garis bagi} $\angle ABC$.
+Jika $\measuredangle A B X\equiv\pi-\measuredangle C B X$, maka garis $(BX)$ disebut \index{garis bagi!garis bagi luar}\emph{garis bagi luar} $\angle ABC$.
+
+
+\begin{wrapfigure}{o}{42mm}
+\centering
+\includegraphics{mppics/pic-108}
+\end{wrapfigure}
+
+Jika $\measuredangle ABA'=\pi$;
+yaitu, jika $B$ terletak di antara $A$ dan $A'$,
+maka garis bagi $\angle ABC$ merupakan garis bagi luar $\angle A' B C$, dan sebaliknya.
+
+Perhatikan bahwa garis bagi dan garis bagi luar ditentukan secara tunggal oleh sudutnya.
+
+\begin{thm}{Latihan kelas}\label{ex:perp-bisectors}
+Tunjukkan bahwa untuk setiap sudut, garis bagi dan garis bagi luarnya saling tegak lurus.
+\end{thm}
+
+Garis-garis bagi $\angle ABC$, $\angle BCA$, dan $\angle CAB$ dari suatu segitiga tak degenerat $A B C$
+disebut \index{garis bagi!garis bagi segitiga}\emph{garis-garis bagi segitiga} $A B C$ masing-masing di titik sudut $B$, $C$, dan $A$.
+
+\begin{thm}{Latihan}\label{ex:bisect=altitude}
+Andaikan pada salah satu titik sudut suatu segitiga tak degenerat, garis baginya berimpit dengan garis tingginya.
+Tunjukkan bahwa segitiga tersebut sama kaki.
+\end{thm}
+
+\begin{thm}{Lema}\label{lem:bisect-ratio}
+Misalkan $\triangle A B C$ merupakan segitiga tak degenerat.
+Andaikan garis bagi di $A$
+memotong $[BC]$ di~$D$.
+Maka
+$$\frac{AB}{AC}=\frac{DB}{DC}.
+\eqlbl{bisect-ratio}$$
+
+\end{thm}
+
+\begin{wrapfigure}{r}{28mm}
+\vskip-6mm
+\centering
+\includegraphics{mppics/pic-110}
+\end{wrapfigure}
+
+\parit{Bukti.}
+Misalkan $\ell$ merupakan garis yang melalui $C$ dan sejajar dengan~$(AB)$.
+Perhatikan bahwa garis $\ell$ dan $(AD)$ tidak sejajar;
+misalkan $E$ merupakan titik perpotongannya.
+
+Perhatikan pula bahwa $B$ dan $C$ terletak pada sisi-sisi yang berlawanan dari~$(AD)$.
+Menurut sifat transversal (\ref{thm:parallel-2}),
+$$\measuredangle BAD=\measuredangle CED.\eqlbl{eq:<BAD=<CED}$$
+
+Selanjutnya, sudut $ADB$ dan $EDC$ merupakan sudut bertolak belakang; menurut \ref{prop:vert}, berlaku
+$$\measuredangle ADB=\measuredangle EDC.$$
+
+Menurut kriteria kesebangunan AA,
+$\triangle ABD\sim \triangle ECD$.
+Khususnya,
+$$\frac{AB}{EC}=\frac{DB}{DC}.\eqlbl{eq:AB/EC=DB/DC}$$
+
+Karena $(AD)$ membagi dua $\angle BAC$, kita memperoleh
+$\measuredangle BAD=\measuredangle DAC$.
+Bersama dengan \ref{eq:<BAD=<CED},
+hal ini menyiratkan bahwa
+$\measuredangle CEA=\measuredangle EAC$.
+Menurut Teorema~\ref{thm:isos}, $\triangle ACE$ sama kaki;
+yaitu, $$EC=AC.$$
+Bersama dengan \ref{eq:AB/EC=DB/DC}, hal ini menyiratkan \ref{bisect-ratio}.
+\qeds
+
+\begin{thm}{Latihan}\label{ex:ext-disect}
+Rumuskan dan buktikan analog dari Lema~\ref{lem:bisect-ratio} untuk garis bagi luar.
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:bisect=median}
+Andaikan garis bagi sudut suatu segitiga tak degenerat membagi sisi di hadapannya menjadi dua sama panjang.
+Tunjukkan bahwa segitiga tersebut sama kaki.
+\end{thm}
+
+{
+
+\begin{wrapfigure}{r}{38mm}
+\vskip-5mm
+\centering
+\includegraphics{mppics/pic-118}
+\end{wrapfigure}
+
+\begin{thm}{Latihan}\label{ex:bisector-parallel}
+Andaikan garis bagi sudut di $A$ pada suatu segitiga tak degenerat $ABC$ memotong $[BC]$ di $D$;
+garis yang melalui $D$ dan sejajar dengan $(CA)$ memotong $(AB)$ di $E$;
+garis yang melalui $E$ dan sejajar dengan $(BC)$ memotong $(AC)$ di $F$.
+
+Tunjukkan bahwa
+$AE=FC$.
+
+\end{thm}
+
+}
+
+\section{Sifat berjarak sama}
+
+Ingat bahwa jarak antara suatu garis $\ell$ dan titik $P$ didefinisikan sebagai jarak dari $P$ ke titik kaki tegak lurusnya pada $\ell$; lihat Bagian~\ref{sec:perp<oblique}.
+
+\begin{thm}[\abs]{Proposisi}\label{prop:angle-bisect-dist}
+Andaikan $\triangle ABC$ tak degenerat.
+Suatu titik $X$ terletak pada garis bagi atau garis bagi luar $\angle ABC$
+jika dan hanya jika $X$ berjarak sama dari garis $(AB)$ dan $(BC)$.
+\end{thm}
+
+
+\parit{Bukti.}
+Kita boleh mengandaikan bahwa $X$ tidak terletak pada gabungan garis $(AB)$ dan $(BC)$.
+Jika tidak, jarak ke salah satu garis bernilai nol;
+dalam hal ini, $X=B$ merupakan satu-satunya titik yang berjarak sama dari kedua garis.
+
+Misalkan $Y$ dan $Z$ berturut-turut merupakan cerminan $X$ terhadap $(AB)$ dan $(BC)$.
+Perhatikan bahwa
+\[Y\ne Z.\]
+Jika tidak, kedua garis $(AB)$ dan $(BC)$ merupakan garis sumbu $[XY]$.
+Akibatnya, $(AB)=(BC)$, tetapi hal ini mustahil karena $\triangle ABC$ tak degenerat.
+
+Menurut Proposisi~\ref{prop:reflection}, $XB=YB=ZB$.
+Perhatikan bahwa $X$ berjarak sama dari $(AB)$ dan $(BC)$ jika dan hanya jika $XY\z=XZ$.
+
+
+{
+
+\begin{wrapfigure}{r}{24mm}
+\centering
+\includegraphics{mppics/pic-112}
+\end{wrapfigure}
+
+Dengan menerapkan SSS lalu SAS, kita memperoleh
+$$\begin{aligned}
+XY&=XZ
+\\
+&\hskip0.4mm\Updownarrow
+\\
+\triangle XBY&\cong\triangle XBZ
+\\
+&\hskip0.4mm\Updownarrow
+\\
+\measuredangle XBY&\equiv \pm \measuredangle XBZ.
+\end{aligned}
+$$
+
+Karena $Y\ne Z$, kita memperoleh bahwa $\measuredangle XBY\ne \measuredangle XBZ$.
+Oleh karena itu, $X$ berjarak sama dari $(AB)$ dan $(BC)$ jika dan hanya jika
+\[\measuredangle XBY\equiv -\measuredangle XBZ.
+\eqlbl{eq:iff-chain}\]
+
+}
+
+Menurut Proposisi~\ref{prop:reflection}, $A$ terletak pada garis bagi $\angle XBY$,
+dan $C$ terletak pada garis bagi $\angle XBZ$; yaitu,
+\begin{align*}
+2\cdot \measuredangle XBA&\equiv \measuredangle XBY,
+&
+2\cdot \measuredangle XBC&\equiv \measuredangle XBZ.
+\end{align*}
+Menurut \ref{eq:iff-chain},
+\[2\cdot \measuredangle XBA\equiv -2\cdot \measuredangle XBC.\]
+Kesamaan terakhir berarti bahwa
+\[
+\measuredangle XBA+\measuredangle XBC\equiv 0
+\quad
+\text{atau}
+\quad
+\measuredangle XBA+\measuredangle XBC\equiv \pi
+\]
+--- sehingga hasilnya terbukti.
+\qeds
+
+\section{Pusat lingkaran dalam}
+
+
+\begin{thm}[\abs]{Teorema}\label{thm:incenter}
+Garis-garis bagi sudut setiap segitiga tak degenerat berpotongan di satu titik.
+\end{thm}
+
+Titik perpotongan garis-garis bagi disebut \index{pusat lingkaran dalam}\emph{pusat lingkaran dalam} segitiga,
+dan biasanya dinotasikan dengan~$I$.
+Titik $I$ berjarak sama dari setiap sisi.
+Khususnya, titik ini merupakan pusat sebuah lingkaran yang menyinggung setiap sisi segitiga.
+Lingkaran ini disebut
+\index{lingkaran dalam}\emph{lingkaran dalam}, dan jari-jarinya disebut
+\index{jari-jari lingkaran dalam}\emph{jari-jari lingkaran dalam} segitiga.
+
+\parit{Bukti.}
+Misalkan $\triangle ABC$ merupakan segitiga tak degenerat.
+
+Titik $B$ dan $C$ terletak pada sisi-sisi yang berlawanan dari garis bagi $\angle BAC$.
+Oleh karena itu, garis bagi ini memotong $[BC]$ di suatu titik, katakanlah~$A'$.
+
+Secara serupa, terdapat $B'\in[AC]$
+sedemikian sehingga $(BB')$ membagi dua $\angle ABC$.
+
+Dengan menerapkan Latihan~\ref{ex:chevinas},
+kita memperoleh bahwa $[AA']$ dan $[BB']$ berpotongan.
+Misalkan $I$ menyatakan titik perpotongan tersebut.
+
+{
+
+\begin{wrapfigure}{o}{28mm}
+\vskip0mm
+\centering
+\includegraphics{mppics/pic-114}
+\end{wrapfigure}
+
+Misalkan $X$, $Y$, dan $Z$ berturut-turut merupakan titik kaki tegak lurus dari $I$ pada $(B C)$, $(C A)$, dan $(A B)$.
+Dengan menerapkan Proposisi~\ref{prop:angle-bisect-dist}, kita memperoleh
+$$I Y=I Z=I X.$$
+Dari proposisi yang sama, kita memperoleh bahwa $I$ terletak pada garis bagi atau garis bagi luar $\angle B C A$.
+
+Garis $(C I)$ memotong $[B B']$;
+titik $B$ dan $B'$ terletak pada sisi-sisi yang berlawanan dari~$(C I)$.
+Oleh karena itu, sudut $I C B'$ dan $I C B$ memiliki tanda yang berlawanan.
+Perhatikan bahwa $\angle I C A=\angle I C B'$.
+Dengan demikian, $(C I)$ tidak mungkin merupakan garis bagi luar $\angle B C A$.
+Maka hasilnya terbukti.
+\qeds
+
+}
+
+{
+
+\begin{wrapfigure}{r}{30mm}
+\centering
+\vskip-2mm
+\includegraphics{mppics/pic-116}
+\end{wrapfigure}
+
+\begin{thm}{Latihan}\label{ex:2x=b+c-a}
+Andaikan sisi-sisi $[B C]$, $[C A]$, dan $[A B]$ dari $\triangle A B C$ menyinggung lingkaran dalam berturut-turut di $X$, $Y$, dan $Z$.
+Tunjukkan bahwa
+$$AY=AZ= \tfrac12\cdot(A B+ A C- B C).$$
+
+\end{thm}
+
+Andaikan $A'$, $B'$, dan $C'$ merupakan titik-titik kaki dari ketiga garis tinggi suatu segitiga $ABC$ dan semuanya berbeda satu sama lain.
+Maka $\triangle A'B'C'$ disebut \index{segitiga!segitiga ortik}\index{segitiga ortik}\emph{segitiga ortik} dari $\triangle ABC$.
+
+}
+
+\begin{thm}{Latihan}\label{ex:orthic-triangle}
+Buktikan bahwa ortosenter suatu segitiga lancip berimpit dengan pusat lingkaran dalam segitiga ortiknya.
+
+Apa analog dari pernyataan ini untuk segitiga tumpul?
+\end{thm}
+
+\begin{thm}{Latihan}\label{ex:bisector-incenter}
+Misalkan $I$ merupakan titik perpotongan garis-garis bagi di $A$ dan $B$ dari suatu segitiga tak degenerat $ABC$.
+Misalkan $D$ menyatakan titik perpotongan garis bagi di $A$ dengan sisi $[BC]$.
+Tunjukkan bahwa $\frac{AI}{DI}=\frac{b+c}{a}$,
+dengan $a=BC$, $b=CA$, dan $c=AB$.
+
+Gunakan hasil ini untuk menyusun bukti lain bagi \ref{thm:incenter}.
+\end{thm}

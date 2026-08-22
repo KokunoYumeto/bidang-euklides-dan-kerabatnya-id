@@ -18,7 +18,7 @@ attribution/source/change/SA/non-endorsement. Exclude `cover/` and P22 fonts;
 do not redistribute `mppics/macros.mp`; retain `fiziko.mp`
 GPL-3.0-or-later and H2checkers PD notices.
 
-Continue from Chapter 8 `triangle.tex` and hints; Chapters 1-7 are
+Continue from Chapter 9 `inscribed-angle.tex` and hints; Chapters 1-8 are
 admitted. Per chapter: translate id-ID without altering mathematics; preserve
 labels, refs, citations, environments, formulas, exercises, hints, figures,
 index and Chapter 14-20 warnings; record terms/corrections. Prove

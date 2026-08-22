@@ -97,3 +97,25 @@ O004-TERM-0095,coordinate plane,bidang koordinat,,analytic-geometry,admitted
 O004-TERM-0096,locus,lokus,,analytic-geometry,admitted
 O004-TERM-0097,Apollonius circle,lingkaran Apollonius,,circle-geometry,admitted
 O004-TERM-0098,focus (Apollonius circle),fokus,,circle-geometry,admitted
+O004-TERM-0099,triangle geometry,geometri segitiga,,triangle-geometry,admitted
+O004-TERM-0100,circumcenter,pusat lingkaran luar,sirkumsentrum (contextual),triangle-geometry,admitted
+O004-TERM-0101,circumcircle,lingkaran luar,lingkaran keliling (noncanonical),triangle-geometry,admitted
+O004-TERM-0102,altitude (line),garis tinggi,,triangle-geometry,admitted
+O004-TERM-0103,altitude (distance),tinggi,garis tinggi (line sense),triangle-geometry,admitted
+O004-TERM-0104,orthocenter,ortosenter,titik tinggi (contextual),triangle-geometry,admitted
+O004-TERM-0105,orthocentric system,sistem ortosentrik,,triangle-geometry,admitted
+O004-TERM-0106,medial triangle,segitiga medial,,triangle-geometry,admitted
+O004-TERM-0107,median of a triangle,garis berat segitiga,median (contextual),triangle-geometry,admitted
+O004-TERM-0108,centroid,titik berat,sentroid (contextual),triangle-geometry,admitted
+O004-TERM-0109,Euler line,garis Euler,,triangle-geometry,admitted
+O004-TERM-0110,homothety,homoteti,,transformation-geometry,admitted
+O004-TERM-0111,angle bisector,garis bagi sudut,garis pembagi sudut,triangle-geometry,admitted
+O004-TERM-0112,internal angle bisector,garis bagi dalam,,triangle-geometry,admitted
+O004-TERM-0113,external angle bisector,garis bagi luar,garis bagi sudut luar (contextual),triangle-geometry,admitted
+O004-TERM-0114,angle-bisector ratio theorem,teorema rasio garis bagi sudut,teorema garis bagi sudut (contextual),triangle-geometry,admitted
+O004-TERM-0115,equidistant from two lines,berjarak sama dari dua garis,,metric-geometry,admitted
+O004-TERM-0116,incenter,pusat lingkaran dalam,insentrum (contextual),triangle-geometry,admitted
+O004-TERM-0117,incircle,lingkaran dalam,,triangle-geometry,admitted
+O004-TERM-0118,inradius,jari-jari lingkaran dalam,,triangle-geometry,admitted
+O004-TERM-0119,orthic triangle,segitiga ortik,,triangle-geometry,admitted
+O004-TERM-0120,excenter,eksenter,pusat lingkaran singgung luar (explanatory),triangle-geometry,admitted

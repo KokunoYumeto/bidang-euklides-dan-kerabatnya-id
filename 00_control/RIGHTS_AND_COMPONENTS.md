@@ -36,6 +36,14 @@ generated body PDF without P22 assets. A public reproduction script may fetch
 the exact official archive for local use, verify it, exclude `cover/`, and apply
 the separately distributed overlay without republishing the generator files.
 
+Chapter 8 requires three translated label strings in `pic-108`. The tracked
+`scripts/apply_figure_localizations.ps1` is a minimal, hash-gated overlay: it
+patches the fetched/local build copy of `pic.mp` or verifies that the exact
+localization is already present. The repository does not redistribute
+`mppics/macros.mp`, `fiziko.mp`, or the remaining upstream generator closure.
+This preserves the component-rights boundary while making the reader-visible
+figure reproducibly Indonesian.
+
 ## Deterministic generated-asset handling
 
 The build closure converts `pics/by-sa.eps` and

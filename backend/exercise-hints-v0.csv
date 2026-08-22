@@ -86,3 +86,16 @@ order,exercise_id,source_label,exercise_kind,used_later,hint_id,exercise_source,
 85,o004.petrunin.ex.ch07.022,ex:circle-coord,exercise,false,o004.petrunin.hint.ch07.019,parallel.tex,hints.tex,translated-admitted
 86,o004.petrunin.ex.ch07.023,ex:apolonnius,exercise,false,o004.petrunin.hint.ch07.020,parallel.tex,hints.tex,translated-admitted
 87,o004.petrunin.ex.ch07.024,ex:apolonnius-construction,exercise,false,o004.petrunin.hint.ch07.021,parallel.tex,hints.tex,translated-admitted
+88,o004.petrunin.ex.ch08.001,ex:unique-cline,exercise,true,o004.petrunin.hint.ch08.001,triangle.tex,hints.tex,translated-admitted
+89,o004.petrunin.ex.ch08.002,ex:orthic-4,exercise,false,o004.petrunin.hint.ch08.002,triangle.tex,hints.tex,translated-admitted
+90,o004.petrunin.ex.ch08.003,ex:orthic-sim,exercise,false,o004.petrunin.hint.ch08.003,triangle.tex,hints.tex,translated-admitted
+91,o004.petrunin.ex.ch08.004,ex:midle,exercise,false,o004.petrunin.hint.ch08.004,triangle.tex,hints.tex,translated-admitted
+92,o004.petrunin.ex.ch08.005,ex:euler-line,advanced-exercise,false,o004.petrunin.hint.ch08.005,triangle.tex,hints.tex,translated-admitted
+93,o004.petrunin.ex.ch08.006,ex:perp-bisectors,classroom-exercise,false,o004.petrunin.hint.ch08.006,triangle.tex,hints.tex,translated-admitted
+94,o004.petrunin.ex.ch08.007,ex:bisect=altitude,exercise,false,o004.petrunin.hint.ch08.007,triangle.tex,hints.tex,translated-admitted
+95,o004.petrunin.ex.ch08.008,ex:ext-disect,exercise,false,o004.petrunin.hint.ch08.008,triangle.tex,hints.tex,translated-admitted
+96,o004.petrunin.ex.ch08.009,ex:bisect=median,exercise,false,o004.petrunin.hint.ch08.009,triangle.tex,hints.tex,translated-admitted
+97,o004.petrunin.ex.ch08.010,ex:bisector-parallel,exercise,false,o004.petrunin.hint.ch08.010,triangle.tex,hints.tex,translated-admitted
+98,o004.petrunin.ex.ch08.011,ex:2x=b+c-a,exercise,false,o004.petrunin.hint.ch08.011,triangle.tex,hints.tex,translated-admitted
+99,o004.petrunin.ex.ch08.012,ex:orthic-triangle,exercise,false,o004.petrunin.hint.ch08.012,triangle.tex,hints.tex,translated-admitted
+100,o004.petrunin.ex.ch08.013,ex:bisector-incenter,exercise,false,o004.petrunin.hint.ch08.013,triangle.tex,hints.tex,translated-admitted

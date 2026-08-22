@@ -4,7 +4,7 @@ Updated: 2026-08-22
 
 Current admitted unit IDs: `o004.petrunin.front-ch01`, `o004.petrunin.ch02`,
 `o004.petrunin.ch03`, `o004.petrunin.ch04`, `o004.petrunin.ch05`,
-`o004.petrunin.ch06`, `o004.petrunin.ch07`
+`o004.petrunin.ch06`, `o004.petrunin.ch07`, `o004.petrunin.ch08`
 
 Completed and frozen:
 
@@ -103,25 +103,50 @@ Completed and frozen:
     admitted and disclosed in `qa/CH07_ADMISSION_20260822.md`. Legacy and
     misspelled source IDs and the inactive signed-`pi/4` material remain
     preserved.
+29. `triangle.tex` — complete Bab 8, six sections, six labeled results,
+    thirteen exercises, and nine body figures; 15,865 bytes, SHA-256
+    `b599ee9baded53dc0c81fe6e0bb6539e5e43e5173d1ba525df5e8885a024f8b6`.
+30. `hints.tex` — complete Chapter 8 slice, target lines 793–871, thirteen
+    directly matching authored hints; 3,322 bytes, SHA-256
+    `8cba27ea4b834ce686c95e6601044a4f792daae4400094da3e6bcec1fd289187`.
+31. Chapter 8 backend: seven unit-order rows, six result records, thirteen
+    exercise-hint mappings, nine admitted figure descriptions, twenty-one
+    concept/dependency rows, five applied correction/localization records,
+    five preserved notes, one build artifact, and one QA event. The catalog
+    has 360 records and 209 relations with zero duplicate IDs or dangling
+    endpoints; concept mappings remain `mapped-pending-qa`.
+32. The immutable `ex:midle` and `ex:ext-disect` IDs, external
+    `ex:abs-bisect=median` reference, altitude senses, homothety dependency,
+    and hint-only excenter are preserved and indexed. The source's B/C/A
+    angle-vertex prose and proposition/lemma wording are corrected explicitly.
+33. Exactly three visible strings in `pic-108` are localized through
+    `scripts/apply_figure_localizations.ps1`, an idempotent authority-hash
+    gated overlay. The unresolved upstream MetaPost generator closure is not
+    redistributed.
 
-Current production boundary: immediately before Chapter 8 (`triangle.tex`) and
-at its hint marker on target line 793. The translated hint prefix through
-Chapter 7 is 29,067 bytes, SHA-256
-`46c00e637aa948158b9e3ac7a5b38379bb367ec9c90f2c560d010f151c3b814c`.
+Current production boundary: immediately before Chapter 9
+(`inscribed-angle.tex`) and at its hint marker on target line 872. Chapter 9
+authority and current target body are byte-identical: 19,072 bytes, SHA-256
+`ea6f921d62502fc78b8bc4757ae43fc8d9728c149ce76abe9533eeb475fad0f4`.
+Its exact marker-inclusive authority hint slice is target lines 872–1107,
+7,590 bytes, SHA-256
+`fdb0734117a80bac0f59a1a860f23c74a921b7bf5a843ac23ec72e9eb04ae490`;
+the strict hint payload at lines 873–1107 is 7,540 bytes, SHA-256
+`9a1445f7d047a2a7b4ce0721d3fb4bfad6ca31ed46b9c682a8fe91d491747ca6`.
+The Chapter 10+ suffix begins at line 1108, is byte-identical to authority,
+and is 54,154 bytes, SHA-256
+`3a82e8d6480207e05584d1431e54c469bf8df558ee37f908852f3a3ff3dcff3e`.
 
-Chapter 8 authority and current target `triangle.tex` are byte-identical:
-14,691 bytes, SHA-256
-`95e4d8050e38af8da76ed24c48277550bfe7cdf8c1a7274887d6f853e4429948`.
-Its exact authority hint slice is target lines 793–871, 3,032 bytes, SHA-256
-`9094d0267cd658585f398bf029934f4a3af9eec2069ecfd18451fa5a3fc2ad8d`.
-The translated prose action begins after the preserved marker/counter lines,
-at line 797, and ends at line 870. The Chapter 9+ suffix begins at line 872 and
-is byte-identical to authority: 61,744 bytes, SHA-256
-`2ea9859cf7143c6f56069ad802df4c1e295839f8729408a0f72ee8884e205afd`.
-Chapter 8 contains thirteen exercises, thirteen directly matching authored
-hint blocks, nine body figures, and no hint figures. Preserve the immutable
-`ex:midle` and `ex:ext-disect` spellings and record the source's
-proposition/lemma and external/exterior-bisector terminology inconsistencies.
+Chapter 9 contains six sections, seven labeled results, twenty-two top-level
+exercises (twenty-one labeled plus one unlabeled YouTube exercise), three
+exercise subparts, nineteen body figures, and four hint figures. All twenty-one
+labeled exercises have authored hint blocks; the three subparts share their
+parent hint and the unlabeled YouTube exercise has no hint. Preserve the
+immutable `ex:tnagents+midpoint` spelling and inactive orphan hint for absent
+`ex:arc-tan-straight`. Record and resolve, where mathematically certain, the
+source's reversed if/only-if reference, undefined X/Y in the degenerate-arc
+discussion, `[BY)` versus endpoint-C `[CY)` ray, and the unlabeled
+service-dependent video exercise lacking a hint or offline alternative.
 
 Artifact boundary: the locally admitted 19-page partial reader has SHA-256
 `1a6909ab8c315fe2529d9267c3d539def1e1f68667bc432d8bf40059dd91a452`.
@@ -154,7 +179,11 @@ Chapter 7 admission evidence is `qa/CH07_ADMISSION_20260822.md`; its two fresh
 full-context builds are 208 pages, 2,968,464 bytes, SHA-256
 `7fa21a42a1cdf4d78db3b1b1ae9d8db3e58ae50c3091264f4402f4b54aa0b448`.
 
-Immediate cursor action: translate Chapter 8 (`triangle.tex`) and its matching
-contiguous hints, then extend the backend and perform one bounded gate.
-Translation remains dominant; do not reopen the admitted Chapters 1-7
+Chapter 8 admission evidence is `qa/CH08_ADMISSION_20260822.md`; its two fresh
+full-context builds are 209 pages, 2,677,012 bytes, SHA-256
+`ca38d7112aa685020094760b3d91c8511cc926eaff73c8fe1db27446400cfdfc`.
+
+Immediate cursor action: translate Chapter 9 (`inscribed-angle.tex`) and its
+matching contiguous hints, then extend the backend and perform one bounded
+gate. Translation remains dominant; do not reopen the admitted Chapters 1-8
 boundary.

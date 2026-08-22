@@ -228,3 +228,38 @@ on page 65 is explicit. See `qa/CH07_ADMISSION_20260822.md`.
 
 The full-context PDF still contains English Chapter 8+ material. It is private
 build/QA evidence and is not a release artifact.
+
+## Chapter 8 deterministic admission boundary
+
+The first two clean builds exposed a reader-visible English-label defect in
+`pic-108` and were rejected. The two `bisector` strings were localized to
+`garis bagi` and the `external` string to `luar`, so the paired labels read
+`garis bagi luar`. Two fresh corrected output directories,
+`build/ch08-final-c-20260822` and `build/ch08-final-d-20260822`, produced
+identical results:
+
+- PDF: 209 pages; 2,677,012 bytes;
+- SHA-256: `ca38d7112aa685020094760b3d91c8511cc926eaff73c8fe1db27446400cfdfc`;
+- 224 generated `.mps` files; zero cross-build hash mismatches;
+- localized `pic-108.mps`: 22,274 bytes; SHA-256
+  `7801282b8ef71e335f8da9ee426d69a1d255adbb9cabcdbcf7819179d8c72532`;
+- normalized CC badge SHA-256
+  `7167e45adcc360f116b77210a2e452308e2b8fffd84106f1ea69045cb5be9928`;
+- normalized H2checkers SHA-256
+  `61a45915d8630a8df63bd9b9ecb095ab9fe6d6671b3360f814bea97ce9a8d885`.
+
+The converged log has zero undefined references/citations and no fatal error.
+It reports 63 overfull and 41 underfull boxes plus the inherited group warning.
+Chapter 8 contributes eight overfull and two underfull diagnostics; rendered
+inspection confirms that none clips, collides, or obscures reader content.
+
+Physical PDF pages 65–73 and hint pages 191–193 were rendered at 150 dpi and
+inspected. All nine body figures are present and legible. The corrected page 68
+shows `garis bagi` and `garis bagi luar` cleanly; the B/C/A correspondence and
+same-proposition wording are visible; Chapter 9 begins as explicit English QA
+context. See `qa/CH08_ADMISSION_20260822.md`.
+
+The tracked, idempotent `scripts/apply_figure_localizations.ps1` applies or
+verifies the exact `pic-108` overlay by hash. A fresh proof build through the
+updated harness reproduced the admitted PDF hash exactly. The full-context PDF
+is private build/QA evidence and is not a release artifact.

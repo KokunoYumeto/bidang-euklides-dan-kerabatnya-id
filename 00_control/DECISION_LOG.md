@@ -168,3 +168,22 @@ signed-`pi/4` exercise and hint as an upstream editorial note. Two fresh
 byte-identical. Body pages 55–65 and hint pages 189–190 are visually admitted;
 the full-context PDF contains English Chapter 8+ material and remains private
 QA evidence. Advance the cursor to Chapter 8, `triangle.tex`.
+
+## D020 — Chapter 8 admission and figure-label overlay
+
+Admit complete Chapter 8 and all thirteen authored hints after structural,
+language, deterministic-build, backend, and visual checks. Preserve immutable
+IDs `ex:midle` and `ex:ext-disect`. Correct the source's angle/vertex prose
+correspondence to B/C/A, call `prop:angle-bisect-dist` a proposition rather
+than a lemma, and normalize external/exterior terminology to `garis bagi
+luar`; each is separately recorded. Preserve the line-versus-distance senses
+of *altitude*, the homothety self-study dependency, the external
+`ex:abs-bisect=median` reference, and the hint-only excenter. The first visual
+pass rejects `pic-108` because its labels remain English. Localize both
+`bisector` strings to `garis bagi` and the `external` string to `luar`, so the
+paired labels read `garis bagi luar`; use a hash-gated overlay without
+redistributing the unresolved generator closure. The
+corrected 209-page full-context PDFs and all 224 MetaPost files are
+byte-identical; body pages 65–73 and hint pages 191–193 are visually admitted.
+The full-context PDF contains English Chapter 9+ material and remains private
+QA evidence. Advance the cursor to Chapter 9, `inscribed-angle.tex`.

@@ -3,11 +3,11 @@
 Updated: 2026-08-22
 
 Status: active Bahasa Indonesia reader production. The front matter, Chapters
-1-7, and their exact available hint slices are complete, structurally verified,
+1-8, and their exact available hint slices are complete, structurally verified,
 and visually admitted. The GitHub repository and Unit 001 release are private.
 Zenodo record `22044358`, DOI
 `10.5281/zenodo.22044358`, retains all five files with restricted access. The
-whole book is not complete; the cursor is immediately before Chapter 8.
+whole book is not complete; the cursor is immediately before Chapter 9.
 
 The admitted core is Anton Petrunin, *Euclidean Plane and Its Relatives: A
 Minimalist Introduction*. The labeled publication witness is arXiv
@@ -204,6 +204,45 @@ twelve correction/source/localization records, one build artifact, and one QA
 event. JSON Schema and UTF-8/LF CSV verification pass; Chapter 7 concept
 mappings remain `mapped-pending-qa`.
 
+Unit `o004.petrunin.ch08` adds complete Bab 8, Geometri segitiga: six
+sections, six labeled results (including two absolute-geometry results),
+thirteen exercises, thirteen directly matching author hints, and nine body
+figures. Target hashes are
+`b599ee9baded53dc0c81fe6e0bb6539e5e43e5173d1ba525df5e8885a024f8b6`
+for `triangle.tex` and
+`8cba27ea4b834ce686c95e6601044a4f792daae4400094da3e6bcec1fd289187`
+for its hint slice.
+
+Two fresh Chapter 8 builds are byte-identical: 209 pages, 2,677,012 bytes,
+SHA-256
+`ca38d7112aa685020094760b3d91c8511cc926eaff73c8fe1db27446400cfdfc`.
+All 224 generated MetaPost figures match across builds. Body pages 65-73 and
+hint pages 191-193 were inspected. All nine body figures, equations, wraps,
+headings and hint columns are legible, with no clipping, overlap, collision,
+off-page content, or missing material. The first visual pass rejected English
+labels in `pic-108`; the admitted hash-gated overlay localizes both `bisector`
+strings to `garis bagi` and `external` to `luar`, so the paired labels read
+`garis bagi luar`. A fresh build through the
+updated harness reproduced the admitted PDF hash. See
+`qa/CH08_ADMISSION_20260822.md`.
+
+Chapter 8 preserves the immutable source IDs `ex:midle` and
+`ex:ext-disect`, the external `ex:abs-bisect=median` reference, the homothety
+self-study dependency, and the distinct line/distance senses of altitude. It
+corrects the source's angle/vertex prose correspondence to B/C/A and calls
+`prop:angle-bisect-dist` a proposition rather than a lemma, without altering
+any formula or identifier. The hint-only term *excenter* is localized as
+`eksenter`.
+
+The backend now has 360 unique records and 209 relations with no duplicates or
+dangling endpoints. Chapter 8 contributes seven admitted ordered-unit rows,
+six admitted result records, thirteen exercise-hint mappings, nine admitted
+figure descriptions, twenty-one concept/dependency rows, five applied
+correction/localization records, five preserved source/dependency/accessibility
+notes, one build artifact and one QA event. JSON Schema, deterministic UTF-8/LF
+CSV, and registered-artifact hash checks pass; Chapter 8 concept mappings
+remain `mapped-pending-qa`.
+
 The exact publication/access receipt is
 `00_control/PUBLICATION_RECEIPT_UNIT001.json`. GitHub is private at
 `KokunoYumeto/bidang-euklides-dan-kerabatnya-id`, tag
@@ -243,6 +282,6 @@ The three-layer architecture is frozen in
 `00_control/CURRICULUM_ARCHITECTURE.md`; the complete finite workflow is
 `00_control/00_CURRENT_GOAL_AND_WORKFLOW.md`.
 
-Next action: translate Chapter 8 (`triangle.tex`) and its matching contiguous
-hint slice in source order, extend the backend, and apply the same bounded
-gate. Do not reopen the admitted Chapters 1-7 boundary.
+Next action: translate Chapter 9 (`inscribed-angle.tex`) and its matching
+contiguous hint slice in source order, extend the backend, and apply the same
+bounded gate. Do not reopen the admitted Chapters 1-8 boundary.

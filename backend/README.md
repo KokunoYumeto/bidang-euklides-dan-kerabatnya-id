@@ -85,6 +85,31 @@ remain `mapped-pending-qa`. The full-context PDF is private, mixed-context,
 untagged QA evidence rather than a public reader. This admitted boundary brings
 the catalog to 309 unique records and 179 relations with no dangling endpoints.
 
+Chapter 8 adds six ordered sections, six result records, thirteen
+exercise-hint pairs, nine body-figure descriptions, and twenty-one
+concept/dependency rows. The proposition `prop:angle-bisect-dist` and theorem
+`thm:incenter` retain their source `\abs` flags; the other four results remain
+Euclidean. The backend preserves the explicit used-later marker on
+`ex:unique-cline`, the misspelled immutable labels `ex:midle` and
+`ex:ext-disect`, the homothety self-study dependency, the cross-label
+`ex:abs-bisect=median`, and the definition of excenter that appears only in a
+hint. It records the applied B/C/A angle-bisector vertex correction, the
+proposition-kind correction in the incenter proof, consistent `garis bagi
+luar` terminology, and the source's dual line/distance meaning of altitude as
+`garis tinggi` versus `tinggi`. Figure `pic-108` additionally localizes its two
+`bisector` strings to `garis bagi` and its `external` string to `luar`, so the
+paired labels read `garis bagi luar`; the authority and localized MetaPost
+container hashes are retained separately. The nine translated
+catalog records, thirteen exercise rows, nine figure records, and five applied
+localization/correction records are admitted after structural QA, two
+byte-identical 209-page clean builds, comparison of 224 generated MPS files,
+and visual inspection of twelve unique pages. Five immutable-identifier,
+cross-reference, dependency, and accessibility notes remain preserved rather
+than being presented as applied corrections; all twenty-one concept mappings
+remain `mapped-pending-qa`. The full-context PDF is private, mixed-context,
+untagged QA evidence rather than a public reader. This admitted boundary brings
+the catalog to 360 unique records and 209 relations with no dangling endpoints.
+
 Serialization rules: UTF-8 without BOM, LF, two-space indentation, object keys
 in the checked-in order, arrays in source order, one terminal newline.  A
 canonical SHA-256 is recorded after each admitted boundary.  The schema is

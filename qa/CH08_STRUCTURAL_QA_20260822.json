@@ -1,0 +1,291 @@
+{
+  "schema": "o004-ch08-qa-v0",
+  "status": "pass",
+  "authority": {
+    "chapter_bytes": 14691,
+    "chapter_sha256": "95e4d8050e38af8da76ed24c48277550bfe7cdf8c1a7274887d6f853e4429948",
+    "hint_slice_lines": "793-871",
+    "hint_slice_bytes": 3032,
+    "hint_slice_sha256": "9094d0267cd658585f398bf029934f4a3af9eec2069ecfd18451fa5a3fc2ad8d",
+    "later_suffix_bytes": 61744,
+    "later_suffix_sha256": "2ea9859cf7143c6f56069ad802df4c1e295839f8729408a0f72ee8884e205afd"
+  },
+  "target": {
+    "chapter_bytes": 15865,
+    "chapter_sha256": "b599ee9baded53dc0c81fe6e0bb6539e5e43e5173d1ba525df5e8885a024f8b6",
+    "hint_slice_lines": "793-871",
+    "hint_slice_bytes": 3322,
+    "hint_slice_sha256": "8cba27ea4b834ce686c95e6601044a4f792daae4400094da3e6bcec1fd289187",
+    "whole_hints_bytes": 94133,
+    "whole_hints_sha256": "fab63adad2acc5dacd44b51724afd9297ffa3a64a9753ad9e5bd22732d899483",
+    "frozen_pre_chapter_8_prefix_bytes": 29067,
+    "frozen_pre_chapter_8_prefix_sha256": "46c00e637aa948158b9e3ac7a5b38379bb367ec9c90f2c560d010f151c3b814c",
+    "chapter_9_plus_suffix_bytes": 61744,
+    "chapter_9_plus_suffix_sha256": "2ea9859cf7143c6f56069ad802df4c1e295839f8729408a0f72ee8884e205afd",
+    "chapter_9_plus_suffix_matches_authority": true,
+    "utf8_lf_no_bom_terminal_lf": true,
+    "edited_surface_trailing_whitespace_lines": {
+      "chapter": [],
+      "hints": []
+    },
+    "whole_hints_inherited_trailing_whitespace_outside_chapter_8_count": 158,
+    "active_english_prose_hits": {
+      "chapter": [],
+      "hints": []
+    },
+    "untranslated_source_language_overlap": {
+      "chapter": [],
+      "hints": []
+    }
+  },
+  "chapter_topology": {
+    "commands": 360,
+    "environments": 62,
+    "labels": 20,
+    "equation_labels": 5,
+    "references": 28,
+    "citations": 0,
+    "graphics": 9,
+    "theorem_options": 19,
+    "qeds": 6,
+    "comments": 0
+  },
+  "chapter_raw_topology": {
+    "commands": 360,
+    "environments": 62,
+    "labels": 20,
+    "equation_labels": 5,
+    "references": 28,
+    "citations": 0,
+    "graphics": 9,
+    "theorem_options": 19,
+    "qeds": 6,
+    "comments": 0
+  },
+  "scalar_counts": {
+    "sections": 6,
+    "index_entries": 15,
+    "absolute_markers": 2,
+    "used_later_markers": 1
+  },
+  "chapter_math_surfaces": {
+    "authority_active": 282,
+    "target_active": 282,
+    "authority_raw": 282,
+    "target_raw": 282,
+    "named_deviations_active": [
+      {
+        "operation": "delete",
+        "authority_range": [
+          137,
+          138
+        ],
+        "target_range": [
+          137,
+          137
+        ],
+        "authority_values": [
+          "A"
+        ],
+        "target_values": []
+      },
+      {
+        "operation": "insert",
+        "authority_range": [
+          140,
+          140
+        ],
+        "target_range": [
+          139,
+          140
+        ],
+        "authority_values": [],
+        "target_values": [
+          "A"
+        ]
+      }
+    ],
+    "named_deviations_raw": [
+      {
+        "operation": "delete",
+        "authority_range": [
+          137,
+          138
+        ],
+        "target_range": [
+          137,
+          137
+        ],
+        "authority_values": [
+          "A"
+        ],
+        "target_values": []
+      },
+      {
+        "operation": "insert",
+        "authority_range": [
+          140,
+          140
+        ],
+        "target_range": [
+          139,
+          140
+        ],
+        "authority_values": [],
+        "target_values": [
+          "A"
+        ]
+      }
+    ],
+    "named_id": "o004.petrunin.correction.ch08.angle-bisector-vertex-correspondence"
+  },
+  "exercise_hint_closure": {
+    "exercise_count": 13,
+    "hint_header_count": 13,
+    "ordered_exercise_ids": [
+      "ex:unique-cline",
+      "ex:orthic-4",
+      "ex:orthic-sim",
+      "ex:midle",
+      "ex:euler-line",
+      "ex:perp-bisectors",
+      "ex:bisect=altitude",
+      "ex:ext-disect",
+      "ex:bisect=median",
+      "ex:bisector-parallel",
+      "ex:2x=b+c-a",
+      "ex:orthic-triangle",
+      "ex:bisector-incenter"
+    ],
+    "direct_complete": true,
+    "external_hint_references": [
+      {
+        "id": "ex:abs-bisect=median",
+        "authority_path": "source/upstream/birkhoff-0b0858e1e985f4c8dadbb6075ae9e095cd4a8981/absolute.tex",
+        "authority_line": 77,
+        "resolved_in_complete_authority_corpus": true
+      }
+    ]
+  },
+  "hint_topology": {
+    "commands": 111,
+    "environments": 2,
+    "labels": 0,
+    "equation_labels": 0,
+    "references": 27,
+    "citations": 0,
+    "graphics": 0,
+    "theorem_options": 0,
+    "qeds": 0,
+    "comments": 0
+  },
+  "hint_raw_topology": {
+    "commands": 113,
+    "environments": 2,
+    "labels": 0,
+    "equation_labels": 0,
+    "references": 28,
+    "citations": 0,
+    "graphics": 0,
+    "theorem_options": 0,
+    "qeds": 0,
+    "comments": 1
+  },
+  "hint_math_surfaces": {
+    "authority_active": 39,
+    "target_active": 39,
+    "authority_raw": 39,
+    "target_raw": 39,
+    "exact_order": true
+  },
+  "inactive_surfaces": {
+    "body_comments_preserved": true,
+    "body_comment_count": 0,
+    "hint_comments_preserved": true,
+    "hint_comment_count": 1
+  },
+  "named_source_notes": [
+    {
+      "id": "o004.petrunin.correction.ch08.midle-label-spelling",
+      "surface": "identifier",
+      "authority_line": 163,
+      "authority_hint_line": 810,
+      "description": "The immutable exercise ID ex:midle retains the source spelling midle.",
+      "proposed_correction": "Normalize only with a complete migration of the body label, hint header, backend ID links, and every cross-reference.",
+      "target_action": "preserved immutable identifier",
+      "source_changed": false
+    },
+    {
+      "id": "o004.petrunin.correction.ch08.ext-disect-label-spelling",
+      "surface": "identifier",
+      "authority_line": 252,
+      "authority_hint_line": 840,
+      "description": "The immutable exercise ID ex:ext-disect retains the source spelling disect.",
+      "proposed_correction": "Normalize only with a complete migration of the body label, hint header, backend ID links, and every cross-reference.",
+      "target_action": "preserved immutable identifier",
+      "source_changed": false
+    },
+    {
+      "id": "o004.petrunin.correction.ch08.angle-bisector-vertex-correspondence",
+      "surface": "body",
+      "authority_lines": "201-202",
+      "description": "The listed angles ABC, BCA, and CAB have vertices B, C, and A respectively, while the authority sentence assigns them to A, B, and C.",
+      "proposed_correction": "Replace the vertex sequence A, B, C with B, C, A.",
+      "confidence": "high",
+      "target_action": "corrected the displayed correspondence to B, C, A",
+      "source_changed": false
+    },
+    {
+      "id": "o004.petrunin.correction.ch08.same-lemma-reference-kind",
+      "surface": "body",
+      "authority_lines": "392-394",
+      "description": "The proof explicitly applies Proposition prop:angle-bisect-dist and then calls it the same lemma.",
+      "proposed_correction": "Replace same lemma with same proposition.",
+      "confidence": "high",
+      "target_action": "translated as proposisi yang sama",
+      "source_changed": false
+    },
+    {
+      "id": "o004.petrunin.localization.ch08.external-exterior-bisector-normalization",
+      "surface": "body-and-hints",
+      "authority_body_lines": "183-400",
+      "description": "The authority alternates external bisector and exterior bisector for the same concept.",
+      "target_action": "normalized both terms consistently to garis bagi luar",
+      "mathematics_changed": false,
+      "source_changed": false
+    },
+    {
+      "id": "o004.petrunin.localization.ch08.altitude-line-distance-distinction",
+      "surface": "body",
+      "authority_lines": "51-52",
+      "description": "The source deliberately uses altitude both for a line and for the scalar distance from a vertex to its footpoint.",
+      "target_action": "rendered the line as garis tinggi and the distance as tinggi while retaining one shared index concept",
+      "mathematics_changed": false,
+      "source_changed": false
+    },
+    {
+      "id": "o004.petrunin.dependency.ch08.homothety-self-study",
+      "surface": "hints",
+      "authority_lines": "815-822",
+      "description": "The Euler-line hint requires homothety and tells the learner to read about it, but Chapter 8 supplies no definition or internal prerequisite link.",
+      "target_action": "preserved and translated the explicit self-study dependency without inventing a replacement hint",
+      "source_changed": false
+    },
+    {
+      "id": "o004.petrunin.dependency.ch08.external-absolute-bisect-median-reference",
+      "surface": "hints",
+      "authority_line": 848,
+      "description": "The ex:bisect=median hint points outside Chapter 8 to ex:abs-bisect=median, defined later in absolute.tex line 77.",
+      "target_action": "preserved the external stable label and verified that it resolves within the complete authority corpus",
+      "source_changed": false
+    },
+    {
+      "id": "o004.petrunin.dependency.ch08.hint-only-excenter",
+      "surface": "hints",
+      "authority_lines": "864-866",
+      "description": "The orthic-triangle hint introduces excenters even though Chapter 8 body prose does not define the term.",
+      "target_action": "translated and indexed the term as eksenter and retained the source's explanatory intersection description",
+      "source_changed": false
+    }
+  ]
+}

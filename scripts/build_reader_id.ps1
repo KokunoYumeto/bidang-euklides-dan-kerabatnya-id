@@ -32,6 +32,11 @@ Get-ChildItem -LiteralPath $source -File |
     ForEach-Object { Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $output $_.Name) }
 Get-ChildItem -LiteralPath (Join-Path $source 'mppics') -File -Filter '*.mp' |
     ForEach-Object { Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $output ('mppics\' + $_.Name)) }
+$figureLocalization = Join-Path $PSScriptRoot 'apply_figure_localizations.ps1'
+if (-not (Test-Path -LiteralPath $figureLocalization -PathType Leaf)) {
+    throw "Missing figure-localization overlay: $figureLocalization"
+}
+& $figureLocalization -SourceRoot $output
 Get-ChildItem -LiteralPath (Join-Path $source 'pics') -File -Filter '*.eps' |
     ForEach-Object { Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $output ('pics\' + $_.Name)) }
 
