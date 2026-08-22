@@ -1,0 +1,92 @@
+{
+  "schema": "o004-github-checkpoint-v0",
+  "recorded_at": "2026-08-22T05:57:42.3312132+02:00",
+  "repository": "KokunoYumeto/bidang-euklides-dan-kerabatnya-id",
+  "repository_url": "https://github.com/KokunoYumeto/bidang-euklides-dan-kerabatnya-id",
+  "visibility": "PRIVATE",
+  "branch": "main",
+  "content_commit": "6086305e6ffba0101cf2a96fb1b105f655e00d54",
+  "remote_head_verified": true,
+  "zenodo_mutated": false,
+  "zenodo_new_version_created": false,
+  "build_evidence": {
+    "source_chapter_path": "parallel.tex",
+    "source_chapter_bytes": 22352,
+    "source_chapter_sha256": "3459de730c56922fe4a9e30781d3a12ce1671c735423f5eaed12175d9d5d5385",
+    "source_hints_path": "hints.tex",
+    "source_hints_bytes": 93843,
+    "source_hints_sha256": "345caa2579bb9c9781d5c9f5426ddf25e710f4b5cfe6eff71440b6a6ca811cde",
+    "next_chapter_authority_path": "triangle.tex",
+    "next_chapter_authority_bytes": 14691,
+    "next_chapter_authority_sha256": "95e4d8050e38af8da76ed24c48277550bfe7cdf8c1a7274887d6f853e4429948",
+    "build_directories": [
+      "build/ch07-final-e-20260822",
+      "build/ch07-final-f-20260822"
+    ],
+    "pdf_pages": 208,
+    "pdf_bytes": 2968464,
+    "pdf_sha256": "7fa21a42a1cdf4d78db3b1b1ae9d8db3e58ae50c3091264f4402f4b54aa0b448",
+    "metapost_files_per_build": 224,
+    "metapost_mismatches": 0,
+    "undefined_references_or_citations": 0,
+    "structural_qa_sha256": "77e43446acb920dfb54855e417c98df8deb56ef9332eac537eefb7780e435de1"
+  },
+  "remote_file_readback": [
+    {
+      "path": "source/id-ID/similar.tex",
+      "bytes": 11244,
+      "sha256": "23c609c66ae26e627425bfd196454b4cdc7a7b11d8398265786c9234ddcdd201",
+      "git_blob": "a74e4420dab07796e853c55de771211595385ea7",
+      "matches_local_commit": true
+    },
+    {
+      "path": "source/id-ID/parallel.tex",
+      "bytes": 22352,
+      "sha256": "3459de730c56922fe4a9e30781d3a12ce1671c735423f5eaed12175d9d5d5385",
+      "git_blob": "d7ff0d11c6a067ceab46d86da811bc163635f737",
+      "matches_local_commit": true
+    },
+    {
+      "path": "source/id-ID/hints.tex",
+      "bytes": 93843,
+      "sha256": "345caa2579bb9c9781d5c9f5426ddf25e710f4b5cfe6eff71440b6a6ca811cde",
+      "git_blob": "0ae61e3c13961d5e098fa16fe141b18428e77ad1",
+      "matches_local_commit": true
+    },
+    {
+      "path": "backend/catalog-v0.json",
+      "bytes": 147134,
+      "sha256": "6f95311d71e024afeba3fcec49f0234a7c1bac2334b6adc0f44466ec3321a04a",
+      "git_blob": "e8989bd930cb5816d8c4fdb0c5559a599fca5471",
+      "matches_local_commit": true
+    },
+    {
+      "path": "qa/CH07_ADMISSION_20260822.md",
+      "bytes": 5313,
+      "sha256": "22dddde152a76123a5ae2c3720e849dbffa0438fbb4afeae8900a18a628a36ff",
+      "git_blob": "56c29f875f3ebef775ce8bc65006c73dee625a54",
+      "matches_local_commit": true
+    },
+    {
+      "path": "00_control/CURRENT_CURSOR.md",
+      "bytes": 9230,
+      "sha256": "a520baa31be3c19e764261ffc0fc91452ebed6b9dd312c0957afba38bdc4bc5f",
+      "git_blob": "48586c0386f1a9aecabd75a547050e070845a7c1",
+      "matches_local_commit": true
+    }
+  ],
+  "restricted_access_readback": {
+    "zenodo_record_id": 22044358,
+    "doi": "10.5281/zenodo.22044358",
+    "anonymous_api_http_status": 200,
+    "anonymous_api_access_right": "restricted",
+    "anonymous_api_file_count": 0,
+    "known_file_request_status": 302,
+    "known_file_request_destination": "Zenodo login page",
+    "known_file_request_content_type": "text/html; charset=utf-8",
+    "known_files_checked": 5,
+    "anonymous_file_bytes_obtained": false,
+    "record_updated": "2026-08-21T18:52:39.740048+02:00",
+    "interpretation": "The record was not mutated at this checkpoint. Anonymous metadata still reports restricted access and no files; every known file request redirects to authentication, so no file bytes are anonymously downloadable."
+  }
+}
