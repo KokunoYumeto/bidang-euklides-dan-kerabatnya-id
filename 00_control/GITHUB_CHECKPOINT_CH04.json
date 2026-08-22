@@ -1,0 +1,70 @@
+{
+  "schema": "o004-github-checkpoint-v0",
+  "recorded_at": "2026-08-22T03:32:34.1923426+02:00",
+  "repository": "KokunoYumeto/bidang-euklides-dan-kerabatnya-id",
+  "repository_url": "https://github.com/KokunoYumeto/bidang-euklides-dan-kerabatnya-id",
+  "visibility": "PRIVATE",
+  "branch": "main",
+  "content_commit": "b0739bd9d10eaaaffb31f2e2c8cfd047c4070b07",
+  "remote_head_verified": true,
+  "zenodo_mutated": false,
+  "build_evidence": {
+    "source_snapshot": "build/ch04-source-snapshot-20260822",
+    "source_chapter_path": "cong.tex",
+    "source_chapter_bytes": 13622,
+    "source_chapter_sha256": "70cbc1809520da16814159a32021a66ebb48db56190b3a638af2205436282b43",
+    "source_hints_path": "hints.tex",
+    "source_hints_bytes": 92351,
+    "source_hints_sha256": "84a8289a0d5a7939bd13d16831efcd155d017ec0d7099584aa451a38d299d3f0",
+    "next_chapter_authority_path": "perp.tex",
+    "next_chapter_authority_bytes": 16499,
+    "next_chapter_authority_sha256": "c5be147e0249d3c7ffe5f2432cdd11b5e686e808927661de57614c55bfc28f91",
+    "build_directories": [
+      "build/ch04-final-i-20260822",
+      "build/ch04-final-j-20260822"
+    ],
+    "pdf_pages": 205,
+    "pdf_bytes": 2962911,
+    "pdf_sha256": "1ff91aa4ff95880980237060624fe95022d6664b8cc68180859d266a9e5cc92e",
+    "metapost_files_per_build": 224,
+    "metapost_mismatches": 0,
+    "undefined_references_or_citations": 0
+  },
+  "remote_file_readback": [
+    {
+      "path": "source/id-ID/cong.tex",
+      "bytes": 13622,
+      "sha256": "70cbc1809520da16814159a32021a66ebb48db56190b3a638af2205436282b43",
+      "git_blob": "83b397a7fdbff982b428c17fbd429f2fbd3b98b5",
+      "matches_local_commit": true
+    },
+    {
+      "path": "source/id-ID/hints.tex",
+      "bytes": 92351,
+      "sha256": "84a8289a0d5a7939bd13d16831efcd155d017ec0d7099584aa451a38d299d3f0",
+      "git_blob": "f0f2ee213dd02063ea740a4934e4aa727a65724e",
+      "matches_local_commit": true
+    },
+    {
+      "path": "backend/catalog-v0.json",
+      "bytes": 65328,
+      "sha256": "ee62b6e19359c25f089ca06a914c1a15f5f9f45a08566aedd254e7287244e796",
+      "git_blob": "039f08541bfbe93e0a633e1121a61ad1114bd0c9",
+      "matches_local_commit": true
+    },
+    {
+      "path": "qa/CH04_ADMISSION_20260822.md",
+      "bytes": 5997,
+      "sha256": "fd110a60b9975f79b5099e653a23ebdd7d5e4bde460e7ca89665a3c27385ba0e",
+      "git_blob": "45314e2538759df25f8e864db0102e739a189339",
+      "matches_local_commit": true
+    },
+    {
+      "path": "00_control/CURRENT_CURSOR.md",
+      "bytes": 4481,
+      "sha256": "ad17d970a4ac7b7a8582ee6cb0e6dc3cf58cfb053c0a56d61df364b694ed7e7f",
+      "git_blob": "ba6ea459e821677dda4243537f76ce16be4e1ab0",
+      "matches_local_commit": true
+    }
+  ]
+}
