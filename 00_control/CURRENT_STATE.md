@@ -151,8 +151,11 @@ The exact publication/access receipt is
 `6ccd1c6add2bf4fb5f3c18314c8358e08b47bb08`. The Zenodo record was edited
 in place without a new version: anonymous record readback reports restricted
 access and exposes zero files, and anonymous requests for all five exact file
-URLs currently return HTTP 404. The record and DOI were not changed and no new
-version was created; see `00_control/ACCESS_CHECK_CH04_20260822.json`.
+URLs currently return HTTP 302 to the Zenodo login page rather than file bytes.
+The record and DOI were not changed and no new version was created; see
+`00_control/GITHUB_CHECKPOINT_CH05.json`. The earlier timestamped Chapter 4
+access receipt records the then-observed 404 response without overriding this
+newer readback.
 
 The Chapter 3 content checkpoint is private Git commit
 `4b2a2a683354c4785aaebb777343049ec5697f6e`. GitHub branch readback matched
@@ -160,6 +163,13 @@ that commit, repository visibility remained `PRIVATE`, and six representative
 source/backend/control blob IDs matched local Git exactly. The receipt is
 `00_control/GITHUB_CHECKPOINT_CH03.json`. No Zenodo mutation or new version was
 made at this boundary.
+
+The Chapter 5 content checkpoint is private Git commit
+`79eee83fbb1c0153146325b48c08ea6bf0bf5874`. GitHub branch readback matched
+that commit, repository visibility remained `PRIVATE`, and five representative
+source/backend/control blob IDs and byte counts matched local Git exactly. The
+receipt is `00_control/GITHUB_CHECKPOINT_CH05.json`. Zenodo remained
+file-restricted and was not mutated or versioned.
 
 The three-layer architecture is frozen in
 `00_control/CURRICULUM_ARCHITECTURE.md`; the complete finite workflow is
