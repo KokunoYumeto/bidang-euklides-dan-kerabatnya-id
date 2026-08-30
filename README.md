@@ -1,72 +1,71 @@
 # Bidang Euklides dan Kerabatnya — Bahasa Indonesia
 
-Edisi Bahasa Indonesia independen dari *Euclidean Plane and Its Relatives: A
-Minimalist Introduction* karya Anton Petrunin, untuk peran kurikulum C100
-Fondasi Geometri.
+Edisi Bahasa Indonesia independen dan lengkap untuk peran kurikulum C100,
+berdasarkan *Euclidean Plane and Its Relatives: A Minimalist Introduction*
+karya Anton Petrunin.
 
-Status produksi saat ini: Prakata serta Bab 1–8 lengkap telah diterjemahkan,
-dipetakan dalam backend, dibangun secara deterministik, dan diperiksa secara
-visual. Pembaca yang tersedia di bawah tetap Unit Produksi 001: rilis parsial
-yang hanya memuat Prakata, Bab 1, 16 latihan Bab 1, 16 petunjuk, dan gambar
-terkait. Edisi lengkap belum dinyatakan selesai, repositori tetap privat, dan
-berkas pada rekaman Zenodo tetap dibatasi.
+## Baca dan unduh
 
-- [Baca Unit Produksi 001](output/BIDANG_EUKLIDES_DAN_KERABATNYA_ID_UNIT_001.pdf)
-- [DOI Zenodo Unit 001](https://doi.org/10.5281/zenodo.22044358)
-- [Cakupan dan checksum rilis](README_RELEASE.md)
+- [Pembaca HTML lengkap](https://kokunoyumeto.github.io/bidang-euklides-dan-kerabatnya-id/)
+- [PDF utama lengkap](output/BIDANG_EUKLIDES_DAN_KERABATNYA_ID_SPINE_COMPLETE.pdf)
+- [Rilis kursus lengkap](https://github.com/KokunoYumeto/bidang-euklides-dan-kerabatnya-id/releases/tag/2026.08.25-complete-course-a11y-ch20-portable)
+- [DOI kursus lengkap](https://doi.org/10.5281/zenodo.22102628)
+- [Buku kerja geometri dua dimensi, Unit 001–022](https://github.com/KokunoYumeto/bidang-euklides-dan-kerabatnya-id/releases/tag/2026.08.29-unit001-022)
+- [DOI buku kerja](https://doi.org/10.5281/zenodo.22151703)
 
-## Sumber resmi
+Rilis utama memuat terjemahan lengkap 20 bab, pendamping orisinal enam unit,
+solusi dan bahan penguasaan lengkap, pembaca HTML/EPUB semantik, empat
+pemeriksaan kumulatif, serta dua capstone. Buku kerja Clemens–Snapp dipelihara
+sebagai rilis terpisah karena narasinya berlisensi CC BY-NC-SA 4.0 dan lapisan
+bangunnya GPL-2.0; buku kerja itu tidak digabung atau dilisensikan ulang ke
+dalam rilis utama CC BY-SA.
 
-- Situs karya: <https://anton-petrunin.github.io/birkhoff/>
-- Repositori penulis: <https://github.com/anton-petrunin/birkhoff>
-- Saksi edisi terbit: arXiv `1302.1630v25`, edisi ketiga, cetakan kesepuluh
-- Revisi sumber kerja: commit
-  `0b0858e1e985f4c8dadbb6075ae9e095cd4a8981`
+## Identitas sumber
 
-Revisi sumber kerja lebih baru daripada v25, tetapi tidak disebut sebagai
-cetakan atau edisi baru. Perbedaan ini dipertahankan dalam provenance.
+- Sumber kerja resmi: commit
+  `0b0858e1e985f4c8dadbb6075ae9e095cd4a8981`, tree
+  `4c931765feb8e83b77b079e618b994a74efa5cf3`.
+- Saksi terbit: arXiv `1302.1630v25`, edisi ketiga, cetakan kesepuluh,
+  revisi 2025-07-07.
+- [Laman penulis](https://anton-petrunin.github.io/birkhoff/)
+- [Repositori sumber](https://github.com/anton-petrunin/birkhoff)
 
-## Isi repositori edisi
+Snapshot GitHub yang lebih baru dipakai sebagai sumber kerja terjemahan dan
+backend, tetapi tidak dinyatakan sebagai edisi atau cetakan bernomor baru.
+Edisi ini merupakan karya turunan independen dan tidak menyiratkan dukungan
+atau pengesahan oleh penulis sumber.
 
-- `source/id-ID/`: sumber LaTeX edisi dan berkas lokalisasi;
-- `backend/`: ID semantik netral-lokal, urutan unit, pasangan latihan–petunjuk,
-  deskripsi gambar, hak komponen, dan ekspor deterministik;
-- `00_control/`: otoritas, keputusan, kursor, terminologi, hak, dan bukti build;
-- `scripts/`: build deterministik dan QA struktural;
-- `output/`: pembaca yang telah melewati batas verifikasi.
+## Struktur repositori
 
-Backend bersifat aditif. Label LaTeX asli tetap dipertahankan, sedangkan ID
-backend memungkinkan bab, konsep, latihan, petunjuk, dan aset dipilih sebagai
-unit yang stabil untuk bahasa lain.
+- `source/id-ID/`: sumber LaTeX dan lokalisasi Bahasa Indonesia;
+- `backend/`: ID stabil, urutan unit, relasi latihan–petunjuk–jawaban–solusi,
+  hak komponen, dan ekspor deterministik;
+- `companion/id-ID/`: pendamping instruksional enam unit;
+- `solutions/id-ID/`: solusi, penguasaan, pemeriksaan, dan capstone;
+- `accessible/id-ID/`: pembaca HTML dan EPUB semantik lengkap;
+- `00_control/`: otoritas, keputusan, hak, kursor, dan bukti build/QA;
+- `scripts/`: build deterministik dan pemeriksaan struktural;
+- `output/`: pembaca serta paket rilis yang telah diverifikasi.
 
-## Build
+Backend bersifat aditif: label sumber tetap dipertahankan, sedangkan ID
+netral-lokal memungkinkan bab, konsep, latihan, petunjuk, solusi, dan aset
+dipilih kembali sebagai unit stabil untuk bahasa lain.
 
-Repositori edisi mendistribusikan overlay terjemahan, bukan salinan generator
-MetaPost yang provenance lisensinya belum selesai. Dari akar repositori,
-perintah berikut mengambil arsip resmi yang dipatok, memverifikasi SHA-256,
-menghapus `cover/`, menerapkan overlay, dan membangun badan buku dalam direktori
-kerja serta keluaran yang baru:
+## Build, hak, dan provenance
 
-```powershell
-.\scripts\fetch_and_build_unit001.ps1 `
-  -WorkRoot C:\path\to\new-work-directory `
-  -OutputRoot C:\path\to\new-build-directory
-```
+Paket rilis sumber/backend dibentuk dari allowlist dan mengecualikan sampul,
+font P22 berpemberitahuan hak milik, `mppics/macros.mp` yang provenance
+lisensinya belum cukup, log mentah, cache, jalur lokal, serta kredensial.
+Rincian per komponen ada di `00_control/RIGHTS_AND_COMPONENTS.md` dan manifest
+rilis.
 
-Skrip tingkat bawah `build_reader_id.ps1` menetapkan waktu sumber ke waktu
-commit resmi, membangun gambar MetaPost, menjalankan LaTeX/MakeIndex/Biber, dan
-mensyaratkan dua PDF akhir yang identik secara byte.
+Karya asli dan adaptasi utama menggunakan
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Atribusi dan
+ShareAlike tetap wajib. Hak komponen lain tidak digeneralisasi. Pembaca PDF
+adalah permukaan cetak; HTML dan EPUB menyediakan urutan semantik, MathML,
+deskripsi gambar, dan tautan stabil.
 
-## Lisensi dan perubahan
-
-Karya asli dan adaptasi ini menggunakan
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Karya asli oleh
-Anton Petrunin. Edisi ini menerjemahkan teks ke Bahasa Indonesia serta menambah
-lokalisasi, indeks mesin, provenance, QA, dan aksesibilitas; edisi ini bukan
-dukungan atau pengesahan oleh penulis asli.
-
-Komponen pihak ketiga tidak digeneralisasi sebagai CC BY-SA. Direktori sampul
-dan kedua font P22 dikecualikan. `fiziko.mp` berlisensi GPL-3.0-or-later;
-`mppics/macros.mp` mempunyai provenance lisensi yang belum cukup untuk paket
-sumber publik, sehingga generator tersebut tidak akan dikemas sampai batas hak
-itu terselesaikan. Rincian ada di `00_control/RIGHTS_AND_COMPONENTS.md`.
+Terjemahan, penyuntingan teknis, produksi pembaca, dan pemeriksaan
+deterministik dibantu oleh OpenAI Codex gpt-5.6-sol, Ultra, atas instruksi
+pengguna. Kredit penulis sumber dan seluruh atribusi komponen tetap
+dipertahankan.

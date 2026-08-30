@@ -1,0 +1,395 @@
+{
+  "chapter20_candidate": {
+    "authored_hint_blocks": 16,
+    "automated_offline_status": "pass",
+    "cumulative_resolved_reference_occurrences": 986,
+    "cumulative_scope_gaps": 0,
+    "exercise_anchors_covered_by_hints": 18,
+    "figures": {
+      "active_total": 18,
+      "body": 15,
+      "hint": 3,
+      "registered_total": 18,
+      "source_disabled": 0
+    },
+    "labeled_exercise_subparts": 2,
+    "new_resolved_reference_occurrences": 64,
+    "nonexercise_results": 11,
+    "production_model": "OpenAI Codex gpt-5.6-sol, Ultra.",
+    "proof_surfaces": 10,
+    "semantic_cursor": "EOF",
+    "top_level_exercises": 16
+  },
+  "generated_at_utc": "2026-08-25T21:03:40Z",
+  "next_cursor": {
+    "action": "no further source-book semantic unit; complete bounded browser QA before Chapter 20 admission",
+    "last_hint_lines": [
+      2394,
+      2612
+    ],
+    "last_source_bytes": 32767,
+    "last_source_path": "source/id-ID/area.tex",
+    "last_source_sha256": "3c7d65bc68fd43b08ce74a125415dfb1163678f0cbc73bf69a9327c973148971",
+    "last_unit_id": "o004.petrunin.ch20",
+    "semantic_cursor": "EOF",
+    "source_identity_status": "terminal-semantic-source-cursor-at-eof",
+    "source_path": null,
+    "unit_id": null
+  },
+  "open_gaps": [
+    "The pilot uses backend Indonesian short/long descriptions as static figure alternatives; source MPS/EPS graphics are not embedded.",
+    "Six Chapter 11 load-bearing statements are explicitly unproved locally; their proof status remains disclosed.",
+    "The Chapter 12 Axiom h-V claim has an explicit picture-dependent proof substitute rather than a complete local proof.",
+    "The Chapter 12 three-line construction hint remains picture-dependent and is not represented as a complete static construction.",
+    "Chapter 12 exercise ex:hyp-fun has no source-authored hint and no hint has been invented.",
+    "Chapter 13 inherits the picture-dependent Axiom h-V proof gap disclosed in Chapter 12.",
+    "The author-declared Chapters 14–20 rigor limitation remains explicit; Chapter 14 retains the degenerate normalization and Menelaus foot-case proof gaps for companion closure.",
+    "Chapter 15 retains three Euclidean-space facts stated without local proof, the Pappus proof outline, the explicitly unproved polar claim, and the Desargues nondegeneracy obligation.",
+    "Chapter 15 forward reference ex:cross-ratio-area now resolves to Chapter 20; ex:cone resolves to Chapter 16.",
+    "Chapter 16 is explicitly an incomplete treatment of spherical geometry.",
+    "The Chapter 16 spherical-area lemma retains an informal proof using area(Sigma)=4*pi without local proof.",
+    "The Chapter 16 spatial-inversion theorem remains incomplete: reconstruction hints and a lemma left to the reader do not constitute a full proof, and its cross-ratio formula omits finite/distinct/nonzero-denominator conditions.",
+    "The Chapter 16 Taurinus analytic correspondence remains explicitly unproved even though the final exercise applies it.",
+    "Chapter 16 references to Chapters 17, 18, and 20 now resolve.",
+    "Chapter 17's projective distance formula is restricted to the stated A-P-Q-B order and unsigned nonzero chord-distance factors; its proof inherits Chapter 16's incomplete spatial-inversion dependency.",
+    "Chapter 17's Pappus/Desargues transfers retain implicit nondegeneracy obligations, and the optional horocycle/equidistant median extension is not supplied by the source hint.",
+    "The Chapter 17 Bolyai proposition proves only the necessary direction used by the construction claim, and the common-perpendicular hint does not prove that a successful P,Q choice exists.",
+    "Chapter 17 forward reference thm:circle-center-proj now resolves to Chapter 19.",
+    "Chapter 18's quotient formula omits the required z != 0 domain, and its extended cross-ratio infinity mnemonic compresses a limiting convention.",
+    "The Chapter 18 three-point Möbius hint does not separate allowed infinity cases, and the holomorphic little-o definition leaves w -> 0 implicit.",
+    "The Chapter 18 Schwarz--Pick theorem is explicitly unproved locally; the source points to external geometric complex-analysis textbooks.",
+    "The Chapter 18 external-video exercise has no source-authored hint or source-authored offline/static alternative; a separately identified CC BY-SA edition-original static exercise is supplied without attribution to Petrunin.",
+    "Chapter 19 retains two unsolved classical problems and three impossibility statements outside the exercise/hint topology.",
+    "Chapter 19's Gauss--Wantzel and Mohr--Mascheroni theorems have no complete local proof; the constructible-number theorem has an outline and two later results have source proof sketches rather than complete proofs.",
+    "The commented Chapter 19 Apollonius hint and pic-364 remain provenance-only and are not rendered as active reader content.",
+    "Chapter 20's polygonal-intersection proof remains an informal picture-dependent argument, and its zero-area/rectangle arguments use unproved Archimedean or limiting steps.",
+    "Chapter 20 quadrable-set existence and uniqueness rely on completeness and supremum reasoning not proved locally.",
+    "Chapter 20's area-ratio, diagonal, Ceva, and cross-ratio surfaces retain implicit positivity, nondegeneracy, distinctness, and nonzero-denominator obligations disclosed in the reader.",
+    "Chapter 20's circle-quadrability hint compresses the cosine-ratio limit and uniform outer-area bound.",
+    "Two preserved historical quotations lack exact documentary locators in the source.",
+    "The source-authored external-video response exercise depends on YouTube and has no source-authored offline/static alternative or authored hint.",
+    "EPUB is a deterministic text/MathML package; no external fonts or scripts are bundled.",
+    "The browser checks are bounded visual/DOM spot checks, not a screen-reader certification."
+  ],
+  "outputs": [
+    {
+      "bytes": 4502,
+      "path": "README.md",
+      "sha256": "13716dd5195482cd02b706b331c78a82a0520118ee0d1581a8b9d23ab509da00"
+    },
+    {
+      "bytes": 18095,
+      "path": "VISUAL_BROWSER_READABILITY_QA.md",
+      "sha256": "649e26409cea8bee0bc91bf944b65656ac6762c0bc912c75ee95dc66c1637254"
+    },
+    {
+      "bytes": 311721,
+      "path": "build_accessible.py",
+      "sha256": "c1be763f9cee0d5e123ad4e2ff7feb70595450718d5cd0505798df4a2d63c29e"
+    },
+    {
+      "bytes": 9642,
+      "path": "finalize_ch18_browser_qa.py",
+      "sha256": "8e5395193dcac93ad89ae74eb3c6894683e76f6d0f8b2e95ec73577aaf033b39"
+    },
+    {
+      "bytes": 3994608,
+      "path": "index.html",
+      "sha256": "1d3b49bc17a5956164d25b53ef6a2e79939a44f066fa87d84d00a66cca6da7ca"
+    },
+    {
+      "bytes": 227419,
+      "path": "manifest.json",
+      "sha256": "9abcf47b5f452985fad2e7014c4b81ceca0adbf9ac47da05f1acb8d062af5452"
+    },
+    {
+      "bytes": 389787,
+      "path": "o004-accessible-id.epub",
+      "sha256": "5eb6773cc036015e8eb9e6f1791c6ec2f2b83812f43c8340c66aaafd91b12d99"
+    },
+    {
+      "bytes": 389787,
+      "path": "output/BIDANG_EUKLIDES_DAN_KERABATNYA_ID_EPUB_CH01_CH20.epub",
+      "sha256": "5eb6773cc036015e8eb9e6f1791c6ec2f2b83812f43c8340c66aaafd91b12d99"
+    },
+    {
+      "bytes": 388840,
+      "path": "output/BIDANG_EUKLIDES_DAN_KERABATNYA_ID_HTML_CH01_CH20.zip",
+      "sha256": "ee26d6e1228b7b66ca7ea156081c673dd1c8ab8b3488d87f7ee35cc354c091ae"
+    },
+    {
+      "bytes": 5098,
+      "path": "style.css",
+      "sha256": "553a606757f117c9edefb0c5c339d490fd55cefd9c10b40e4d60774c30e32887"
+    },
+    {
+      "bytes": 418749,
+      "path": "validate_accessible.py",
+      "sha256": "8b669c95b0ba48bdb3b2d5daaefcef1d02049dfd49d9b28c074cb922b84817c7"
+    },
+    {
+      "bytes": 171015,
+      "path": "validator-report.json",
+      "sha256": "d46ad89f0ac00cfb0e9e10d5a6bbf518968e5903dc3c661d7277ac7084f40451"
+    }
+  ],
+  "path_base": "accessible/id-ID (directory containing receipt.json)",
+  "provenance": "OpenAI Codex gpt-5.6-sol, Ultra.",
+  "reproducibility": {
+    "deterministic_artifacts": [
+      "index.html",
+      "style.css",
+      "o004-accessible-id.epub",
+      "manifest.json",
+      "validator-report.json"
+    ],
+    "note": "The informational generated_at_utc field makes receipt.json intentionally time-varying; every substantive generated artifact listed above was byte-identical.",
+    "status": "verified-two-fresh-exact-output-builds"
+  },
+  "rights": {
+    "license": "CC BY-SA 4.0",
+    "non_endorsement": true,
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "schema": "o004-accessible-id-v0",
+  "scope": {
+    "excluded": "none; complete source-book semantic scope through EOF",
+    "hints": {
+      "chapter10_authored_hint_blocks": 14,
+      "chapter10_exercise_anchors_covered_by_hints": 14,
+      "chapter10_lines": [
+        1108,
+        1256
+      ],
+      "chapter10_top_level_exercises": 14,
+      "chapter11_authored_hint_blocks": 11,
+      "chapter11_exercise_anchors_covered_by_hints": 11,
+      "chapter11_lines": [
+        1257,
+        1376
+      ],
+      "chapter11_top_level_exercises": 11,
+      "chapter12_authored_hint_blocks": 9,
+      "chapter12_exercise_anchors_covered_by_hints": 16,
+      "chapter12_lines": [
+        1378,
+        1499
+      ],
+      "chapter12_subparts": 7,
+      "chapter12_top_level_exercises": 10,
+      "chapter12_unhinted_source_exercises": 1,
+      "chapter13_authored_hint_blocks": 10,
+      "chapter13_exercise_anchors_covered_by_hints": 10,
+      "chapter13_lines": [
+        1504,
+        1606
+      ],
+      "chapter13_top_level_exercises": 10,
+      "chapter14_authored_hint_blocks": 14,
+      "chapter14_exercise_anchors_covered_by_hints": 15,
+      "chapter14_lines": [
+        1611,
+        1747
+      ],
+      "chapter14_shared_hint_blocks": 1,
+      "chapter14_top_level_exercises": 15,
+      "chapter15_authored_hint_blocks": 14,
+      "chapter15_exercise_anchors_covered_by_hints": 22,
+      "chapter15_lines": [
+        1752,
+        1893
+      ],
+      "chapter15_subparts": 8,
+      "chapter15_top_level_exercises": 14,
+      "chapter16_authored_hint_blocks": 9,
+      "chapter16_exercise_anchors_covered_by_hints": 14,
+      "chapter16_labeled_subparts": 2,
+      "chapter16_lines": [
+        1899,
+        1968
+      ],
+      "chapter16_subparts": 5,
+      "chapter16_top_level_exercises": 9,
+      "chapter16_total_subparts": 5,
+      "chapter16_unlabeled_subparts": 3,
+      "chapter17_authored_hint_blocks": 10,
+      "chapter17_exercise_anchors_covered_by_hints": 10,
+      "chapter17_lines": [
+        1984,
+        2102
+      ],
+      "chapter17_subparts": 0,
+      "chapter17_top_level_exercises": 10,
+      "chapter18_authored_hint_blocks": 15,
+      "chapter18_exercise_anchors_covered_by_hints": 15,
+      "chapter18_lines": [
+        2104,
+        2257
+      ],
+      "chapter18_problem_count": 1,
+      "chapter18_top_level_exercises": 16,
+      "chapter18_unhinted_source_exercises": 1,
+      "chapter19_authored_hint_blocks": 9,
+      "chapter19_exercise_anchors_covered_by_hints": 13,
+      "chapter19_labeled_subparts": 4,
+      "chapter19_lines": [
+        2281,
+        2389
+      ],
+      "chapter19_problem_count": 3,
+      "chapter19_source_worked_problem_count": 1,
+      "chapter19_top_level_exercises": 9,
+      "chapter1_lines": [
+        13,
+        231
+      ],
+      "chapter20_authored_hint_blocks": 16,
+      "chapter20_exercise_anchors_covered_by_hints": 18,
+      "chapter20_labeled_subparts": 2,
+      "chapter20_lines": [
+        2394,
+        2612
+      ],
+      "chapter20_top_level_exercises": 16,
+      "chapter2_lines": [
+        234,
+        288
+      ],
+      "chapter3_lines": [
+        290,
+        360
+      ],
+      "chapter4_lines": [
+        360,
+        395
+      ],
+      "chapter5_exercises_covered": 18,
+      "chapter5_lines": [
+        396,
+        560
+      ],
+      "chapter6_exercises_covered": 8,
+      "chapter6_lines": [
+        562,
+        607
+      ],
+      "chapter7_labeled_subparts_covered": 3,
+      "chapter7_lines": [
+        612,
+        790
+      ],
+      "chapter7_top_level_exercises_covered": 21,
+      "chapter8_exercises_covered": 13,
+      "chapter8_lines": [
+        797,
+        870
+      ],
+      "chapter9_authored_hint_blocks": 21,
+      "chapter9_exercise_anchors_covered_by_hints": 24,
+      "chapter9_lines": [
+        876,
+        1104
+      ],
+      "chapter9_subparts": 3,
+      "chapter9_top_level_exercises": 22,
+      "chapter9_unhinted_source_exercises": 1,
+      "count": 247
+    },
+    "locale": "id-ID",
+    "units": [
+      "o004.petrunin.preface",
+      "o004.petrunin.ch01",
+      "o004.petrunin.ch02",
+      "o004.petrunin.ch03",
+      "o004.petrunin.ch04",
+      "o004.petrunin.ch05",
+      "o004.petrunin.ch06",
+      "o004.petrunin.ch07",
+      "o004.petrunin.ch08",
+      "o004.petrunin.ch09",
+      "o004.petrunin.ch10",
+      "o004.petrunin.ch11",
+      "o004.petrunin.ch12",
+      "o004.petrunin.ch13",
+      "o004.petrunin.ch14",
+      "o004.petrunin.ch15",
+      "o004.petrunin.ch16",
+      "o004.petrunin.ch17",
+      "o004.petrunin.ch18",
+      "o004.petrunin.ch19",
+      "o004.petrunin.ch20"
+    ]
+  },
+  "status": "pass",
+  "validation": {
+    "report": "validator-report.json",
+    "status": "pass",
+    "validator_exit": 0
+  },
+  "visual_browser_readability_qa": {
+    "status": "pass",
+    "tested_at": "2026-08-25T23:12:23.451335+02:00",
+    "browser": "Codex in-app browser",
+    "origin": "isolated localhost static server serving the exact promoted bytes",
+    "desktop": {
+      "viewport": "1280x900",
+      "document_client_width": 1265,
+      "document_scroll_width": 1265,
+      "body_client_width": 1152,
+      "body_scroll_width": 1152,
+      "scroll_x": 0
+    },
+    "narrow": {
+      "viewport": "390x844",
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "body_client_width": 375,
+      "body_scroll_width": 375,
+      "scroll_x": 0,
+      "formula_scrollers": 585,
+      "wide_formula_scrollers": 113,
+      "wide_scroller_failures": 0,
+      "max_local_scroll_width": 1375,
+      "max_local_client_width": 337
+    },
+    "chapter20": {
+      "sections": 10,
+      "exercises": 16,
+      "authored_hints": 16,
+      "nonexercise_results": 11,
+      "proofs": 10,
+      "body_figures": 15,
+      "hint_figures": 3,
+      "exercise_hint_round_trips": 16,
+      "figure_bounds_and_details": "pass",
+      "canonical_and_compatibility_anchors": "pass"
+    },
+    "math": {
+      "mathml_nodes": 7646,
+      "visible_tex_fallbacks": 0,
+      "residual_source_formulas_converted": 11,
+      "original_tex_annotations_preserved": true,
+      "visible_source_tex_patterns": 0
+    },
+    "complete_reader": {
+      "accessible_figures": 213,
+      "figure_bounds_failures_narrow": 0
+    },
+    "clean_load": {
+      "console_warnings_or_errors": 0,
+      "script_elements": 0,
+      "remote_src_resources": 0,
+      "replacement_characters": 0
+    },
+    "interaction": {
+      "native_details_desktop": "pass",
+      "native_details_narrow": "pass",
+      "exercise_hint_backlink_desktop": "pass",
+      "exercise_hint_backlink_narrow": "pass",
+      "formula_scroller_focus_outline": "pass",
+      "synthetic_arrowright_scroll_movement": false
+    },
+    "visual_defects": 0,
+    "claim_limit": "bounded browser/reflow QA; not screen-reader certification"
+  }
+}
